@@ -1,0 +1,69 @@
+<div class="form-group">
+    <span class="mar">
+        <p-radioButton class="rb" name="group1" value="4" label="Brussels I bis" [(ngModel)]="euLink.docType" inputId="opt1"
+            (ngModelChange)="onChange($event)"></p-radioButton>
+    </span>
+    <span class="mar">
+        <p-radioButton name="group1" value="5" label="Brussels I" [(ngModel)]="euLink.docType" inputId="opt2"
+            (ngModelChange)="onChange($event)"></p-radioButton>
+    </span>
+    <span class="mar">
+        <p-radioButton name="group1" value="6" label="Rome I" [(ngModel)]="euLink.docType" inputId="opt3"
+            (ngModelChange)="onChange($event)"></p-radioButton>
+    </span>
+    <span class="mar">
+        <p-radioButton name="group1" value="7" label="Rome II" [(ngModel)]="euLink.docType" inputId="opt3"
+            (ngModelChange)="onChange($event)"></p-radioButton>
+    </span>
+    <br />
+    <span class="mar">
+        <p-radioButton class="rb" name="group1" value="1" label="Regulation &nbsp;&nbsp;&nbsp;" [(ngModel)]="euLink.docType"
+            inputId="opt1" (ngModelChange)="onChange($event)"></p-radioButton>
+    </span>
+    <span class="mar">
+        <p-radioButton name="group1" value="2" label="Directive&nbsp;" [(ngModel)]="euLink.docType" inputId="opt2"
+            (ngModelChange)="onChange($event)"></p-radioButton>
+    </span>
+    <span class="mar">
+        <p-radioButton name="group1" value="3" label="Other" [(ngModel)]="euLink.docType" inputId="opt3"
+            (ngModelChange)="onChange($event)"></p-radioButton>
+    </span>
+</div>
+<div *ngIf="euLink.docType==1 || euLink.docType==2">
+    <div>
+        <span>
+            <label for="docNumber">Number</label>
+            <input pInputText id="docNumber" size="20" [(ngModel)]="euLink.docNumber" (ngModelChange)="onChange($event)">
+        </span>
+        <span>
+            <label for="docYear">Year</label>
+            <input id="docYear" type="text" size="20" pInputText [(ngModel)]="euLink.year" (ngModelChange)="onChange($event)">
+        </span>
+    </div>
+</div>
+<div *ngIf="euLink.docType==3">
+    <span>
+        <label for="celex-input">Celex Number</label>
+        <input id="celex-input" type="text" size="20" pInputText [(ngModel)]="euLink.celex" class="inputCelex">
+    </span>
+</div>
+<br />
+<div class="form-group">
+    <label for="importance">Importance &nbsp;<p-dropdown [options]="importances" id="importance" name="importance"
+            [(ngModel)]="euLink.importance" placeholder="Importance" optionLabel="label" [style]="{'width':'200px'}"></p-dropdown></label>
+
+</div>
+<table [style]="{'width':'100%'}">
+    <tr>
+        <td colspan="2" class="cb">Cited Provisions</td>
+        <td colspan="2" class="cb">Citation to other <br />structural elements</td>
+    </tr>
+    <tr *ngFor="let item of euLink.itemsBase; index as i">
+        <td>{{item.label}}</td>
+        <td><div><input type="text" [(ngModel)]="item.value"  title="E.g.: {{item.placeholder}}" /></div></td>
+        <td *ngIf="euLink.itemsOther.length > i">{{euLink.itemsOther[i].label}}</td>
+        <td *ngIf="euLink.itemsOther.length > i"><input type="text" [(ngModel)]="euLink.itemsOther[i].value" class="inputPart"
+            title="E.g.: {{euLink.itemsOther[i].placeholder}}"   />
+            </td>
+    </tr>
+</table>

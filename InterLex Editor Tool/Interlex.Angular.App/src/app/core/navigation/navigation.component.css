@@ -1,0 +1,14 @@
+.header {
+  position: absolute;
+  left: 40%;
+}
+
+img {
+  width: 100px;
+}
+
+h3 {
+  display: inline;
+  vertical-align: middle;
+  font-family: Georgia, Times New Roman, serif;
+}

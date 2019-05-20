@@ -1,0 +1,41 @@
+.cb{
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+#docNumber{
+    margin: 5px;
+    width: 90px;
+    height: 25px;
+}
+
+#docYear{
+    margin: 5px;
+    width: 90px;
+    height: 25px;
+}
+
+.inputCelex{
+    margin: 5px;
+    width: 181px;
+    height: 25px;
+}
+.inputPart{
+    margin: 2px;
+    width: 100%;
+    height: 25px;
+}
+label{
+    font-weight: bold;
+}
+.ui-float-label{
+    display: inline;
+}
+
+.mar{
+    margin: 5px;
+    font-weight: bold;
+}
+#importance{
+    display: inline;
+}

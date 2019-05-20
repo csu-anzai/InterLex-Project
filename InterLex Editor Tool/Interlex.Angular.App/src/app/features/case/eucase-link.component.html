@@ -1,0 +1,49 @@
+<table [style]="{'width':'100%'}">
+    <!-- <tr>
+        <td><label>Celex Number</label></td>
+        <td><input id="celex-input" type="text" size="30" pInputText [(ngModel)]="euCaseLink.celex" class="inputPart"></td>
+    </tr> -->
+    <tr>
+        <td><label>Court</label></td>
+        <td>
+            <p-dropdown [options]="courts" id="courts" name="courts" [(ngModel)]="euCaseLink.court" placeholder="Court"
+                [showClear]="false" class="inputPart" optionLabel="label" (ngModelChange)="onChange($event)" [style]="{'width':'100%'}"></p-dropdown>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Document type</label></td>
+        <td>
+            <p-dropdown [options]="docTypes" id="docTypes" name="docTypes" [(ngModel)]="euCaseLink.docType" placeholder="Document type"
+                [showClear]="false" class="inputPart" optionLabel="label" (ngModelChange)="onChange($event)" [style]="{'width':'100%'}"></p-dropdown>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Case number</label></td>
+        <td><input id="case-number-input" type="text" size="30" pInputText [(ngModel)]="euCaseLink.docNumber" class="inputPart"
+                (ngModelChange)="onChange($event)"></td>
+    </tr>
+    <tr>
+        <td><label>Case year</label></td>
+        <td><input id="year-input" type="text" size="30" pInputText [(ngModel)]="euCaseLink.year" class="inputPart"
+                (ngModelChange)="onChange($event)"></td>
+    </tr>
+    <tr *ngIf="!isDoc">
+        <td><label>Importance</label></td>
+        <td>
+            <p-dropdown [options]="importances" id="importance" name="importance" [(ngModel)]="euCaseLink.importance"
+                placeholder="Importance" optionLabel="label" [showClear]="false" class="inputPart" [style]="{'width':'100%'}"></p-dropdown>
+        </td>
+    </tr>
+    <tr *ngIf="!isDoc && !isEuDoc">
+        <td><label>Preliminary ruling</label></td>
+        <td>
+            <p-dropdown [options]="prelRuling" id="prelRuling" name="prelRuling" [(ngModel)]="euCaseLink.preliminaryRuling"
+                placeholder="Preliminary ruling" optionLabel="label" [showClear]="false" class="inputPart" [style]="{'width':'100%'}"></p-dropdown>
+        </td>
+    </tr>
+    <tr *ngIf="!isDoc">
+        <td><label>Cited paragraph</label></td>
+        <td><input id="part-input" type="text" size="30" pInputText [(ngModel)]="euCaseLink.part" class="inputPart"
+                (ngModelChange)="onChange($event)"></td>
+    </tr>
+</table>

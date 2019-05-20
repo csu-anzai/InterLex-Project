@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+/*@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');*/
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~primeicons/primeicons.css";
+@import "~primeng/resources/primeng.min.css";
+@import "~primeng/resources/themes/nova-colored/theme.css";
+@import "~primeflex/primeflex.css";
+
+
+.ui-state-active {
+  background-color: whitesmoke;
+}
+
+.ql-editor{
+  font-size: 16px;
+}
+
+
+/*@font-face {*/
+  /*font-family: typewriter123;*/
+  /*font-style: normal;*/
+  /*src: url("/assets/fonts/typewriterbold.ttf") format("truetype");*/
+/*}*/

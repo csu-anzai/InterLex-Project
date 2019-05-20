@@ -1,0 +1,67 @@
+.form-group label {
+  font-weight: bold;
+  display: block;
+}
+
+.label-inline {
+  display: inline;
+}
+
+/* .form-group{
+    margin: 15px;
+}
+.form-group textarea{
+    height: 250px;
+    _width: 1000px;
+}
+.form-group input{
+    _width: 1000px;
+}
+
+.ui-dropdown{
+    width: 250px;
+}
+
+.ui-editor-container{
+    width: 1000px;
+}
+
+} */
+
+.ui-inputfield {
+  padding: 5px !important;
+}
+
+.ui-button-text-icon-left .ui-button-text {
+  padding: 5px !important;
+}
+
+.ui-button-text-only .ui-button-text {
+  padding: 5px !important;
+}
+
+.ui-chips > ul.ui-inputtext {
+  width: 300px !important;
+}
+
+#keywords > .ui-inputtext {
+  width: 300px !important;
+}
+
+.star-red {
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.overlay{
+    font-weight: normal;
+}
+
+.t-eu-link{
+    border-bottom: 1px solid gray;
+}
+
+.bold {
+  font-weight: bold;
+}

@@ -1,0 +1,34 @@
+<p-menubar [model]="items" *ngIf="loggedIn">
+  <div class="header">
+    <img src="assets/logo.png" alt="interlex-logo">
+    <h3>InterLex Editor Tool</h3>
+  </div>
+  <div>
+    <p class="float-right">Hello, {{username}}</p>
+    <div>
+      <!--<button label="Change password" pButton icon="pi pi-key" (click)="changePass()"></button>-->
+      <p-splitButton class="float-right" label="Logout" icon="pi pi-sign-out" [model]="buttonItems" (onClick)="logout()"
+      ></p-splitButton>
+      <!--<button *ngIf="loggedIn" (click)="logout()" pButton label="Logout" icon="pi pi-sign-out"-->
+      <!--style="margin-left:.25em"></button>-->
+      <button *ngIf="!loggedIn" routerLink="/login" pButton label="Login" icon="pi pi-sign-in"
+                                style="margin-left:.25em"></button>
+    </div>
+  </div>
+</p-menubar>
+<!--<p-toolbar>-->
+<!--<div class="ui-toolbar-group-left">-->
+<!--<button pButton type="button" label="New" icon="pi pi-plus"></button>-->
+<!--<button pButton type="button" label="Upload" icon="pi pi-upload" class="ui-button-success"></button>-->
+
+<!--<i class="pi pi-bars"></i>-->
+
+<!--<p-splitButton label="Save" icon="pi pi-check" [model]="items" styleClass="ui-button-warning"></p-splitButton>-->
+<!--</div>-->
+
+<!--<div class="ui-toolbar-group-right">-->
+<!--<button pButton type="button" icon="pi pi-search"></button>-->
+<!--<button pButton type="button" icon="pi pi-calendar" class="ui-button-success"></button>-->
+<!--<button pButton type="button" icon="pi pi-times" class="ui-button-danger"></button>-->
+<!--</div>-->
+<!--</p-toolbar>-->

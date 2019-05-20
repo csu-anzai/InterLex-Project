@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6c4f65d9-b32b-422b-b345-c74130cec25f}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectView>ProjectFiles</ProjectView>
+    <StartupFile>
+    </StartupFile>
+    <WorkingDirectory>
+    </WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <EnableTypeScript>true</EnableTypeScript>
+    <TypeScriptToolsVersion>3.0</TypeScriptToolsVersion>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <LastActiveSolutionConfig>Release|Any CPU</LastActiveSolutionConfig>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <StartWebBrowser>True</StartWebBrowser>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+    <ScriptArguments>
+    </ScriptArguments>
+    <NodejsPort>
+    </NodejsPort>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="angular.json" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="src\app\core\alert\alert.component.css" />
+    <Content Include="src\app\core\alert\alert.component.html" />
+    <Content Include="src\app\core\navigation\navigation.component.css" />
+    <Content Include="src\app\core\navigation\navigation.component.html" />
+    <Content Include="src\app\features\admin\admin.component.css" />
+    <Content Include="src\app\features\admin\admin.component.html" />
+    <Content Include="src\app\features\admin\edit-user\edit-user.component.css" />
+    <Content Include="src\app\features\admin\edit-user\edit-user.component.html" />
+    <Content Include="src\app\features\admin\register-user\register-user.component.css" />
+    <Content Include="src\app\features\admin\register-user\register-user.component.html" />
+    <Content Include="src\app\features\admin\reset-user\reset-user.component.css" />
+    <Content Include="src\app\features\admin\reset-user\reset-user.component.html" />
+    <Content Include="src\app\features\admin\suggestions\suggestions.component.css" />
+    <Content Include="src\app\features\admin\suggestions\suggestions.component.html" />
+    <Content Include="src\app\features\case\case-editor.component.css" />
+    <Content Include="src\app\features\case\case-editor.component.html" />
+    <Content Include="src\app\features\case\case-list.component.css" />
+    <Content Include="src\app\features\case\case-list.component.html" />
+    <Content Include="src\app\features\case\eucase-link.component.css" />
+    <Content Include="src\app\features\case\eucase-link.component.html" />
+    <Content Include="src\app\features\case\eulaw-link.component.css" />
+    <Content Include="src\app\features\case\eulaw-link.component.html" />
+    <Content Include="src\app\features\help\help.component.css" />
+    <Content Include="src\app\features\help\help.component.html" />
+    <Content Include="src\app\features\help\help.component.ts" />
+    <Content Include="src\app\features\home\home.component.html" />
+    <Content Include="src\app\features\login\login.component.css" />
+    <Content Include="src\app\features\login\login.component.html" />
+    <Content Include="src\assets\acrobat-icon.png" />
+    <Content Include="src\assets\fonts\typewriter.ttf" />
+    <Content Include="src\assets\fonts\typewriterbold.ttf" />
+    <Content Include="src\assets\Interlex-Editor-Tool-Manual.pdf" />
+    <Content Include="src\assets\logo.png" />
+    <Content Include="src\environments\environment.eurocases.ts" />
+    <Content Include="tsconfig.json" />
+    <Content Include="tslint.json" />
+    <Content Include="README.md" />
+    <Content Include="e2e\tsconfig.e2e.json" />
+    <Content Include="src\index.html" />
+    <Content Include="src\styles.css" />
+    <Content Include="src\favicon.ico" />
+    <Content Include="src\tsconfig.app.json" />
+    <Content Include="src\tsconfig.spec.json" />
+    <Content Include="src\tslint.json" />
+    <TypeScriptCompile Include="src\app\animations.ts" />
+    <TypeScriptCompile Include="src\app\app-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\core\alert\alert.component.ts" />
+    <TypeScriptCompile Include="src\app\core\Constants.ts" />
+    <TypeScriptCompile Include="src\app\core\core.module.ts" />
+    <TypeScriptCompile Include="src\app\core\guards\admin.guard.ts" />
+    <TypeScriptCompile Include="src\app\core\guards\auth.guard.ts" />
+    <TypeScriptCompile Include="src\app\core\guards\superadmin.guard.ts" />
+    <TypeScriptCompile Include="src\app\core\interceptors\error.interceptor.ts" />
+    <TypeScriptCompile Include="src\app\core\interceptors\token.interceptor.ts" />
+    <TypeScriptCompile Include="src\app\core\navigation\navigation.component.ts" />
+    <TypeScriptCompile Include="src\app\core\services\alert.service.ts" />
+    <TypeScriptCompile Include="src\app\core\services\auth.service.ts" />
+    <TypeScriptCompile Include="src\app\core\services\http.service.ts" />
+    <TypeScriptCompile Include="src\app\core\services\user.service.ts" />
+    <TypeScriptCompile Include="src\app\features\admin\admin.component.ts" />
+    <TypeScriptCompile Include="src\app\features\admin\edit-user\edit-user.component.ts" />
+    <TypeScriptCompile Include="src\app\features\admin\register-user\register-user.component.ts" />
+    <TypeScriptCompile Include="src\app\features\admin\reset-user\reset-user.component.ts" />
+    <TypeScriptCompile Include="src\app\features\admin\suggestions\suggestions.component.ts" />
+    <TypeScriptCompile Include="src\app\features\case\case-editor.component.ts" />
+    <TypeScriptCompile Include="src\app\features\case\case-list.component.ts" />
+    <TypeScriptCompile Include="src\app\features\case\eucase-link-parts.pipe.ts" />
+    <TypeScriptCompile Include="src\app\features\case\eucase-link.component.ts" />
+    <TypeScriptCompile Include="src\app\features\case\eulaw-link-parts.pipe.ts" />
+    <TypeScriptCompile Include="src\app\features\case\eulaw-link.component.ts" />
+    <TypeScriptCompile Include="src\app\features\case\eurovoc-tree.component.ts" />
+    <TypeScriptCompile Include="src\app\features\features.module.ts" />
+    <TypeScriptCompile Include="src\app\features\home\home.component.ts" />
+    <TypeScriptCompile Include="src\app\features\login\login.component.ts" />
+    <TypeScriptCompile Include="src\app\models\case-editor.model.ts" />
+    <TypeScriptCompile Include="src\app\models\organization.model.ts" />
+    <TypeScriptCompile Include="src\app\models\suggestions-tree.model.ts" />
+    <TypeScriptCompile Include="src\app\models\suggestions.model.ts" />
+    <TypeScriptCompile Include="src\app\models\user-list.model.ts" />
+    <TypeScriptCompile Include="src\app\models\user.model.ts" />
+    <TypeScriptCompile Include="src\app\shared\shared.module.ts" />
+    <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="src\polyfills.ts" />
+    <TypeScriptCompile Include="src\test.ts" />
+    <TypeScriptCompile Include="e2e\src\app.e2e-spec.ts" />
+    <TypeScriptCompile Include="e2e\src\app.po.ts" />
+    <Content Include="src\app\app.component.html" />
+    <Content Include="src\app\app.component.css" />
+    <TypeScriptCompile Include="src\app\app.component.ts" />
+    <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\environments\environment.prod.ts" />
+    <TypeScriptCompile Include="src\environments\environment.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="e2e" />
+    <Folder Include="e2e\src" />
+    <Folder Include="src" />
+    <Folder Include="src\app" />
+    <Folder Include="src\app\core\" />
+    <Folder Include="src\app\core\alert\" />
+    <Folder Include="src\app\core\guards\" />
+    <Folder Include="src\app\core\interceptors\" />
+    <Folder Include="src\app\core\navigation\" />
+    <Folder Include="src\app\core\services\" />
+    <Folder Include="src\app\features\" />
+    <Folder Include="src\app\features\admin\" />
+    <Folder Include="src\app\features\admin\edit-user\" />
+    <Folder Include="src\app\features\admin\register-user\" />
+    <Folder Include="src\app\features\admin\reset-user\" />
+    <Folder Include="src\app\features\admin\suggestions\" />
+    <Folder Include="src\app\features\case\" />
+    <Folder Include="src\app\features\help\" />
+    <Folder Include="src\app\features\home\" />
+    <Folder Include="src\app\features\login\" />
+    <Folder Include="src\app\models\" />
+    <Folder Include="src\app\shared\" />
+    <Folder Include="src\assets\" />
+    <Folder Include="src\assets\fonts\" />
+    <Folder Include="src\environments\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

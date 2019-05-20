@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interlex", "Interlex\Interlex.csproj", "{7EC50473-40FF-46B7-AB90-A186FFA83DCF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interlex.Models", "Interlex.Models\Interlex.Models.csproj", "{75E3E33E-2EF6-4232-833F-6FD5AF78141F}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Interlex.Vue.App", "Interlex.Vue.App\Interlex.Vue.App.njsproj", "{9659118E-933E-411D-8247-A246FAF5CDCE}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Interlex.Angular.App", "Interlex.Angular.App\Interlex.Angular.App.njsproj", "{6C4F65D9-B32B-422B-B345-C74130CEC25F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interlex.Data", "Interlex.Data\Interlex.Data.csproj", "{ADB8E811-11C3-4303-9A11-300C23B7854A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EC50473-40FF-46B7-AB90-A186FFA83DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EC50473-40FF-46B7-AB90-A186FFA83DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EC50473-40FF-46B7-AB90-A186FFA83DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EC50473-40FF-46B7-AB90-A186FFA83DCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75E3E33E-2EF6-4232-833F-6FD5AF78141F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75E3E33E-2EF6-4232-833F-6FD5AF78141F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75E3E33E-2EF6-4232-833F-6FD5AF78141F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75E3E33E-2EF6-4232-833F-6FD5AF78141F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9659118E-933E-411D-8247-A246FAF5CDCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9659118E-933E-411D-8247-A246FAF5CDCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9659118E-933E-411D-8247-A246FAF5CDCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C4F65D9-B32B-422B-B345-C74130CEC25F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C4F65D9-B32B-422B-B345-C74130CEC25F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C4F65D9-B32B-422B-B345-C74130CEC25F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADB8E811-11C3-4303-9A11-300C23B7854A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADB8E811-11C3-4303-9A11-300C23B7854A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADB8E811-11C3-4303-9A11-300C23B7854A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADB8E811-11C3-4303-9A11-300C23B7854A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D39F5A94-B517-4BB8-902C-273457B161C1}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.2.19:8080/tfs/apiscollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Interlex\\Interlex.csproj
+		SccProjectName1 = Interlex
+		SccLocalPath1 = Interlex
+		SccProjectUniqueName2 = Interlex.Models\\Interlex.Models.csproj
+		SccProjectName2 = Interlex.Models
+		SccLocalPath2 = Interlex.Models
+		SccProjectUniqueName3 = Interlex.Vue.App\\Interlex.Vue.App.njsproj
+		SccProjectName3 = Interlex.Vue.App
+		SccLocalPath3 = Interlex.Vue.App
+		SccProjectUniqueName4 = Interlex.Angular.App\\Interlex.Angular.App.njsproj
+		SccProjectName4 = Interlex.Angular.App
+		SccLocalPath4 = Interlex.Angular.App
+		SccProjectUniqueName5 = Interlex.Data\\Interlex.Data.csproj
+		SccProjectName5 = Interlex.Data
+		SccLocalPath5 = Interlex.Data
+	EndGlobalSection
+EndGlobal

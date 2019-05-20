@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interlex.Crawler.ConsoleClient", "Interlex.Crawler.ConsoleClient\Interlex.Crawler.ConsoleClient.csproj", "{493445B5-2211-4B77-95D1-6CCAB406A660}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interlex.Crawler", "Interlex.Crawler\Interlex.Crawler.csproj", "{69B97173-38D5-4C4C-9067-824486ECE93D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interlex.Crawler.Data", "Interlex.Crawler.Data\Interlex.Crawler.Data.csproj", "{18BD3E74-F48E-4723-A3F9-3727DE0DFA52}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{493445B5-2211-4B77-95D1-6CCAB406A660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{493445B5-2211-4B77-95D1-6CCAB406A660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{493445B5-2211-4B77-95D1-6CCAB406A660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{493445B5-2211-4B77-95D1-6CCAB406A660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69B97173-38D5-4C4C-9067-824486ECE93D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69B97173-38D5-4C4C-9067-824486ECE93D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69B97173-38D5-4C4C-9067-824486ECE93D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69B97173-38D5-4C4C-9067-824486ECE93D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18BD3E74-F48E-4723-A3F9-3727DE0DFA52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18BD3E74-F48E-4723-A3F9-3727DE0DFA52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18BD3E74-F48E-4723-A3F9-3727DE0DFA52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18BD3E74-F48E-4723-A3F9-3727DE0DFA52}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B75DCD4F-03F4-4E08-BE12-8F602FD4D398}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.2.19:8080/tfs/apiscollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Interlex.Crawler.ConsoleClient\\Interlex.Crawler.ConsoleClient.csproj
+		SccProjectName1 = Interlex.Crawler.ConsoleClient
+		SccLocalPath1 = Interlex.Crawler.ConsoleClient
+		SccProjectUniqueName2 = Interlex.Crawler\\Interlex.Crawler.csproj
+		SccProjectName2 = Interlex.Crawler
+		SccLocalPath2 = Interlex.Crawler
+		SccProjectUniqueName3 = Interlex.Crawler.Data\\Interlex.Crawler.Data.csproj
+		SccProjectName3 = Interlex.Crawler.Data
+		SccLocalPath3 = Interlex.Crawler.Data
+	EndGlobalSection
+EndGlobal

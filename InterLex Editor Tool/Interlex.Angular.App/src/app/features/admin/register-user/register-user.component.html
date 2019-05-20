@@ -1,0 +1,51 @@
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2>Register User</h2>
+        <div [formGroup]="loginForm">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Username" formControlName="username"
+                   [ngClass]="{ 'is-invalid': f.username.errors && loginForm.dirty }">
+          </div>
+          <div *ngIf=" f.username.errors?.email && loginForm.dirty" class="alert alert-danger">
+            Username must be an email address.
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password" formControlName="password"
+                   [ngClass]="{ 'is-invalid': f.password.errors && loginForm.dirty }">
+          </div>
+          <div *ngIf="f.password.errors?.pattern && loginForm.dirty"
+               class="alert alert-danger">
+            Password must be at least 6 characters and must contain at least 1 lowercase and 1 uppercase letter and 1 digit.
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Confirm Password"
+                   formControlName="confirmPassword" [ngClass]="{ 'is-invalid': f.password.errors && loginForm.dirty }">
+          </div>
+          <div *ngIf="f.confirmPassword.errors?.passwordMismatch && loginForm.dirty"
+               class="alert alert-danger">
+            Passwords do not match.
+          </div>
+          <div *ngIf="isSuperAdmin" class="form-group">
+            <div> <p-radioButton name="group1" value="0" label="User"
+                                 inputId="opt1" formControlName="privileges"></p-radioButton></div>
+            <div><p-radioButton name="group1" value="1" label="Admin"
+                                inputId="opt2" formControlName="privileges"></p-radioButton></div>
+            <div><p-radioButton name="group1" value="2" label="Superadmin"
+                                inputId="opt3" formControlName="privileges"></p-radioButton></div>
+          </div>
+          <!--<div *ngIf="isSuperAdmin" class="form-group">-->
+          <!--Admin-->
+          <!--<p-checkbox formControlName="admin" binary="true"></p-checkbox>-->
+          <!--</div>-->
+          <div *ngIf="isSuperAdmin" class="form-group">
+            <p-dropdown [options]="organizations" formControlName="organization" optionLabel="shortName"
+                        placeholder="Current user organization"></p-dropdown>
+          </div>
+          <button pButton type="submit" [disabled]="!loginForm.valid" label="Submit" (click)="submit()"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,1239 @@
+<p-confirmDialog></p-confirmDialog>
+<p-dialog header="EU legislation" [(visible)]="showEuLink" [style]="{width: '500px'}" [modal]="true"
+          [contentStyle]="{'height':'500px', 'max-height':'700px'}">
+  <app-eulaw-link [euLink]="tmpEuLink"></app-eulaw-link>
+  <p-footer>
+    <button type="button" pButton icon="pi pi-check" (click)="addEditEuLink()" label="Save"></button>
+  </p-footer>
+</p-dialog>
+
+<p-dialog header="EU case law" [(visible)]="showEuCaseLink" [style]="{width: '400px'}" [modal]="true"
+          [contentStyle]="{'overflow':'visible', 'height':'500px', 'max-height':'700px'}">
+  <app-eucase-link [euCaseLink]="tmpEucaseLink" [isDoc]="false" [isEuDoc]="isEuDoc"></app-eucase-link>
+  <p-footer>
+    <button type="button" type="button" pButton icon="pi pi-check" (click)="addEditEuCase()" label="Save"></button>
+  </p-footer>
+</p-dialog>
+
+<p-dialog header="National Law" [(visible)]="showAddNationalLaw" [style]="{width: '400px'}" [modal]="true"
+          [contentStyle]="{'overflow':'visible', 'height':'500px', 'max-height':'700px'}">
+  <label for="lawTitle" class="bold">Title of the national legal instrument</label>
+  <input type="text" pInputText class="form-control" required #lawTitle id="lawTitle">
+  <br>
+  <label for="lawLink" class="bold">Link to the national legal instrument</label>
+  <input type="text" pInputText class="form-control" required #lawLink id="lawLink">
+  <p-footer>
+    <button type="button" pButton icon="pi pi-check" (click)="addNationalLawItem(lawTitle, lawLink)"
+            label="Save"></button>
+  </p-footer>
+</p-dialog>
+
+<p-dialog header="National Case Law" [(visible)]="showAddNationalCaseLaw" [style]="{width: '400px'}" [modal]="true"
+          [contentStyle]="{'overflow':'visible', 'height':'500px', 'max-height':'700px'}">
+  <label for="caseLawTitle" class="bold">Title of the national decision</label>
+  <input type="text" pInputText class="form-control" required #caseLawTitle id="caseLawTitle">
+  <br>
+  <label for="caseLawIdent" class="bold">
+    National / ECLI identifier of the follow-up decision of the national
+    court
+  </label>
+  <input type="text" pInputText class="form-control" required #caseLawIdent id="caseLawIdent">
+  <br>
+  <label for="caseLawLink" class="bold">Link to the national decision</label>
+  <input type="text" pInputText class="form-control" required #caseLawLink id="caseLawLink">
+  <p-footer>
+    <button type="button" pButton icon="pi pi-check"
+            (click)="addNationalCaseLawItem(caseLawTitle, caseLawIdent, caseLawLink)"
+            label="Save"></button>
+  </p-footer>
+</p-dialog>
+<p-dialog header="EU document" [(visible)]="showEuDoc" [style]="{width: '400px'}" [modal]="true"
+          [contentStyle]="{'overflow':'visible', 'height':'500px', 'max-height':'700px'}">
+  <app-eucase-link [euCaseLink]="tmpEuDoc" [isDoc]="true" [isEuDoc]="isEuDoc"></app-eucase-link>
+  <p-footer>
+    <button type="button" pButton icon="pi pi-check" (click)="fillEudoc()" label="Save"></button>
+  </p-footer>
+</p-dialog>
+<p-dialog header="Keyword" [(visible)]="showKeyword" [modal]="true" [style]="{width: '750px'}"
+          [contentStyle]="{'overflow':'visible', 'height':'500px', 'max-height':'700px'}">
+  <div class="form-group">
+    <label>Keyword<span class="star-red">*</span></label>
+    <p-autoComplete [(ngModel)]="keyword" [suggestions]="filteredKeywords" [size]="55"
+                    [minLength]="1" [dropdown]="true" (completeMethod)="filterKeywords($event)">
+      <ng-template let-kw pTemplate="item">
+        <div class="ui-helper-clearfix">
+          {{kw}}
+        </div>
+      </ng-template>
+    </p-autoComplete>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-sm">
+        <div class="bold">Keywords related to PIL rules</div>
+        <div>
+          <p-checkbox name="predefined" value="jurisdiction" label="jurisdiction"
+                      [(ngModel)]="keywordCheckboxes"></p-checkbox>
+        </div>
+        <div>
+          <p-checkbox name="predefined" value="applicable law" label="applicable law"
+                      [(ngModel)]="keywordCheckboxes"></p-checkbox>
+        </div>
+        <div>
+          <p-checkbox name="predefined" value="recognition and enforcement" label="recognition and enforcement"
+                      [(ngModel)]="keywordCheckboxes"></p-checkbox>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="bold">Keywords related to the PIL legal instrument</div>
+        <div>
+          <p-checkbox name="predefined" value="Brussels I Regulation" label="Brussels I Regulation"
+                      [(ngModel)]="keywordCheckboxes"></p-checkbox>
+        </div>
+        <div>
+          <p-checkbox name="predefined" value="Brussels I bis Regulation" label="Brussels I bis Regulation"
+                      [(ngModel)]="keywordCheckboxes"></p-checkbox>
+        </div>
+        <div>
+          <p-checkbox name="predefined" value="Rome I Regulation" label="Rome I Regulation"
+                      [(ngModel)]="keywordCheckboxes"></p-checkbox>
+        </div>
+        <div>
+          <p-checkbox name="predefined" value="Rome II Regulation" label="Rome II Regulation"
+                      [(ngModel)]="keywordCheckboxes"></p-checkbox>
+        </div>
+        <div>
+          <p-checkbox name="predefined" value="Brussels Convention" label="Brussels Convention"
+                      [(ngModel)]="keywordCheckboxes"></p-checkbox>
+        </div>
+        <div>
+          <p-checkbox name="predefined" value="Rome Convention" label="Rome Convention"
+                      [(ngModel)]="keywordCheckboxes"></p-checkbox>
+        </div>
+        <div>
+          <p-checkbox name="predefined" value="Lugano Convention I" label="Lugano Convention I"
+                      [(ngModel)]="keywordCheckboxes"></p-checkbox>
+        </div>
+        <div>
+          <p-checkbox name="predefined" value="Lugano Convention II" label="Lugano Convention II"
+                      [(ngModel)]="keywordCheckboxes"></p-checkbox>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="bold">Keywords to the PIL topic</div>
+        <div>
+          <p-checkbox name="predefined" value="contracts" label="contracts"
+                      [(ngModel)]="keywordCheckboxes"></p-checkbox>
+        </div>
+        <div>
+          <p-checkbox name="predefined" value="tort, delicts or quasi-delicts" label="tort, delicts or quasi-delicts"
+                      [(ngModel)]="keywordCheckboxes"></p-checkbox>
+        </div>
+        <div>
+          <p-checkbox name="predefined" value="defamation" label="defamation"
+                      [(ngModel)]="keywordCheckboxes"></p-checkbox>
+        </div>
+        <div>
+          <p-checkbox name="predefined" value="consumer contracts" label="consumer contracts"
+                      [(ngModel)]="keywordCheckboxes"></p-checkbox>
+        </div>
+        <div>
+          <p-checkbox name="predefined" value="insurance contracts" label="insurance contracts"
+                      [(ngModel)]="keywordCheckboxes"></p-checkbox>
+        </div>
+        <div>
+          <p-checkbox name="predefined" value="employment contracts" label="employment contracts"
+                      [(ngModel)]="keywordCheckboxes"></p-checkbox>
+        </div>
+        <div>
+          <p-checkbox name="predefined" value="copyright" label="copyright"
+                      [(ngModel)]="keywordCheckboxes"></p-checkbox>
+        </div>
+        <div>
+          <p-checkbox name="predefined" value="personal data protection" label="personal data protection"
+                      [(ngModel)]="keywordCheckboxes"></p-checkbox>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p-footer>
+    <button type="button" pButton icon="pi pi-check" (click)="addKeyword()" label="Save"></button>
+  </p-footer>
+</p-dialog>
+<p-dialog header="Nationality" [(visible)]="showAddNationality" [style]="{width: '400px'}" [modal]="true"
+          [contentStyle]="{'overflow':'visible', 'height':'500px', 'max-height':'700px'}">
+  <div class="form-group">
+    <label>Nationality<span class="star-red">*</span></label>
+    <p-autoComplete [(ngModel)]="nationality" #natAutoComplete [suggestions]="filteredNationalities" [size]="35"
+                    [minLength]="1" placeholder="Nationality" [dropdown]="true"
+                    (completeMethod)="filterNationalities($event)">
+      <ng-template let-nat pTemplate="item">
+        <div class="ui-helper-clearfix">
+          {{nat}}
+        </div>
+      </ng-template>
+    </p-autoComplete>
+  </div>
+  <p-footer>
+    <button type="button" pButton icon="pi pi-check" (click)="addNationalityChip()" label="Save"></button>
+  </p-footer>
+</p-dialog>
+<p-dialog header="Domicile" [(visible)]="showAddDomicile" [style]="{width: '800px'}" [modal]="true"
+          [contentStyle]="{'overflow':'visible', 'height':'500px', 'max-height':'700px'}">
+  <div class="row">
+    <div class="col-sm form-group">
+      <label>Domicile<span class="star-red">*</span></label>
+      <p-autoComplete [(ngModel)]="domicileCountry" #domAutoComplete [suggestions]="filteredDomiciles" [size]="35"
+                      [minLength]="1" placeholder="Domicile" [dropdown]="true"
+                      (completeMethod)="filterDomiciles($event)">
+        <ng-template let-nat pTemplate="item">
+          <div class="ui-helper-clearfix">
+            {{nat}}
+          </div>
+        </ng-template>
+      </p-autoComplete>
+    </div>
+    <div class="col-sm form-group">
+      <label>Role</label>
+      <div>
+        <p-radioButton name="domRole" value="applicant" label="Applicant" [(ngModel)]="domicileRole"></p-radioButton>
+      </div>
+      <div>
+        <p-radioButton name="domRole" value="defendant" label="Defendant" [(ngModel)]="domicileRole"></p-radioButton>
+      </div>
+    </div>
+  </div>
+
+  <p-footer>
+    <button type="button" pButton icon="pi pi-check" (click)="addDomicileChip()" label="Save"></button>
+  </p-footer>
+</p-dialog>
+<p-dialog [(visible)]="showTree" [modal]="true" [dismissableMask]="true" [blockScroll]="true"
+          [contentStyle]="{'max-height':'500px'}">
+  <app-eurovoc-tree (selectionConfirmed)="getEurovocData($event)" [selectedSet]="selectedTreeNodes"></app-eurovoc-tree>
+</p-dialog>
+
+<div class="container">
+  <form #f="ngForm" (ngSubmit)="f.form.valid && submitForm(false)" novalidate>
+    <!-- " -->
+    <p></p>
+    <div class="form-group" style="border-bottom: 1px solid gray;">
+      <span style="padding:10px 20px 0px 0px;">
+        <p-button type="button" icon="pi pi-save" label="Save" type="submit"
+                  (click)="submitForm(false)"></p-button>
+      </span>
+      <span style="padding:10px 20px 0px 100px;">
+        <p-button type="button" icon="pi pi-check" label="Save and close" type="submit"
+                  (click)="submitForm(true)"></p-button>
+      </span>
+      <p></p>
+    </div>
+
+    <div class="form-group">
+      <label for="jurisdiction">Country / Jurisdiction<span class="star-red">*</span></label>
+      <p-dropdown [options]="countries" id="jurisdiction" placeholder="Country / Jurisdiction" name="jurisdiction"
+                  [(ngModel)]="mod.jurisdiction" optionLabel="label" [style]="{'width':'250px'}" #jurisdiction="ngModel"
+                  required="true" (ngModelChange)="onModelChange($event)"></p-dropdown>
+      <div *ngIf="submitted && jurisdiction.invalid" class="alert alert-danger">
+        <div *ngIf="jurisdiction.errors.required">
+          Country / Jurisdiction is required.
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="title">
+        Title<span class="star-red">*</span>
+        <i class="pi pi-info-circle" (mouseenter)="opTitle.show($event)" (mouseleave)="opTitle.hide()"></i>
+        <p-overlayPanel #opTitle [dismissable]="false">
+          <div style="width:500px;" class="overlay">
+            <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+                            margin-left:0cm;margin-bottom:.0001pt'>
+              <span lang=EN-US>
+                Provide here the title
+                of the case according to national rules or best practices. Where such rules do
+                not exist, please use the following format:
+              </span>
+            </p>
+
+            <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+                            margin-left:0cm'>
+              <span lang=EN-US>
+                &lt;Court-name&gt;, <span style='color:red'>
+                  [&lt;Court-chamber&gt;,
+                  &lt;Decision type&gt;,]
+                </span>&lt;Date-of-decision&gt;,
+                &lt;National-identifier&gt;
+              </span>
+            </p>
+
+            <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+                   style='background:#D9D9D9;border-collapse:collapse;border:none'>
+              <tr>
+                <td width=614 valign=top style='width:460.25pt;border:solid windowtext 1.0pt;
+                              padding:0cm 5.4pt 0cm 5.4pt'>
+                  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+                              0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal'>
+                    <b>
+                      <i>
+                        <span lang=EN-US style='font-size:9.0pt'>Examples:</span>
+                      </i>
+                    </b><span lang=EN-US style='font-size:9.0pt'></span>
+                  </p>
+                  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+                              normal'>
+                    <i>
+                      <span lang=EN-US style='font-size:9.0pt'>
+                        BVerwG, Urteil vom
+                        25.01.2017 – 6 C 15.16
+                      </span>
+                    </i>
+                  </p>
+                  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+                              normal'>
+                    <i>
+                      <span lang=EN-US style='font-size:9.0pt'>
+                        CAA de LYON, 2ème chambre
+                        - formation à 3, 30/08/2018, 17LY03755, Inédit au recueil Lebon
+                      </span>
+                    </i>
+                  </p>
+                  <p class=MsoNormal style='margin-bottom:3.0pt;line-height:normal'>
+                    <i>
+                      <span lang=EN-US
+                            style='font-size:9.0pt'>
+                        Sentenza penale n. 39176 del 2017 sez. 1
+                        della Corte Suprema di Cassazione
+                      </span>
+                    </i>
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+            <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:0cm;
+                            margin-left:0cm;margin-bottom:.0001pt'>
+              <b>
+                <i>
+                  <u>
+                    <span lang=EN-US style='color:red'>Important notice:</span>
+                  </u>
+                </i>
+              </b><i>
+              <span lang=EN-US style='color:red'>For<b>EU cases</b></span>
+            </i><i>
+                <span lang=EN-US>
+                  please
+                  use the “Select document” button for automated completion of case title and
+                  metadata!
+                </span>
+            </i>
+            </p>
+          </div>
+        </p-overlayPanel>
+        &nbsp;<button type="button" *ngIf="isEuDoc" class="ui-button-rounded" pButton (click)="showEuDoc = true;"
+                      label="Select document"></button>
+      </label>
+
+      <input type="text" pInputText id="title" name="title" [(ngModel)]="mod.title" required class="form-control"
+             #title="ngModel" autocomplete="off">
+      <div *ngIf="submitted && title.invalid" class="alert alert-danger">
+        <div *ngIf="title.errors.required">
+          Name is required.
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="keywords">
+        Keywords<span class="star-red">*</span>
+        <i class="pi pi-info-circle" (mouseenter)="opKeyword.show($event)" (mouseleave)="opKeyword.hide()"></i>
+        <p-overlayPanel #opKeyword [dismissable]="false">
+          <div style="width:500px;" class="overlay">
+            <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+                            margin-left:0cm'>
+              <span lang=EN-US>
+                Provide here two or more keywords (single
+                words or phrases) presenting the main legal issues discussed in the decision. To
+                this end, use the “Add keyword” button for each single entry or type directly
+                the keyword or phrase and press &lt;Enter&gt;.
+              </span>
+            </p>
+
+            <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+                   style='background:#D9D9D9;border-collapse:collapse;border:none'>
+              <tr>
+                <td width=614 valign=top style='width:460.25pt;border:solid windowtext 1.0pt;
+                              padding:0cm 5.4pt 0cm 5.4pt'>
+                  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+                              0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal'>
+                    <b>
+                      <i>
+                        <span lang=EN-US style='font-size:9.0pt'>Examples:</span>
+                      </i>
+                    </b><span lang=EN-US style='font-size:9.0pt'></span>
+                  </p>
+                  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+                              normal'>
+                    <i>
+                      <span lang=EN-US style='font-size:9.0pt'>Forum shopping</span>
+                    </i>
+                  </p>
+                  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+                              normal'>
+                    <i>
+                      <span lang=EN-US style='font-size:9.0pt'>E-commerce</span>
+                    </i>
+                  </p>
+                  <p class=MsoNormal style='margin-bottom:3.0pt;line-height:normal'>
+                    <i>
+                      <span lang=EN-US
+                            style='font-size:9.0pt'>
+                        Law applicable to non-contractual
+                        obligations
+                      </span>
+                    </i>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </p-overlayPanel>
+        &nbsp;
+        <button class="ui-button-rounded" type="button" pButton icon="pi pi-plus" (click)="addKeywordsClick()"
+                iconPos="left" label="Add keyword"></button>
+      </label>
+      <p-chips [(ngModel)]="mod.keywords" id="keywords" name="keywords" #keywords="ngModel" [disabled]="false"
+               [allowDuplicate]="false" addOnBlur="true" required>
+      </p-chips>
+      <div *ngIf="submitted && keywords.invalid" class="alert alert-danger">
+        <div *ngIf="keywords.errors.required">
+          Keywords are required.
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="summary">Summary<span class="star-red">*</span></label>
+      <p-editor id="summary" name="summary" [(ngModel)]="mod.summary" #summary="ngModel" [style]="{'height':'320px'}"
+                required></p-editor>
+      <div *ngIf="submitted && summary.invalid" class="alert alert-danger">
+        <div *ngIf="summary.errors.required">
+          Summary is required.
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <p-overlayPanel #opCourt [dismissable]="false">
+        <div style="width:500px;" class="overlay">
+          <p class=MsoNormal>
+            <span lang=EN-US>
+              Provide here the full name of the court in
+              the language of the case. Always capitalise the first word. Capitalise the
+              other words in the name only if this is required by the national syntax rules.
+            </span>
+          </p>
+          <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+                 style='background:#D9D9D9;border-collapse:collapse;border:none'>
+            <tr>
+              <td width=614 valign=top style='width:460.25pt;border:solid windowtext 1.0pt;
+                                      padding:0cm 5.4pt 0cm 5.4pt'>
+                <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+                                      0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal'>
+                  <b>
+                    <i>
+                      <span lang=EN-US style='font-size:9.0pt'>Examples:</span>
+                    </i>
+                  </b><span lang=EN-US
+                            style='font-size:9.0pt'></span>
+                </p>
+                <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+                                      normal'>
+                  <i>
+                    <span lang=EN-US style='font-size:9.0pt'>Oberster Gerichtshof</span>
+                  </i>
+                </p>
+                <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+                                      normal'>
+                  <i>
+                    <span lang=EN-US style='font-size:9.0pt'>Conseil d'État</span>
+                  </i>
+                </p>
+                <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+                                      normal'>
+                  <i>
+                    <span lang=EN-US style='font-size:9.0pt'>Curtea de apel Bucureşti</span>
+                  </i>
+                </p>
+                <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+                                      normal'>
+                  <i>
+                    <span lang=EN-US style='font-size:9.0pt'>
+                      Nejvyšší soud České
+                      republiky
+                    </span>
+                  </i>
+                </p>
+                <p class=MsoNormal style='margin-bottom:3.0pt;line-height:normal'>
+                  <i>
+                    <span style='font-size:9.0pt'>
+                      Върховен
+                      административен съд
+                    </span>
+                  </i>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </p-overlayPanel>
+      <div class="row">
+        <div class="col-sm">
+          <label for="court">
+            Court<span class="star-red">*</span>
+            <i class="pi pi-info-circle" (mouseenter)="opCourt.show($event)" (mouseleave)="opCourt.hide()"></i>
+          </label>
+          <!--<input type="text" pInputText id="court" name="court" class="form-control" size="25" [(ngModel)]="mod.court"-->
+          <!--required #court="ngModel">-->
+          <p-autoComplete id="court" name="court" [(ngModel)]="mod.court" [suggestions]="courtSuggestionsFiltered"
+                          size="50" [minLength]="1" [dropdown]="true" (completeMethod)="filterCourts($event)" required
+                          #court="ngModel">
+            <ng-template let-courtSug pTemplate="item">
+              <div class="ui-helper-clearfix">
+                {{courtSug}}
+              </div>
+            </ng-template>
+          </p-autoComplete>
+          <div *ngIf="submitted && court.invalid" class="alert alert-danger">
+            <div *ngIf="court.errors.required">
+              Court is required.
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <label for="courtEng">Court - Translation in English</label>
+          <!--<input type="text" pInputText id="courtEng" name="courtEng" class="form-control" size="25" [(ngModel)]="mod.courtEng"-->
+          <!--required [disabled]="isEuDoc">-->
+          <p-autoComplete id="courtEng" name="courtEng" [(ngModel)]="mod.courtEng"
+                          [suggestions]="courtEngSuggestionsFiltered"
+                          [size]="50" [minLength]="1" [dropdown]="true" (completeMethod)="filterCourtsEng($event)"
+                          required [disabled]="isEuDoc">
+            <ng-template let-courtSugEng pTemplate="item">
+              <div class="ui-helper-clearfix">
+                {{courtSugEng}}
+              </div>
+            </ng-template>
+          </p-autoComplete>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="row">
+        <div class="col-sm">
+          <label for="dateOfDocument" dateFormat="dd.mm.yy">Date of document<span class="star-red">*</span></label>
+          <p-calendar id="dateOfDocument" name="dateOfDocument" [(ngModel)]="mod.dateOfDocument" dateFormat="dd.mm.yy"
+                      [style]="{'width':'350px'}" #dateOfDocument="ngModel" required [yearNavigator]="true"
+                      yearRange="1950:2025"
+                      [monthNavigator]="true"></p-calendar>
+          <div *ngIf="submitted && dateOfDocument.invalid" class="alert alert-danger">
+            <div *ngIf="dateOfDocument.errors.required">
+              Date of document is required.
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <label for="language">Language<span class="star-red">*</span></label>
+          <p-dropdown [options]="languages" id="language" name="language" [(ngModel)]="mod.language"
+                      placeholder="Select a Language" [showClear]="false" [style]="{'width':'250px'}"
+                      optionLabel="label"
+                      required="true" #language="ngModel"></p-dropdown>
+
+          <div *ngIf="submitted && language.invalid" class="alert alert-danger">
+            <div *ngIf="language.errors.required">
+              Language is required.
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <label for="decisionType">
+            Decision Type<span class="star-red">*</span>
+            <i class="pi pi-info-circle" (mouseenter)="opDecisionType.show($event)"
+               (mouseleave)="opDecisionType.hide()"></i>
+          </label>
+          <p-dropdown [options]="decisionTypes" id="decisionType" name="decisionType" [(ngModel)]="mod.decisionType"
+                      placeholder="Select a Decision type" optionLabel="label" [showClear]="false"
+                      [style]="{'width':'250px'}"
+                      required="true" #decisionType="ngModel"></p-dropdown>
+          <div *ngIf="submitted && decisionType.invalid" class="alert alert-danger">
+            <div *ngIf="decisionType.errors.required">
+              Decision type is required.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+
+      <p-overlayPanel #opDecisionType [dismissable]="false">
+        <div style="width:500px;" class="overlay">
+          <p class=MsoNormal>
+            <span lang=EN-US>
+              Please select “Judgment” for final
+              decisions on the subject matter of the case, “Order” for decisions on
+              procedural matters and “Other” for decisions of any other type.
+            </span>
+          </p>
+        </div>
+      </p-overlayPanel>
+    </div>
+    <div class="form-group">
+      <label for="nationalIdentifier">
+        National identifier
+        <i class="pi pi-info-circle" (mouseenter)="opNationalIdentifier.show($event)"
+           (mouseleave)="opNationalIdentifier.hide()"></i>
+        <p-overlayPanel #opNationalIdentifier [dismissable]="false">
+          <div style="width:500px;" class="overlay">
+            <p class=MsoNormal>
+              <span lang=EN-US>
+                Provide here the number (if any) used in
+                the national case law repositories to identify uniquely the case and/or the
+                decision.
+              </span>
+            </p>
+
+            <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+                   style='background:#D9D9D9;border-collapse:collapse;border:none'>
+              <tr>
+                <td width=614 valign=top style='width:460.25pt;border:solid windowtext 1.0pt;
+                                          padding:0cm 5.4pt 0cm 5.4pt'>
+                  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+                                          0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal'>
+                    <b>
+                      <i>
+                        <span lang=EN-US style='font-size:9.0pt'>Examples:</span>
+                      </i>
+                    </b><span lang=EN-US style='font-size:9.0pt'></span>
+                  </p>
+                  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+                                          normal'>
+                    <i>
+                      <span lang=EN-US style='font-size:9.0pt'>7 Ob 1/18z</span>
+                    </i>
+                  </p>
+                  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+                                          normal'>
+                    <i>
+                      <span lang=EN-US style='font-size:9.0pt'>17LY01833</span>
+                    </i>
+                  </p>
+                  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+                                          normal'>
+                    <i>
+                      <span lang=EN-US style='font-size:9.0pt'>8 AZR 860/15</span>
+                    </i>
+                  </p>
+                  <p class=MsoNormal style='margin-bottom:3.0pt;line-height:normal'>
+                    <i>
+                      <span style='font-size:9.0pt'>
+                        3
+                        Sžf/116/2009
+                      </span>
+                    </i>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </p-overlayPanel>
+      </label>
+      <input type="text" pInputText class="form-control" id="nationalIdentifier" name="nationalIdentifier"
+             [(ngModel)]="mod.nationalIdentifier" required [disabled]="isEuDoc || isBgDoc">
+    </div>
+    <div class="form-group">
+      <label for="ecli">
+        ECLI
+        <i class="pi pi-info-circle" (mouseenter)="opECLI.show($event)" (mouseleave)="opECLI.hide()"></i>
+        <p-overlayPanel #opECLI [dismissable]="false">
+          <div style="width:500px;" class="overlay">
+            <p class=MsoNormal>
+              <span lang=EN-US>
+                Provide here the European Case Law
+                Identifier (ECLI) of the decision (if any).
+              </span>
+            </p>
+
+            <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+                   style='background:#D9D9D9;border-collapse:collapse;border:none'>
+              <tr>
+                <td width=614 valign=top style='width:460.25pt;border:solid windowtext 1.0pt;
+                                          padding:0cm 5.4pt 0cm 5.4pt'>
+                  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+                                          0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal'>
+                    <b>
+                      <i>
+                        <span lang=EN-US style='font-size:9.0pt'>Examples:</span>
+                      </i>
+                    </b><span lang=EN-US style='font-size:9.0pt'></span>
+                  </p>
+                  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+                                          normal'>
+                    <i>
+                      <span lang=EN-US style='font-size:9.0pt'>ECLI:DE:BGH:2018:130918BVZB2.18.0</span>
+                    </i>
+                  </p>
+                  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+                                          normal'>
+                    <i>
+                      <span lang=EN-US style='font-size:9.0pt'>ECLI:ES:TSJCL:2018:2331</span>
+                    </i>
+                  </p>
+                  <p class=MsoNormal style='margin-bottom:3.0pt;line-height:normal'>
+                    <i>
+                      <span lang=EN-US
+                            style='font-size:9.0pt'>ECLI:FR:CECHR:2018:408594.20181001</span>
+                    </i>
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+          </div>
+        </p-overlayPanel>
+      </label>
+      <input type="text" pInputText class="form-control" id="ecli" name="ecli" [(ngModel)]="mod.ecli" required
+             autocomplete="off">
+    </div>
+    <div class="form-group">
+      <label for="natOfParties">
+        Nationality of the parties
+        <button class="ui-button-rounded" type="button" pButton icon="pi pi-plus" (click)="addNationality()"
+                iconPos="left" label="Add nationality"></button>
+      </label>
+      <p-chips [(ngModel)]="mod.nationalities" id="natOfParties" name="natOfParties" required #natOfParties="ngModel"
+               [disabled]="false" [allowDuplicate]="false" placeholder="">
+      </p-chips>
+    </div>
+    <div class="form-group">
+      <label for="natOfParties">
+        Domicile of the parties
+        <button class="ui-button-rounded" type="button" pButton icon="pi pi-plus" (click)="addDomicile()"
+                iconPos="left" label="Add domicile"></button>
+      </label>
+      <p-chips [(ngModel)]="mod.domiciles" id="domOfParties" name="domOfParties" required #domOfParties="ngModel"
+               [disabled]="false" [allowDuplicate]="false" placeholder="">
+      </p-chips>
+    </div>
+    <div class="form-group">
+      <div class="row">
+        <div class="col-sm">
+          <label for="residence">Residence in MS of forum</label>
+          <p-dropdown [options]="yesNoRule" id="residence" name="residence" [(ngModel)]="mod.residenceMsForum"
+                      placeholder="Select" optionLabel="label" [showClear]="true" [style]="{'width':'150px'}"
+                      required="true" #residence="ngModel"></p-dropdown>
+        </div>
+        <div class="col-sm">
+          <label for="choiceCourt">
+            Choice of court
+          </label>
+          <p-dropdown [options]="yesNoRule" id="choiceCourt" name="choiceCourt" [(ngModel)]="mod.choiceCourt"
+                      placeholder="Select" optionLabel="label" [showClear]="true" [style]="{'width':'150px'}"
+                      required="true" #choiceCourt="ngModel"></p-dropdown>
+        </div>
+        <div class="col-sm">
+          <label for="choiceLaw">Choice of law</label>
+          <p-dropdown [options]="yesNoRule" id="choiceLaw" name="choiceLaw" [(ngModel)]="mod.choiceLaw"
+                      placeholder="Select" optionLabel="label" [showClear]="true" [style]="{'width':'150px'}"
+                      required="true" #choiceCourt="ngModel"></p-dropdown>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="interlexOntology">InterLex Ontology</label>
+      <input type="text" pInputText class="form-control" id="interlexOntology" name="interlexOntology"
+             [(ngModel)]="mod.interlexOntology" required disabled>
+    </div>
+    <div class="form-group">
+      <label for="eurovoc">
+        EuroVoc descriptor
+        <i class="pi pi-info-circle" (mouseenter)="opEuroVoc.show($event)" (mouseleave)="opEuroVoc.hide()"></i>
+        &nbsp;
+        <button class="ui-button-rounded" type="button" pButton icon="pi pi-plus" (click)="showTreeFunc()"
+                label="Add EuroVoc term"></button>
+        <p-overlayPanel #opEuroVoc [dismissable]="false">
+          <div style="width:500px;" class="overlay">
+            <p class=MsoNormal>
+              <span lang=EN-US>
+                Click on the “Add EuroVoc term” button,
+                then search for (or browse) and choose two or more terms from the EuroVoc
+                Thesaurus, which relate most precisely to the main legal issues discussed in
+                the decision.
+              </span>
+            </p>
+
+            <p class=MsoNormal>
+              <span lang=EN-US>
+                At least one of the selected terms should always
+                be chosen from “LAW =&gt; international law =&gt; private international law”
+                In most cases terms related to Internet law and ITC can be found in “EDUCATION
+                AND COMMUNICATIONS =&gt; communications =&gt; communications systems =&gt;
+                Internet”, “EDUCATION AND COMMUNICATIONS =&gt; information technology and data
+                processing” or “EDUCATION AND COMMUNICATIONS =&gt; information and information
+                processing”.
+              </span>
+            </p>
+          </div>
+        </p-overlayPanel>
+      </label>
+      <p-chips [(ngModel)]="euroVocChips" id="eurovoc" name="eurovoc" (onRemove)="removeChip($event)"
+               [inputStyle]="{'visibility':'hidden'}"></p-chips>
+
+    </div>
+    <div class="form-group">
+      <label for="euProvisions">
+        EU legislation
+        <i class="pi pi-info-circle" (mouseenter)="opEuLegislation.show($event)"
+           (mouseleave)="opEuLegislation.hide()"></i>
+        <p-overlayPanel #opEuLegislation [dismissable]="false">
+          <div style="width:500px;" class="overlay">
+            <p class=MsoNormal>
+              <span lang=EN-US>
+                Add one or more references to provisions of
+                EU legal instruments cited in the decision. To this end, click on “Add
+                citation” button.
+              </span>
+            </p>
+
+            <p class=MsoNormal>
+              <b><span lang=EN-US>Firstly, choose the cited EU instrument</span></b><span lang=EN-US>
+                by selecting the respective radio button: “Brussels I bis” (Recast
+                Reg. 1215/2012), “Brussels I” (Reg. 44/2001 – repealed), “Rome I” (Reg.
+                593/2008) or “Rome II” (Reg. 864/2007). For citations to other EU regulations
+                or directives, respectively select the “Regulation” or the “Directive” radio
+                button. Then type the number and the year of the cited document. For other
+                types of EU instruments (decisions, international agreements, rules of
+                procedure, etc.) please select the radio button “Other” and type the CELEX
+                number of the document (available in EUR-Lex).
+              </span>
+            </p>
+
+            <p class=MsoNormal>
+              <b>
+                <span lang=EN-US>
+                  Secondly, insert the number of the cited
+                  provision
+                </span>
+              </b><span lang=EN-US>
+                and its subelements – article, paragraph,
+                alinea
+              </span><span lang=EN-US> </span><span lang=EN-US>
+                (i.e. unnumbered
+                paragraph), point, letter, indent, and sentence. Do not use opening and/or
+                closing parentheses. Citations to recitals in the preamble are also possible. <u>
+                  Citations
+                  to annexes or appendices and their subelements should be inserted as one single
+                  entry
+                </u> in the “Annex” text box by using the following syntax: “II, Article
+                2(3)(b)”.
+              </span>
+            </p>
+
+            <p class=MsoNormal>
+              <b>
+                <span lang=EN-US>
+                  Finally, define the “Importance” of the
+                  citation
+                </span>
+              </b><span lang=EN-US> by choosing “Low” or “High”.</span>
+            </p>
+          </div>
+        </p-overlayPanel>
+        &nbsp;<button type="button" class="ui-button-rounded" pButton icon="pi pi-plus" (click)="addEulawLink()"
+                      iconPos="left" label="Add citation"></button>
+      </label>
+
+      <p-overlayPanel #opEuLinkHint [dismissable]="false">
+        <div style="width:500px;" class="overlay">
+          {{linkHint}}
+        </div>
+      </p-overlayPanel>
+      <table>
+        <tr *ngFor="let euLinkItem of mod.euProvisions; index as i" class="t-eu-link">
+          <td width="400px" [class.bold]="euLinkItem?.importance.code == 1">
+            <a target="_blank" [href]="euLinkItem | eulawhref"
+               (mouseenter)="opEuLinkHint.show($event); euLinkMouseEnter(euLinkItem)"
+               (mouseleave)="opEuLinkHint.hide()">{{euLinkItem.celex}}</a> {{
+            euLinkItem |
+              eulinkPart
+            }}
+          </td>
+          <td>
+            &nbsp;
+            <button type="button" pButton class="ui-button-rounded ui-button-primary" type="button" icon="pi pi-bars"
+                    (click)="editEuLink(euLinkItem, i)" title="Edit citation"></button>
+            &nbsp;<button pButton class="ui-button-rounded ui-button-danger" type="button" icon="pi pi-times"
+                          (click)="removeEuLink(euLinkItem)" title="Remove citation"></button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="form-group">
+      <label for="euCaselaw">
+        EU case law
+        <i class="pi pi-info-circle" (mouseenter)="opEuCaselaw.show($event)" (mouseleave)="opEuCaselaw.hide()"></i>
+        <p-overlayPanel #opEuCaselaw [dismissable]="false">
+          <div style="width:500px;" class="overlay">
+            <p class=MsoNormal>
+              <span lang=EN-US>
+                Add one or more references to decisions of
+                the EU Court of Justice. To this end, click on “Add citation” button.
+              </span>
+            </p>
+
+            <p class=MsoNormal>
+              <b><span lang=EN-US>Firstly, choose the cited ECJ decision </span></b><span lang=EN-US>
+                by selecting the court (Court of Justice, General Court or Civil
+                Service Tribunal) and the document type (Judgment, Order or Opinion of the
+                Advocate-General). Then type the number and the year of the case.
+              </span>
+            </p>
+
+            <p class=MsoNormal>
+              <b><span lang=EN-US>Secondly,</span></b><span lang=EN-US>
+                <b>
+                  define
+                  the “Importance” of the citation
+                </b> by choosing “Low” or “High”.
+              </span>
+            </p>
+
+            <p class=MsoNormal>
+              <b>
+                <span lang=EN-US>
+                  Thirdly, indicate whether the ECJ
+                  decision is a preliminary ruling
+                </span>
+              </b><span lang=EN-US>
+                requested by one
+                of the national courts involved in the case described by the InterLex editor.
+              </span>
+            </p>
+
+            <p class=MsoNormal>
+              <b>
+                <span lang=EN-US>
+                  Finally, type the number of the referred
+                  paragraph
+                </span>
+              </b><span lang=EN-US>
+                where the citation refers to a particular
+                paragraph of the ECJ decision.
+              </span>
+            </p>
+
+          </div>
+        </p-overlayPanel>
+        &nbsp;
+        <button type="button" class="ui-button-rounded" pButton icon="pi pi-plus" (click)="addEucaseLink()"
+                iconPos="left" label="Add citation"></button>
+      </label>
+      <table>
+        <tr *ngFor="let euLinkItem of mod.euCaselaw; index as i" class="t-eu-link">
+          <td width="400px" [class.bold]="euLinkItem?.importance.code == 1">
+            <a target="_blank" [href]="euLinkItem | eucasehref"
+               (mouseenter)="opEuLinkHint.show($event); euLinkMouseEnter(euLinkItem)"
+               (mouseleave)="opEuLinkHint.hide()">{{euLinkItem.celex}}</a>
+            {{euLinkItem | eucasePart}}{{euLinkItem | eucasePreliminaryRuling}}
+          </td>
+          <td>
+            &nbsp;<button pButton class="ui-button-rounded" type="button" icon="pi pi-bars"
+                          (click)="editEucaseLink(euLinkItem, i)"
+                          title="Edit citation"></button>
+            &nbsp;<button pButton class="ui-button-rounded ui-button-danger" type="button" icon="pi pi-times"
+                          (click)="removeEucaseLink(euLinkItem)" title="Remove citation"></button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="form-group" *ngIf="mod.jurisdiction?.code === 'EU'">
+      <label>
+        National legislation
+        <button type="button" class="ui-button-rounded" pButton icon="pi pi-plus"
+                (click)="addNationalLaw(lawTitle, lawLink)"
+                iconPos="left" label="Add citation"></button>
+      </label>
+      <table>
+        <tr *ngFor="let nat of mod.nationalLawRecords; index as i" class="t-eu-link">
+          <td>
+            <a target="_blank" [attr.href]="nat.link ? nat.link : null">{{nat.title}}</a>
+          </td>
+          <td>
+            &nbsp;<button pButton class="ui-button-rounded" type="button" icon="pi pi-bars"
+                          (click)="editNatLawRecord(lawTitle, lawLink, i)"
+                          title="Edit citation"></button>
+            &nbsp;<button pButton class="ui-button-rounded ui-button-danger" type="button" icon="pi pi-times"
+                          (click)="removeNationalLawRecord(nat)" title="Remove record"></button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="form-group" *ngIf="mod.jurisdiction?.code === 'EU'">
+      <label>
+        National case law – link to the follow-up decision of the national court
+        <button type="button" class="ui-button-rounded" pButton icon="pi pi-plus"
+                (click)="addNationalCaseLaw(caseLawTitle, caseLawLink, caseLawIdent)"
+                iconPos="left" label="Add citation"></button>
+      </label>
+      <table>
+        <tr *ngFor="let nat of mod.nationalCaseLawRecords; index as i" class="t-eu-link">
+          <td>
+            <a target="_blank" [attr.href]="nat.link ? nat.link : null">{{nat.title}} ({{nat.identifier}})</a>
+          </td>
+          <td>
+            &nbsp;<button pButton class="ui-button-rounded" type="button" icon="pi pi-bars"
+                          (click)="editNatCaseLawRecord(caseLawTitle, caseLawLink, caseLawIdent, i)"
+                          title="Edit citation"></button>
+            &nbsp;<button pButton class="ui-button-rounded ui-button-danger" type="button" icon="pi pi-times"
+                          (click)="removeNationalCaseLawRecord(nat)" title="Remove record"></button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="form-group">
+      <label for="internationalLaw">
+        International law
+        <i class="pi pi-info-circle" (mouseenter)="opInternationalLaw.show($event)"
+           (mouseleave)="opInternationalLaw.hide()"></i>
+        <p-overlayPanel #opInternationalLaw [dismissable]="false">
+          <div style="width:500px;" class="overlay">
+            <p class=MsoNormal>
+              <span lang=EN-US>
+                Provide here references to the provisions
+                of international treaties and agreements cited in the decision (if any). The
+                citation shall contain the official title of the treaty. If there is a commonly
+                used colloquial title, it shall be given after that in brackets. Cited
+                provisions are given after a dash symbol in the following format: “Article
+                5(1)(2)(d), second item”.
+              </span>
+            </p>
+
+            <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+                                    margin-left:0cm'>
+              <b>
+                <i>
+                  <u>
+                    <span lang=EN-US style='color:red'>Important notice:</span>
+                  </u>
+                </i>
+              </b><i>
+              <span lang=EN-US style='color:red'>International agreements</span>
+            </i><i>
+                <span lang=EN-US>
+                  concluded
+                  by the European Union with non-member countries or with
+                  international organisations, or agreements concluded jointly by the Member
+                  States and the European Union in areas of shared responsibility, which are
+                  considered an integral part of EU law and are <span style='color:red'>
+                    published
+                    in EUR-Lex, must be put in the field “EU legislation”
+                  </span>!
+                </span>
+            </i>
+            </p>
+
+            <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+                   style='background:#D9D9D9;border-collapse:collapse;border:none'>
+              <tr>
+                <td width=614 valign=top style='width:460.25pt;border:solid windowtext 1.0pt;
+                                      padding:0cm 5.4pt 0cm 5.4pt'>
+                  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+                                      0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal'>
+                    <b>
+                      <i>
+                        <span lang=EN-US style='font-size:9.0pt'>Example:</span>
+                      </i>
+                    </b><span lang=EN-US style='font-size:9.0pt'></span>
+                  </p>
+                  <p class=MsoNormal style='margin-bottom:3.0pt;line-height:normal'>
+                    <i>
+                      <span lang=EN-US
+                            style='font-size:9.0pt'>
+                        Vienna Convention on Consular Relations –
+                        Article 1(1)(d)
+                      </span>
+                    </i>
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+
+          </div>
+        </p-overlayPanel>
+
+      </label>
+      <textarea pInputTextArea class="form-control" id="internationalLaw" name="internationalLaw"
+                [(ngModel)]="mod.internationalLaw"
+                required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="internationalCaseLaw">
+        International case law
+        <i class="pi pi-info-circle" (mouseenter)="opInternationalCaselaw.show($event)"
+           (mouseleave)="opInternationalCaselaw.hide()"></i>
+        <p-overlayPanel #opInternationalCaselaw [dismissable]="false">
+          <div style="width:500px;" class="overlay">
+            <p class=MsoNormal>
+              <span lang=EN-US>
+                Provide here references to cases of
+                international courts cited in the decision (if any). The format of the
+                reference shall follow the citation rules of the issuing court or common
+                citation rules agreed by legal scholars.
+              </span>
+            </p>
+
+            <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+                   style='background:#D9D9D9;border-collapse:collapse;border:none'>
+              <tr>
+                <td width=614 valign=top style='width:460.25pt;border:solid windowtext 1.0pt;
+                                      padding:0cm 5.4pt 0cm 5.4pt'>
+                  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+                                      0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal'>
+                    <b>
+                      <i>
+                        <span lang=EN-US style='font-size:9.0pt'>Example:</span>
+                      </i>
+                    </b><span lang=EN-US style='font-size:9.0pt'></span>
+                  </p>
+                  <p class=MsoNormal style='margin-bottom:3.0pt;line-height:normal'>
+                    <i>
+                      <span lang=EN-US
+                            style='font-size:9.0pt'>
+                        Antonio Izzo v. Italy, ECHR, no. 51120/99,
+                        28 February 2002 – § 15
+                      </span>
+                    </i>
+                  </p>
+                </td>
+              </tr>
+            </table>
+
+          </div>
+        </p-overlayPanel>
+      </label>
+      <textarea pInputTextArea class="form-control" id="internationalCaseLaw" name="internationalCaseLaw"
+                [(ngModel)]="mod.internationalCaseLaw" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="source">
+        Source
+        <i class="pi pi-info-circle" (mouseenter)="opSource.show($event)" (mouseleave)="opSource.hide()"></i>
+        <p-overlayPanel #opSource [dismissable]="false">
+          <div style="width:500px;" class="overlay">
+            <p class=MsoNormal>
+              <span lang=EN-US>
+                Provide here the name of the publisher (the
+                court or the national case law portal / database). This is the name of the same
+                website, portal or database, which is referred in the “Source URL” field.
+              </span>
+            </p>
+
+            <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+                   style='background:#D9D9D9;border-collapse:collapse;border:none'>
+              <tr>
+                <td width=614 valign=top style='width:460.25pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+                  <p class=MsoNormal style='margin-top:3.0pt;margin-right:0cm;margin-bottom:
+  0cm;margin-left:0cm;margin-bottom:.0001pt;line-height:normal'>
+                    <b>
+                      <i>
+                        <span lang=EN-US style='font-size:9.0pt'>Examples:</span>
+                      </i>
+                    </b><span lang=EN-US style='font-size:9.0pt'></span>
+                  </p>
+                  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>
+                    <i>
+                      <span lang=EN-US style='font-size:9.0pt'>
+                        Rechtsinformationssystem
+                        des Bundes (RIS)
+                      </span>
+                    </i>
+                  </p>
+                  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>
+                    <i>
+                      <span lang=EN-US style='font-size:9.0pt'>Légifrance</span>
+                    </i>
+                  </p>
+                  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'>
+                    <i>
+                      <span lang=EN-US style='font-size:9.0pt'>
+                        Nejvyšší soud České
+                        republiky
+                      </span>
+                    </i>
+                  </p>
+                  <p class=MsoNormal style='margin-bottom:3.0pt;line-height:normal'>
+                    <i>
+                      <span lang=EN-US
+                            style='font-size:9.0pt'>Rechtsprechung im Internet</span>
+                    </i>
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </p-overlayPanel>
+      </label>
+      <!--<input type="text" pInputText class="form-control" id="source" name="source" [(ngModel)]="mod.source"-->
+      <!--required>-->
+      <p-autoComplete id="source" name="source" [(ngModel)]="mod.source" [suggestions]="sourceSuggestionsFiltered"
+                      [size]="50" [minLength]="1" [dropdown]="true" (completeMethod)="filterSources($event)" required>
+        <ng-template let-source pTemplate="item">
+          <div class="ui-helper-clearfix">
+            {{source}}
+          </div>
+        </ng-template>
+      </p-autoComplete>
+    </div>
+    <div class="form-group">
+      <label for="sourceUrl">
+        Source URL
+        <i class="pi pi-info-circle" (mouseenter)="opSourceUrl.show($event)" (mouseleave)="opSourceUrl.hide()"></i>
+        <p-overlayPanel #opSourceUrl [dismissable]="false">
+          <div style="width:500px;" class="overlay">
+            <p class=MsoNormal>
+              <span lang=EN-US>
+                Paste here a link to the webpage where the
+                text of the decision has been published by the source. If the decision is not
+                published in HTML format, paste here a link to the file (docx, pdf, etc.)
+                containing its text. After having inserted the link, please test it by using
+                the “Open” button.
+              </span>
+            </p>
+          </div>
+        </p-overlayPanel>
+      </label>
+      <div class="ui-inputgroup">
+        <input type="text" pInputText class="form-control" id="sourceUrl" name="sourceUrl" [(ngModel)]="mod.sourceUrl"
+               required autocomplete="off">
+        <button pButton type="button" (click)="previewUrl()" label="Open"></button>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="text">{{mod.jurisdiction?.code === 'EU' ? 'Decision of the court' : 'Text'}}</label>
+      <p-editor [style]="{'height':'320px'}" id="text" name="text" required [(ngModel)]="mod.text"></p-editor>
+    </div>
+
+    <div class="form-group" style="border-top: 1px solid gray;">
+      <p></p>
+      <span style="padding:10px 20px 0px 0px;">
+        <p-button type="button" icon="pi pi-save" label="Save" type="submit"
+                  (click)="submitForm(false)"></p-button>
+      </span>
+      <span style="padding:10px 20px 0px 100px;">
+        <p-button type="button" icon="pi pi-check" label="Save and close" type="submit"
+                  (click)="submitForm(true)"></p-button>
+      </span>
+    </div>
+    <p></p>
+  </form>
+</div>

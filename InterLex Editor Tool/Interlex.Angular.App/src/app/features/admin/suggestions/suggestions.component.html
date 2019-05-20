@@ -1,0 +1,19 @@
+<p-treeTable [value]="nodes">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Suggestions based on Jurisdiction</th>
+      <th>Action</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowNode let-rowData="rowData">
+    <tr>
+      <td>
+        <p-treeTableToggler [rowNode]="rowNode"></p-treeTableToggler>
+        {{!rowNode.parent ? rowData.label : rowData}}
+      </td>
+      <td>
+        <button *ngIf="rowNode.node.leaf" pButton label="Delete" (click)="deleteSuggestion(rowNode)"></button>
+      </td>
+    </tr>
+  </ng-template>
+</p-treeTable>
