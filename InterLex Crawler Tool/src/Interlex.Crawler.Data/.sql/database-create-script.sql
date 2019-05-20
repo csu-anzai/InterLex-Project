@@ -4,9 +4,9 @@ GO
 CREATE DATABASE [CrawlerInterlex]
  CONTAINMENT = NONE
  ON  PRIMARY 
-( NAME = N'Sales_dat', FILENAME = N'D:\MSSQL\DATA\CrawlerInterlex.mdf' , SIZE = 102400KB , MAXSIZE = UNLIMITED, FILEGROWTH = 5%)
+( NAME = N'CrawlerInterlex_dat', FILENAME = N'D:\MSSQL\DATA\CrawlerInterlex.mdf' , SIZE = 102400KB , MAXSIZE = UNLIMITED, FILEGROWTH = 5%)
  LOG ON 
-( NAME = N'Sales_log', FILENAME = N'D:\MSSQL\DATA\CrawlerInterlex_log.ldf' , SIZE = 5120KB , MAXSIZE = 2048GB , FILEGROWTH = 5%)
+( NAME = N'CrawlerInterlex_log', FILENAME = N'D:\MSSQL\DATA\CrawlerInterlex_log.ldf' , SIZE = 5120KB , MAXSIZE = 2048GB , FILEGROWTH = 5%)
 GO
 ALTER DATABASE [CrawlerInterlex] SET COMPATIBILITY_LEVEL = 110
 GO
