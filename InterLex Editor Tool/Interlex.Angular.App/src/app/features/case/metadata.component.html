@@ -1,0 +1,338 @@
+<p-overlayPanel #previewOp [dismissable]="true" [showCloseIcon]="true">
+  <div [innerHTML]="previewHtmlContent"></div>
+</p-overlayPanel>
+<p-confirmDialog></p-confirmDialog>
+<p-dialog header="Consolidated version" [(visible)]="showAddConsolidated" [style]="{width: '400px'}" [modal]="true"
+          [contentStyle]="{'overflow':'visible', 'height':'500px', 'max-height':'700px'}">
+  <label for="link" class="bold">Link to consolidated version</label>
+  <input type="text" pInputText class="form-control" required #link id="link">
+  <p-footer>
+    <button type="button" pButton icon="pi pi-check" (click)="addConsolidatedLinkItem(link)"
+            label="Save"></button>
+  </p-footer>
+</p-dialog>
+<div class="container">
+  <form #f="ngForm" (ngSubmit)="f.form.valid && submitForm(false)" novalidate>
+    <!-- " -->
+    <p></p>
+    <div class="form-group" style="border-bottom: 1px solid gray;" *ngIf="editable">
+      <span style="padding:10px 20px 0px 0px;">
+        <p-button type="button" icon="pi pi-save" label="Save"
+                  (click)="submitForm(false)"></p-button>
+      </span>
+      <span style="padding:10px 20px 0px 0px;" *ngIf="environment.hasPreview">
+        <p-button type="button" icon="pi pi-save" label="Preview HTML"
+                  (click)="previewHtml($event, previewOp)"></p-button>
+      </span>
+      <span style="padding:10px 20px 0px 100px;">
+        <p-button type="button" icon="pi pi-check" label="Save and close"
+                  (click)="submitForm(true)"></p-button>
+      </span>
+      <p></p>
+    </div>
+    <div class="form-group" style="border-bottom: 1px solid gray;" *ngIf="!editable && environment.hasPreview">
+      <span style="padding:10px 20px 0px 0px;">
+        <p-button type="button" icon="pi pi-save" label="Preview HTML"
+                  (click)="previewHtml($event, previewOp)"></p-button>
+      </span>
+      <p></p>
+    </div>
+    <div class="form-group">
+      <label for="jurisdiction">Country<span class="star-red">*</span></label>
+      <p-dropdown [options]="countries" id="jurisdiction" placeholder="Country / Jurisdiction" name="jurisdiction"
+                  [(ngModel)]="model.jurisdiction" optionLabel="label" [style]="{'width':'250px'}"
+                  #jurisdiction="ngModel" [readonly]="!editable"
+                  required="true"></p-dropdown>
+      <div *ngIf="submitted && jurisdiction.invalid" class="alert alert-danger">
+        <div *ngIf="jurisdiction.errors.required">
+          Country / Jurisdiction is required.
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="title">
+        Title<span class="star-red">*</span>
+      </label>
+
+      <input type="text" pInputText id="title" name="title" [(ngModel)]="model.title" required class="form-control"
+             #title="ngModel" autocomplete="off" [readOnly]="!editable">
+      <div *ngIf="submitted && title.invalid" class="alert alert-danger">
+        <div *ngIf="title.errors.required">
+          Title is required.
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="titleEn">
+        Title in English<span class="star-red">*</span>
+      </label>
+      <input type="text" pInputText id="titleEn" name="titleEn" [(ngModel)]="model.titleEn" class="form-control"
+             #titleEn="ngModel" autocomplete="off" [readOnly]="!editable">
+      <div *ngIf="submitted && titleEn.invalid" class="alert alert-danger">
+        <div *ngIf="titleEn.errors.required">
+          English title is required.
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm">
+        <label for="shortTitle">
+          Short title
+        </label>
+        <input type="text" pInputText id="shortTitle" name="shortTitle" [(ngModel)]="model.shortTitle"
+               class="form-control" [readOnly]="!editable"
+               #shortTitle="ngModel" autocomplete="off">
+      </div>
+      <div class="form-group col-sm">
+        <label for="abbreviation">
+          Abbreviation
+        </label>
+        <input type="text" pInputText id="abbreviation" name="abbreviation" [(ngModel)]="model.abbreviation"
+               class="form-control" [readOnly]="!editable"
+               #shortTitle="ngModel" autocomplete="off">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm form-group">
+        <label for="language">Language<span class="star-red">*</span></label>
+        <p-dropdown [options]="languages" id="language" name="language" [(ngModel)]="model.language"
+                    placeholder="Select a Language" [showClear]="false" [style]="{'width':'250px'}"
+                    optionLabel="label" [readonly]="!editable"
+                    required="true" #language="ngModel"></p-dropdown>
+        <div *ngIf="submitted && language.invalid" class="alert alert-danger">
+          <div *ngIf="language.errors.required">
+            Language is required.
+          </div>
+        </div>
+      </div>
+      <div class="col-sm form-group">
+        <label for="actType">
+          Act type<span class="star-red">*</span>
+        </label>
+        <p-dropdown [options]="actTypes" id="actType" name="actType" [(ngModel)]="model.actType"
+                    placeholder="Select Act type" optionLabel="label" [showClear]="false"
+                    [style]="{'width':'300px'}" [readonly]="!editable"
+                    required="true" #actType="ngModel"></p-dropdown>
+        <div *ngIf="submitted && actType.invalid" class="alert alert-danger">
+          <div *ngIf="actType.errors.required">
+            Act type is required.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="eli">
+        ELI (European Legislation Identifier)
+      </label>
+      <input type="text" pInputText id="eli" name="titleEn" [(ngModel)]="model.eli" class="form-control"
+             #eli="ngModel" autocomplete="off" [readOnly]="!editable">
+    </div>
+    <div class="form-group">
+      <label for="publReference">
+        Publication reference<span class="star-red">*</span>
+      </label>
+      <input type="text" pInputText id="publReference" name="publReference" [(ngModel)]="model.publReference"
+             class="form-control" [readOnly]="!editable"
+             #publReference="ngModel" autocomplete="off">
+      <div *ngIf="submitted && publReference.invalid" class="alert alert-danger">
+        <div *ngIf="publReference.errors.required">
+          Publication reference is required.
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 form-group">
+        <label for="dateOfDocument">Date of document<span class="star-red">*</span></label>
+        <p-calendar id="dateOfDocument" name="dateOfDocument" [(ngModel)]="model.dateOfDocument" dateFormat="dd.mm.yy"
+                    [style]="{'width':'350px'}" #dateOfDocument="ngModel" required [yearNavigator]="true"
+                    yearRange="1950:2025" [showIcon]="true"
+                    [monthNavigator]="true" [disabled]="!editable"></p-calendar>
+        <div *ngIf="submitted && dateOfDocument.invalid" class="alert alert-danger">
+          <div *ngIf="dateOfDocument.errors.required">
+            Date of document is required.
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 form-group">
+        <label for="dateOfPublication">Date of publication<span class="star-red">*</span></label>
+        <p-calendar id="dateOfPublication" name="dateOfPublication" [(ngModel)]="model.dateOfPublication"
+                    dateFormat="dd.mm.yy" [showIcon]="true"
+                    [style]="{'width':'350px'}" #dateOfPublication="ngModel" required [yearNavigator]="true"
+                    yearRange="1950:2025" [disabled]="!editable"
+                    [monthNavigator]="true"></p-calendar>
+        <div *ngIf="submitted && dateOfPublication.invalid" class="alert alert-danger">
+          <div *ngIf="dateOfPublication.errors.required">
+            Date of publication is required.
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 form-group">
+        <label for="dateOfEffect">Date of effect<span class="star-red">*</span></label>
+        <p-calendar id="dateOfEffect" name="dateOfEffect" [(ngModel)]="model.dateOfEffect" dateFormat="dd.mm.yy"
+                    [style]="{'width':'350px'}" #dateOfEffect="ngModel" required [yearNavigator]="true"
+                    yearRange="1950:2025" [showIcon]="true" [disabled]="!editable"
+                    [monthNavigator]="true"></p-calendar>
+        <div *ngIf="submitted && dateOfEffect.invalid" class="alert alert-danger">
+          <div *ngIf="dateOfEffect.errors.required">
+            Date of effect is required.
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 form-group">
+        <label for="dateEndValidity">Date of end of validity</label>
+        <p-calendar id="dateEndValidity" name="dateEndValidity" [(ngModel)]="model.dateEndValidity"
+                    dateFormat="dd.mm.yy" [disabled]="!editable"
+                    [style]="{'width':'350px'}" #dateEndValidity="ngModel" required [yearNavigator]="true"
+                    yearRange="1950:2025" [showIcon]="true"
+                    [monthNavigator]="true"></p-calendar>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-4">
+        <label for="sourceName">
+          Source name<span class="star-red">*</span>
+        </label>
+        <input type="text" pInputText id="sourceName" name="sourceName" [(ngModel)]="model.sourceName"
+               class="form-control" [readOnly]="!editable"
+               #sourceName="ngModel" autocomplete="off">
+        <div *ngIf="submitted && sourceName.invalid" class="alert alert-danger">
+          <div *ngIf="sourceName.errors.required">
+            Source name is required.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="form-group col-sm-4">
+        <label for="actType">
+          Version<span class="star-red">*</span>
+        </label>
+        <p-dropdown [options]="versions" id="version" name="version" [(ngModel)]="model.version"
+                    placeholder="Select version" optionLabel="label" [showClear]="false"
+                    [style]="{'width':'300px'}" [readonly]="!editable"
+                    required="true" #version="ngModel"></p-dropdown>
+        <div *ngIf="submitted && version.invalid" class="alert alert-danger">
+          <div *ngIf="version.errors.required">
+            Version is required.
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 form-group">
+        <label for="versionDateOfEffect">Date of effect of this version</label>
+        <p-calendar id="versionDateOfEffect" name="versionDateOfEffect" [(ngModel)]="model.versionDateOfEffect"
+                    dateFormat="dd.mm.yy"
+                    [style]="{'width':'350px'}" #versionDateOfEffect="ngModel" required [yearNavigator]="true"
+                    yearRange="1950:2025" [showIcon]="true" [disabled]="!editable || model.version?.code !== 'L'"
+                    [monthNavigator]="true"></p-calendar>
+      </div>
+      <div class="col-sm-3 form-group">
+        <label for="subseqAmmendments">Subsequent ammendments</label>
+        <p-dropdown [options]="yesNoRule" id="subseqAmmendments" name="subseqAmmendments"
+                    [(ngModel)]="model.subsequentAmmendments"
+                    placeholder="Select" optionLabel="label" [showClear]="editable" [style]="{'width':'150px'}"
+                    #subseqAmmendments="ngModel" [readonly]="!editable"></p-dropdown>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="sourceUrl">
+        Act URL
+      </label>
+      <div class="ui-inputgroup">
+        <input type="text" pInputText class="form-control" id="sourceUrl" name="sourceUrl" [(ngModel)]="model.actUrl"
+               required autocomplete="off" [readOnly]="!editable">
+        <button pButton type="button" (click)="previewUrl(model.actUrl)" label="Open"></button>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="actFile">
+        Act file
+      </label>
+      <p-fileUpload name="actFile" [showCancelButton]="false" [showUploadButton]="false" (onRemove)="removeFile($event)"
+                    maxFileSize="10000000" [customUpload]="true" (uploadHandler)="onUpload($event, false)" auto="auto"
+                    [files]="files" [disabled]="!editable">
+        <ng-template pTemplate="file">
+          <div class="ui-fileupload-row" *ngIf="model.actFile">
+            <div (click)="getFile(false)" class="link">{{model.actFile}}</div>
+            <div>
+              <button type="button" icon="pi pi-times" pButton (click)="removeFile($event)" *ngIf="editable"></button>
+            </div>
+          </div>
+        </ng-template>
+      </p-fileUpload>
+    </div>
+    <div class="form-group">
+      <label for="">Translation in English</label>
+      <p-card>
+        <div class="form-group">
+          <label for="translatedSourceUrl">
+            Translated act URL
+          </label>
+          <div class="ui-inputgroup">
+            <input type="text" pInputText class="form-control" id="translatedSourceUrl" name="translatedSourceUrl"
+                   [(ngModel)]="model.translatedActUrl"
+                   required autocomplete="off" [readOnly]="!editable">
+            <button pButton type="button" (click)="previewUrl(model.translatedActUrl)" label="Open"></button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="translatedActFile">
+            Translated act file
+          </label>
+          <p-fileUpload name="translatedActFile" [showCancelButton]="false" [showUploadButton]="false"
+                        (onRemove)="removeTranslatedFile($event)"
+                        maxFileSize="10000000" [customUpload]="true" (uploadHandler)="onUpload($event, true)"
+                        auto="auto"
+                        [files]="translatedFiles" [disabled]="!editable">
+            <ng-template pTemplate="file">
+              <div class="ui-fileupload-row" *ngIf="model.translatedActFile">
+                <div (click)="getFile(true)" class="link">{{model.translatedActFile}}</div>
+                <div>
+                  <button type="button" icon="pi pi-times" pButton (click)="removeTranslatedFile($event)"
+                          *ngIf="editable"></button>
+                </div>
+              </div>
+            </ng-template>
+          </p-fileUpload>
+        </div>
+      </p-card>
+    </div>
+
+
+    <div class="form-group">
+      <label>
+        Information about consolidated versions
+        <button type="button" class="ui-button-rounded" pButton icon="pi pi-plus"
+                (click)="addConsolidatedLink(link)" *ngIf="editable"
+                iconPos="left" label="Add citation"></button>
+      </label>
+      <table>
+        <tr *ngFor="let nat of model.infoConsolidatedVersions; index as i" class="t-eu-link">
+          <td>
+            <a target="_blank" [attr.href]="nat">{{nat}}</a>
+          </td>
+          <td>
+            &nbsp;<button pButton class="ui-button-rounded" type="button" icon="pi pi-bars"
+                          (click)="editConsolidatedLink(link, i)" *ngIf="editable"
+                          title="Edit citation"></button>
+            &nbsp;<button pButton class="ui-button-rounded ui-button-danger" type="button" icon="pi pi-times"
+                          *ngIf="editable"
+                          (click)="removeConsolidatedLink(i)" title="Remove record"></button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="form-group" style="border-top: 1px solid gray;" *ngIf="editable">
+      <p></p>
+      <span style="padding:10px 20px 0px 0px;">
+        <p-button type="button" icon="pi pi-save" label="Save"
+                  (click)="submitForm(false)"></p-button>
+      </span>
+      <span style="padding:10px 20px 0px 100px;">
+        <p-button type="button" icon="pi pi-check" label="Save and close"
+                  (click)="submitForm(true)"></p-button>
+      </span>
+    </div>
+    <p></p>
+  </form>
+</div>

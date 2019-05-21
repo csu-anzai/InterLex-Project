@@ -18,7 +18,7 @@ import {
   AutoCompleteModule,
   CardModule,
   ChipsModule,
-  ConfirmDialogModule,
+  ConfirmDialogModule, FileUploadModule,
   InputTextModule,
   OverlayPanelModule,
   TreeModule,
@@ -36,6 +36,8 @@ import {EditUserComponent} from './admin/edit-user/edit-user.component';
 import {ResetUserComponent} from './admin/reset-user/reset-user.component';
 import {SuggestionsComponent} from './admin/suggestions/suggestions.component';
 import {HelpComponent} from "./help/help.component";
+import {MetadataComponent} from "./case/metadata.component";
+import { MetadataListComponent } from './case/metadata-list.component';
 
 @NgModule({
   imports: [
@@ -61,11 +63,14 @@ import {HelpComponent} from "./help/help.component";
     ChipsModule,
     AutoCompleteModule,
     TreeTableModule,
+    FileUploadModule
   ],
   declarations: [HomeComponent, AdminComponent, LoginComponent, CaseEditorComponent,
     EulawLinkComponent, CaseListComponent, EurovocTreeComponent, EucaseLinkComponent,
     EulinkPartPipe, EucasePartPipe, RegisterUserComponent, EulawHrefPipe,
-    EucasePreliminaryRuling, EucaseHrefPipe, EditUserComponent, ResetUserComponent, SuggestionsComponent,HelpComponent
+    EucasePreliminaryRuling, EucaseHrefPipe, EditUserComponent, ResetUserComponent, SuggestionsComponent,HelpComponent,
+    MetadataComponent,
+    MetadataListComponent
   ],
 })
 export class FeaturesModule {

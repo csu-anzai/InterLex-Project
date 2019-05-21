@@ -11,12 +11,14 @@ import {
   languageList,
   nationalities,
   yesNoRule,
-  countries, NationalLawRecord, NationalCaseLawRecord
+  countries, NationalLawRecord, NationalCaseLawRecord, ICaseMetaContentResponse
 } from '../../models/case-editor.model';
 import {ActivatedRoute, Router} from '@angular/router';
 import {AlertService} from '../../core/services/alert.service';
 import {ConfirmationService, TreeNode} from 'primeng/api';
 import {SuggestionsModel} from '../../models/suggestions.model';
+import {OverlayPanel} from "primeng/primeng";
+import {environment} from "../../../environments/environment";
 
 @Component({
   selector: 'app-case-editor',
@@ -35,6 +37,7 @@ export class CaseEditorComponent implements OnInit {
   isEuDoc: boolean;
   isBgDoc: boolean;
   tmpEuDoc: IEucaseLink;
+  previewHtmlContent: string;
   filteredNationalities: string[];
   filteredDomiciles: string[];
   nationalities: string[];
@@ -52,12 +55,12 @@ export class CaseEditorComponent implements OnInit {
   showTree = false;
   editEuLinkIndex = -1;
   tmpEuLink: IEulawLink;
-
+  editable = true;
   editEucaseIndex = -1;
   editNatLawIndex: number;
   editNatCaseLawIndex: number;
   tmpEucaseLink: IEucaseLink;
-
+  environment = environment;
   href: string;
   countries: INomenclature[];
   languages: INomenclature[];
@@ -68,7 +71,7 @@ export class CaseEditorComponent implements OnInit {
   keyword: string;
   nationality: string;
   domicileCountry: string;
-  domicileRole: 'applicant' | 'defendant' = "applicant";
+  domicileRole: 'applicant' | 'defendant' = 'applicant';
   showKeyword: boolean;
   showAddNationality: boolean;
   showAddDomicile: boolean;
@@ -105,7 +108,10 @@ export class CaseEditorComponent implements OnInit {
 
   initModelFromApi() {
     const id = this.caseId;
-    this.http.get('./case/GetCaseContent/' + this.caseId).subscribe((data: ICaseEditor) => {
+    this.editable = false;
+    this.http.get('./case/GetCaseContent/' + this.caseId).subscribe((response: ICaseMetaContentResponse) => {
+      let data = JSON.parse(response.content) as ICaseEditor;
+      this.editable = response.editable;
       this.mod = {
         ...data,
         dateOfDocument: data.dateOfDocument === null ? null : new Date(data.dateOfDocument),
@@ -367,12 +373,12 @@ export class CaseEditorComponent implements OnInit {
   }
 
   validateRequiredFields() {
-    if (!this.mod.title) {
+    if (!this.mod.title || !this.mod.jurisdiction) {
       // if (!this.mod.title || !this.mod.keywords || !this.mod.summary || !this.mod.jurisdiction
       //   || !this.mod.court || !this.mod.dateOfDocument || !this.mod.language || !this.mod.decisionType
       // )
 
-      this.alertService.error('Please fill "Title" field!');
+      this.alertService.error('Please fill "Title" field and select a Jurisdiction!');
       return false;
     }
     // if (this.mod.keywords.length === 0) {
@@ -625,6 +631,18 @@ export class CaseEditorComponent implements OnInit {
     caseLawTitle.value = '';
     caseLawIdent.value = '';
     caseLawLink.value = '';
+  }
+
+  previewHtml(event, op: OverlayPanel) {
+    if (!this.previewHtmlContent) {
+      this.http.getText('./case/GetCaseHtmlContent/' + this.caseId).subscribe(x => {
+        this.previewHtmlContent = x;
+        op.show(event);
+      });
+    } else {
+      op.show(event);
+    }
+
   }
 }
 

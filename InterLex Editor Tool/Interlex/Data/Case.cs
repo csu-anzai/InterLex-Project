@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Interlex.Data
 {
-    public class Case
+    public class Case : IMetaCase
     {
         public Case()
         {
@@ -20,6 +20,5 @@ namespace Interlex.Data
         public ICollection<CaseLog> CasesLog { get; set; }
 
         public bool? IsDeleted { get; set; }
-
     }
 }

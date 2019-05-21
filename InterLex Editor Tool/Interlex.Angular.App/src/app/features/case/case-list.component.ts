@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {HttpService} from '../../core/services/http.service';
 import {
   countryList,
@@ -19,6 +19,8 @@ import {ConfirmationService} from 'primeng/api';
   providers: [ConfirmationService]
 })
 export class CaseListComponent implements OnInit {
+  @Input() type: 'case' | 'meta' = 'case';
+
   cols: any[];
   cases: ICaseListResponseModel[];
   requestModel: ICaseListRequestModel;
@@ -78,7 +80,8 @@ export class CaseListComponent implements OnInit {
   }
 
   editCase(rowData: ICaseListResponseModel) {
-    this.router.navigate(['caseeditor', rowData.caseId]);
+    const path = this.type === "case" ? 'caseeditor' : 'metadata';
+    this.router.navigate([path, rowData.caseId]);
   }
 
   deleteCase(rowData: ICaseListResponseModel) {
@@ -87,7 +90,8 @@ export class CaseListComponent implements OnInit {
       header: 'Confirmation',
       icon: 'pi pi-exclamation-triangle',
       accept: () => {
-        this.http.post(`case/DeleteCase/${rowData.caseId}`, null)
+        const path = this.type === "case" ? 'case/DeleteCase' : 'case/DeleteMeta';
+        this.http.post(`${path}/${rowData.caseId}`, null)
           .subscribe(x => {
             this.alertService.success('Deleted successfully.');
             this.getCasesListFromApi();
@@ -101,11 +105,13 @@ export class CaseListComponent implements OnInit {
   }
 
   addNewCase() {
-    this.router.navigate(['caseeditor']);
+    const path = this.type === "case" ? 'caseeditor' : 'metadata';
+    this.router.navigate([path]);
   }
 
   private makeApiCall() {
-    this.http.post('./case/GetCasesList', this.requestModel).subscribe((data: ICaseListResponseModel[]) => {
+    const path = this.type === "case" ? 'case/GetCasesList':'case/GetMetaList';
+    this.http.post(path, this.requestModel).subscribe((data: ICaseListResponseModel[]) => {
       this.cases = data;
       this.loading = false;
     }, (error) => {

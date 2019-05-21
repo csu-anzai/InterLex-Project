@@ -28,6 +28,42 @@ export interface ICaseEditor {
   choiceLaw: INomenclature;
 }
 
+export interface ICaseMetaContentResponse {
+  content: string;
+  editable: boolean;
+}
+
+export interface IMetaEditor {
+  title?: string;
+  titleEn?: string;
+  shortTitle?: string;
+  abbreviation?: string;
+  jurisdiction?: INomenclature;
+  language?: INomenclature;
+  actType?: INomenclature;
+  eli?: string;
+  publReference?: string;
+  dateOfDocument?: Date;
+  dateOfPublication?: Date;
+  dateOfEffect?: Date;
+  dateEndValidity?: Date;
+  sourceName?: string;
+  actUrl?: string;
+  translatedActUrl?: string;
+  actFile?: string; // this needs thinking over
+  translatedActFile?: string;
+  version?: INomenclature;
+  versionDateOfEffect?: Date;
+  subsequentAmmendments?: INomenclature;
+  infoConsolidatedVersions?: string[];
+}
+
+export interface IFile {
+  base64Content: string;
+  filename: string;
+  mimeType: string;
+}
+
 export interface NationalLawRecord {
   title: string;
   link: string;
@@ -183,6 +219,7 @@ export interface ICaseListResponseModel {
   lastChange: Date;
   organization: string;
   docDate: Date;
+  editable: boolean;
 }
 
 export interface ICaseListRequestModel {

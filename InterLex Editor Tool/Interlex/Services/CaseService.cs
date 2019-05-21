@@ -93,7 +93,7 @@ namespace Interlex.Services
             }
             else if (model.Type == "Keywords")
             {
-                var sug = new Keyword { Name = model.Name };
+                var sug = new Keyword {Name = model.Name};
                 this.context.Remove(sug);
             }
             else
@@ -106,13 +106,13 @@ namespace Interlex.Services
 
         internal IReadOnlyList<AllSuggestionsModel> GetAllSuggestions()
         {
-            var court = this.context.Court.Select(x => new { x.Name, x.Jurisdiction.JurCode })
+            var court = this.context.Court.Select(x => new {x.Name, x.Jurisdiction.JurCode})
                 .AsEnumerable()
                 .GroupBy(x => x.JurCode, x => x.Name).ToDictionary(x => x.Key, x => x.ToList());
-            var courtEng = this.context.CourtEng.Select(x => new { x.Name, x.Jurisdiction.JurCode })
+            var courtEng = this.context.CourtEng.Select(x => new {x.Name, x.Jurisdiction.JurCode})
                 .AsEnumerable()
                 .GroupBy(x => x.JurCode, x => x.Name).ToDictionary(x => x.Key, x => x.ToList());
-            var source = this.context.Source.Select(x => new { x.Name, x.Jurisdiction.JurCode })
+            var source = this.context.Source.Select(x => new {x.Name, x.Jurisdiction.JurCode})
                 .AsEnumerable()
                 .GroupBy(x => x.JurCode, x => x.Name).ToDictionary(x => x.Key, x => x.ToList());
             var list = new List<AllSuggestionsModel>();
@@ -144,7 +144,7 @@ namespace Interlex.Services
         public IReadOnlyList<TreeNode> GetWholeTree()
         {
             var codes = context.Codes.AsNoTracking()
-                .Select(c => new { c.Id, c.Code, c.Level, c.Texts.FirstOrDefault().Text })
+                .Select(c => new {c.Id, c.Code, c.Level, c.Texts.FirstOrDefault().Text})
                 .ToDictionary(c => c.Id);
             var relationships = context.Relationships.AsNoTracking().AsEnumerable().GroupBy(rel => rel.ParentId)
                 .ToDictionary(g => g.Key, g => g.Select(x => x.ChildId));
@@ -188,8 +188,6 @@ namespace Interlex.Services
 
         internal async Task DeleteCase(int id)
         {
-            var isSuperAdmin = this.currentUserService.IsSuperAdmin();
-            var isAdmin = this.currentUserService.IsAdmin();
             var record = await this.context.Cases.Where(c => c.Id == id).Select(c => new
             {
                 c.Id,
@@ -202,31 +200,12 @@ namespace Interlex.Services
                 throw new NotFoundException($"Case with id {id} not found");
             }
 
-            var hasRightToDelete = false;
-            if (isSuperAdmin)
-            {
-                hasRightToDelete = true;
-            }
-            else if (isAdmin)
-            {
-                var orgClaim = this.currentUserService.GetCurrentUserOrgClaim();
-                if (orgClaim == record.OrgName)
-                {
-                    hasRightToDelete = true;
-                }
-            }
-            else
-            {
-                var idClaim = this.currentUserService.GetCurrentUserIdClaim();
-                if (idClaim == record.UserId)
-                {
-                    hasRightToDelete = true;
-                }
-            }
+            var hasRightToDelete = this.HasEditDeleteRights(record.UserId, record.OrgName);
+
 
             if (hasRightToDelete)
             {
-                var caseEntity = new Case { Id = record.Id };
+                var caseEntity = new Case {Id = record.Id};
                 context.Cases.Attach(caseEntity);
                 caseEntity.IsDeleted = true;
                 await context.SaveChangesAsync();
@@ -237,50 +216,128 @@ namespace Interlex.Services
             }
         }
 
-        public async Task<IEnumerable<CaseListResponseModel>> GetCaseList(CaseListRequestModel request)
+        public async Task DeleteMeta(int id)
+        {
+            var record = await this.context.Metadata.Where(c => c.Id == id).Select(c => new
+            {
+                c.Id,
+                c.UserId,
+                OrgName = c.User.Organization.ShortName,
+                c.IsDeleted
+            }).FirstOrDefaultAsync();
+            if (record == null)
+            {
+                throw new NotFoundException($"Metadata with id {id} not found");
+            }
+
+            var hasRightToDelete = this.HasEditDeleteRights(record.UserId, record.OrgName);
+
+
+            if (hasRightToDelete)
+            {
+                var metaEntity = new Metadata {Id = record.Id};
+                this.context.Metadata.Attach(metaEntity);
+                metaEntity.IsDeleted = true;
+                await this.context.SaveChangesAsync();
+            }
+            else
+            {
+                throw new NotAuthorizedException();
+            }
+        }
+
+        public async Task<object> GetMetadataList(CaseListRequestModel request)
+        {
+            var result = await this.GetCaseList(request, true);
+            return result;
+        }
+
+        private bool HasEditDeleteRights(string userId, string orgName)
+        {
+            var isSuperAdmin = this.currentUserService.IsSuperAdmin();
+            var isAdmin = this.currentUserService.IsAdmin();
+            var hasRightToDelete = false;
+            if (isSuperAdmin)
+            {
+                hasRightToDelete = true;
+            }
+            else if (isAdmin)
+            {
+                var orgClaim = this.currentUserService.GetCurrentUserOrgClaim();
+                if (orgClaim == orgName)
+                {
+                    hasRightToDelete = true;
+                }
+            }
+            else
+            {
+                var idClaim = this.currentUserService.GetCurrentUserIdClaim();
+                if (idClaim == userId)
+                {
+                    hasRightToDelete = true;
+                }
+            }
+
+            return hasRightToDelete;
+        }
+
+        public async Task<IEnumerable<CaseListResponseModel>> GetCaseList(CaseListRequestModel request,
+            bool isMeta = false)
         {
             var isSuper = this.currentUserService.IsSuperAdmin();
             var isAdmin = this.currentUserService.IsAdmin();
             context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
 
-            var query = this.context.Cases.Include(x => x.User).ThenInclude(x => x.Organization)
-                .Where(c => c.IsDeleted == false);
+            IQueryable<IMetaCase> query;
+            if (isMeta)
+            {
+                query = this.context.Metadata.Include(x => x.User).ThenInclude(x => x.Organization)
+                    .Where(c => c.IsDeleted == false);
+            }
+            else
+            {
+                query = this.context.Cases.Include(x => x.User).ThenInclude(x => x.Organization)
+                    .Where(c => c.IsDeleted == false);
+            }
 
             if (request.UserName.IsNotNull() && isAdmin)
             {
                 query = query.Where(x => EF.Functions.Like(x.User.UserName, $"%{request.UserName}%"));
             }
-            else
-            {
-                if (!isAdmin)
-                {
-                    var userId = this.currentUserService.GetCurrentUserIdClaim();
-                    query = query.Where(x => x.UserId == userId);
-                }
-            }
 
+            //            else
+            //            {
+            //                if (!isAdmin)
+            //                {
+            //                    var userId = this.currentUserService.GetCurrentUserIdClaim();
+            //                    query = query.Where(x => x.UserId == userId);
+            //                }
+            //            }
+            //
             if (request.Organization.IsNotNull() && isSuper)
             {
                 query = query.Where(x => x.User.Organization.ShortName == request.Organization);
             }
-            else if (!isSuper)
-            {
-                var orgClaim = this.currentUserService.GetCurrentUserOrgClaim();
-                query = query.Where(x => x.User.Organization.ShortName == orgClaim);
-            }
+            //            else if (!isSuper)
+            //            {
+            //                var orgClaim = this.currentUserService.GetCurrentUserOrgClaim();
+            //                query = query.Where(x => x.User.Organization.ShortName == orgClaim);
+            //            }
+
 
             var tempRes = (from item in query
-                           let content = JObject.Parse(item.Content)
-                           select new
-                           {
-                               item.Id,
-                               item.LastChange,
-                               item.Caption,
-                               item.User.UserName,
-                               OrgShortName = item.User.Organization.ShortName,
-                               Content = content,
-                               DocDate = content["dateOfDocument"]
-                           }).AsEnumerable();
+                let content = JObject.Parse(item.Content)
+                select new
+                {
+                    item.Id,
+                    item.LastChange,
+                    item.Caption,
+                    item.User.UserName,
+                    Editable = this.HasEditDeleteRights(item.UserId, item.User.Organization.ShortName),
+                    OrgShortName = item.User.Organization.ShortName,
+                    Content = content,
+                    DocDate = content["dateOfDocument"]
+                }).AsEnumerable();
 
             if (!string.IsNullOrWhiteSpace(request.JurisdictionCode))
             {
@@ -289,7 +346,7 @@ namespace Interlex.Services
                     var juri = x.Content["jurisdiction"];
                     if (juri != null && juri.Type != JTokenType.Null)
                     {
-                        var jurisdictionCode = (string)juri["code"];
+                        var jurisdictionCode = (string) juri["code"];
                         if (jurisdictionCode == request.JurisdictionCode)
                         {
                             return true;
@@ -305,7 +362,7 @@ namespace Interlex.Services
                 {
                     if (x.DocDate != null && x.DocDate.Type != JTokenType.Null)
                     {
-                        return (DateTime)x.DocDate; // trusting JsonConvert for now >_>
+                        return (DateTime) x.DocDate; // trusting JsonConvert for now >_>
                     }
 
                     return x.LastChange;
@@ -316,36 +373,112 @@ namespace Interlex.Services
                     LastChange = x.LastChange,
                     Title = x.Caption,
                     UserName = x.UserName,
+                    Editable = x.Editable,
                     Organization = x.OrgShortName,
                     DocDate = (x.DocDate != null && x.DocDate.Type != JTokenType.Null)
-                        ? (DateTime)x.DocDate
-                        : (DateTime?)null
+                        ? (DateTime) x.DocDate
+                        : (DateTime?) null
                 });
 
 
             return result.ToList();
         }
 
-        public async Task<string> GetCaseContent(int caseId)
+        public async Task<CaseMetaContentResponseModel> GetCaseContent(int caseId)
         {
-            return await this.context.Cases.AsNoTracking().Where(x => x.Id == caseId).Select(x => x.Content)
-                .SingleAsync();
+            var dbInfo = await this.context.Cases.AsNoTracking().Where(x => x.Id == caseId)
+                .Select(x => new
+                {
+                    x.Content,
+                    x.UserId,
+                    OrgShortName = x.User.Organization.ShortName
+                }).SingleAsync();
+            var editable = this.HasEditDeleteRights(dbInfo.UserId, dbInfo.OrgShortName);
+            return new CaseMetaContentResponseModel
+            {
+                Content = dbInfo.Content,
+                Editable = editable
+            };
+        }
+
+        public async Task<CaseMetaContentResponseModel> GetMetaContent(int id)
+        {
+            var dbInfo = await this.context.Metadata.AsNoTracking().Where(x => x.Id == id).Select(x => new
+            {
+                x.Content,
+                x.UserId,
+                OrgShortName = x.User.Organization.ShortName
+            }).SingleAsync();
+            var editable = this.HasEditDeleteRights(dbInfo.UserId, dbInfo.OrgShortName);
+            return new CaseMetaContentResponseModel
+            {
+                Content = dbInfo.Content,
+                Editable = editable
+            };
         }
 
         public async Task<int> SaveCase(CaseModel model)
         {
             var caseEntity = this.mapper.Map<Case>(model);
             caseEntity.LastChange = DateTime.Now;
-            caseEntity.User = await usersService.GetCurrentApplicationUser();
+            caseEntity.User = await this.usersService.GetCurrentApplicationUser();
             var caseInserted = this.context.Cases.Add(caseEntity);
             this.SaveAutoCompleteSuggestions(model);
             await this.context.SaveChangesAsync();
             return caseInserted.Entity.Id;
         }
 
+        public async Task<int> SaveMetadata(MetadataModel model)
+        {
+            var metaEntity = new Metadata
+            {
+                Caption = model.Title,
+                LastChange = DateTime.Now,
+                User = await this.usersService.GetCurrentApplicationUser(),
+                Content = model.Content,
+            };
+            if (model.File != null)
+            {
+                var file = new MetaFile
+                {
+                    Name = model.File.Filename,
+                    MimeType = model.File.MimeType,
+                    Content = Convert.FromBase64String(model.File.Base64Content)
+                };
+                metaEntity.MetaFile.Add(file);
+            }
+
+            if (model.TranslatedFile != null)
+            {
+                var file = new MetaTranslatedFile
+                {
+                    Name = model.TranslatedFile.Filename,
+                    MimeType = model.TranslatedFile.MimeType,
+                    Content = Convert.FromBase64String(model.TranslatedFile.Base64Content)
+                };
+                metaEntity.MetaTranslatedFile.Add(file);
+            }
+
+            var metaInserted = this.context.Metadata.Add(metaEntity); // are there gonna be suggestions here??
+            await this.context.SaveChangesAsync();
+            return metaInserted.Entity.Id;
+        }
+
         public async Task EditCase(CaseModel model, int id)
         {
-            var oldRecord = await this.context.Cases.FindAsync(id);
+            var caseInfo = await this.context.Cases.Where(x => x.Id == id).Select(x => new
+            {
+                Case = x,
+                OrgShortName = x.User.Organization.ShortName,
+                UserId = x.UserId
+            }).SingleAsync();
+            var hasRightToEdit = this.HasEditDeleteRights(caseInfo.UserId, caseInfo.OrgShortName);
+            if (!hasRightToEdit)
+            {
+                throw new NotAuthorizedException();
+            }
+
+            var oldRecord = caseInfo.Case;
             if (oldRecord == null)
             {
                 throw new NotFoundException($"Case with id {id} not found");
@@ -355,10 +488,105 @@ namespace Interlex.Services
             oldRecord.LastChange = DateTime.Now;
             oldRecord.Caption = model.Title;
 
+
             var caseLog = this.mapper.Map<CaseLog>(oldRecord);
             caseLog.UserId = this.currentUserService.GetCurrentUserIdClaim();
             this.context.CasesLog.Add(caseLog);
             this.SaveAutoCompleteSuggestions(model);
+            await this.context.SaveChangesAsync();
+        }
+
+        public async Task EditMetadata(MetadataModel model, int id)
+        {
+            var metaInfo = await this.context.Metadata.Where(x => x.Id == id).Select(x => new
+            {
+                Meta = x,
+                OrgShortName = x.User.Organization.ShortName,
+                x.UserId
+            }).SingleAsync();
+
+            var hasRightToEdit = this.HasEditDeleteRights(metaInfo.UserId, metaInfo.OrgShortName);
+            if (!hasRightToEdit)
+            {
+                throw new NotAuthorizedException();
+            }
+
+            var oldRecord = metaInfo.Meta;
+            if (oldRecord == null)
+            {
+                throw new NotFoundException($"Metadata with id {id} not found");
+            }
+
+            oldRecord.Content = model.Content;
+            oldRecord.LastChange = DateTime.Now;
+            oldRecord.Caption = model.Title;
+            if (model.File != null && model.File.Base64Content != null)
+            {
+                var file = new MetaFile
+                {
+                    Name = model.File.Filename,
+                    MimeType = model.File.MimeType,
+                    Content = Convert.FromBase64String(model.File.Base64Content)
+                };
+                var oldFileId = this.context.MetaFile.Where(x => x.MetadataId == id).Select(x => x.Id).FirstOrDefault();
+                if (oldFileId == 0)
+                {
+                    oldRecord.MetaFile.Add(file);
+                }
+                else
+                {
+                    file.Id = oldFileId;
+                    file.MetadataId = id;
+                    var entry = this.context.MetaFile.Attach(file);
+                    entry.State = EntityState.Modified;
+                }
+            }
+            else if (model.File == null)
+            {
+                var oldFileId = this.context.MetaFile.Where(x => x.MetadataId == id).Select(x => x.Id).FirstOrDefault();
+                if (oldFileId != 0)
+                {
+                    var entry = this.context.MetaFile.Attach(new MetaFile {Id = oldFileId});
+                    entry.State = EntityState.Deleted;
+                }
+            }
+
+            if (model.TranslatedFile != null && model.TranslatedFile.Base64Content != null)
+            {
+                var file = new MetaTranslatedFile
+                {
+                    Name = model.TranslatedFile.Filename,
+                    MimeType = model.TranslatedFile.MimeType,
+                    Content = Convert.FromBase64String(model.TranslatedFile.Base64Content)
+                };
+                var oldFileId = this.context.MetaTranslatedFile.Where(x => x.MetadataId == id).Select(x => x.Id)
+                    .FirstOrDefault();
+                if (oldFileId == 0)
+                {
+                    oldRecord.MetaTranslatedFile.Add(file);
+                }
+                else
+                {
+                    file.Id = oldFileId;
+                    file.MetadataId = id;
+                    var entry = this.context.MetaTranslatedFile.Attach(file);
+                    entry.State = EntityState.Modified;
+                }
+            }
+            else if (model.TranslatedFile == null)
+            {
+                var oldFileId = this.context.MetaTranslatedFile.Where(x => x.MetadataId == id).Select(x => x.Id)
+                    .FirstOrDefault();
+                if (oldFileId != 0)
+                {
+                    var entry = this.context.MetaTranslatedFile.Attach(new MetaTranslatedFile {Id = oldFileId});
+                    entry.State = EntityState.Deleted;
+                }
+            }
+
+            var log = this.mapper.Map<MetadataLog>(oldRecord);
+            log.UserId = this.currentUserService.GetCurrentUserIdClaim();
+            this.context.MetadataLog.Add(log);
             await this.context.SaveChangesAsync();
         }
 
@@ -393,12 +621,24 @@ namespace Interlex.Services
             if (parsed.Keywords?.Length > 0)
             {
                 var dbKeywords = this.context.Keywords.Select(x => x.Name).ToList();
-                var entities = parsed.Keywords.Except(dbKeywords).Select(x => new Keyword { Name = x });
+                var entities = parsed.Keywords.Except(dbKeywords).Select(x => new Keyword {Name = x});
                 this.context.Keywords.AddRange(entities); // context.save is in calling method
             }
 
             this.context.Database.ExecuteSqlCommand("suggest.InsertSuggestions @p0, @p1, @p2, @p3",
                 parsed.Jurisdiction.Code, parsed.Court, parsed.CourtEng, parsed.Source);
+        }
+
+        public async Task<MetaFile> GetMetaFile(int id)
+        {
+            var data = await this.context.MetaFile.Where(x => x.MetadataId == id).FirstOrDefaultAsync();
+            return data;
+        }
+
+        public async Task<MetaTranslatedFile> GetMetaTranslatedFile(int id)
+        {
+            var data = await this.context.MetaTranslatedFile.Where(x => x.MetadataId == id).FirstOrDefaultAsync();
+            return data;
         }
     }
 }

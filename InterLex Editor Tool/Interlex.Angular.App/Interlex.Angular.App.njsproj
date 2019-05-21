@@ -59,6 +59,12 @@
     <Content Include="src\app\features\case\eucase-link.component.html" />
     <Content Include="src\app\features\case\eulaw-link.component.css" />
     <Content Include="src\app\features\case\eulaw-link.component.html" />
+    <Content Include="src\app\features\case\metadata-list.component.css" />
+    <Content Include="src\app\features\case\metadata-list.component.html" />
+    <Content Include="src\app\features\case\metadata-list.component.ts" />
+    <Content Include="src\app\features\case\metadata.component.css" />
+    <Content Include="src\app\features\case\metadata.component.html" />
+    <Content Include="src\app\features\case\metadata.component.ts" />
     <Content Include="src\app\features\help\help.component.css" />
     <Content Include="src\app\features\help\help.component.html" />
     <Content Include="src\app\features\help\help.component.ts" />

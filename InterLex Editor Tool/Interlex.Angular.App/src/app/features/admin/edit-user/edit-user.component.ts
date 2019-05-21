@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormGroup, ValidationErrors, Validators} from '@angular/forms';
 import {HttpErrorResponse} from '@angular/common/http';
 import {HttpService} from '../../../core/services/http.service';
@@ -13,8 +13,10 @@ import {AuthService} from '../../../core/services/auth.service';
 export class EditUserComponent implements OnInit {
 
   editForm: FormGroup;
+
   constructor(private fb: FormBuilder, private http: HttpService, private alert: AlertService,
-              private auth: AuthService) { }
+              private auth: AuthService) {
+  }
 
   ngOnInit() {
     this.editForm = this.fb.group({
@@ -23,6 +25,7 @@ export class EditUserComponent implements OnInit {
       confirmPassword: [''/*, [Validators.pattern(/^(?=.*[a-z])(?=.*[\d])\w{6,}$/)]*/],
     }, {validator: this.passwordMatchValidator});
   }
+
   passwordMatchValidator(control: FormGroup): ValidationErrors | null {
     const password = control.get('password');
     const confirmPassword = control.get('confirmPassword');
