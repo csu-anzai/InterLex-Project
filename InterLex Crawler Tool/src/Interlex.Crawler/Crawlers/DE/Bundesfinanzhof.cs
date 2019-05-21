@@ -8,12 +8,12 @@
     /// Court: Bundesfinanzhofs
     /// MainUrl: https://juris.bundesfinanzhof.de/cgi-bin/rechtsprechung/list.py?Gericht=bfh&Art=en
     /// </summary>
-    public class Bundesfinanzhofs : BaseBundes
+    public class Bundesfinanzhof : BaseBundes
     {
         private const string BaseUrl = "https://juris.bundesfinanzhof.de/cgi-bin/rechtsprechung/list.py?Gericht=bfh&Art=en&Datum=";
         private const string MainUrl = "https://juris.bundesfinanzhof.de/cgi-bin/rechtsprechung/";
 
-        public Bundesfinanzhofs(ILog logger) : base(logger)
+        public Bundesfinanzhof(ILog logger) : base(logger)
         {
         }
 

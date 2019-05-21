@@ -73,13 +73,13 @@ namespace Interlex.Crawler
         }
 
         /// <summary>
-        /// Starts the <see cref="Crawlers.DE.Bundesfinanzhofs"/> crawler
+        /// Starts the <see cref="Crawlers.DE.Bundesfinanzhof"/> crawler
         /// </summary>
         /// <param name="logger"></param>
         /// <returns></returns>
         public static async Task RunBundesfinanzhofsAsync(ILog logger)
         {
-            var crawler = new Bundesfinanzhofs(logger);
+            var crawler = new Bundesfinanzhof(logger);
 
             await crawler.StartAsync();
         }
