@@ -14,8 +14,14 @@ namespace Interlex.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
+
         public virtual DbSet<Case> Cases { get; set; }
         public virtual DbSet<CaseLog> CasesLog { get; set; }
+
+        public virtual DbSet<Metadata> Metadata { get; set; }
+        public virtual DbSet<MetadataLog> MetadataLog { get; set; }
+        public virtual DbSet<MetaFile> MetaFile { get; set; }
+        public virtual DbSet<MetaTranslatedFile> MetaTranslatedFile { get; set; }
         public virtual DbSet<Codes> Codes { get; set; }
         public virtual DbSet<Language> Languages { get; set; }
         public virtual DbSet<Relationship> Relationships { get; set; }
@@ -56,7 +62,7 @@ namespace Interlex.Data
             {
                 entity.ToTable("Court", "suggest");
 
-                entity.HasKey(e => new { e.Name, e.JurId });
+                entity.HasKey(e => new {e.Name, e.JurId});
 
                 entity.Property(e => e.Name)
                     .IsRequired()
@@ -83,7 +89,7 @@ namespace Interlex.Data
             {
                 entity.ToTable("CourtEng", "suggest");
 
-                entity.HasKey(e => new { e.Name, e.JurId });
+                entity.HasKey(e => new {e.Name, e.JurId});
 
                 entity.Property(e => e.Name)
                     .IsRequired()
@@ -108,7 +114,7 @@ namespace Interlex.Data
             {
                 entity.ToTable("Source", "suggest");
 
-                entity.HasKey(e => new { e.Name, e.JurId });
+                entity.HasKey(e => new {e.Name, e.JurId});
 
                 entity.Property(e => e.Name)
                     .IsRequired()
@@ -131,8 +137,8 @@ namespace Interlex.Data
                     .IsRequired()
                     .HasDefaultValueSql("((1))");
                 entity.HasMany(e => e.Claims)
-                .WithOne().HasForeignKey(uc => uc.UserId)
-                .IsRequired();
+                    .WithOne().HasForeignKey(uc => uc.UserId)
+                    .IsRequired();
             });
 
             builder.Entity<Case>(entity =>
@@ -202,7 +208,101 @@ namespace Interlex.Data
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK__CasesLog__userId__5812160E");
             });
+            
+            builder.Entity<MetaFile>(entity =>
+            {
+                entity.Property(e => e.Content).IsRequired();
 
+                entity.Property(e => e.MimeType)
+                    .IsRequired()
+                    .HasMaxLength(100);
+
+                entity.Property(e => e.Name)
+                    .IsRequired()
+                    .HasMaxLength(500);
+
+                entity.HasOne(d => d.Metadata)
+                    .WithMany(p => p.MetaFile)
+                    .HasForeignKey(d => d.MetadataId)
+                    .HasConstraintName("FK_Metadata_MetaFile");
+            });
+            
+            builder.Entity<MetaTranslatedFile>(entity =>
+            {
+                entity.Property(e => e.Content).IsRequired();
+
+                entity.Property(e => e.MimeType)
+                    .IsRequired()
+                    .HasMaxLength(100);
+
+                entity.Property(e => e.Name)
+                    .IsRequired()
+                    .HasMaxLength(500);
+
+                entity.HasOne(d => d.Metadata)
+                    .WithMany(p => p.MetaTranslatedFile)
+                    .HasForeignKey(d => d.MetadataId)
+                    .HasConstraintName("FK_Metadata_MetaTranslatedFile");
+            });
+            
+            builder.Entity<Metadata>(entity =>
+            {
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.Caption)
+                    .IsRequired()
+                    .HasColumnName("caption")
+                    .HasMaxLength(4000);
+
+                entity.Property(e => e.IsDeleted)
+                    .IsRequired()
+                    .HasDefaultValueSql("((0))");
+
+                entity.Property(e => e.Content)
+                    .IsRequired()
+                    .HasColumnName("content");
+
+                entity.Property(e => e.LastChange).HasColumnName("lastChange");
+
+                entity.Property(e => e.UserId)
+                    .IsRequired()
+                    .HasColumnName("userId")
+                    .HasMaxLength(450);
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.Metadata)
+                    .HasForeignKey(d => d.UserId)
+                    .HasConstraintName("FK_Users_Metadata");
+            });
+
+            builder.Entity<MetadataLog>(entity =>
+            {
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.ChangeDate).HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.Content)
+                    .IsRequired()
+                    .HasColumnName("content");
+
+                entity.Property(e => e.MetadataId).HasColumnName("metadataId");
+
+                entity.Property(e => e.UserId)
+                    .IsRequired()
+                    .HasColumnName("userId")
+                    .HasMaxLength(450);
+
+                entity.HasOne(d => d.Metadata)
+                    .WithMany(p => p.MetadataLog)
+                    .HasForeignKey(d => d.MetadataId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Metadata_MetadataLog");
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.MetadataLog)
+                    .HasForeignKey(d => d.UserId)
+                    .HasConstraintName("FK_Users_MetadataLog");
+            });
             builder.Entity<Organization>(entity =>
             {
                 entity.Property(e => e.Id).ValueGeneratedNever();
@@ -235,7 +335,7 @@ namespace Interlex.Data
 
             builder.Entity<Relationship>(entity =>
             {
-                entity.HasKey(e => new { e.ParentId, e.ChildId });
+                entity.HasKey(e => new {e.ParentId, e.ChildId});
 
                 entity.ToTable("Relationships", "classifier");
 
@@ -276,7 +376,6 @@ namespace Interlex.Data
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Texts_Languages");
             });
-
         }
     }
 }

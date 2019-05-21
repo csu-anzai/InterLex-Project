@@ -31,6 +31,13 @@ namespace Interlex.Automapper_Profiles
                 .ForMember(x => x.User, opt => opt.Ignore())
                 .ForMember(x => x.UserId, opt => opt.Ignore())
                 .ForMember(x => x.ChangeDate, opt => opt.MapFrom(src => src.LastChange));
+
+            CreateMap<Metadata, MetadataLog>()
+                .ForMember(x => x.MetadataId, opt => opt.MapFrom(src => src.Id))
+                .ForMember(x => x.Id, opt => opt.Ignore())
+                .ForMember(x => x.User, opt => opt.Ignore())
+                .ForMember(x => x.UserId, opt => opt.Ignore())
+                .ForMember(x => x.ChangeDate, opt => opt.MapFrom(src => src.LastChange));
             // Add other maps here, or create additional Profiles - they are found automatically
         }
     }

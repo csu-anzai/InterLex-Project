@@ -1,10 +1,10 @@
 <p-confirmDialog></p-confirmDialog>
 <!-- <h3>Case list</h3> -->
 <p></p>
-<button pButton (click)="addNewCase()" label="Add new case" class="ui-button-rounded" icon="pi pi-plus"></button>
+<button pButton (click)="addNewCase()" label="{{type === 'case' ? 'Add new case':'Add new act'}}"
+        class="ui-button-rounded" icon="pi pi-plus"></button>
 <p></p>
 <p-table [columns]="cols" [value]="cases" [paginator]="true" [rows]="10" [loading]="loading" #dt>
-
   <ng-template pTemplate="caption">
     <p-dropdown [options]="countries" placeholder="Country / Jurisdiction" name="jurisdiction"
                 [(ngModel)]="jurisdiction" optionLabel="label" [style]="{'width':'250px', 'float':'left'}"
@@ -36,13 +36,15 @@
   </ng-template> -->
   <ng-template pTemplate="header" let-columns>
     <tr>
-      <th *ngIf="isSuperAdmin" [pSortableColumn]="'organization'" style="width:150px;">
+      <!--<th *ngIf="isSuperAdmin" [pSortableColumn]="'organization'" style="width:150px;">-->
+      <th [pSortableColumn]="'organization'" style="width:150px;">
         <b>Organization</b>
         <p-sortIcon [field]="'organization'" ariaLabel="Activate to sort"
                     ariaLabelDesc="Activate to sort in descending order"
                     ariaLabelAsc="Activate to sort in ascending order"></p-sortIcon>
       </th>
-      <th *ngIf="isAdmin" [pSortableColumn]="'userName'" style="width:200px;">
+      <th [pSortableColumn]="'userName'" style="width:200px;">
+        <!--<th *ngIf="isAdmin" [pSortableColumn]="'userName'" style="width:200px;">-->
         <b>User</b>
         <p-sortIcon [field]="'userName'" ariaLabel="Activate to sort"
                     ariaLabelDesc="Activate to sort in descending order"
@@ -71,19 +73,27 @@
   </ng-template>
   <ng-template pTemplate="body" let-rowData let-columns="columns">
     <tr [pSelectableRow]="rowData">
-      <td *ngIf="isSuperAdmin" [pSortableColumn]="organization"> {{rowData['organization']}}</td>
-      <td *ngIf="isAdmin" [pSortableColumn]="userName"> {{rowData['userName']}}</td>
-      <td [pSortableColumn]="title"><a [routerLink]="['/caseeditor', rowData.caseId]">{{rowData['title']}}</a></td>
+      <!--<td *ngIf="isSuperAdmin" [pSortableColumn]="organization"> {{rowData['organization']}}</td>-->
+      <td [pSortableColumn]="organization"> {{rowData['organization']}}</td>
+      <!--<td *ngIf="isAdmin" [pSortableColumn]="userName"> {{rowData['userName']}}</td>-->
+      <td [pSortableColumn]="userName"> {{rowData['userName']}}</td>
+      <td [pSortableColumn]="title"><a
+        [routerLink]="[type === 'case' ? '/caseeditor': '/metadata', rowData.caseId]">{{rowData['title']}}</a></td>
       <td [pSortableColumn]="docDate"> {{rowData['docDate'] | date:'dd/MM/yyyy'}}</td>
       <td [pSortableColumn]="lastChange"> {{rowData['lastChange'] | date:'dd/MM/yyyy'}}</td>
       <td>
-        <button pButton type="button" label="Edit" class="ui-button-primary" (click)="editCase(rowData)"
+        <button *ngIf="rowData.editable" pButton type="button" label="Edit" class="ui-button-primary"
+                (click)="editCase(rowData)"
                 class="ui-button-rounded"
                 icon="pi pi-bars" title="Edit case"></button>
+        <button *ngIf="!rowData.editable" pButton type="button" label="View" class="ui-button-primary"
+                (click)="editCase(rowData)"
+                class="ui-button-rounded"
+                icon="pi pi-bars" title="View case"></button>
       </td>
       <td>
         <button pButton type="button" class="ui-button-rounded ui-button-danger" (click)="deleteCase(rowData)"
-                icon="pi pi-times" title="Remove case"></button>
+                icon="pi pi-times" title="Remove case" [disabled]="!rowData.editable"></button>
       </td>
     </tr>
     <!-- <tr [pSelectableRow]="rowData">

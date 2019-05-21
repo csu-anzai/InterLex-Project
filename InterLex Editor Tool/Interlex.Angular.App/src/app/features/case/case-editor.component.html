@@ -1,17 +1,30 @@
+<p-overlayPanel #previewOp [dismissable]="true" [showCloseIcon]="true">
+  <div [innerHTML]="previewHtmlContent"></div>
+</p-overlayPanel>
 <p-confirmDialog></p-confirmDialog>
-<p-dialog header="EU legislation" [(visible)]="showEuLink" [style]="{width: '500px'}" [modal]="true"
+<p-dialog [(visible)]="showEuLink" [style]="{width: '500px'}" [modal]="true"
           [contentStyle]="{'height':'500px', 'max-height':'700px'}">
+  <p-header>
+    EU legislation <i
+    class="pi pi-info-circle" (mouseenter)="opEuLegislation.show($event)"
+    (mouseleave)="opEuLegislation.hide()"></i>
+  </p-header>
   <app-eulaw-link [euLink]="tmpEuLink"></app-eulaw-link>
   <p-footer>
     <button type="button" pButton icon="pi pi-check" (click)="addEditEuLink()" label="Save"></button>
   </p-footer>
 </p-dialog>
 
-<p-dialog header="EU case law" [(visible)]="showEuCaseLink" [style]="{width: '400px'}" [modal]="true"
+<p-dialog [(visible)]="showEuCaseLink" [style]="{width: '400px'}" [modal]="true"
           [contentStyle]="{'overflow':'visible', 'height':'500px', 'max-height':'700px'}">
+  <p-header>
+    EU case law <i
+    class="pi pi-info-circle" (mouseenter)="opEuCaselaw.show($event)"
+    (mouseleave)="opEuCaselaw.hide()"></i>
+  </p-header>
   <app-eucase-link [euCaseLink]="tmpEucaseLink" [isDoc]="false" [isEuDoc]="isEuDoc"></app-eucase-link>
   <p-footer>
-    <button type="button" type="button" pButton icon="pi pi-check" (click)="addEditEuCase()" label="Save"></button>
+    <button type="button" pButton icon="pi pi-check" (click)="addEditEuCase()" label="Save"></button>
   </p-footer>
 </p-dialog>
 
@@ -57,7 +70,18 @@
 <p-dialog header="Keyword" [(visible)]="showKeyword" [modal]="true" [style]="{width: '750px'}"
           [contentStyle]="{'overflow':'visible', 'height':'500px', 'max-height':'700px'}">
   <div class="form-group">
-    <label>Keyword<span class="star-red">*</span></label>
+    <label>Keyword<span class="star-red">*</span><i class="pi pi-info-circle" (mouseenter)="opKeywordModal.show($event)"
+                                                    (mouseleave)="opKeywordModal.hide()"></i></label>
+    <p-overlayPanel #opKeywordModal [dismissable]="false" appendTo="body">
+      <div style="width:500px;" class="overlay">
+        <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+                            margin-left:0cm'>
+              <span lang=EN-US>
+                Provide here <strong>standard keywords</strong> (by checking the respective checkboxes) and <strong>editor keywords</strong> that can be entered freely in the combo box or chosen from the combo box list with previous keyword entries made by you or other editors.
+              </span>
+        </p>
+      </div>
+    </p-overlayPanel>
     <p-autoComplete [(ngModel)]="keyword" [suggestions]="filteredKeywords" [size]="55"
                     [minLength]="1" [dropdown]="true" (completeMethod)="filterKeywords($event)">
       <ng-template let-kw pTemplate="item">
@@ -163,7 +187,9 @@
 <p-dialog header="Nationality" [(visible)]="showAddNationality" [style]="{width: '400px'}" [modal]="true"
           [contentStyle]="{'overflow':'visible', 'height':'500px', 'max-height':'700px'}">
   <div class="form-group">
-    <label>Nationality<span class="star-red">*</span></label>
+    <label>Nationality<span class="star-red">*</span><i
+      class="pi pi-info-circle" (mouseenter)="natOfPartiesHint.show($event)"
+      (mouseleave)="natOfPartiesHint.hide()"></i></label>
     <p-autoComplete [(ngModel)]="nationality" #natAutoComplete [suggestions]="filteredNationalities" [size]="35"
                     [minLength]="1" placeholder="Nationality" [dropdown]="true"
                     (completeMethod)="filterNationalities($event)">
@@ -182,7 +208,9 @@
           [contentStyle]="{'overflow':'visible', 'height':'500px', 'max-height':'700px'}">
   <div class="row">
     <div class="col-sm form-group">
-      <label>Domicile<span class="star-red">*</span></label>
+      <label>Domicile<span class="star-red">*</span><i
+        class="pi pi-info-circle" (mouseenter)="domOfPartiesHint.show($event)"
+        (mouseleave)="domOfPartiesHint.hide()"></i></label>
       <p-autoComplete [(ngModel)]="domicileCountry" #domAutoComplete [suggestions]="filteredDomiciles" [size]="35"
                       [minLength]="1" placeholder="Domicile" [dropdown]="true"
                       (completeMethod)="filterDomiciles($event)">
@@ -210,6 +238,9 @@
 </p-dialog>
 <p-dialog [(visible)]="showTree" [modal]="true" [dismissableMask]="true" [blockScroll]="true"
           [contentStyle]="{'max-height':'500px'}">
+  <p-header>Eurovoc <i
+    class="pi pi-info-circle" (mouseenter)="opEuroVoc.show($event)"
+    (mouseleave)="opEuroVoc.hide()"></i></p-header>
   <app-eurovoc-tree (selectionConfirmed)="getEurovocData($event)" [selectedSet]="selectedTreeNodes"></app-eurovoc-tree>
 </p-dialog>
 
@@ -217,14 +248,25 @@
   <form #f="ngForm" (ngSubmit)="f.form.valid && submitForm(false)" novalidate>
     <!-- " -->
     <p></p>
-    <div class="form-group" style="border-bottom: 1px solid gray;">
+    <div class="form-group" style="border-bottom: 1px solid gray;" *ngIf="editable">
       <span style="padding:10px 20px 0px 0px;">
-        <p-button type="button" icon="pi pi-save" label="Save" type="submit"
+        <p-button type="button" icon="pi pi-save" label="Save"
                   (click)="submitForm(false)"></p-button>
       </span>
+      <span style="padding:10px 20px 0px 0px;" *ngIf="environment.hasPreview">
+        <p-button type="button" icon="pi pi-save" label="Preview HTML"
+                  (click)="previewHtml($event, previewOp)"></p-button>
+      </span>
       <span style="padding:10px 20px 0px 100px;">
-        <p-button type="button" icon="pi pi-check" label="Save and close" type="submit"
+        <p-button type="button" icon="pi pi-check" label="Save and close"
                   (click)="submitForm(true)"></p-button>
+      </span>
+      <p></p>
+    </div>
+    <div class="form-group" style="border-bottom: 1px solid gray;" *ngIf="!editable && environment.hasPreview">
+      <span style="padding:10px 20px 0px 0px;">
+        <p-button type="button" icon="pi pi-save" label="Preview HTML"
+                  (click)="previewHtml($event, previewOp)"></p-button>
       </span>
       <p></p>
     </div>
@@ -233,7 +275,7 @@
       <label for="jurisdiction">Country / Jurisdiction<span class="star-red">*</span></label>
       <p-dropdown [options]="countries" id="jurisdiction" placeholder="Country / Jurisdiction" name="jurisdiction"
                   [(ngModel)]="mod.jurisdiction" optionLabel="label" [style]="{'width':'250px'}" #jurisdiction="ngModel"
-                  required="true" (ngModelChange)="onModelChange($event)"></p-dropdown>
+                  required="true" (ngModelChange)="onModelChange($event)" [readonly]="!editable"></p-dropdown>
       <div *ngIf="submitted && jurisdiction.invalid" class="alert alert-danger">
         <div *ngIf="jurisdiction.errors.required">
           Country / Jurisdiction is required.
@@ -330,12 +372,13 @@
             </p>
           </div>
         </p-overlayPanel>
-        &nbsp;<button type="button" *ngIf="isEuDoc" class="ui-button-rounded" pButton (click)="showEuDoc = true;"
+        &nbsp;<button type="button" *ngIf="isEuDoc && editable" class="ui-button-rounded" pButton
+                      (click)="showEuDoc = true;"
                       label="Select document"></button>
       </label>
 
       <input type="text" pInputText id="title" name="title" [(ngModel)]="mod.title" required class="form-control"
-             #title="ngModel" autocomplete="off">
+             #title="ngModel" autocomplete="off" [readOnly]="!editable">
       <div *ngIf="submitted && title.invalid" class="alert alert-danger">
         <div *ngIf="title.errors.required">
           Name is required.
@@ -399,9 +442,9 @@
         </p-overlayPanel>
         &nbsp;
         <button class="ui-button-rounded" type="button" pButton icon="pi pi-plus" (click)="addKeywordsClick()"
-                iconPos="left" label="Add keyword"></button>
+                iconPos="left" label="Add keyword" *ngIf="editable"></button>
       </label>
-      <p-chips [(ngModel)]="mod.keywords" id="keywords" name="keywords" #keywords="ngModel" [disabled]="false"
+      <p-chips [(ngModel)]="mod.keywords" id="keywords" name="keywords" #keywords="ngModel" [disabled]="!editable"
                [allowDuplicate]="false" addOnBlur="true" required>
       </p-chips>
       <div *ngIf="submitted && keywords.invalid" class="alert alert-danger">
@@ -413,7 +456,7 @@
     <div class="form-group">
       <label for="summary">Summary<span class="star-red">*</span></label>
       <p-editor id="summary" name="summary" [(ngModel)]="mod.summary" #summary="ngModel" [style]="{'height':'320px'}"
-                required></p-editor>
+                required [readonly]="!editable"></p-editor>
       <div *ngIf="submitted && summary.invalid" class="alert alert-danger">
         <div *ngIf="summary.errors.required">
           Summary is required.
@@ -494,7 +537,7 @@
           <!--required #court="ngModel">-->
           <p-autoComplete id="court" name="court" [(ngModel)]="mod.court" [suggestions]="courtSuggestionsFiltered"
                           size="50" [minLength]="1" [dropdown]="true" (completeMethod)="filterCourts($event)" required
-                          #court="ngModel">
+                          #court="ngModel" [disabled]="!editable">
             <ng-template let-courtSug pTemplate="item">
               <div class="ui-helper-clearfix">
                 {{courtSug}}
@@ -514,7 +557,7 @@
           <p-autoComplete id="courtEng" name="courtEng" [(ngModel)]="mod.courtEng"
                           [suggestions]="courtEngSuggestionsFiltered"
                           [size]="50" [minLength]="1" [dropdown]="true" (completeMethod)="filterCourtsEng($event)"
-                          required [disabled]="isEuDoc">
+                          required [disabled]="isEuDoc || !editable">
             <ng-template let-courtSugEng pTemplate="item">
               <div class="ui-helper-clearfix">
                 {{courtSugEng}}
@@ -527,11 +570,23 @@
     <div class="form-group">
       <div class="row">
         <div class="col-sm">
-          <label for="dateOfDocument" dateFormat="dd.mm.yy">Date of document<span class="star-red">*</span></label>
+          <label for="dateOfDocument" dateFormat="dd.mm.yy">Date of document<span class="star-red">*</span><i
+            class="pi pi-info-circle" (mouseenter)="dateOfDocumentHint.show($event)"
+            (mouseleave)="dateOfDocumentHint.hide()"></i></label>
+          <p-overlayPanel #dateOfDocumentHint [dismissable]="false" appendTo="body">
+            <div style="width:500px;" class="overlay">
+              <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+                            margin-left:0cm'>
+              <span lang=EN-US>
+                Use the calendar button to indicate the date on which the court decision has been rendered.
+              </span>
+              </p>
+            </div>
+          </p-overlayPanel>
           <p-calendar id="dateOfDocument" name="dateOfDocument" [(ngModel)]="mod.dateOfDocument" dateFormat="dd.mm.yy"
                       [style]="{'width':'350px'}" #dateOfDocument="ngModel" required [yearNavigator]="true"
-                      yearRange="1950:2025"
-                      [monthNavigator]="true"></p-calendar>
+                      yearRange="1950:2025" [showIcon]="true"
+                      [monthNavigator]="true" [disabled]="!editable"></p-calendar>
           <div *ngIf="submitted && dateOfDocument.invalid" class="alert alert-danger">
             <div *ngIf="dateOfDocument.errors.required">
               Date of document is required.
@@ -542,7 +597,7 @@
           <label for="language">Language<span class="star-red">*</span></label>
           <p-dropdown [options]="languages" id="language" name="language" [(ngModel)]="mod.language"
                       placeholder="Select a Language" [showClear]="false" [style]="{'width':'250px'}"
-                      optionLabel="label"
+                      optionLabel="label" [readonly]="!editable"
                       required="true" #language="ngModel"></p-dropdown>
 
           <div *ngIf="submitted && language.invalid" class="alert alert-danger">
@@ -559,7 +614,7 @@
           </label>
           <p-dropdown [options]="decisionTypes" id="decisionType" name="decisionType" [(ngModel)]="mod.decisionType"
                       placeholder="Select a Decision type" optionLabel="label" [showClear]="false"
-                      [style]="{'width':'250px'}"
+                      [style]="{'width':'250px'}" [readonly]="!editable"
                       required="true" #decisionType="ngModel"></p-dropdown>
           <div *ngIf="submitted && decisionType.invalid" class="alert alert-danger">
             <div *ngIf="decisionType.errors.required">
@@ -644,7 +699,7 @@
         </p-overlayPanel>
       </label>
       <input type="text" pInputText class="form-control" id="nationalIdentifier" name="nationalIdentifier"
-             [(ngModel)]="mod.nationalIdentifier" required [disabled]="isEuDoc || isBgDoc">
+             [(ngModel)]="mod.nationalIdentifier" required [disabled]="isEuDoc || isBgDoc || !editable">
     </div>
     <div class="form-group">
       <label for="ecli">
@@ -698,49 +753,114 @@
         </p-overlayPanel>
       </label>
       <input type="text" pInputText class="form-control" id="ecli" name="ecli" [(ngModel)]="mod.ecli" required
-             autocomplete="off">
+             autocomplete="off" [readOnly]="!editable">
     </div>
     <div class="form-group">
       <label for="natOfParties">
-        Nationality of the parties
+        Nationality of the parties <i
+        class="pi pi-info-circle" (mouseenter)="natOfPartiesHint.show($event)"
+        (mouseleave)="natOfPartiesHint.hide()"></i>
         <button class="ui-button-rounded" type="button" pButton icon="pi pi-plus" (click)="addNationality()"
-                iconPos="left" label="Add nationality"></button>
+                iconPos="left" label="Add nationality" *ngIf="editable"></button>
+        <p-overlayPanel #natOfPartiesHint [dismissable]="false" appendTo="body">
+          <div style="width:500px;" class="overlay">
+            <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+                            margin-left:0cm'>
+              <span lang=EN-US>
+                Provide here information about the nationality of the parties to the case (if relevant). The field allows multiple entries.
+              </span>
+            </p>
+          </div>
+        </p-overlayPanel>
       </label>
       <p-chips [(ngModel)]="mod.nationalities" id="natOfParties" name="natOfParties" required #natOfParties="ngModel"
-               [disabled]="false" [allowDuplicate]="false" placeholder="">
+               [disabled]="!editable" [allowDuplicate]="false" placeholder="">
       </p-chips>
     </div>
     <div class="form-group">
       <label for="natOfParties">
-        Domicile of the parties
+        Domicile of the parties <i
+        class="pi pi-info-circle" (mouseenter)="domOfPartiesHint.show($event)"
+        (mouseleave)="domOfPartiesHint.hide()"></i>
         <button class="ui-button-rounded" type="button" pButton icon="pi pi-plus" (click)="addDomicile()"
-                iconPos="left" label="Add domicile"></button>
+                iconPos="left" label="Add domicile" *ngIf="editable"></button>
+        <p-overlayPanel #domOfPartiesHint [dismissable]="false" appendTo="body">
+          <div style="width:500px;" class="overlay">
+            <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+                            margin-left:0cm'>
+              <span lang=EN-US>
+                Choose from a drop-down list the name of the country where the parties to the case are domiciled and indicate their role in the proceedings – applicant or defendant. The field allows multiple entries.
+              </span>
+            </p>
+          </div>
+        </p-overlayPanel>
       </label>
       <p-chips [(ngModel)]="mod.domiciles" id="domOfParties" name="domOfParties" required #domOfParties="ngModel"
-               [disabled]="false" [allowDuplicate]="false" placeholder="">
+               [disabled]="!editable" [allowDuplicate]="false" placeholder="">
       </p-chips>
     </div>
     <div class="form-group">
       <div class="row">
         <div class="col-sm">
-          <label for="residence">Residence in MS of forum</label>
+          <label for="residence">Residence in MS of forum <i
+            class="pi pi-info-circle" (mouseenter)="residenceHint.show($event)"
+            (mouseleave)="residenceHint.hide()"></i></label>
+          <p-overlayPanel #residenceHint [dismissable]="false" appendTo="body">
+            <div style="width:500px;" class="overlay">
+              <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+                            margin-left:0cm'>
+              <span lang=EN-US>
+                Choose “Yes” or “No” depending on whether the applicant has or does not have its domicile in the EU Member State of the court before which the case is heard.
+              </span>
+              </p>
+            </div>
+          </p-overlayPanel>
           <p-dropdown [options]="yesNoRule" id="residence" name="residence" [(ngModel)]="mod.residenceMsForum"
                       placeholder="Select" optionLabel="label" [showClear]="true" [style]="{'width':'150px'}"
-                      required="true" #residence="ngModel"></p-dropdown>
+                      required="true" #residence="ngModel" [readonly]="!editable"></p-dropdown>
         </div>
         <div class="col-sm">
           <label for="choiceCourt">
-            Choice of court
+            Choice of court <i
+            class="pi pi-info-circle" (mouseenter)="choiceCourtHint.show($event)"
+            (mouseleave)="choiceCourtHint.hide()"></i>
           </label>
+          <p-overlayPanel #choiceCourtHint [dismissable]="false" appendTo="body">
+            <div style="width:500px;" class="overlay">
+              <div class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+                            margin-left:0cm'>
+                <div lang=EN-US>
+                  <p>Answer with “Yes” or “No” to the question if the parties to the case have agreed (in an explicit of
+                    tacit way) on the choice of court that would have had jurisdiction, but afterwards one of the
+                    parties has decided to sue the counterparty before a different court.
+                  </p>
+                  <strong>Note:</strong> For cases of the CJEU, choose the answer in accordance to Article 25 of the
+                  Brussels I bis Regulation.
+                </div>
+              </div>
+            </div>
+          </p-overlayPanel>
           <p-dropdown [options]="yesNoRule" id="choiceCourt" name="choiceCourt" [(ngModel)]="mod.choiceCourt"
                       placeholder="Select" optionLabel="label" [showClear]="true" [style]="{'width':'150px'}"
-                      required="true" #choiceCourt="ngModel"></p-dropdown>
+                      required="true" #choiceCourt="ngModel" [readonly]="!editable"></p-dropdown>
         </div>
         <div class="col-sm">
-          <label for="choiceLaw">Choice of law</label>
+          <label for="choiceLaw">Choice of law <i
+            class="pi pi-info-circle" (mouseenter)="choiceLawHint.show($event)"
+            (mouseleave)="choiceLawHint.hide()"></i></label>
+          <p-overlayPanel #choiceLawHint [dismissable]="false" appendTo="body">
+            <div style="width:500px;" class="overlay">
+              <p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+                            margin-left:0cm'>
+              <span lang=EN-US>
+                Answer with “Yes” or “No” to the question if the parties to the case have agreed on the applicable law irrespective of the fact whether this law was applied by the court that has rendered the decision. For answering positively, it is enough that the parties have chosen a substantive law applicable to their case.
+              </span>
+              </p>
+            </div>
+          </p-overlayPanel>
           <p-dropdown [options]="yesNoRule" id="choiceLaw" name="choiceLaw" [(ngModel)]="mod.choiceLaw"
                       placeholder="Select" optionLabel="label" [showClear]="true" [style]="{'width':'150px'}"
-                      required="true" #choiceCourt="ngModel"></p-dropdown>
+                      required="true" #choiceCourt="ngModel" [readonly]="!editable"></p-dropdown>
         </div>
       </div>
     </div>
@@ -755,8 +875,8 @@
         <i class="pi pi-info-circle" (mouseenter)="opEuroVoc.show($event)" (mouseleave)="opEuroVoc.hide()"></i>
         &nbsp;
         <button class="ui-button-rounded" type="button" pButton icon="pi pi-plus" (click)="showTreeFunc()"
-                label="Add EuroVoc term"></button>
-        <p-overlayPanel #opEuroVoc [dismissable]="false">
+                label="Add EuroVoc term" *ngIf="editable"></button>
+        <p-overlayPanel #opEuroVoc [dismissable]="false" appendTo="body">
           <div style="width:500px;" class="overlay">
             <p class=MsoNormal>
               <span lang=EN-US>
@@ -782,7 +902,7 @@
         </p-overlayPanel>
       </label>
       <p-chips [(ngModel)]="euroVocChips" id="eurovoc" name="eurovoc" (onRemove)="removeChip($event)"
-               [inputStyle]="{'visibility':'hidden'}"></p-chips>
+               [inputStyle]="{'visibility':'hidden'}" [disabled]="!editable"></p-chips>
 
     </div>
     <div class="form-group">
@@ -790,7 +910,7 @@
         EU legislation
         <i class="pi pi-info-circle" (mouseenter)="opEuLegislation.show($event)"
            (mouseleave)="opEuLegislation.hide()"></i>
-        <p-overlayPanel #opEuLegislation [dismissable]="false">
+        <p-overlayPanel #opEuLegislation [dismissable]="false" appendTo="body">
           <div style="width:500px;" class="overlay">
             <p class=MsoNormal>
               <span lang=EN-US>
@@ -845,7 +965,7 @@
           </div>
         </p-overlayPanel>
         &nbsp;<button type="button" class="ui-button-rounded" pButton icon="pi pi-plus" (click)="addEulawLink()"
-                      iconPos="left" label="Add citation"></button>
+                      iconPos="left" label="Add citation" *ngIf="editable"></button>
       </label>
 
       <p-overlayPanel #opEuLinkHint [dismissable]="false">
@@ -865,10 +985,10 @@
           </td>
           <td>
             &nbsp;
-            <button type="button" pButton class="ui-button-rounded ui-button-primary" type="button" icon="pi pi-bars"
-                    (click)="editEuLink(euLinkItem, i)" title="Edit citation"></button>
+            <button type="button" pButton class="ui-button-rounded ui-button-primary" icon="pi pi-bars"
+                    (click)="editEuLink(euLinkItem, i)" title="Edit citation" *ngIf="editable"></button>
             &nbsp;<button pButton class="ui-button-rounded ui-button-danger" type="button" icon="pi pi-times"
-                          (click)="removeEuLink(euLinkItem)" title="Remove citation"></button>
+                          (click)="removeEuLink(euLinkItem)" title="Remove citation" *ngIf="editable"></button>
           </td>
         </tr>
       </table>
@@ -931,7 +1051,7 @@
         </p-overlayPanel>
         &nbsp;
         <button type="button" class="ui-button-rounded" pButton icon="pi pi-plus" (click)="addEucaseLink()"
-                iconPos="left" label="Add citation"></button>
+                iconPos="left" label="Add citation" *ngIf="editable"></button>
       </label>
       <table>
         <tr *ngFor="let euLinkItem of mod.euCaselaw; index as i" class="t-eu-link">
@@ -942,10 +1062,11 @@
             {{euLinkItem | eucasePart}}{{euLinkItem | eucasePreliminaryRuling}}
           </td>
           <td>
-            &nbsp;<button pButton class="ui-button-rounded" type="button" icon="pi pi-bars"
+            &nbsp;<button pButton class="ui-button-rounded" type="button" icon="pi pi-bars" *ngIf="editable"
                           (click)="editEucaseLink(euLinkItem, i)"
                           title="Edit citation"></button>
             &nbsp;<button pButton class="ui-button-rounded ui-button-danger" type="button" icon="pi pi-times"
+                          *ngIf="editable"
                           (click)="removeEucaseLink(euLinkItem)" title="Remove citation"></button>
           </td>
         </tr>
@@ -955,7 +1076,7 @@
       <label>
         National legislation
         <button type="button" class="ui-button-rounded" pButton icon="pi pi-plus"
-                (click)="addNationalLaw(lawTitle, lawLink)"
+                (click)="addNationalLaw(lawTitle, lawLink)" *ngIf="editable"
                 iconPos="left" label="Add citation"></button>
       </label>
       <table>
@@ -966,9 +1087,9 @@
           <td>
             &nbsp;<button pButton class="ui-button-rounded" type="button" icon="pi pi-bars"
                           (click)="editNatLawRecord(lawTitle, lawLink, i)"
-                          title="Edit citation"></button>
+                          title="Edit citation" *ngIf="editable"></button>
             &nbsp;<button pButton class="ui-button-rounded ui-button-danger" type="button" icon="pi pi-times"
-                          (click)="removeNationalLawRecord(nat)" title="Remove record"></button>
+                          (click)="removeNationalLawRecord(nat)" title="Remove record" *ngIf="editable"></button>
           </td>
         </tr>
       </table>
@@ -978,7 +1099,7 @@
         National case law – link to the follow-up decision of the national court
         <button type="button" class="ui-button-rounded" pButton icon="pi pi-plus"
                 (click)="addNationalCaseLaw(caseLawTitle, caseLawLink, caseLawIdent)"
-                iconPos="left" label="Add citation"></button>
+                iconPos="left" label="Add citation" *ngIf="editable"></button>
       </label>
       <table>
         <tr *ngFor="let nat of mod.nationalCaseLawRecords; index as i" class="t-eu-link">
@@ -988,9 +1109,9 @@
           <td>
             &nbsp;<button pButton class="ui-button-rounded" type="button" icon="pi pi-bars"
                           (click)="editNatCaseLawRecord(caseLawTitle, caseLawLink, caseLawIdent, i)"
-                          title="Edit citation"></button>
+                          title="Edit citation" *ngIf="editable"></button>
             &nbsp;<button pButton class="ui-button-rounded ui-button-danger" type="button" icon="pi pi-times"
-                          (click)="removeNationalCaseLawRecord(nat)" title="Remove record"></button>
+                          (click)="removeNationalCaseLawRecord(nat)" title="Remove record" *ngIf="editable"></button>
           </td>
         </tr>
       </table>
@@ -1069,7 +1190,7 @@
 
       </label>
       <textarea pInputTextArea class="form-control" id="internationalLaw" name="internationalLaw"
-                [(ngModel)]="mod.internationalLaw"
+                [(ngModel)]="mod.internationalLaw" [readOnly]="!editable"
                 required></textarea>
     </div>
     <div class="form-group">
@@ -1118,7 +1239,7 @@
         </p-overlayPanel>
       </label>
       <textarea pInputTextArea class="form-control" id="internationalCaseLaw" name="internationalCaseLaw"
-                [(ngModel)]="mod.internationalCaseLaw" required></textarea>
+                [(ngModel)]="mod.internationalCaseLaw" required [readOnly]="!editable"></textarea>
     </div>
     <div class="form-group">
       <label for="source">
@@ -1186,7 +1307,8 @@
       <!--<input type="text" pInputText class="form-control" id="source" name="source" [(ngModel)]="mod.source"-->
       <!--required>-->
       <p-autoComplete id="source" name="source" [(ngModel)]="mod.source" [suggestions]="sourceSuggestionsFiltered"
-                      [size]="50" [minLength]="1" [dropdown]="true" (completeMethod)="filterSources($event)" required>
+                      [size]="50" [minLength]="1" [dropdown]="true" (completeMethod)="filterSources($event)" required
+                      [disabled]="!editable">
         <ng-template let-source pTemplate="item">
           <div class="ui-helper-clearfix">
             {{source}}
@@ -1214,23 +1336,24 @@
       </label>
       <div class="ui-inputgroup">
         <input type="text" pInputText class="form-control" id="sourceUrl" name="sourceUrl" [(ngModel)]="mod.sourceUrl"
-               required autocomplete="off">
+               required autocomplete="off" [readOnly]="!editable">
         <button pButton type="button" (click)="previewUrl()" label="Open"></button>
       </div>
     </div>
     <div class="form-group">
       <label for="text">{{mod.jurisdiction?.code === 'EU' ? 'Decision of the court' : 'Text'}}</label>
-      <p-editor [style]="{'height':'320px'}" id="text" name="text" required [(ngModel)]="mod.text"></p-editor>
+      <p-editor [style]="{'height':'320px'}" id="text" name="text" required [(ngModel)]="mod.text"
+                [readonly]="!editable"></p-editor>
     </div>
 
-    <div class="form-group" style="border-top: 1px solid gray;">
+    <div class="form-group" style="border-top: 1px solid gray;" *ngIf="editable">
       <p></p>
       <span style="padding:10px 20px 0px 0px;">
-        <p-button type="button" icon="pi pi-save" label="Save" type="submit"
+        <p-button type="button" icon="pi pi-save" label="Save"
                   (click)="submitForm(false)"></p-button>
       </span>
       <span style="padding:10px 20px 0px 100px;">
-        <p-button type="button" icon="pi pi-check" label="Save and close" type="submit"
+        <p-button type="button" icon="pi pi-check" label="Save and close"
                   (click)="submitForm(true)"></p-button>
       </span>
     </div>

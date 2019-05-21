@@ -28,9 +28,14 @@ export class NavigationComponent implements OnInit, OnDestroy {
       //   routerLink: ['caseeditor']
       // },
       {
-        label: 'Case list',
+        label: 'Case Law',
         icon: 'pi pi-fw pi-file ',
         routerLink: ['caselist']
+      },
+      {
+        label: 'Legislation',
+        icon: 'pi pi-fw pi-file ',
+        routerLink: ['metalist']
       },
       // {
       //   label: 'Home',

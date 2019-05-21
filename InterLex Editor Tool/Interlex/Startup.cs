@@ -97,6 +97,7 @@ namespace Interlex
             services.AddScoped<CaseService>();
             services.AddScoped<OrganizationService>();
             services.AddScoped<Repository>();
+            services.AddSingleton<AknConvertService>();
             services.AddSingleton(implementationFactory: _ => new ReferenceEditorRepository(this.Configuration.GetCrawlerStorageConnection()));
         }
 

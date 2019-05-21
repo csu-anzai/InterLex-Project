@@ -10,6 +10,8 @@ namespace Interlex.Models.ResponseModels
         public string UserName { get; set; }
         public string Title { get; set; }
         public DateTime LastChange { get; set; }
+
+        public bool Editable { get; set; }
         public string Organization { get; set; }
         public DateTime? DocDate { get; set; }
     }

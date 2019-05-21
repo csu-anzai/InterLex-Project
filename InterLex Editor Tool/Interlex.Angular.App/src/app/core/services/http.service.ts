@@ -21,4 +21,12 @@ export class HttpService {
     const options = {headers};
     return this.http.post(Constants.API_BASE + url, body, options);
   }
+
+  getFile(url: string) {
+    return this.http.get(Constants.API_BASE + url, {responseType: 'blob' as 'json', observe: "response"});
+  }
+
+  getText(url: string): Observable<string> {
+    return this.http.get(Constants.API_BASE + url, {responseType: "text"});
+  }
 }
