@@ -1,0 +1,1058 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler
+  commentId: T:Interlex.Crawler.Crawlers.BaseHttpCrawler
+  id: BaseHttpCrawler
+  parent: Interlex.Crawler.Crawlers
+  children:
+  - Interlex.Crawler.Crawlers.BaseHttpCrawler.#ctor(Interlex.Crawler.Common.Http,System.Collections.Generic.IReadOnlyCollection{System.String},ILog)
+  - Interlex.Crawler.Crawlers.BaseHttpCrawler.#ctor(Interlex.Crawler.Common.Http,System.String,ILog)
+  - Interlex.Crawler.Crawlers.BaseHttpCrawler.CreatePackageDocumentName(HtmlNode,Interlex.Crawler.Model.HttpModel)
+  - Interlex.Crawler.Crawlers.BaseHttpCrawler.CreatePackageName(HtmlNode,Interlex.Crawler.Model.HttpModel)
+  - Interlex.Crawler.Crawlers.BaseHttpCrawler.GenerateAdditionalUrls(HtmlNode,Interlex.Crawler.Model.HttpModel)
+  - Interlex.Crawler.Crawlers.BaseHttpCrawler.GetTwoLetterLanguage(Interlex.Crawler.Model.HttpModel,HtmlNode)
+  - Interlex.Crawler.Crawlers.BaseHttpCrawler.IsNotFound(Interlex.Crawler.Model.HttpModel)
+  - Interlex.Crawler.Crawlers.BaseHttpCrawler.IsPackage(HtmlNode)
+  - Interlex.Crawler.Crawlers.BaseHttpCrawler.IsPackageDocument(HtmlNode)
+  - Interlex.Crawler.Crawlers.BaseHttpCrawler.Logger
+  - Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldExamine(HtmlNode)
+  - Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldIncludePackgeAsDocument(HtmlNode)
+  - Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldIncludeParentPageAsDocument(HtmlNode,HtmlNode)
+  langs:
+  - csharp
+  - vb
+  name: BaseHttpCrawler
+  nameWithType: BaseHttpCrawler
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler
+  type: Class
+  source:
+    id: BaseHttpCrawler
+    path: ''
+    startLine: 1557
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers
+  summary: "\nRepresents base crawler used in conjution with the <xref href=\"Interlex.Crawler.Manager.HttpCrawlerManager\" data-throw-if-not-resolved=\"false\"></xref>.\nSuitable for more generic crawling where the structure of the <xref href=\"Interlex.Crawler.Model.DocumentGroupModel\" data-throw-if-not-resolved=\"false\"></xref> is constructed from single document.\nThe resposabilities of the crawler is to determ if given url is packge or document for the packge.\n"
+  example: []
+  syntax:
+    content: public abstract class BaseHttpCrawler
+    content.vb: Public MustInherit Class BaseHttpCrawler
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Interlex.Crawler.Crawlers.AT.RisBka
+  - Interlex.Crawler.Crawlers.Eurlex.Eurlex
+  - Interlex.Crawler.Crawlers.UK.UKSupremeCourt
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.Logger
+  commentId: F:Interlex.Crawler.Crawlers.BaseHttpCrawler.Logger
+  id: Logger
+  parent: Interlex.Crawler.Crawlers.BaseHttpCrawler
+  langs:
+  - csharp
+  - vb
+  name: Logger
+  nameWithType: BaseHttpCrawler.Logger
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.Logger
+  type: Field
+  source:
+    id: Logger
+    path: ''
+    startLine: 1561
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers
+  syntax:
+    content: protected readonly ILog Logger
+    return:
+      type: ILog
+    content.vb: Protected ReadOnly Logger As ILog
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.#ctor(Interlex.Crawler.Common.Http,System.String,ILog)
+  commentId: M:Interlex.Crawler.Crawlers.BaseHttpCrawler.#ctor(Interlex.Crawler.Common.Http,System.String,ILog)
+  id: '#ctor(Interlex.Crawler.Common.Http,System.String,ILog)'
+  parent: Interlex.Crawler.Crawlers.BaseHttpCrawler
+  langs:
+  - csharp
+  - vb
+  name: BaseHttpCrawler(Http, String, ILog)
+  nameWithType: BaseHttpCrawler.BaseHttpCrawler(Http, String, ILog)
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.BaseHttpCrawler(Interlex.Crawler.Common.Http, System.String, ILog)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1569
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers
+  summary: "\nCreates new intance of the crawler\n"
+  example: []
+  syntax:
+    content: public BaseHttpCrawler(Http http, string initialPageUrl, ILog logger)
+    parameters:
+    - id: http
+      type: Interlex.Crawler.Common.Http
+      description: Http requester
+    - id: initialPageUrl
+      type: System.String
+      description: Url to start the crawling from
+    - id: logger
+      type: ILog
+      description: Logger
+    content.vb: Public Sub New(http As Http, initialPageUrl As String, logger As ILog)
+  overload: Interlex.Crawler.Crawlers.BaseHttpCrawler.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.#ctor(Interlex.Crawler.Common.Http,System.Collections.Generic.IReadOnlyCollection{System.String},ILog)
+  commentId: M:Interlex.Crawler.Crawlers.BaseHttpCrawler.#ctor(Interlex.Crawler.Common.Http,System.Collections.Generic.IReadOnlyCollection{System.String},ILog)
+  id: '#ctor(Interlex.Crawler.Common.Http,System.Collections.Generic.IReadOnlyCollection{System.String},ILog)'
+  parent: Interlex.Crawler.Crawlers.BaseHttpCrawler
+  langs:
+  - csharp
+  - vb
+  name: BaseHttpCrawler(Http, IReadOnlyCollection<String>, ILog)
+  nameWithType: BaseHttpCrawler.BaseHttpCrawler(Http, IReadOnlyCollection<String>, ILog)
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.BaseHttpCrawler(Interlex.Crawler.Common.Http, System.Collections.Generic.IReadOnlyCollection<System.String>, ILog)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1579
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers
+  summary: "\nCreates new instance of the crawler\n"
+  example: []
+  syntax:
+    content: public BaseHttpCrawler(Http http, IReadOnlyCollection<string> initialPageUrls, ILog logger)
+    parameters:
+    - id: http
+      type: Interlex.Crawler.Common.Http
+      description: Http requester
+    - id: initialPageUrls
+      type: System.Collections.Generic.IReadOnlyCollection{System.String}
+      description: Urls to start the crawling from
+    - id: logger
+      type: ILog
+      description: Logger
+    content.vb: Public Sub New(http As Http, initialPageUrls As IReadOnlyCollection(Of String), logger As ILog)
+  overload: Interlex.Crawler.Crawlers.BaseHttpCrawler.#ctor*
+  nameWithType.vb: BaseHttpCrawler.BaseHttpCrawler(Http, IReadOnlyCollection(Of String), ILog)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Interlex.Crawler.Crawlers.BaseHttpCrawler.BaseHttpCrawler(Interlex.Crawler.Common.Http, System.Collections.Generic.IReadOnlyCollection(Of System.String), ILog)
+  name.vb: BaseHttpCrawler(Http, IReadOnlyCollection(Of String), ILog)
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.IsNotFound(Interlex.Crawler.Model.HttpModel)
+  commentId: M:Interlex.Crawler.Crawlers.BaseHttpCrawler.IsNotFound(Interlex.Crawler.Model.HttpModel)
+  id: IsNotFound(Interlex.Crawler.Model.HttpModel)
+  parent: Interlex.Crawler.Crawlers.BaseHttpCrawler
+  langs:
+  - csharp
+  - vb
+  name: IsNotFound(HttpModel)
+  nameWithType: BaseHttpCrawler.IsNotFound(HttpModel)
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.IsNotFound(Interlex.Crawler.Model.HttpModel)
+  type: Method
+  source:
+    id: IsNotFound
+    path: ''
+    startLine: 1591
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers
+  summary: "\nDeterms if the given http response is not found (404)\n"
+  example: []
+  syntax:
+    content: public abstract bool IsNotFound(HttpModel httpGet)
+    parameters:
+    - id: httpGet
+      type: Interlex.Crawler.Model.HttpModel
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public MustOverride Function IsNotFound(httpGet As HttpModel) As Boolean
+  overload: Interlex.Crawler.Crawlers.BaseHttpCrawler.IsNotFound*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.IsPackage(HtmlNode)
+  commentId: M:Interlex.Crawler.Crawlers.BaseHttpCrawler.IsPackage(HtmlNode)
+  id: IsPackage(HtmlNode)
+  parent: Interlex.Crawler.Crawlers.BaseHttpCrawler
+  langs:
+  - csharp
+  - vb
+  name: IsPackage(HtmlNode)
+  nameWithType: BaseHttpCrawler.IsPackage(HtmlNode)
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.IsPackage(HtmlNode)
+  type: Method
+  source:
+    id: IsPackage
+    path: ''
+    startLine: 1598
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers
+  summary: "\nDeterms if given anchor is package\n"
+  example: []
+  syntax:
+    content: public abstract bool IsPackage(HtmlNode anchor)
+    parameters:
+    - id: anchor
+      type: HtmlNode
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public MustOverride Function IsPackage(anchor As HtmlNode) As Boolean
+  overload: Interlex.Crawler.Crawlers.BaseHttpCrawler.IsPackage*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.IsPackageDocument(HtmlNode)
+  commentId: M:Interlex.Crawler.Crawlers.BaseHttpCrawler.IsPackageDocument(HtmlNode)
+  id: IsPackageDocument(HtmlNode)
+  parent: Interlex.Crawler.Crawlers.BaseHttpCrawler
+  langs:
+  - csharp
+  - vb
+  name: IsPackageDocument(HtmlNode)
+  nameWithType: BaseHttpCrawler.IsPackageDocument(HtmlNode)
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.IsPackageDocument(HtmlNode)
+  type: Method
+  source:
+    id: IsPackageDocument
+    path: ''
+    startLine: 1605
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers
+  summary: "\nDeterms if the anchor is document package\n"
+  example: []
+  syntax:
+    content: public abstract bool IsPackageDocument(HtmlNode anchor)
+    parameters:
+    - id: anchor
+      type: HtmlNode
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public MustOverride Function IsPackageDocument(anchor As HtmlNode) As Boolean
+  overload: Interlex.Crawler.Crawlers.BaseHttpCrawler.IsPackageDocument*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldExamine(HtmlNode)
+  commentId: M:Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldExamine(HtmlNode)
+  id: ShouldExamine(HtmlNode)
+  parent: Interlex.Crawler.Crawlers.BaseHttpCrawler
+  langs:
+  - csharp
+  - vb
+  name: ShouldExamine(HtmlNode)
+  nameWithType: BaseHttpCrawler.ShouldExamine(HtmlNode)
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldExamine(HtmlNode)
+  type: Method
+  source:
+    id: ShouldExamine
+    path: ''
+    startLine: 1613
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers
+  summary: "\nDeterms if the given url should be crawled and furtuer examined for packages and document packages.\nExample: the next page anchor of result search in given website is appropraite to be examined for additional packages and document packages\n"
+  example: []
+  syntax:
+    content: public abstract bool ShouldExamine(HtmlNode anchor)
+    parameters:
+    - id: anchor
+      type: HtmlNode
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public MustOverride Function ShouldExamine(anchor As HtmlNode) As Boolean
+  overload: Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldExamine*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.CreatePackageName(HtmlNode,Interlex.Crawler.Model.HttpModel)
+  commentId: M:Interlex.Crawler.Crawlers.BaseHttpCrawler.CreatePackageName(HtmlNode,Interlex.Crawler.Model.HttpModel)
+  id: CreatePackageName(HtmlNode,Interlex.Crawler.Model.HttpModel)
+  parent: Interlex.Crawler.Crawlers.BaseHttpCrawler
+  langs:
+  - csharp
+  - vb
+  name: CreatePackageName(HtmlNode, HttpModel)
+  nameWithType: BaseHttpCrawler.CreatePackageName(HtmlNode, HttpModel)
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.CreatePackageName(HtmlNode, Interlex.Crawler.Model.HttpModel)
+  type: Method
+  source:
+    id: CreatePackageName
+    path: ''
+    startLine: 1623
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers
+  summary: "\nCreate unique name for the package.\nThe name of the package is the identity used for representing specific package in the database.\nChecking in the database if the package is new or it should update already persisted package in the database is determed by the name of the package.\n"
+  example: []
+  syntax:
+    content: public abstract NameModel CreatePackageName(HtmlNode anchor, HttpModel httpGet)
+    parameters:
+    - id: anchor
+      type: HtmlNode
+      description: Anchor of the package
+    - id: httpGet
+      type: Interlex.Crawler.Model.HttpModel
+      description: Http reponse of the download webpage from the href of the <code data-dev-comment-type="paramref" class="paramref">anchor</code>
+    return:
+      type: Interlex.Crawler.Model.NameModel
+      description: ''
+    content.vb: Public MustOverride Function CreatePackageName(anchor As HtmlNode, httpGet As HttpModel) As NameModel
+  overload: Interlex.Crawler.Crawlers.BaseHttpCrawler.CreatePackageName*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.CreatePackageDocumentName(HtmlNode,Interlex.Crawler.Model.HttpModel)
+  commentId: M:Interlex.Crawler.Crawlers.BaseHttpCrawler.CreatePackageDocumentName(HtmlNode,Interlex.Crawler.Model.HttpModel)
+  id: CreatePackageDocumentName(HtmlNode,Interlex.Crawler.Model.HttpModel)
+  parent: Interlex.Crawler.Crawlers.BaseHttpCrawler
+  langs:
+  - csharp
+  - vb
+  name: CreatePackageDocumentName(HtmlNode, HttpModel)
+  nameWithType: BaseHttpCrawler.CreatePackageDocumentName(HtmlNode, HttpModel)
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.CreatePackageDocumentName(HtmlNode, Interlex.Crawler.Model.HttpModel)
+  type: Method
+  source:
+    id: CreatePackageDocumentName
+    path: ''
+    startLine: 1632
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers
+  summary: "\nCreate unique name for the document in given package.\nThe name of the document should unique in the context of the package.\n"
+  example: []
+  syntax:
+    content: public abstract NameModel CreatePackageDocumentName(HtmlNode anchor, HttpModel httpGet)
+    parameters:
+    - id: anchor
+      type: HtmlNode
+      description: Anchor of the document package
+    - id: httpGet
+      type: Interlex.Crawler.Model.HttpModel
+      description: Http reponse of the download webpage from the href of the <code data-dev-comment-type="paramref" class="paramref">anchor</code>
+    return:
+      type: Interlex.Crawler.Model.NameModel
+      description: ''
+    content.vb: Public MustOverride Function CreatePackageDocumentName(anchor As HtmlNode, httpGet As HttpModel) As NameModel
+  overload: Interlex.Crawler.Crawlers.BaseHttpCrawler.CreatePackageDocumentName*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.GetTwoLetterLanguage(Interlex.Crawler.Model.HttpModel,HtmlNode)
+  commentId: M:Interlex.Crawler.Crawlers.BaseHttpCrawler.GetTwoLetterLanguage(Interlex.Crawler.Model.HttpModel,HtmlNode)
+  id: GetTwoLetterLanguage(Interlex.Crawler.Model.HttpModel,HtmlNode)
+  parent: Interlex.Crawler.Crawlers.BaseHttpCrawler
+  langs:
+  - csharp
+  - vb
+  name: GetTwoLetterLanguage(HttpModel, HtmlNode)
+  nameWithType: BaseHttpCrawler.GetTwoLetterLanguage(HttpModel, HtmlNode)
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.GetTwoLetterLanguage(Interlex.Crawler.Model.HttpModel, HtmlNode)
+  type: Method
+  source:
+    id: GetTwoLetterLanguage
+    path: ''
+    startLine: 1640
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers
+  summary: "\nCreates two letter language for the specific package anchor\n"
+  example: []
+  syntax:
+    content: public abstract string GetTwoLetterLanguage(HttpModel packageHttpGet, HtmlNode packageAnchor)
+    parameters:
+    - id: packageHttpGet
+      type: Interlex.Crawler.Model.HttpModel
+      description: Http response for specific package
+    - id: packageAnchor
+      type: HtmlNode
+      description: Anchor for specific package
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public MustOverride Function GetTwoLetterLanguage(packageHttpGet As HttpModel, packageAnchor As HtmlNode) As String
+  overload: Interlex.Crawler.Crawlers.BaseHttpCrawler.GetTwoLetterLanguage*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldIncludeParentPageAsDocument(HtmlNode,HtmlNode)
+  commentId: M:Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldIncludeParentPageAsDocument(HtmlNode,HtmlNode)
+  id: ShouldIncludeParentPageAsDocument(HtmlNode,HtmlNode)
+  parent: Interlex.Crawler.Crawlers.BaseHttpCrawler
+  langs:
+  - csharp
+  - vb
+  name: ShouldIncludeParentPageAsDocument(HtmlNode, HtmlNode)
+  nameWithType: BaseHttpCrawler.ShouldIncludeParentPageAsDocument(HtmlNode, HtmlNode)
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldIncludeParentPageAsDocument(HtmlNode, HtmlNode)
+  type: Method
+  source:
+    id: ShouldIncludeParentPageAsDocument
+    path: ''
+    startLine: 1648
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers
+  summary: "\nDeterms if the parent page of the anchor should included as package document for the specific package. Default is false.\n"
+  example: []
+  syntax:
+    content: public virtual bool ShouldIncludeParentPageAsDocument(HtmlNode parentPageAnchor, HtmlNode currentAnchor)
+    parameters:
+    - id: parentPageAnchor
+      type: HtmlNode
+      description: Anchor for the parent page
+    - id: currentAnchor
+      type: HtmlNode
+      description: Anchor for the current package
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Overridable Function ShouldIncludeParentPageAsDocument(parentPageAnchor As HtmlNode, currentAnchor As HtmlNode) As Boolean
+  overload: Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldIncludeParentPageAsDocument*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldIncludePackgeAsDocument(HtmlNode)
+  commentId: M:Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldIncludePackgeAsDocument(HtmlNode)
+  id: ShouldIncludePackgeAsDocument(HtmlNode)
+  parent: Interlex.Crawler.Crawlers.BaseHttpCrawler
+  langs:
+  - csharp
+  - vb
+  name: ShouldIncludePackgeAsDocument(HtmlNode)
+  nameWithType: BaseHttpCrawler.ShouldIncludePackgeAsDocument(HtmlNode)
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldIncludePackgeAsDocument(HtmlNode)
+  type: Method
+  source:
+    id: ShouldIncludePackgeAsDocument
+    path: ''
+    startLine: 1658
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers
+  summary: "\nDeterms if the package content should be included as package document. Default is true.\n"
+  example: []
+  syntax:
+    content: public virtual bool ShouldIncludePackgeAsDocument(HtmlNode packageAnchor)
+    parameters:
+    - id: packageAnchor
+      type: HtmlNode
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Overridable Function ShouldIncludePackgeAsDocument(packageAnchor As HtmlNode) As Boolean
+  overload: Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldIncludePackgeAsDocument*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.GenerateAdditionalUrls(HtmlNode,Interlex.Crawler.Model.HttpModel)
+  commentId: M:Interlex.Crawler.Crawlers.BaseHttpCrawler.GenerateAdditionalUrls(HtmlNode,Interlex.Crawler.Model.HttpModel)
+  id: GenerateAdditionalUrls(HtmlNode,Interlex.Crawler.Model.HttpModel)
+  parent: Interlex.Crawler.Crawlers.BaseHttpCrawler
+  langs:
+  - csharp
+  - vb
+  name: GenerateAdditionalUrls(HtmlNode, HttpModel)
+  nameWithType: BaseHttpCrawler.GenerateAdditionalUrls(HtmlNode, HttpModel)
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.GenerateAdditionalUrls(HtmlNode, Interlex.Crawler.Model.HttpModel)
+  type: Method
+  source:
+    id: GenerateAdditionalUrls
+    path: ''
+    startLine: 1669
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers
+  summary: "\nReturns additional urls to be processed\n"
+  example: []
+  syntax:
+    content: public virtual IReadOnlyCollection<string> GenerateAdditionalUrls(HtmlNode anchor, HttpModel httpModel)
+    parameters:
+    - id: anchor
+      type: HtmlNode
+      description: Anchor
+    - id: httpModel
+      type: Interlex.Crawler.Model.HttpModel
+      description: Http response of the <code data-dev-comment-type="paramref" class="paramref">anchor</code>
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{System.String}
+      description: ''
+    content.vb: Public Overridable Function GenerateAdditionalUrls(anchor As HtmlNode, httpModel As HttpModel) As IReadOnlyCollection(Of String)
+  overload: Interlex.Crawler.Crawlers.BaseHttpCrawler.GenerateAdditionalUrls*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: Interlex.Crawler.Manager.HttpCrawlerManager
+  commentId: T:Interlex.Crawler.Manager.HttpCrawlerManager
+  name: HttpCrawlerManager
+  nameWithType: HttpCrawlerManager
+  fullName: Interlex.Crawler.Manager.HttpCrawlerManager
+- uid: Interlex.Crawler.Model.DocumentGroupModel
+  commentId: T:Interlex.Crawler.Model.DocumentGroupModel
+  name: DocumentGroupModel
+  nameWithType: DocumentGroupModel
+  fullName: Interlex.Crawler.Model.DocumentGroupModel
+- uid: Interlex.Crawler.Crawlers
+  commentId: N:Interlex.Crawler.Crawlers
+  name: Interlex.Crawler.Crawlers
+  nameWithType: Interlex.Crawler.Crawlers
+  fullName: Interlex.Crawler.Crawlers
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ILog
+  isExternal: true
+  name: ILog
+  nameWithType: ILog
+  fullName: ILog
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.#ctor*
+  commentId: Overload:Interlex.Crawler.Crawlers.BaseHttpCrawler.#ctor
+  name: BaseHttpCrawler
+  nameWithType: BaseHttpCrawler.BaseHttpCrawler
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.BaseHttpCrawler
+- uid: Interlex.Crawler.Common.Http
+  commentId: T:Interlex.Crawler.Common.Http
+  parent: Interlex.Crawler.Common
+  name: Http
+  nameWithType: Http
+  fullName: Interlex.Crawler.Common.Http
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Interlex.Crawler.Common
+  commentId: N:Interlex.Crawler.Common
+  name: Interlex.Crawler.Common
+  nameWithType: Interlex.Crawler.Common
+  fullName: Interlex.Crawler.Common
+- uid: System.Collections.Generic.IReadOnlyCollection{System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  name: IReadOnlyCollection<String>
+  nameWithType: IReadOnlyCollection<String>
+  fullName: System.Collections.Generic.IReadOnlyCollection<System.String>
+  nameWithType.vb: IReadOnlyCollection(Of String)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of System.String)
+  name.vb: IReadOnlyCollection(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.IsNotFound*
+  commentId: Overload:Interlex.Crawler.Crawlers.BaseHttpCrawler.IsNotFound
+  name: IsNotFound
+  nameWithType: BaseHttpCrawler.IsNotFound
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.IsNotFound
+- uid: Interlex.Crawler.Model.HttpModel
+  commentId: T:Interlex.Crawler.Model.HttpModel
+  parent: Interlex.Crawler.Model
+  name: HttpModel
+  nameWithType: HttpModel
+  fullName: Interlex.Crawler.Model.HttpModel
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Interlex.Crawler.Model
+  commentId: N:Interlex.Crawler.Model
+  name: Interlex.Crawler.Model
+  nameWithType: Interlex.Crawler.Model
+  fullName: Interlex.Crawler.Model
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.IsPackage*
+  commentId: Overload:Interlex.Crawler.Crawlers.BaseHttpCrawler.IsPackage
+  name: IsPackage
+  nameWithType: BaseHttpCrawler.IsPackage
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.IsPackage
+- uid: HtmlNode
+  isExternal: true
+  name: HtmlNode
+  nameWithType: HtmlNode
+  fullName: HtmlNode
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.IsPackageDocument*
+  commentId: Overload:Interlex.Crawler.Crawlers.BaseHttpCrawler.IsPackageDocument
+  name: IsPackageDocument
+  nameWithType: BaseHttpCrawler.IsPackageDocument
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.IsPackageDocument
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldExamine*
+  commentId: Overload:Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldExamine
+  name: ShouldExamine
+  nameWithType: BaseHttpCrawler.ShouldExamine
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldExamine
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.CreatePackageName*
+  commentId: Overload:Interlex.Crawler.Crawlers.BaseHttpCrawler.CreatePackageName
+  name: CreatePackageName
+  nameWithType: BaseHttpCrawler.CreatePackageName
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.CreatePackageName
+- uid: Interlex.Crawler.Model.NameModel
+  commentId: T:Interlex.Crawler.Model.NameModel
+  parent: Interlex.Crawler.Model
+  name: NameModel
+  nameWithType: NameModel
+  fullName: Interlex.Crawler.Model.NameModel
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.CreatePackageDocumentName*
+  commentId: Overload:Interlex.Crawler.Crawlers.BaseHttpCrawler.CreatePackageDocumentName
+  name: CreatePackageDocumentName
+  nameWithType: BaseHttpCrawler.CreatePackageDocumentName
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.CreatePackageDocumentName
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.GetTwoLetterLanguage*
+  commentId: Overload:Interlex.Crawler.Crawlers.BaseHttpCrawler.GetTwoLetterLanguage
+  name: GetTwoLetterLanguage
+  nameWithType: BaseHttpCrawler.GetTwoLetterLanguage
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.GetTwoLetterLanguage
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldIncludeParentPageAsDocument*
+  commentId: Overload:Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldIncludeParentPageAsDocument
+  name: ShouldIncludeParentPageAsDocument
+  nameWithType: BaseHttpCrawler.ShouldIncludeParentPageAsDocument
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldIncludeParentPageAsDocument
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldIncludePackgeAsDocument*
+  commentId: Overload:Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldIncludePackgeAsDocument
+  name: ShouldIncludePackgeAsDocument
+  nameWithType: BaseHttpCrawler.ShouldIncludePackgeAsDocument
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldIncludePackgeAsDocument
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler.GenerateAdditionalUrls*
+  commentId: Overload:Interlex.Crawler.Crawlers.BaseHttpCrawler.GenerateAdditionalUrls
+  name: GenerateAdditionalUrls
+  nameWithType: BaseHttpCrawler.GenerateAdditionalUrls
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler.GenerateAdditionalUrls

@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Crawlers.UK
+  commentId: N:Interlex.Crawler.Crawlers.UK
+  id: Interlex.Crawler.Crawlers.UK
+  children:
+  - Interlex.Crawler.Crawlers.UK.UKSupremeCourt
+  langs:
+  - csharp
+  - vb
+  name: Interlex.Crawler.Crawlers.UK
+  nameWithType: Interlex.Crawler.Crawlers.UK
+  fullName: Interlex.Crawler.Crawlers.UK
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Interlex.Crawler.Crawlers.UK.UKSupremeCourt
+  commentId: T:Interlex.Crawler.Crawlers.UK.UKSupremeCourt
+  name: UKSupremeCourt
+  nameWithType: UKSupremeCourt
+  fullName: Interlex.Crawler.Crawlers.UK.UKSupremeCourt

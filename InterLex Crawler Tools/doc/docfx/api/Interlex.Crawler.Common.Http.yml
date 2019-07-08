@@ -1,0 +1,946 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Common.Http
+  commentId: T:Interlex.Crawler.Common.Http
+  id: Http
+  parent: Interlex.Crawler.Common
+  children:
+  - Interlex.Crawler.Common.Http.#ctor
+  - Interlex.Crawler.Common.Http.#ctor(System.Int32,System.Boolean,System.Boolean,System.TimeSpan)
+  - Interlex.Crawler.Common.Http.GetAsync(System.String)
+  - Interlex.Crawler.Common.Http.GetAsync(System.String,System.Action{Interlex.Crawler.Common.HttpRequestBuilder})
+  - Interlex.Crawler.Common.Http.GetAsync(Uri)
+  - Interlex.Crawler.Common.Http.NotFoundPredicate
+  - Interlex.Crawler.Common.Http.PostAsync(System.String,System.String)
+  - Interlex.Crawler.Common.Http.PostAsync(System.String,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: Http
+  nameWithType: Http
+  fullName: Interlex.Crawler.Common.Http
+  type: Class
+  source:
+    id: Http
+    path: ''
+    startLine: 580
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nRepresents http based requester\n"
+  example: []
+  syntax:
+    content: public class Http
+    content.vb: Public Class Http
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Interlex.Crawler.Common.Http.#ctor
+  commentId: M:Interlex.Crawler.Common.Http.#ctor
+  id: '#ctor'
+  parent: Interlex.Crawler.Common.Http
+  langs:
+  - csharp
+  - vb
+  name: Http()
+  nameWithType: Http.Http()
+  fullName: Interlex.Crawler.Common.Http.Http()
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 595
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  syntax:
+    content: public Http()
+    content.vb: Public Sub New
+  overload: Interlex.Crawler.Common.Http.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.Http.#ctor(System.Int32,System.Boolean,System.Boolean,System.TimeSpan)
+  commentId: M:Interlex.Crawler.Common.Http.#ctor(System.Int32,System.Boolean,System.Boolean,System.TimeSpan)
+  id: '#ctor(System.Int32,System.Boolean,System.Boolean,System.TimeSpan)'
+  parent: Interlex.Crawler.Common.Http
+  langs:
+  - csharp
+  - vb
+  name: Http(Int32, Boolean, Boolean, TimeSpan)
+  nameWithType: Http.Http(Int32, Boolean, Boolean, TimeSpan)
+  fullName: Interlex.Crawler.Common.Http.Http(System.Int32, System.Boolean, System.Boolean, System.TimeSpan)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 607
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nCreates new instace of <xref href=\"Interlex.Crawler.Common.Http\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public Http(int retryCount, bool reUseCookies, bool allowRedirect, TimeSpan timeout)
+    parameters:
+    - id: retryCount
+      type: System.Int32
+      description: Retry count if request fails
+    - id: reUseCookies
+      type: System.Boolean
+      description: True to reuse cookies between requests
+    - id: allowRedirect
+      type: System.Boolean
+      description: True to allow redirects
+    - id: timeout
+      type: System.TimeSpan
+      description: Timeout for the request
+    content.vb: Public Sub New(retryCount As Integer, reUseCookies As Boolean, allowRedirect As Boolean, timeout As TimeSpan)
+  overload: Interlex.Crawler.Common.Http.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.Http.NotFoundPredicate
+  commentId: P:Interlex.Crawler.Common.Http.NotFoundPredicate
+  id: NotFoundPredicate
+  parent: Interlex.Crawler.Common.Http
+  langs:
+  - csharp
+  - vb
+  name: NotFoundPredicate
+  nameWithType: Http.NotFoundPredicate
+  fullName: Interlex.Crawler.Common.Http.NotFoundPredicate
+  type: Property
+  source:
+    id: NotFoundPredicate
+    path: ''
+    startLine: 618
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nPredicate to check if the response result was not found (404). \n"
+  example: []
+  syntax:
+    content: public Predicate<HttpModel> NotFoundPredicate { get; }
+    parameters: []
+    return:
+      type: System.Predicate{Interlex.Crawler.Model.HttpModel}
+    content.vb: Public ReadOnly Property NotFoundPredicate As Predicate(Of HttpModel)
+  overload: Interlex.Crawler.Common.Http.NotFoundPredicate*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Common.Http.GetAsync(Uri)
+  commentId: M:Interlex.Crawler.Common.Http.GetAsync(Uri)
+  id: GetAsync(Uri)
+  parent: Interlex.Crawler.Common.Http
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(Uri)
+  nameWithType: Http.GetAsync(Uri)
+  fullName: Interlex.Crawler.Common.Http.GetAsync(Uri)
+  type: Method
+  source:
+    id: GetAsync
+    path: ''
+    startLine: 625
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nExecutes http get\n"
+  example: []
+  syntax:
+    content: public Task<HttpModel> GetAsync(Uri uri)
+    parameters:
+    - id: uri
+      type: Uri
+      description: Request url
+    return:
+      type: System.Threading.Tasks.Task{Interlex.Crawler.Model.HttpModel}
+      description: ''
+    content.vb: Public Function GetAsync(uri As Uri) As Task(Of HttpModel)
+  overload: Interlex.Crawler.Common.Http.GetAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.Http.GetAsync(System.String)
+  commentId: M:Interlex.Crawler.Common.Http.GetAsync(System.String)
+  id: GetAsync(System.String)
+  parent: Interlex.Crawler.Common.Http
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String)
+  nameWithType: Http.GetAsync(String)
+  fullName: Interlex.Crawler.Common.Http.GetAsync(System.String)
+  type: Method
+  source:
+    id: GetAsync
+    path: ''
+    startLine: 632
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nExecutes http get \n"
+  example: []
+  syntax:
+    content: public Task<HttpModel> GetAsync(string url)
+    parameters:
+    - id: url
+      type: System.String
+      description: Request url
+    return:
+      type: System.Threading.Tasks.Task{Interlex.Crawler.Model.HttpModel}
+      description: ''
+    content.vb: Public Function GetAsync(url As String) As Task(Of HttpModel)
+  overload: Interlex.Crawler.Common.Http.GetAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.Http.GetAsync(System.String,System.Action{Interlex.Crawler.Common.HttpRequestBuilder})
+  commentId: M:Interlex.Crawler.Common.Http.GetAsync(System.String,System.Action{Interlex.Crawler.Common.HttpRequestBuilder})
+  id: GetAsync(System.String,System.Action{Interlex.Crawler.Common.HttpRequestBuilder})
+  parent: Interlex.Crawler.Common.Http
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, Action<HttpRequestBuilder>)
+  nameWithType: Http.GetAsync(String, Action<HttpRequestBuilder>)
+  fullName: Interlex.Crawler.Common.Http.GetAsync(System.String, System.Action<Interlex.Crawler.Common.HttpRequestBuilder>)
+  type: Method
+  source:
+    id: GetAsync
+    path: ''
+    startLine: 643
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nExecutes http get\n"
+  example: []
+  syntax:
+    content: public Task<HttpModel> GetAsync(string url, Action<HttpRequestBuilder> opt)
+    parameters:
+    - id: url
+      type: System.String
+      description: Request url
+    - id: opt
+      type: System.Action{Interlex.Crawler.Common.HttpRequestBuilder}
+      description: Action for access to the underling http builder. Provides capabilities for additional configuration.
+    return:
+      type: System.Threading.Tasks.Task{Interlex.Crawler.Model.HttpModel}
+      description: ''
+    content.vb: Public Function GetAsync(url As String, opt As Action(Of HttpRequestBuilder)) As Task(Of HttpModel)
+  overload: Interlex.Crawler.Common.Http.GetAsync*
+  nameWithType.vb: Http.GetAsync(String, Action(Of HttpRequestBuilder))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Interlex.Crawler.Common.Http.GetAsync(System.String, System.Action(Of Interlex.Crawler.Common.HttpRequestBuilder))
+  name.vb: GetAsync(String, Action(Of HttpRequestBuilder))
+- uid: Interlex.Crawler.Common.Http.PostAsync(System.String,System.String)
+  commentId: M:Interlex.Crawler.Common.Http.PostAsync(System.String,System.String)
+  id: PostAsync(System.String,System.String)
+  parent: Interlex.Crawler.Common.Http
+  langs:
+  - csharp
+  - vb
+  name: PostAsync(String, String)
+  nameWithType: Http.PostAsync(String, String)
+  fullName: Interlex.Crawler.Common.Http.PostAsync(System.String, System.String)
+  type: Method
+  source:
+    id: PostAsync
+    path: ''
+    startLine: 704
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nExecutes http post\n"
+  example: []
+  syntax:
+    content: public Task<HttpModel> PostAsync(string url, string json)
+    parameters:
+    - id: url
+      type: System.String
+      description: Request url
+    - id: json
+      type: System.String
+      description: Json to post
+    return:
+      type: System.Threading.Tasks.Task{Interlex.Crawler.Model.HttpModel}
+      description: ''
+    content.vb: Public Function PostAsync(url As String, json As String) As Task(Of HttpModel)
+  overload: Interlex.Crawler.Common.Http.PostAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.Http.PostAsync(System.String,System.String,System.String)
+  commentId: M:Interlex.Crawler.Common.Http.PostAsync(System.String,System.String,System.String)
+  id: PostAsync(System.String,System.String,System.String)
+  parent: Interlex.Crawler.Common.Http
+  langs:
+  - csharp
+  - vb
+  name: PostAsync(String, String, String)
+  nameWithType: Http.PostAsync(String, String, String)
+  fullName: Interlex.Crawler.Common.Http.PostAsync(System.String, System.String, System.String)
+  type: Method
+  source:
+    id: PostAsync
+    path: ''
+    startLine: 716
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nExecutes http post\n"
+  example: []
+  syntax:
+    content: public Task<HttpModel> PostAsync(string url, string postData, string contentType)
+    parameters:
+    - id: url
+      type: System.String
+      description: Request url
+    - id: postData
+      type: System.String
+      description: Data to post
+    - id: contentType
+      type: System.String
+      description: Content type of <code data-dev-comment-type="paramref" class="paramref">postData</code>
+    return:
+      type: System.Threading.Tasks.Task{Interlex.Crawler.Model.HttpModel}
+      description: ''
+    content.vb: Public Function PostAsync(url As String, postData As String, contentType As String) As Task(Of HttpModel)
+  overload: Interlex.Crawler.Common.Http.PostAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Interlex.Crawler.Common
+  commentId: N:Interlex.Crawler.Common
+  name: Interlex.Crawler.Common
+  nameWithType: Interlex.Crawler.Common
+  fullName: Interlex.Crawler.Common
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Interlex.Crawler.Common.Http.#ctor*
+  commentId: Overload:Interlex.Crawler.Common.Http.#ctor
+  name: Http
+  nameWithType: Http.Http
+  fullName: Interlex.Crawler.Common.Http.Http
+- uid: Interlex.Crawler.Common.Http
+  commentId: T:Interlex.Crawler.Common.Http
+  parent: Interlex.Crawler.Common
+  name: Http
+  nameWithType: Http
+  fullName: Interlex.Crawler.Common.Http
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Interlex.Crawler.Common.Http.NotFoundPredicate*
+  commentId: Overload:Interlex.Crawler.Common.Http.NotFoundPredicate
+  name: NotFoundPredicate
+  nameWithType: Http.NotFoundPredicate
+  fullName: Interlex.Crawler.Common.Http.NotFoundPredicate
+- uid: System.Predicate{Interlex.Crawler.Model.HttpModel}
+  commentId: T:System.Predicate{Interlex.Crawler.Model.HttpModel}
+  parent: System
+  definition: System.Predicate`1
+  name: Predicate<HttpModel>
+  nameWithType: Predicate<HttpModel>
+  fullName: System.Predicate<Interlex.Crawler.Model.HttpModel>
+  nameWithType.vb: Predicate(Of HttpModel)
+  fullName.vb: System.Predicate(Of Interlex.Crawler.Model.HttpModel)
+  name.vb: Predicate(Of HttpModel)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Interlex.Crawler.Model.HttpModel
+    name: HttpModel
+    nameWithType: HttpModel
+    fullName: Interlex.Crawler.Model.HttpModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Interlex.Crawler.Model.HttpModel
+    name: HttpModel
+    nameWithType: HttpModel
+    fullName: Interlex.Crawler.Model.HttpModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Predicate`1
+  commentId: T:System.Predicate`1
+  isExternal: true
+  name: Predicate<T>
+  nameWithType: Predicate<T>
+  fullName: System.Predicate<T>
+  nameWithType.vb: Predicate(Of T)
+  fullName.vb: System.Predicate(Of T)
+  name.vb: Predicate(Of T)
+  spec.csharp:
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: System.Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Interlex.Crawler.Common.Http.GetAsync*
+  commentId: Overload:Interlex.Crawler.Common.Http.GetAsync
+  name: GetAsync
+  nameWithType: Http.GetAsync
+  fullName: Interlex.Crawler.Common.Http.GetAsync
+- uid: Uri
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: Uri
+- uid: System.Threading.Tasks.Task{Interlex.Crawler.Model.HttpModel}
+  commentId: T:System.Threading.Tasks.Task{Interlex.Crawler.Model.HttpModel}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<HttpModel>
+  nameWithType: Task<HttpModel>
+  fullName: System.Threading.Tasks.Task<Interlex.Crawler.Model.HttpModel>
+  nameWithType.vb: Task(Of HttpModel)
+  fullName.vb: System.Threading.Tasks.Task(Of Interlex.Crawler.Model.HttpModel)
+  name.vb: Task(Of HttpModel)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Interlex.Crawler.Model.HttpModel
+    name: HttpModel
+    nameWithType: HttpModel
+    fullName: Interlex.Crawler.Model.HttpModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Interlex.Crawler.Model.HttpModel
+    name: HttpModel
+    nameWithType: HttpModel
+    fullName: Interlex.Crawler.Model.HttpModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Action{Interlex.Crawler.Common.HttpRequestBuilder}
+  commentId: T:System.Action{Interlex.Crawler.Common.HttpRequestBuilder}
+  parent: System
+  definition: System.Action`1
+  name: Action<HttpRequestBuilder>
+  nameWithType: Action<HttpRequestBuilder>
+  fullName: System.Action<Interlex.Crawler.Common.HttpRequestBuilder>
+  nameWithType.vb: Action(Of HttpRequestBuilder)
+  fullName.vb: System.Action(Of Interlex.Crawler.Common.HttpRequestBuilder)
+  name.vb: Action(Of HttpRequestBuilder)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Interlex.Crawler.Common.HttpRequestBuilder
+    name: HttpRequestBuilder
+    nameWithType: HttpRequestBuilder
+    fullName: Interlex.Crawler.Common.HttpRequestBuilder
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Interlex.Crawler.Common.HttpRequestBuilder
+    name: HttpRequestBuilder
+    nameWithType: HttpRequestBuilder
+    fullName: Interlex.Crawler.Common.HttpRequestBuilder
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Interlex.Crawler.Common.Http.PostAsync*
+  commentId: Overload:Interlex.Crawler.Common.Http.PostAsync
+  name: PostAsync
+  nameWithType: Http.PostAsync
+  fullName: Interlex.Crawler.Common.Http.PostAsync

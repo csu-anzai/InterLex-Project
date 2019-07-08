@@ -1,0 +1,818 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.CrawlerApi
+  commentId: T:Interlex.Crawler.CrawlerApi
+  id: CrawlerApi
+  parent: Interlex.Crawler
+  children:
+  - Interlex.Crawler.CrawlerApi.CreateCmdArgs(System.String[],ILog)
+  - Interlex.Crawler.CrawlerApi.RunBundesarbeitsgerichtAsync(ILog)
+  - Interlex.Crawler.CrawlerApi.RunBundesfinanzhofsAsync(ILog)
+  - Interlex.Crawler.CrawlerApi.RunBundesgerichtshofAsync(ILog)
+  - Interlex.Crawler.CrawlerApi.RunBundespatentgerichtAsync(ILog)
+  - Interlex.Crawler.CrawlerApi.RunBundessozialgerichtAsync(ILog)
+  - Interlex.Crawler.CrawlerApi.RunEurlexAsync(ILog)
+  - Interlex.Crawler.CrawlerApi.RunLegifrance(ILog)
+  - Interlex.Crawler.CrawlerApi.RunUKSupremeCourtAsync(ILog)
+  langs:
+  - csharp
+  - vb
+  name: CrawlerApi
+  nameWithType: CrawlerApi
+  fullName: Interlex.Crawler.CrawlerApi
+  type: Class
+  source:
+    id: CrawlerApi
+    path: ''
+    startLine: 23
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler
+  summary: "\nEntry point for starting different crawlers\n"
+  example: []
+  syntax:
+    content: public static class CrawlerApi
+    content.vb: Public Module CrawlerApi
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Interlex.Crawler.CrawlerApi.CreateCmdArgs(System.String[],ILog)
+  commentId: M:Interlex.Crawler.CrawlerApi.CreateCmdArgs(System.String[],ILog)
+  id: CreateCmdArgs(System.String[],ILog)
+  parent: Interlex.Crawler.CrawlerApi
+  langs:
+  - csharp
+  - vb
+  name: CreateCmdArgs(String[], ILog)
+  nameWithType: CrawlerApi.CreateCmdArgs(String[], ILog)
+  fullName: Interlex.Crawler.CrawlerApi.CreateCmdArgs(System.String[], ILog)
+  type: Method
+  source:
+    id: CreateCmdArgs
+    path: ''
+    startLine: 34
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler
+  summary: "\nStarts crawler from the specified cmd arguments\n"
+  example: []
+  syntax:
+    content: public static Task CreateCmdArgs(string[] args, ILog logger)
+    parameters:
+    - id: args
+      type: System.String[]
+      description: "\nAtleast on argument which must represent the name of the crawler to be started (example: Eurlex or Interlex.Crawler.Crawlers.Eurlex.Eurlex).\nAllowed argumnets are: -retrycount, -timeout, -reusecookies, -allowredirect\n"
+    - id: logger
+      type: ILog
+      description: Logger
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Shared Function CreateCmdArgs(args As String(), logger As ILog) As Task
+  overload: Interlex.Crawler.CrawlerApi.CreateCmdArgs*
+  nameWithType.vb: CrawlerApi.CreateCmdArgs(String(), ILog)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Interlex.Crawler.CrawlerApi.CreateCmdArgs(System.String(), ILog)
+  name.vb: CreateCmdArgs(String(), ILog)
+- uid: Interlex.Crawler.CrawlerApi.RunUKSupremeCourtAsync(ILog)
+  commentId: M:Interlex.Crawler.CrawlerApi.RunUKSupremeCourtAsync(ILog)
+  id: RunUKSupremeCourtAsync(ILog)
+  parent: Interlex.Crawler.CrawlerApi
+  langs:
+  - csharp
+  - vb
+  name: RunUKSupremeCourtAsync(ILog)
+  nameWithType: CrawlerApi.RunUKSupremeCourtAsync(ILog)
+  fullName: Interlex.Crawler.CrawlerApi.RunUKSupremeCourtAsync(ILog)
+  type: Method
+  source:
+    id: RunUKSupremeCourtAsync
+    path: ''
+    startLine: 53
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler
+  summary: "\nStarts the <xref href=\"Interlex.Crawler.Crawlers.UK.UKSupremeCourt\" data-throw-if-not-resolved=\"false\"></xref> crawler\n"
+  example: []
+  syntax:
+    content: public static Task RunUKSupremeCourtAsync(ILog logger)
+    parameters:
+    - id: logger
+      type: ILog
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Shared Function RunUKSupremeCourtAsync(logger As ILog) As Task
+  overload: Interlex.Crawler.CrawlerApi.RunUKSupremeCourtAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.CrawlerApi.RunBundesarbeitsgerichtAsync(ILog)
+  commentId: M:Interlex.Crawler.CrawlerApi.RunBundesarbeitsgerichtAsync(ILog)
+  id: RunBundesarbeitsgerichtAsync(ILog)
+  parent: Interlex.Crawler.CrawlerApi
+  langs:
+  - csharp
+  - vb
+  name: RunBundesarbeitsgerichtAsync(ILog)
+  nameWithType: CrawlerApi.RunBundesarbeitsgerichtAsync(ILog)
+  fullName: Interlex.Crawler.CrawlerApi.RunBundesarbeitsgerichtAsync(ILog)
+  type: Method
+  source:
+    id: RunBundesarbeitsgerichtAsync
+    path: ''
+    startLine: 67
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler
+  summary: "\nStarts the <xref href=\"Interlex.Crawler.Crawlers.DE.Bundesarbeitsgericht\" data-throw-if-not-resolved=\"false\"></xref> crawler\n"
+  example: []
+  syntax:
+    content: public static Task RunBundesarbeitsgerichtAsync(ILog logger)
+    parameters:
+    - id: logger
+      type: ILog
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Shared Function RunBundesarbeitsgerichtAsync(logger As ILog) As Task
+  overload: Interlex.Crawler.CrawlerApi.RunBundesarbeitsgerichtAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.CrawlerApi.RunBundesfinanzhofsAsync(ILog)
+  commentId: M:Interlex.Crawler.CrawlerApi.RunBundesfinanzhofsAsync(ILog)
+  id: RunBundesfinanzhofsAsync(ILog)
+  parent: Interlex.Crawler.CrawlerApi
+  langs:
+  - csharp
+  - vb
+  name: RunBundesfinanzhofsAsync(ILog)
+  nameWithType: CrawlerApi.RunBundesfinanzhofsAsync(ILog)
+  fullName: Interlex.Crawler.CrawlerApi.RunBundesfinanzhofsAsync(ILog)
+  type: Method
+  source:
+    id: RunBundesfinanzhofsAsync
+    path: ''
+    startLine: 79
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler
+  summary: "\nStarts the <xref href=\"Interlex.Crawler.Crawlers.DE.Bundesfinanzhofs\" data-throw-if-not-resolved=\"false\"></xref> crawler\n"
+  example: []
+  syntax:
+    content: public static Task RunBundesfinanzhofsAsync(ILog logger)
+    parameters:
+    - id: logger
+      type: ILog
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Shared Function RunBundesfinanzhofsAsync(logger As ILog) As Task
+  overload: Interlex.Crawler.CrawlerApi.RunBundesfinanzhofsAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.CrawlerApi.RunBundesgerichtshofAsync(ILog)
+  commentId: M:Interlex.Crawler.CrawlerApi.RunBundesgerichtshofAsync(ILog)
+  id: RunBundesgerichtshofAsync(ILog)
+  parent: Interlex.Crawler.CrawlerApi
+  langs:
+  - csharp
+  - vb
+  name: RunBundesgerichtshofAsync(ILog)
+  nameWithType: CrawlerApi.RunBundesgerichtshofAsync(ILog)
+  fullName: Interlex.Crawler.CrawlerApi.RunBundesgerichtshofAsync(ILog)
+  type: Method
+  source:
+    id: RunBundesgerichtshofAsync
+    path: ''
+    startLine: 91
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler
+  summary: "\nStarts the <xref href=\"Interlex.Crawler.Crawlers.DE.Bundesgerichtshof\" data-throw-if-not-resolved=\"false\"></xref> crawler\n"
+  example: []
+  syntax:
+    content: public static Task RunBundesgerichtshofAsync(ILog logger)
+    parameters:
+    - id: logger
+      type: ILog
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Shared Function RunBundesgerichtshofAsync(logger As ILog) As Task
+  overload: Interlex.Crawler.CrawlerApi.RunBundesgerichtshofAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.CrawlerApi.RunBundespatentgerichtAsync(ILog)
+  commentId: M:Interlex.Crawler.CrawlerApi.RunBundespatentgerichtAsync(ILog)
+  id: RunBundespatentgerichtAsync(ILog)
+  parent: Interlex.Crawler.CrawlerApi
+  langs:
+  - csharp
+  - vb
+  name: RunBundespatentgerichtAsync(ILog)
+  nameWithType: CrawlerApi.RunBundespatentgerichtAsync(ILog)
+  fullName: Interlex.Crawler.CrawlerApi.RunBundespatentgerichtAsync(ILog)
+  type: Method
+  source:
+    id: RunBundespatentgerichtAsync
+    path: ''
+    startLine: 103
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler
+  summary: "\nStarts the <xref href=\"Interlex.Crawler.Crawlers.DE.Bundespatentgericht\" data-throw-if-not-resolved=\"false\"></xref> crawler\n"
+  example: []
+  syntax:
+    content: public static Task RunBundespatentgerichtAsync(ILog logger)
+    parameters:
+    - id: logger
+      type: ILog
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Shared Function RunBundespatentgerichtAsync(logger As ILog) As Task
+  overload: Interlex.Crawler.CrawlerApi.RunBundespatentgerichtAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.CrawlerApi.RunBundessozialgerichtAsync(ILog)
+  commentId: M:Interlex.Crawler.CrawlerApi.RunBundessozialgerichtAsync(ILog)
+  id: RunBundessozialgerichtAsync(ILog)
+  parent: Interlex.Crawler.CrawlerApi
+  langs:
+  - csharp
+  - vb
+  name: RunBundessozialgerichtAsync(ILog)
+  nameWithType: CrawlerApi.RunBundessozialgerichtAsync(ILog)
+  fullName: Interlex.Crawler.CrawlerApi.RunBundessozialgerichtAsync(ILog)
+  type: Method
+  source:
+    id: RunBundessozialgerichtAsync
+    path: ''
+    startLine: 115
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler
+  summary: "\nStarts the <xref href=\"Interlex.Crawler.Crawlers.DE.Bundessozialgericht\" data-throw-if-not-resolved=\"false\"></xref> crawler\n"
+  example: []
+  syntax:
+    content: public static Task RunBundessozialgerichtAsync(ILog logger)
+    parameters:
+    - id: logger
+      type: ILog
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Shared Function RunBundessozialgerichtAsync(logger As ILog) As Task
+  overload: Interlex.Crawler.CrawlerApi.RunBundessozialgerichtAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.CrawlerApi.RunEurlexAsync(ILog)
+  commentId: M:Interlex.Crawler.CrawlerApi.RunEurlexAsync(ILog)
+  id: RunEurlexAsync(ILog)
+  parent: Interlex.Crawler.CrawlerApi
+  langs:
+  - csharp
+  - vb
+  name: RunEurlexAsync(ILog)
+  nameWithType: CrawlerApi.RunEurlexAsync(ILog)
+  fullName: Interlex.Crawler.CrawlerApi.RunEurlexAsync(ILog)
+  type: Method
+  source:
+    id: RunEurlexAsync
+    path: ''
+    startLine: 127
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler
+  summary: "\nStarts the <xref href=\"Interlex.Crawler.Crawlers.Eurlex.Eurlex\" data-throw-if-not-resolved=\"false\"></xref> crawler\n"
+  example: []
+  syntax:
+    content: public static Task RunEurlexAsync(ILog logger)
+    parameters:
+    - id: logger
+      type: ILog
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Shared Function RunEurlexAsync(logger As ILog) As Task
+  overload: Interlex.Crawler.CrawlerApi.RunEurlexAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.CrawlerApi.RunLegifrance(ILog)
+  commentId: M:Interlex.Crawler.CrawlerApi.RunLegifrance(ILog)
+  id: RunLegifrance(ILog)
+  parent: Interlex.Crawler.CrawlerApi
+  langs:
+  - csharp
+  - vb
+  name: RunLegifrance(ILog)
+  nameWithType: CrawlerApi.RunLegifrance(ILog)
+  fullName: Interlex.Crawler.CrawlerApi.RunLegifrance(ILog)
+  type: Method
+  source:
+    id: RunLegifrance
+    path: ''
+    startLine: 141
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler
+  summary: "\nStats the <xref href=\"Interlex.Crawler.Crawlers.FR.LegiFrance\" data-throw-if-not-resolved=\"false\"></xref> crawler\n"
+  example: []
+  syntax:
+    content: public static Task RunLegifrance(ILog logger)
+    parameters:
+    - id: logger
+      type: ILog
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Shared Function RunLegifrance(logger As ILog) As Task
+  overload: Interlex.Crawler.CrawlerApi.RunLegifrance*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Interlex.Crawler
+  commentId: N:Interlex.Crawler
+  name: Interlex.Crawler
+  nameWithType: Interlex.Crawler
+  fullName: Interlex.Crawler
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Interlex.Crawler.CrawlerApi.CreateCmdArgs*
+  commentId: Overload:Interlex.Crawler.CrawlerApi.CreateCmdArgs
+  name: CreateCmdArgs
+  nameWithType: CrawlerApi.CreateCmdArgs
+  fullName: Interlex.Crawler.CrawlerApi.CreateCmdArgs
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: ILog
+  isExternal: true
+  name: ILog
+  nameWithType: ILog
+  fullName: ILog
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Interlex.Crawler.Crawlers.UK.UKSupremeCourt
+  commentId: T:Interlex.Crawler.Crawlers.UK.UKSupremeCourt
+  name: UKSupremeCourt
+  nameWithType: UKSupremeCourt
+  fullName: Interlex.Crawler.Crawlers.UK.UKSupremeCourt
+- uid: Interlex.Crawler.CrawlerApi.RunUKSupremeCourtAsync*
+  commentId: Overload:Interlex.Crawler.CrawlerApi.RunUKSupremeCourtAsync
+  name: RunUKSupremeCourtAsync
+  nameWithType: CrawlerApi.RunUKSupremeCourtAsync
+  fullName: Interlex.Crawler.CrawlerApi.RunUKSupremeCourtAsync
+- uid: Interlex.Crawler.Crawlers.DE.Bundesarbeitsgericht
+  commentId: T:Interlex.Crawler.Crawlers.DE.Bundesarbeitsgericht
+  name: Bundesarbeitsgericht
+  nameWithType: Bundesarbeitsgericht
+  fullName: Interlex.Crawler.Crawlers.DE.Bundesarbeitsgericht
+- uid: Interlex.Crawler.CrawlerApi.RunBundesarbeitsgerichtAsync*
+  commentId: Overload:Interlex.Crawler.CrawlerApi.RunBundesarbeitsgerichtAsync
+  name: RunBundesarbeitsgerichtAsync
+  nameWithType: CrawlerApi.RunBundesarbeitsgerichtAsync
+  fullName: Interlex.Crawler.CrawlerApi.RunBundesarbeitsgerichtAsync
+- uid: Interlex.Crawler.Crawlers.DE.Bundesfinanzhofs
+  commentId: T:Interlex.Crawler.Crawlers.DE.Bundesfinanzhofs
+  name: Bundesfinanzhofs
+  nameWithType: Bundesfinanzhofs
+  fullName: Interlex.Crawler.Crawlers.DE.Bundesfinanzhofs
+- uid: Interlex.Crawler.CrawlerApi.RunBundesfinanzhofsAsync*
+  commentId: Overload:Interlex.Crawler.CrawlerApi.RunBundesfinanzhofsAsync
+  name: RunBundesfinanzhofsAsync
+  nameWithType: CrawlerApi.RunBundesfinanzhofsAsync
+  fullName: Interlex.Crawler.CrawlerApi.RunBundesfinanzhofsAsync
+- uid: Interlex.Crawler.Crawlers.DE.Bundesgerichtshof
+  commentId: T:Interlex.Crawler.Crawlers.DE.Bundesgerichtshof
+  name: Bundesgerichtshof
+  nameWithType: Bundesgerichtshof
+  fullName: Interlex.Crawler.Crawlers.DE.Bundesgerichtshof
+- uid: Interlex.Crawler.CrawlerApi.RunBundesgerichtshofAsync*
+  commentId: Overload:Interlex.Crawler.CrawlerApi.RunBundesgerichtshofAsync
+  name: RunBundesgerichtshofAsync
+  nameWithType: CrawlerApi.RunBundesgerichtshofAsync
+  fullName: Interlex.Crawler.CrawlerApi.RunBundesgerichtshofAsync
+- uid: Interlex.Crawler.Crawlers.DE.Bundespatentgericht
+  commentId: T:Interlex.Crawler.Crawlers.DE.Bundespatentgericht
+  name: Bundespatentgericht
+  nameWithType: Bundespatentgericht
+  fullName: Interlex.Crawler.Crawlers.DE.Bundespatentgericht
+- uid: Interlex.Crawler.CrawlerApi.RunBundespatentgerichtAsync*
+  commentId: Overload:Interlex.Crawler.CrawlerApi.RunBundespatentgerichtAsync
+  name: RunBundespatentgerichtAsync
+  nameWithType: CrawlerApi.RunBundespatentgerichtAsync
+  fullName: Interlex.Crawler.CrawlerApi.RunBundespatentgerichtAsync
+- uid: Interlex.Crawler.Crawlers.DE.Bundessozialgericht
+  commentId: T:Interlex.Crawler.Crawlers.DE.Bundessozialgericht
+  name: Bundessozialgericht
+  nameWithType: Bundessozialgericht
+  fullName: Interlex.Crawler.Crawlers.DE.Bundessozialgericht
+- uid: Interlex.Crawler.CrawlerApi.RunBundessozialgerichtAsync*
+  commentId: Overload:Interlex.Crawler.CrawlerApi.RunBundessozialgerichtAsync
+  name: RunBundessozialgerichtAsync
+  nameWithType: CrawlerApi.RunBundessozialgerichtAsync
+  fullName: Interlex.Crawler.CrawlerApi.RunBundessozialgerichtAsync
+- uid: Interlex.Crawler.Crawlers.Eurlex.Eurlex
+  commentId: T:Interlex.Crawler.Crawlers.Eurlex.Eurlex
+  name: Eurlex
+  nameWithType: Eurlex
+  fullName: Interlex.Crawler.Crawlers.Eurlex.Eurlex
+- uid: Interlex.Crawler.CrawlerApi.RunEurlexAsync*
+  commentId: Overload:Interlex.Crawler.CrawlerApi.RunEurlexAsync
+  name: RunEurlexAsync
+  nameWithType: CrawlerApi.RunEurlexAsync
+  fullName: Interlex.Crawler.CrawlerApi.RunEurlexAsync
+- uid: Interlex.Crawler.Crawlers.FR.LegiFrance
+  commentId: T:Interlex.Crawler.Crawlers.FR.LegiFrance
+  name: LegiFrance
+  nameWithType: LegiFrance
+  fullName: Interlex.Crawler.Crawlers.FR.LegiFrance
+- uid: Interlex.Crawler.CrawlerApi.RunLegifrance*
+  commentId: Overload:Interlex.Crawler.CrawlerApi.RunLegifrance
+  name: RunLegifrance
+  nameWithType: CrawlerApi.RunLegifrance
+  fullName: Interlex.Crawler.CrawlerApi.RunLegifrance

@@ -1,0 +1,500 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool
+  commentId: T:Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool
+  id: InterlexEditorTool
+  parent: Interlex.Crawler.Crawlers.Interlex_editor_tool
+  children:
+  - Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool.#ctor(ILog)
+  - Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool.StartAsync
+  langs:
+  - csharp
+  - vb
+  name: InterlexEditorTool
+  nameWithType: InterlexEditorTool
+  fullName: Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool
+  type: Class
+  source:
+    id: InterlexEditorTool
+    path: ''
+    startLine: 2511
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers.Interlex_editor_tool
+  summary: "\nRepresents crawler for the cases and legislation processed in the Interlex Editor Tool\n"
+  example: []
+  syntax:
+    content: 'public class InterlexEditorTool : BaseGenericCrawler'
+    content.vb: >-
+      Public Class InterlexEditorTool
+          Inherits BaseGenericCrawler
+  inheritance:
+  - System.Object
+  - Interlex.Crawler.Crawlers.BaseGenericCrawler
+  inheritedMembers:
+  - Interlex.Crawler.Crawlers.BaseGenericCrawler.DocumentGroupManager
+  - Interlex.Crawler.Crawlers.BaseGenericCrawler.Http
+  - Interlex.Crawler.Crawlers.BaseGenericCrawler.Logger
+  - Interlex.Crawler.Crawlers.BaseGenericCrawler.CrawlerId
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool.#ctor(ILog)
+  commentId: M:Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool.#ctor(ILog)
+  id: '#ctor(ILog)'
+  parent: Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool
+  langs:
+  - csharp
+  - vb
+  name: InterlexEditorTool(ILog)
+  nameWithType: InterlexEditorTool.InterlexEditorTool(ILog)
+  fullName: Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool.InterlexEditorTool(ILog)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 2515
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers.Interlex_editor_tool
+  syntax:
+    content: public InterlexEditorTool(ILog logger)
+    parameters:
+    - id: logger
+      type: ILog
+    content.vb: Public Sub New(logger As ILog)
+  overload: Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool.StartAsync
+  commentId: M:Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool.StartAsync
+  id: StartAsync
+  parent: Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool
+  langs:
+  - csharp
+  - vb
+  name: StartAsync()
+  nameWithType: InterlexEditorTool.StartAsync()
+  fullName: Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool.StartAsync()
+  type: Method
+  source:
+    id: StartAsync
+    path: ''
+    startLine: 2519
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers.Interlex_editor_tool
+  syntax:
+    content: public override Task StartAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function StartAsync As Task
+  overridden: Interlex.Crawler.Crawlers.BaseGenericCrawler.StartAsync
+  overload: Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool.StartAsync*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Interlex.Crawler.Crawlers.Interlex_editor_tool
+  commentId: N:Interlex.Crawler.Crawlers.Interlex_editor_tool
+  name: Interlex.Crawler.Crawlers.Interlex_editor_tool
+  nameWithType: Interlex.Crawler.Crawlers.Interlex_editor_tool
+  fullName: Interlex.Crawler.Crawlers.Interlex_editor_tool
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Interlex.Crawler.Crawlers.BaseGenericCrawler
+  commentId: T:Interlex.Crawler.Crawlers.BaseGenericCrawler
+  parent: Interlex.Crawler.Crawlers
+  name: BaseGenericCrawler
+  nameWithType: BaseGenericCrawler
+  fullName: Interlex.Crawler.Crawlers.BaseGenericCrawler
+- uid: Interlex.Crawler.Crawlers.BaseGenericCrawler.DocumentGroupManager
+  commentId: F:Interlex.Crawler.Crawlers.BaseGenericCrawler.DocumentGroupManager
+  parent: Interlex.Crawler.Crawlers.BaseGenericCrawler
+  name: DocumentGroupManager
+  nameWithType: BaseGenericCrawler.DocumentGroupManager
+  fullName: Interlex.Crawler.Crawlers.BaseGenericCrawler.DocumentGroupManager
+- uid: Interlex.Crawler.Crawlers.BaseGenericCrawler.Http
+  commentId: F:Interlex.Crawler.Crawlers.BaseGenericCrawler.Http
+  parent: Interlex.Crawler.Crawlers.BaseGenericCrawler
+  name: Http
+  nameWithType: BaseGenericCrawler.Http
+  fullName: Interlex.Crawler.Crawlers.BaseGenericCrawler.Http
+- uid: Interlex.Crawler.Crawlers.BaseGenericCrawler.Logger
+  commentId: F:Interlex.Crawler.Crawlers.BaseGenericCrawler.Logger
+  parent: Interlex.Crawler.Crawlers.BaseGenericCrawler
+  name: Logger
+  nameWithType: BaseGenericCrawler.Logger
+  fullName: Interlex.Crawler.Crawlers.BaseGenericCrawler.Logger
+- uid: Interlex.Crawler.Crawlers.BaseGenericCrawler.CrawlerId
+  commentId: F:Interlex.Crawler.Crawlers.BaseGenericCrawler.CrawlerId
+  parent: Interlex.Crawler.Crawlers.BaseGenericCrawler
+  name: CrawlerId
+  nameWithType: BaseGenericCrawler.CrawlerId
+  fullName: Interlex.Crawler.Crawlers.BaseGenericCrawler.CrawlerId
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Interlex.Crawler.Crawlers
+  commentId: N:Interlex.Crawler.Crawlers
+  name: Interlex.Crawler.Crawlers
+  nameWithType: Interlex.Crawler.Crawlers
+  fullName: Interlex.Crawler.Crawlers
+- uid: Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool.#ctor*
+  commentId: Overload:Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool.#ctor
+  name: InterlexEditorTool
+  nameWithType: InterlexEditorTool.InterlexEditorTool
+  fullName: Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool.InterlexEditorTool
+- uid: ILog
+  isExternal: true
+  name: ILog
+  nameWithType: ILog
+  fullName: ILog
+- uid: Interlex.Crawler.Crawlers.BaseGenericCrawler.StartAsync
+  commentId: M:Interlex.Crawler.Crawlers.BaseGenericCrawler.StartAsync
+  parent: Interlex.Crawler.Crawlers.BaseGenericCrawler
+  name: StartAsync()
+  nameWithType: BaseGenericCrawler.StartAsync()
+  fullName: Interlex.Crawler.Crawlers.BaseGenericCrawler.StartAsync()
+  spec.csharp:
+  - uid: Interlex.Crawler.Crawlers.BaseGenericCrawler.StartAsync
+    name: StartAsync
+    nameWithType: BaseGenericCrawler.StartAsync
+    fullName: Interlex.Crawler.Crawlers.BaseGenericCrawler.StartAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Interlex.Crawler.Crawlers.BaseGenericCrawler.StartAsync
+    name: StartAsync
+    nameWithType: BaseGenericCrawler.StartAsync
+    fullName: Interlex.Crawler.Crawlers.BaseGenericCrawler.StartAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool.StartAsync*
+  commentId: Overload:Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool.StartAsync
+  name: StartAsync
+  nameWithType: InterlexEditorTool.StartAsync
+  fullName: Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool.StartAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

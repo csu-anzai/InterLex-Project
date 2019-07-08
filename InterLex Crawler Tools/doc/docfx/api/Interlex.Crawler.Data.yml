@@ -1,0 +1,59 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Data
+  commentId: N:Interlex.Crawler.Data
+  id: Interlex.Crawler.Data
+  children:
+  - Interlex.Crawler.Data.InterlexCrawlerEntities
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.Crawler
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog
+  langs:
+  - csharp
+  - vb
+  name: Interlex.Crawler.Data
+  nameWithType: Interlex.Crawler.Data
+  fullName: Interlex.Crawler.Data
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities
+  commentId: T:Interlex.Crawler.Data.InterlexCrawlerEntities
+  name: InterlexCrawlerEntities
+  nameWithType: InterlexCrawlerEntities
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Crawler
+  commentId: T:Interlex.Crawler.Data.InterlexCrawlerEntities.Crawler
+  name: InterlexCrawlerEntities.Crawler
+  nameWithType: InterlexCrawlerEntities.Crawler
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Crawler
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+  commentId: T:Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+  name: InterlexCrawlerEntities.Document
+  nameWithType: InterlexCrawlerEntities.Document
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup
+  commentId: T:Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup
+  parent: Interlex.Crawler.Data
+  name: InterlexCrawlerEntities.DocumentGroup
+  nameWithType: InterlexCrawlerEntities.DocumentGroup
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus
+  commentId: T:Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus
+  parent: Interlex.Crawler.Data
+  name: InterlexCrawlerEntities.OperationStatus
+  nameWithType: InterlexCrawlerEntities.OperationStatus
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog
+  commentId: T:Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog
+  name: InterlexCrawlerEntities.OperationStatusLog
+  nameWithType: InterlexCrawlerEntities.OperationStatusLog
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog
+- uid: Interlex.Crawler.Data
+  commentId: N:Interlex.Crawler.Data
+  name: Interlex.Crawler.Data
+  nameWithType: Interlex.Crawler.Data
+  fullName: Interlex.Crawler.Data

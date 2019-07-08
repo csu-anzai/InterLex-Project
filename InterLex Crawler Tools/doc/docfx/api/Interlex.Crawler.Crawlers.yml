@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Crawlers
+  commentId: N:Interlex.Crawler.Crawlers
+  id: Interlex.Crawler.Crawlers
+  children:
+  - Interlex.Crawler.Crawlers.BaseGenericCrawler
+  - Interlex.Crawler.Crawlers.BaseHttpCrawler
+  langs:
+  - csharp
+  - vb
+  name: Interlex.Crawler.Crawlers
+  nameWithType: Interlex.Crawler.Crawlers
+  fullName: Interlex.Crawler.Crawlers
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Interlex.Crawler.Crawlers.BaseGenericCrawler
+  commentId: T:Interlex.Crawler.Crawlers.BaseGenericCrawler
+  parent: Interlex.Crawler.Crawlers
+  name: BaseGenericCrawler
+  nameWithType: BaseGenericCrawler
+  fullName: Interlex.Crawler.Crawlers.BaseGenericCrawler
+- uid: Interlex.Crawler.Crawlers.BaseHttpCrawler
+  commentId: T:Interlex.Crawler.Crawlers.BaseHttpCrawler
+  parent: Interlex.Crawler.Crawlers
+  name: BaseHttpCrawler
+  nameWithType: BaseHttpCrawler
+  fullName: Interlex.Crawler.Crawlers.BaseHttpCrawler
+- uid: Interlex.Crawler.Crawlers
+  commentId: N:Interlex.Crawler.Crawlers
+  name: Interlex.Crawler.Crawlers
+  nameWithType: Interlex.Crawler.Crawlers
+  fullName: Interlex.Crawler.Crawlers

@@ -1,0 +1,735 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BaseHttpCrawler
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BaseHttpCrawler
+   ">
+    <meta name="generator" content="docfx 2.42.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler">
+  
+  
+  <h1 id="Interlex_Crawler_Crawlers_BaseHttpCrawler" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler" class="text-break">Class BaseHttpCrawler
+  </h1>
+  <div class="markdown level0 summary"><p>Represents base crawler used in conjution with the <a class="xref" href="Interlex.Crawler.Manager.HttpCrawlerManager.html">HttpCrawlerManager</a>.
+Suitable for more generic crawling where the structure of the <a class="xref" href="Interlex.Crawler.Model.DocumentGroupModel.html">DocumentGroupModel</a> is constructed from single document.
+The resposabilities of the crawler is to determ if given url is packge or document for the packge.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BaseHttpCrawler</span></div>
+      <div class="level2"><a class="xref" href="Interlex.Crawler.Crawlers.AT.RisBka.html">RisBka</a></div>
+      <div class="level2"><a class="xref" href="Interlex.Crawler.Crawlers.Eurlex.Eurlex.html">Eurlex</a></div>
+      <div class="level2"><a class="xref" href="Interlex.Crawler.Crawlers.UK.UKSupremeCourt.html">UKSupremeCourt</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Interlex.Crawler.Crawlers.html">Interlex.Crawler.Crawlers</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Interlex_Crawler_Crawlers_BaseHttpCrawler_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BaseHttpCrawler</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Interlex_Crawler_Crawlers_BaseHttpCrawler__ctor_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.#ctor*"></a>
+  <h4 id="Interlex_Crawler_Crawlers_BaseHttpCrawler__ctor_Interlex_Crawler_Common_Http_System_Collections_Generic_IReadOnlyCollection_System_String__ILog_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.#ctor(Interlex.Crawler.Common.Http,System.Collections.Generic.IReadOnlyCollection{System.String},ILog)">BaseHttpCrawler(Http, IReadOnlyCollection&lt;String&gt;, ILog)</h4>
+  <div class="markdown level1 summary"><p>Creates new instance of the crawler</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseHttpCrawler(Http http, IReadOnlyCollection&lt;string&gt; initialPageUrls, ILog logger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.Http.html">Http</a></td>
+        <td><span class="parametername">http</span></td>
+        <td><p>Http requester</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">initialPageUrls</span></td>
+        <td><p>Urls to start the crawling from</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILog</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>Logger</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Crawlers_BaseHttpCrawler__ctor_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.#ctor*"></a>
+  <h4 id="Interlex_Crawler_Crawlers_BaseHttpCrawler__ctor_Interlex_Crawler_Common_Http_System_String_ILog_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.#ctor(Interlex.Crawler.Common.Http,System.String,ILog)">BaseHttpCrawler(Http, String, ILog)</h4>
+  <div class="markdown level1 summary"><p>Creates new intance of the crawler</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseHttpCrawler(Http http, string initialPageUrl, ILog logger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.Http.html">Http</a></td>
+        <td><span class="parametername">http</span></td>
+        <td><p>Http requester</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">initialPageUrl</span></td>
+        <td><p>Url to start the crawling from</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ILog</span></td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>Logger</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Interlex_Crawler_Crawlers_BaseHttpCrawler_Logger" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.Logger">Logger</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly ILog Logger</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILog</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Interlex_Crawler_Crawlers_BaseHttpCrawler_CreatePackageDocumentName_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.CreatePackageDocumentName*"></a>
+  <h4 id="Interlex_Crawler_Crawlers_BaseHttpCrawler_CreatePackageDocumentName_HtmlNode_Interlex_Crawler_Model_HttpModel_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.CreatePackageDocumentName(HtmlNode,Interlex.Crawler.Model.HttpModel)">CreatePackageDocumentName(HtmlNode, HttpModel)</h4>
+  <div class="markdown level1 summary"><p>Create unique name for the document in given package.
+The name of the document should unique in the context of the package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract NameModel CreatePackageDocumentName(HtmlNode anchor, HttpModel httpGet)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HtmlNode</span></td>
+        <td><span class="parametername">anchor</span></td>
+        <td><p>Anchor of the document package</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Model.HttpModel.html">HttpModel</a></td>
+        <td><span class="parametername">httpGet</span></td>
+        <td><p>Http reponse of the download webpage from the href of the <code data-dev-comment-type="paramref" class="paramref">anchor</code></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Model.NameModel.html">NameModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Crawlers_BaseHttpCrawler_CreatePackageName_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.CreatePackageName*"></a>
+  <h4 id="Interlex_Crawler_Crawlers_BaseHttpCrawler_CreatePackageName_HtmlNode_Interlex_Crawler_Model_HttpModel_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.CreatePackageName(HtmlNode,Interlex.Crawler.Model.HttpModel)">CreatePackageName(HtmlNode, HttpModel)</h4>
+  <div class="markdown level1 summary"><p>Create unique name for the package.
+The name of the package is the identity used for representing specific package in the database.
+Checking in the database if the package is new or it should update already persisted package in the database is determed by the name of the package.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract NameModel CreatePackageName(HtmlNode anchor, HttpModel httpGet)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HtmlNode</span></td>
+        <td><span class="parametername">anchor</span></td>
+        <td><p>Anchor of the package</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Model.HttpModel.html">HttpModel</a></td>
+        <td><span class="parametername">httpGet</span></td>
+        <td><p>Http reponse of the download webpage from the href of the <code data-dev-comment-type="paramref" class="paramref">anchor</code></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Model.NameModel.html">NameModel</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Crawlers_BaseHttpCrawler_GenerateAdditionalUrls_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.GenerateAdditionalUrls*"></a>
+  <h4 id="Interlex_Crawler_Crawlers_BaseHttpCrawler_GenerateAdditionalUrls_HtmlNode_Interlex_Crawler_Model_HttpModel_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.GenerateAdditionalUrls(HtmlNode,Interlex.Crawler.Model.HttpModel)">GenerateAdditionalUrls(HtmlNode, HttpModel)</h4>
+  <div class="markdown level1 summary"><p>Returns additional urls to be processed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IReadOnlyCollection&lt;string&gt; GenerateAdditionalUrls(HtmlNode anchor, HttpModel httpModel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HtmlNode</span></td>
+        <td><span class="parametername">anchor</span></td>
+        <td><p>Anchor</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Model.HttpModel.html">HttpModel</a></td>
+        <td><span class="parametername">httpModel</span></td>
+        <td><p>Http response of the <code data-dev-comment-type="paramref" class="paramref">anchor</code></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Crawlers_BaseHttpCrawler_GetTwoLetterLanguage_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.GetTwoLetterLanguage*"></a>
+  <h4 id="Interlex_Crawler_Crawlers_BaseHttpCrawler_GetTwoLetterLanguage_Interlex_Crawler_Model_HttpModel_HtmlNode_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.GetTwoLetterLanguage(Interlex.Crawler.Model.HttpModel,HtmlNode)">GetTwoLetterLanguage(HttpModel, HtmlNode)</h4>
+  <div class="markdown level1 summary"><p>Creates two letter language for the specific package anchor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract string GetTwoLetterLanguage(HttpModel packageHttpGet, HtmlNode packageAnchor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Model.HttpModel.html">HttpModel</a></td>
+        <td><span class="parametername">packageHttpGet</span></td>
+        <td><p>Http response for specific package</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HtmlNode</span></td>
+        <td><span class="parametername">packageAnchor</span></td>
+        <td><p>Anchor for specific package</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Crawlers_BaseHttpCrawler_IsNotFound_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.IsNotFound*"></a>
+  <h4 id="Interlex_Crawler_Crawlers_BaseHttpCrawler_IsNotFound_Interlex_Crawler_Model_HttpModel_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.IsNotFound(Interlex.Crawler.Model.HttpModel)">IsNotFound(HttpModel)</h4>
+  <div class="markdown level1 summary"><p>Determs if the given http response is not found (404)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool IsNotFound(HttpModel httpGet)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Model.HttpModel.html">HttpModel</a></td>
+        <td><span class="parametername">httpGet</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Crawlers_BaseHttpCrawler_IsPackage_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.IsPackage*"></a>
+  <h4 id="Interlex_Crawler_Crawlers_BaseHttpCrawler_IsPackage_HtmlNode_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.IsPackage(HtmlNode)">IsPackage(HtmlNode)</h4>
+  <div class="markdown level1 summary"><p>Determs if given anchor is package</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool IsPackage(HtmlNode anchor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HtmlNode</span></td>
+        <td><span class="parametername">anchor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Crawlers_BaseHttpCrawler_IsPackageDocument_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.IsPackageDocument*"></a>
+  <h4 id="Interlex_Crawler_Crawlers_BaseHttpCrawler_IsPackageDocument_HtmlNode_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.IsPackageDocument(HtmlNode)">IsPackageDocument(HtmlNode)</h4>
+  <div class="markdown level1 summary"><p>Determs if the anchor is document package</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool IsPackageDocument(HtmlNode anchor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HtmlNode</span></td>
+        <td><span class="parametername">anchor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Crawlers_BaseHttpCrawler_ShouldExamine_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldExamine*"></a>
+  <h4 id="Interlex_Crawler_Crawlers_BaseHttpCrawler_ShouldExamine_HtmlNode_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldExamine(HtmlNode)">ShouldExamine(HtmlNode)</h4>
+  <div class="markdown level1 summary"><p>Determs if the given url should be crawled and furtuer examined for packages and document packages.
+Example: the next page anchor of result search in given website is appropraite to be examined for additional packages and document packages</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool ShouldExamine(HtmlNode anchor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HtmlNode</span></td>
+        <td><span class="parametername">anchor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Crawlers_BaseHttpCrawler_ShouldIncludePackgeAsDocument_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldIncludePackgeAsDocument*"></a>
+  <h4 id="Interlex_Crawler_Crawlers_BaseHttpCrawler_ShouldIncludePackgeAsDocument_HtmlNode_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldIncludePackgeAsDocument(HtmlNode)">ShouldIncludePackgeAsDocument(HtmlNode)</h4>
+  <div class="markdown level1 summary"><p>Determs if the package content should be included as package document. Default is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ShouldIncludePackgeAsDocument(HtmlNode packageAnchor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HtmlNode</span></td>
+        <td><span class="parametername">packageAnchor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Crawlers_BaseHttpCrawler_ShouldIncludeParentPageAsDocument_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldIncludeParentPageAsDocument*"></a>
+  <h4 id="Interlex_Crawler_Crawlers_BaseHttpCrawler_ShouldIncludeParentPageAsDocument_HtmlNode_HtmlNode_" data-uid="Interlex.Crawler.Crawlers.BaseHttpCrawler.ShouldIncludeParentPageAsDocument(HtmlNode,HtmlNode)">ShouldIncludeParentPageAsDocument(HtmlNode, HtmlNode)</h4>
+  <div class="markdown level1 summary"><p>Determs if the parent page of the anchor should included as package document for the specific package. Default is false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ShouldIncludeParentPageAsDocument(HtmlNode parentPageAnchor, HtmlNode currentAnchor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HtmlNode</span></td>
+        <td><span class="parametername">parentPageAnchor</span></td>
+        <td><p>Anchor for the parent page</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">HtmlNode</span></td>
+        <td><span class="parametername">currentAnchor</span></td>
+        <td><p>Anchor for the current package</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

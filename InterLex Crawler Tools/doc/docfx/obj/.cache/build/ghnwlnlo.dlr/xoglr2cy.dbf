@@ -1,0 +1,76 @@
+
+<div id="sidetoggle">
+  <div>
+    <div class="sidefilter">
+      <form class="toc-filter">
+        <span class="glyphicon glyphicon-filter filter-icon"></span>
+        <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+      </form>
+    </div>
+    <div class="sidetoc">
+      <div class="toc" id="toc">
+          
+          <ul class="nav level1">
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="Interlex.Crawler.html" name="" title="Interlex.Crawler">Interlex.Crawler</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="Interlex.Crawler.CrawlerApi.html" name="" title="CrawlerApi">CrawlerApi</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="Interlex.Crawler.Common.html" name="" title="Interlex.Crawler.Common">Interlex.Crawler.Common</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="Interlex.Crawler.Common.MD5Hash.html" name="" title="MD5Hash">MD5Hash</a>
+                          </li>
+                          <li>
+                              <a href="Interlex.Crawler.Common.ResponseRichResult.html" name="" title="ResponseRichResult">ResponseRichResult</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="Interlex.Crawler.Data.html" name="" title="Interlex.Crawler.Data">Interlex.Crawler.Data</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="Interlex.Crawler.Data.InterlexCrawlerEntities.html" name="" title="InterlexCrawlerEntities">InterlexCrawlerEntities</a>
+                          </li>
+                          <li>
+                              <a href="Interlex.Crawler.Data.InterlexCrawlerEntities.Crawler.html" name="" title="InterlexCrawlerEntities.Crawler">InterlexCrawlerEntities.Crawler</a>
+                          </li>
+                          <li>
+                              <a href="Interlex.Crawler.Data.InterlexCrawlerEntities.Document.html" name="" title="InterlexCrawlerEntities.Document">InterlexCrawlerEntities.Document</a>
+                          </li>
+                          <li>
+                              <a href="Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup.html" name="" title="InterlexCrawlerEntities.DocumentGroup">InterlexCrawlerEntities.DocumentGroup</a>
+                          </li>
+                          <li>
+                              <a href="Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.html" name="" title="InterlexCrawlerEntities.OperationStatus">InterlexCrawlerEntities.OperationStatus</a>
+                          </li>
+                          <li>
+                              <a href="Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog.html" name="" title="InterlexCrawlerEntities.OperationStatusLog">InterlexCrawlerEntities.OperationStatusLog</a>
+                          </li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="expand-stub"></span>
+                    <a href="Interlex.Crawler.Model.html" name="" title="Interlex.Crawler.Model">Interlex.Crawler.Model</a>
+                    
+                    <ul class="nav level2">
+                          <li>
+                              <a href="Interlex.Crawler.Model.CrawlerHttpManagerConfig.html" name="" title="CrawlerHttpManagerConfig">CrawlerHttpManagerConfig</a>
+                          </li>
+                    </ul>
+                </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>

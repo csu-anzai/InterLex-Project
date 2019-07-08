@@ -1,0 +1,711 @@
+{
+  "homepages": [],
+  "source_base_path": "Y:/Interlex/Interlex.Crawler/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "log_codes": [
+        "ReferencedXrefPropertyNotString"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Common.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Common.Extensions.html",
+          "hash": "1wloZtOFYrYdYF9t6r6eYw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Common.Http.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Common.Http.html",
+          "hash": "0oDqaI7CqD7wUSY7g6KUBw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Common.HttpRequestBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Common.HttpRequestBuilder.html",
+          "hash": "GBtCbNMI0+oQW31X+2PukA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Common.MD5Hash.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Common.MD5Hash.html",
+          "hash": "+4QgHESZuCziERqEzxgU+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Common.ResponseRichResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Common.ResponseRichResult.html",
+          "hash": "3ICzERPIbx6gQ3ekggmkOg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Common.html",
+          "hash": "1F7l67nIR0bREjYZGc6Eww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.CrawlerApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.CrawlerApi.html",
+          "hash": "XY0APTJUyac/elc8Xs5QWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Crawlers.AT.RisBka.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Crawlers.AT.RisBka.html",
+          "hash": "RvS2vjTn8Nw0Nm+eiyXCLw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Crawlers.AT.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Crawlers.AT.html",
+          "hash": "LIoL6tNdz4riQbr6+VER/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Crawlers.BaseGenericCrawler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Crawlers.BaseGenericCrawler.html",
+          "hash": "ACM9+GLqi0gVVbA6446Z/g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Crawlers.BaseHttpCrawler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Crawlers.BaseHttpCrawler.html",
+          "hash": "nATjEcVCyyZ6K0jU/jxeBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Crawlers.DE.BaseBundes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Crawlers.DE.BaseBundes.html",
+          "hash": "54SR6xpElD5haabpRs4WXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Crawlers.DE.Bundesarbeitsgericht.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Crawlers.DE.Bundesarbeitsgericht.html",
+          "hash": "6nB6rp6DcdEBP1XVXzYM9g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Crawlers.DE.Bundesfinanzhofs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Crawlers.DE.Bundesfinanzhofs.html",
+          "hash": "zZUAdNdNvYGHPRgirYO9cw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Crawlers.DE.Bundesgerichtshof.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Crawlers.DE.Bundesgerichtshof.html",
+          "hash": "4+4PsTAJVu2QsTlmFZh4Fw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Crawlers.DE.Bundespatentgericht.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Crawlers.DE.Bundespatentgericht.html",
+          "hash": "E6p9KSoGW4yYCpa5O1Errg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Crawlers.DE.Bundessozialgericht.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Crawlers.DE.Bundessozialgericht.html",
+          "hash": "jC9arr7uX0v7L2pY0/O9iQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Crawlers.DE.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Crawlers.DE.html",
+          "hash": "A8PaNMziKwF/0UT7lY9RTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Crawlers.Eurlex.Eurlex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Crawlers.Eurlex.Eurlex.html",
+          "hash": "FYg2LIDCV2CLOihoQJPgsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Crawlers.Eurlex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Crawlers.Eurlex.html",
+          "hash": "Y4RZvC49TtvG2ET9NnTw9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Crawlers.FR.LegiFrance.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Crawlers.FR.LegiFrance.html",
+          "hash": "MyRuwRMFWsu4OXGPsmZt8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Crawlers.FR.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Crawlers.FR.html",
+          "hash": "gSbssu/6ajQtbUs+xQ9lgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool.html",
+          "hash": "c+l+w7TggdI7b0EvZ6Aehg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Crawlers.Interlex_editor_tool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Crawlers.Interlex_editor_tool.html",
+          "hash": "+4CGWxOr7cfo+XkaUL1wcw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Crawlers.UK.UKSupremeCourt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Crawlers.UK.UKSupremeCourt.html",
+          "hash": "mDS+2q6n0oWgtVM1ltGNZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Crawlers.UK.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Crawlers.UK.html",
+          "hash": "ALVfzvhMrfHW+nlJtzQroA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Crawlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Crawlers.html",
+          "hash": "SMVAINHEKUzi5ythnAOjTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Data.InterlexCrawlerEntities.Crawler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Data.InterlexCrawlerEntities.Crawler.html",
+          "hash": "aYLAxTZycPC1EkKp7fK4cg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Data.InterlexCrawlerEntities.Document.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Data.InterlexCrawlerEntities.Document.html",
+          "hash": "Fo+dSLb+OTHmsgufdsWWaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup.html",
+          "hash": "jLsZCqOIlEVwNyjQk7hQdw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.html",
+          "hash": "ktr0J2n7CdUdLFbGFDmp+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog.html",
+          "hash": "U3VExAoUugan3n0aBDtAcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Data.InterlexCrawlerEntities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Data.InterlexCrawlerEntities.html",
+          "hash": "Dj5tSxg2XOS9QRIUihR4hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Data.html",
+          "hash": "TXAvON8/lSE3VeBlpjdndg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Manager.DocumentGroupManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Manager.DocumentGroupManager.html",
+          "hash": "MQbzJjtRdz6uRneF1Vwy/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Manager.HttpCrawlerManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Manager.HttpCrawlerManager.html",
+          "hash": "UYHko4WDQ/P9Zeu2R51iQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Manager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Manager.html",
+          "hash": "u41wQ28PQxmUsA46zYcaJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Model.CrawlerDownloadDocumentModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Model.CrawlerDownloadDocumentModel.html",
+          "hash": "MuyE7llzOWRweUBmfOVBBA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Model.CrawlerDownloadPackageModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Model.CrawlerDownloadPackageModel.html",
+          "hash": "7UrV9n0f+nN3KAQZN+2cXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "ReferencedXrefPropertyNotString"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Model.CrawlerHttpManagerConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Model.CrawlerHttpManagerConfig.html",
+          "hash": "n28WGcd/sOMaMNeMMNznjQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Model.DocumentGroupModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Model.DocumentGroupModel.html",
+          "hash": "8aXMiXqiWksBaylyE2gpew=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Model.DocumentGroupModelOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Model.DocumentGroupModelOperation.html",
+          "hash": "ao/A78uQrjZCtKIle7yMQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Model.DocumentModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Model.DocumentModel.html",
+          "hash": "t4rBAqIpDkcC3eIGoaZGGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Model.DocumentModelOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Model.DocumentModelOperation.html",
+          "hash": "d6i/ulM7mo7OY8C+uECEsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Model.HttpModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Model.HttpModel.html",
+          "hash": "B0+zGPq9iK3ew8AQtaPeYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "ReferencedXrefPropertyNotString"
+      ],
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Model.NameModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Model.NameModel.html",
+          "hash": "h8X5ZAk7lsouOBfHUY8xSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.Model.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.Model.html",
+          "hash": "S8jARcA/CghxJ7nRgG7PPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Interlex.Crawler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Interlex.Crawler.html",
+          "hash": "NhVI1K+FMMIB3JQluaUOyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "wPdAuWCuEprHcI4D4NyF5Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "NPxPtUBRNqB9BgPUIfcWUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "hwcpv5lbKj08oC73jwjDpQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "t7iiFrmuYmrKWisdq+lN6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "mfO3xhAQimsmGXuxASl69g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "k+/dkjFuwAVS32HduMpmBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 48,
+          "skipped_file_count": 15
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,532 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Model.NameModel
+  commentId: T:Interlex.Crawler.Model.NameModel
+  id: NameModel
+  parent: Interlex.Crawler.Model
+  children:
+  - Interlex.Crawler.Model.NameModel.Create(System.String)
+  - Interlex.Crawler.Model.NameModel.UnifyAndCreate(System.String)
+  - Interlex.Crawler.Model.NameModel.UnifyAndCreateFromUrlLastPart(System.String)
+  - Interlex.Crawler.Model.NameModel.Value
+  langs:
+  - csharp
+  - vb
+  name: NameModel
+  nameWithType: NameModel
+  fullName: Interlex.Crawler.Model.NameModel
+  type: Class
+  source:
+    id: NameModel
+    path: ''
+    startLine: 3779
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nName with specific rules which represnts valid name in the database\n"
+  example: []
+  syntax:
+    content: public class NameModel
+    content.vb: Public Class NameModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Interlex.Crawler.Model.NameModel.Create(System.String)
+  commentId: M:Interlex.Crawler.Model.NameModel.Create(System.String)
+  id: Create(System.String)
+  parent: Interlex.Crawler.Model.NameModel
+  langs:
+  - csharp
+  - vb
+  name: Create(String)
+  nameWithType: NameModel.Create(String)
+  fullName: Interlex.Crawler.Model.NameModel.Create(System.String)
+  type: Method
+  source:
+    id: Create
+    path: ''
+    startLine: 3790
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nCreates new name with the spcified value\n"
+  example: []
+  syntax:
+    content: public static NameModel Create(string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: ''
+    return:
+      type: Interlex.Crawler.Model.NameModel
+      description: ''
+    content.vb: Public Shared Function Create(value As String) As NameModel
+  overload: Interlex.Crawler.Model.NameModel.Create*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Throws when the value has invalid charachters
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.Model.NameModel.UnifyAndCreate(System.String)
+  commentId: M:Interlex.Crawler.Model.NameModel.UnifyAndCreate(System.String)
+  id: UnifyAndCreate(System.String)
+  parent: Interlex.Crawler.Model.NameModel
+  langs:
+  - csharp
+  - vb
+  name: UnifyAndCreate(String)
+  nameWithType: NameModel.UnifyAndCreate(String)
+  fullName: Interlex.Crawler.Model.NameModel.UnifyAndCreate(System.String)
+  type: Method
+  source:
+    id: UnifyAndCreate
+    path: ''
+    startLine: 3807
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nUnifies the provided value and creates the name with the unified value\n"
+  example: []
+  syntax:
+    content: public static NameModel UnifyAndCreate(string value)
+    parameters:
+    - id: value
+      type: System.String
+      description: ''
+    return:
+      type: Interlex.Crawler.Model.NameModel
+      description: ''
+    content.vb: Public Shared Function UnifyAndCreate(value As String) As NameModel
+  overload: Interlex.Crawler.Model.NameModel.UnifyAndCreate*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Throws when the value has invalid charachters
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.Model.NameModel.UnifyAndCreateFromUrlLastPart(System.String)
+  commentId: M:Interlex.Crawler.Model.NameModel.UnifyAndCreateFromUrlLastPart(System.String)
+  id: UnifyAndCreateFromUrlLastPart(System.String)
+  parent: Interlex.Crawler.Model.NameModel
+  langs:
+  - csharp
+  - vb
+  name: UnifyAndCreateFromUrlLastPart(String)
+  nameWithType: NameModel.UnifyAndCreateFromUrlLastPart(String)
+  fullName: Interlex.Crawler.Model.NameModel.UnifyAndCreateFromUrlLastPart(System.String)
+  type: Method
+  source:
+    id: UnifyAndCreateFromUrlLastPart
+    path: ''
+    startLine: 3819
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nUnifies the last <see cref=\"!:Uri.Segments\"></see> of the url and creates name\n"
+  example: []
+  syntax:
+    content: public static NameModel UnifyAndCreateFromUrlLastPart(string url)
+    parameters:
+    - id: url
+      type: System.String
+      description: ''
+    return:
+      type: Interlex.Crawler.Model.NameModel
+      description: ''
+    content.vb: Public Shared Function UnifyAndCreateFromUrlLastPart(url As String) As NameModel
+  overload: Interlex.Crawler.Model.NameModel.UnifyAndCreateFromUrlLastPart*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.Model.NameModel.Value
+  commentId: P:Interlex.Crawler.Model.NameModel.Value
+  id: Value
+  parent: Interlex.Crawler.Model.NameModel
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: NameModel.Value
+  fullName: Interlex.Crawler.Model.NameModel.Value
+  type: Property
+  source:
+    id: Value
+    path: ''
+    startLine: 3835
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nValue\n"
+  example: []
+  syntax:
+    content: public string Value { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Value As String
+  overload: Interlex.Crawler.Model.NameModel.Value*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Interlex.Crawler.Model
+  commentId: N:Interlex.Crawler.Model
+  name: Interlex.Crawler.Model
+  nameWithType: Interlex.Crawler.Model
+  fullName: Interlex.Crawler.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+- uid: Interlex.Crawler.Model.NameModel.Create*
+  commentId: Overload:Interlex.Crawler.Model.NameModel.Create
+  name: Create
+  nameWithType: NameModel.Create
+  fullName: Interlex.Crawler.Model.NameModel.Create
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Interlex.Crawler.Model.NameModel
+  commentId: T:Interlex.Crawler.Model.NameModel
+  parent: Interlex.Crawler.Model
+  name: NameModel
+  nameWithType: NameModel
+  fullName: Interlex.Crawler.Model.NameModel
+- uid: Interlex.Crawler.Model.NameModel.UnifyAndCreate*
+  commentId: Overload:Interlex.Crawler.Model.NameModel.UnifyAndCreate
+  name: UnifyAndCreate
+  nameWithType: NameModel.UnifyAndCreate
+  fullName: Interlex.Crawler.Model.NameModel.UnifyAndCreate
+- uid: Interlex.Crawler.Model.NameModel.UnifyAndCreateFromUrlLastPart*
+  commentId: Overload:Interlex.Crawler.Model.NameModel.UnifyAndCreateFromUrlLastPart
+  name: UnifyAndCreateFromUrlLastPart
+  nameWithType: NameModel.UnifyAndCreateFromUrlLastPart
+  fullName: Interlex.Crawler.Model.NameModel.UnifyAndCreateFromUrlLastPart
+- uid: Interlex.Crawler.Model.NameModel.Value*
+  commentId: Overload:Interlex.Crawler.Model.NameModel.Value
+  name: Value
+  nameWithType: NameModel.Value
+  fullName: Interlex.Crawler.Model.NameModel.Value

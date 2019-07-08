@@ -1,0 +1,1685 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Common.HttpRequestBuilder
+  commentId: T:Interlex.Crawler.Common.HttpRequestBuilder
+  id: HttpRequestBuilder
+  parent: Interlex.Crawler.Common
+  children:
+  - Interlex.Crawler.Common.HttpRequestBuilder.Execute
+  - Interlex.Crawler.Common.HttpRequestBuilder.ExecuteRich
+  - Interlex.Crawler.Common.HttpRequestBuilder.ExecuteRichAsync
+  - Interlex.Crawler.Common.HttpRequestBuilder.ExecuteWebRespose
+  - Interlex.Crawler.Common.HttpRequestBuilder.ExecuteWebResposeAsync
+  - Interlex.Crawler.Common.HttpRequestBuilder.Get
+  - Interlex.Crawler.Common.HttpRequestBuilder.Head
+  - Interlex.Crawler.Common.HttpRequestBuilder.Post
+  - Interlex.Crawler.Common.HttpRequestBuilder.UseGZip
+  - Interlex.Crawler.Common.HttpRequestBuilder.WithAccept(System.String)
+  - Interlex.Crawler.Common.HttpRequestBuilder.WithAllowRedirect(System.Boolean)
+  - Interlex.Crawler.Common.HttpRequestBuilder.WithApplicationJsonType
+  - Interlex.Crawler.Common.HttpRequestBuilder.WithCancellationToken(System.Threading.CancellationToken)
+  - Interlex.Crawler.Common.HttpRequestBuilder.WithCharset(System.String)
+  - Interlex.Crawler.Common.HttpRequestBuilder.WithContentType(System.String)
+  - Interlex.Crawler.Common.HttpRequestBuilder.WithCookie(Cookie)
+  - Interlex.Crawler.Common.HttpRequestBuilder.WithCookie(System.Collections.Generic.IEnumerable{Cookie})
+  - Interlex.Crawler.Common.HttpRequestBuilder.WithCookie(System.String)
+  - Interlex.Crawler.Common.HttpRequestBuilder.WithHeader(System.String,System.String)
+  - Interlex.Crawler.Common.HttpRequestBuilder.WithHost(System.String)
+  - Interlex.Crawler.Common.HttpRequestBuilder.WithMethod(System.String)
+  - Interlex.Crawler.Common.HttpRequestBuilder.WithPostData(System.String)
+  - Interlex.Crawler.Common.HttpRequestBuilder.WithProxy(System.String)
+  - Interlex.Crawler.Common.HttpRequestBuilder.WithProxy(WebProxy)
+  - Interlex.Crawler.Common.HttpRequestBuilder.WithRefer(System.String)
+  - Interlex.Crawler.Common.HttpRequestBuilder.WithTimeout(System.TimeSpan)
+  - Interlex.Crawler.Common.HttpRequestBuilder.WithUrl(System.String)
+  langs:
+  - csharp
+  - vb
+  name: HttpRequestBuilder
+  nameWithType: HttpRequestBuilder
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder
+  type: Class
+  source:
+    id: HttpRequestBuilder
+    path: ''
+    startLine: 814
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nRepresents class with capabilities to execute http requests\n"
+  example: []
+  syntax:
+    content: public class HttpRequestBuilder
+    content.vb: Public Class HttpRequestBuilder
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.Execute
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.Execute
+  id: Execute
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: HttpRequestBuilder.Execute()
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.Execute()
+  type: Method
+  source:
+    id: Execute
+    path: ''
+    startLine: 837
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nExecutes the request and returns the string representation of the respose uisng the charset of the content type header (if no charset provided uf8 is used)\n"
+  example: []
+  syntax:
+    content: public string Execute()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Function Execute As String
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.Execute*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.ExecuteRich
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.ExecuteRich
+  id: ExecuteRich
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: ExecuteRich()
+  nameWithType: HttpRequestBuilder.ExecuteRich()
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.ExecuteRich()
+  type: Method
+  source:
+    id: ExecuteRich
+    path: ''
+    startLine: 846
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nExecutes the request and returns wrapped object for the http response with headers, content ... etc\n"
+  example: []
+  syntax:
+    content: public ResponseRichResult ExecuteRich()
+    return:
+      type: Interlex.Crawler.Common.ResponseRichResult
+      description: ''
+    content.vb: Public Function ExecuteRich As ResponseRichResult
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.ExecuteRich*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.ExecuteRichAsync
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.ExecuteRichAsync
+  id: ExecuteRichAsync
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: ExecuteRichAsync()
+  nameWithType: HttpRequestBuilder.ExecuteRichAsync()
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.ExecuteRichAsync()
+  type: Method
+  source:
+    id: ExecuteRichAsync
+    path: ''
+    startLine: 877
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nExecutes asynchronous request and returns wrapped object for the http response with headers, content ... etc\n"
+  example: []
+  syntax:
+    content: public Task<ResponseRichResult> ExecuteRichAsync()
+    return:
+      type: System.Threading.Tasks.Task{Interlex.Crawler.Common.ResponseRichResult}
+      description: ''
+    content.vb: Public Function ExecuteRichAsync As Task(Of ResponseRichResult)
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.ExecuteRichAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.ExecuteWebRespose
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.ExecuteWebRespose
+  id: ExecuteWebRespose
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: ExecuteWebRespose()
+  nameWithType: HttpRequestBuilder.ExecuteWebRespose()
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.ExecuteWebRespose()
+  type: Method
+  source:
+    id: ExecuteWebRespose
+    path: ''
+    startLine: 911
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nExecutes the request and returns the dotnet response object\n"
+  example: []
+  syntax:
+    content: public HttpWebResponse ExecuteWebRespose()
+    return:
+      type: HttpWebResponse
+      description: ''
+    content.vb: Public Function ExecuteWebRespose As HttpWebResponse
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.ExecuteWebRespose*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.ExecuteWebResposeAsync
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.ExecuteWebResposeAsync
+  id: ExecuteWebResposeAsync
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: ExecuteWebResposeAsync()
+  nameWithType: HttpRequestBuilder.ExecuteWebResposeAsync()
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.ExecuteWebResposeAsync()
+  type: Method
+  source:
+    id: ExecuteWebResposeAsync
+    path: ''
+    startLine: 924
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nExecutes asynchronous request and returns the dotnet response object\n"
+  example: []
+  syntax:
+    content: public Task<HttpWebResponse> ExecuteWebResposeAsync()
+    return:
+      type: System.Threading.Tasks.Task{HttpWebResponse}
+      description: ''
+    content.vb: Public Function ExecuteWebResposeAsync As Task(Of HttpWebResponse)
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.ExecuteWebResposeAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithUrl(System.String)
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.WithUrl(System.String)
+  id: WithUrl(System.String)
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithUrl(String)
+  nameWithType: HttpRequestBuilder.WithUrl(String)
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithUrl(System.String)
+  type: Method
+  source:
+    id: WithUrl
+    path: ''
+    startLine: 939
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nSets the url of the request\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder WithUrl(string url)
+    parameters:
+    - id: url
+      type: System.String
+      description: ''
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function WithUrl(url As String) As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.WithUrl*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithHost(System.String)
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.WithHost(System.String)
+  id: WithHost(System.String)
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithHost(String)
+  nameWithType: HttpRequestBuilder.WithHost(String)
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithHost(System.String)
+  type: Method
+  source:
+    id: WithHost
+    path: ''
+    startLine: 957
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nSets the host of the url. Usually this value will be set when using <xref href=\"Interlex.Crawler.Common.HttpRequestBuilder.WithUrl(System.String)\" data-throw-if-not-resolved=\"false\"></xref> method\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder WithHost(string host)
+    parameters:
+    - id: host
+      type: System.String
+      description: ''
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function WithHost(host As String) As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.WithHost*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithRefer(System.String)
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.WithRefer(System.String)
+  id: WithRefer(System.String)
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithRefer(String)
+  nameWithType: HttpRequestBuilder.WithRefer(String)
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithRefer(System.String)
+  type: Method
+  source:
+    id: WithRefer
+    path: ''
+    startLine: 968
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nSets the refer of the request\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder WithRefer(string refer)
+    parameters:
+    - id: refer
+      type: System.String
+      description: ''
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function WithRefer(refer As String) As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.WithRefer*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithPostData(System.String)
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.WithPostData(System.String)
+  id: WithPostData(System.String)
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithPostData(String)
+  nameWithType: HttpRequestBuilder.WithPostData(String)
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithPostData(System.String)
+  type: Method
+  source:
+    id: WithPostData
+    path: ''
+    startLine: 979
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nSets the post data of the ruquest. Used when the method is POST.\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder WithPostData(string postData)
+    parameters:
+    - id: postData
+      type: System.String
+      description: ''
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function WithPostData(postData As String) As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.WithPostData*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithMethod(System.String)
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.WithMethod(System.String)
+  id: WithMethod(System.String)
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithMethod(String)
+  nameWithType: HttpRequestBuilder.WithMethod(String)
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithMethod(System.String)
+  type: Method
+  source:
+    id: WithMethod
+    path: ''
+    startLine: 993
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nSets the method of the request. Example: post, get, put, patch, head .. etc\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder WithMethod(string method)
+    parameters:
+    - id: method
+      type: System.String
+      description: ''
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function WithMethod(method As String) As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.WithMethod*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithCookie(System.String)
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.WithCookie(System.String)
+  id: WithCookie(System.String)
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithCookie(String)
+  nameWithType: HttpRequestBuilder.WithCookie(String)
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithCookie(System.String)
+  type: Method
+  source:
+    id: WithCookie
+    path: ''
+    startLine: 1004
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nSets cookie for the request\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder WithCookie(string cookie)
+    parameters:
+    - id: cookie
+      type: System.String
+      description: ''
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function WithCookie(cookie As String) As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.WithCookie*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithCookie(Cookie)
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.WithCookie(Cookie)
+  id: WithCookie(Cookie)
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithCookie(Cookie)
+  nameWithType: HttpRequestBuilder.WithCookie(Cookie)
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithCookie(Cookie)
+  type: Method
+  source:
+    id: WithCookie
+    path: ''
+    startLine: 1016
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nAdds cookie for the request\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder WithCookie(Cookie cookie)
+    parameters:
+    - id: cookie
+      type: Cookie
+      description: ''
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function WithCookie(cookie As Cookie) As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.WithCookie*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithCookie(System.Collections.Generic.IEnumerable{Cookie})
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.WithCookie(System.Collections.Generic.IEnumerable{Cookie})
+  id: WithCookie(System.Collections.Generic.IEnumerable{Cookie})
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithCookie(IEnumerable<Cookie>)
+  nameWithType: HttpRequestBuilder.WithCookie(IEnumerable<Cookie>)
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithCookie(System.Collections.Generic.IEnumerable<Cookie>)
+  type: Method
+  source:
+    id: WithCookie
+    path: ''
+    startLine: 1028
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nAdds cookies for the request\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder WithCookie(IEnumerable<Cookie> cookies)
+    parameters:
+    - id: cookies
+      type: System.Collections.Generic.IEnumerable{Cookie}
+      description: ''
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function WithCookie(cookies As IEnumerable(Of Cookie)) As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.WithCookie*
+  nameWithType.vb: HttpRequestBuilder.WithCookie(IEnumerable(Of Cookie))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Interlex.Crawler.Common.HttpRequestBuilder.WithCookie(System.Collections.Generic.IEnumerable(Of Cookie))
+  name.vb: WithCookie(IEnumerable(Of Cookie))
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithContentType(System.String)
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.WithContentType(System.String)
+  id: WithContentType(System.String)
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithContentType(String)
+  nameWithType: HttpRequestBuilder.WithContentType(String)
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithContentType(System.String)
+  type: Method
+  source:
+    id: WithContentType
+    path: ''
+    startLine: 1043
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nSets the content type of the request\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder WithContentType(string type)
+    parameters:
+    - id: type
+      type: System.String
+      description: ''
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function WithContentType(type As String) As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.WithContentType*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.UseGZip
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.UseGZip
+  id: UseGZip
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: UseGZip()
+  nameWithType: HttpRequestBuilder.UseGZip()
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.UseGZip()
+  type: Method
+  source:
+    id: UseGZip
+    path: ''
+    startLine: 1054
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nThe request will notify the server that a gzip response is requested if the server support it\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder UseGZip()
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function UseGZip As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.UseGZip*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.Post
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.Post
+  id: Post
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: Post()
+  nameWithType: HttpRequestBuilder.Post()
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.Post()
+  type: Method
+  source:
+    id: Post
+    path: ''
+    startLine: 1065
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nSets the method of the request to post\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder Post()
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function Post As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.Post*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.Get
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.Get
+  id: Get
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: Get()
+  nameWithType: HttpRequestBuilder.Get()
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.Get()
+  type: Method
+  source:
+    id: Get
+    path: ''
+    startLine: 1075
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nSets the method of the request to get\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder Get()
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function Get As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.Get*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.Head
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.Head
+  id: Head
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: Head()
+  nameWithType: HttpRequestBuilder.Head()
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.Head()
+  type: Method
+  source:
+    id: Head
+    path: ''
+    startLine: 1085
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nSets the method of the request to head\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder Head()
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function Head As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.Head*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithApplicationJsonType
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.WithApplicationJsonType
+  id: WithApplicationJsonType
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithApplicationJsonType()
+  nameWithType: HttpRequestBuilder.WithApplicationJsonType()
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithApplicationJsonType()
+  type: Method
+  source:
+    id: WithApplicationJsonType
+    path: ''
+    startLine: 1095
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nSets the content type to application/json\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder WithApplicationJsonType()
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function WithApplicationJsonType As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.WithApplicationJsonType*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithProxy(System.String)
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.WithProxy(System.String)
+  id: WithProxy(System.String)
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithProxy(String)
+  nameWithType: HttpRequestBuilder.WithProxy(String)
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithProxy(System.String)
+  type: Method
+  source:
+    id: WithProxy
+    path: ''
+    startLine: 1106
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nSets proxy for the request\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder WithProxy(string proxy)
+    parameters:
+    - id: proxy
+      type: System.String
+      description: ''
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function WithProxy(proxy As String) As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.WithProxy*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithProxy(WebProxy)
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.WithProxy(WebProxy)
+  id: WithProxy(WebProxy)
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithProxy(WebProxy)
+  nameWithType: HttpRequestBuilder.WithProxy(WebProxy)
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithProxy(WebProxy)
+  type: Method
+  source:
+    id: WithProxy
+    path: ''
+    startLine: 1117
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nSets proxy for the request\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder WithProxy(WebProxy proxy)
+    parameters:
+    - id: proxy
+      type: WebProxy
+      description: ''
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function WithProxy(proxy As WebProxy) As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.WithProxy*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithHeader(System.String,System.String)
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.WithHeader(System.String,System.String)
+  id: WithHeader(System.String,System.String)
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithHeader(String, String)
+  nameWithType: HttpRequestBuilder.WithHeader(String, String)
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithHeader(System.String, System.String)
+  type: Method
+  source:
+    id: WithHeader
+    path: ''
+    startLine: 1129
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nSets specific header for the request\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder WithHeader(string name, string value)
+    parameters:
+    - id: name
+      type: System.String
+      description: header name
+    - id: value
+      type: System.String
+      description: header value
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function WithHeader(name As String, value As String) As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.WithHeader*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithTimeout(System.TimeSpan)
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.WithTimeout(System.TimeSpan)
+  id: WithTimeout(System.TimeSpan)
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithTimeout(TimeSpan)
+  nameWithType: HttpRequestBuilder.WithTimeout(TimeSpan)
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithTimeout(System.TimeSpan)
+  type: Method
+  source:
+    id: WithTimeout
+    path: ''
+    startLine: 1141
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nSets after what time a timeout exception will be rised\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder WithTimeout(TimeSpan timeout)
+    parameters:
+    - id: timeout
+      type: System.TimeSpan
+      description: ''
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function WithTimeout(timeout As TimeSpan) As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.WithTimeout*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithCharset(System.String)
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.WithCharset(System.String)
+  id: WithCharset(System.String)
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithCharset(String)
+  nameWithType: HttpRequestBuilder.WithCharset(String)
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithCharset(System.String)
+  type: Method
+  source:
+    id: WithCharset
+    path: ''
+    startLine: 1153
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nSets the charset of the content type\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder WithCharset(string charset)
+    parameters:
+    - id: charset
+      type: System.String
+      description: ''
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function WithCharset(charset As String) As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.WithCharset*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithCancellationToken(System.Threading.CancellationToken)
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.WithCancellationToken(System.Threading.CancellationToken)
+  id: WithCancellationToken(System.Threading.CancellationToken)
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithCancellationToken(CancellationToken)
+  nameWithType: HttpRequestBuilder.WithCancellationToken(CancellationToken)
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithCancellationToken(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: WithCancellationToken
+    path: ''
+    startLine: 1166
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nSets cancellation token for the request\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder WithCancellationToken(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: ''
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function WithCancellationToken(cancellationToken As CancellationToken) As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.WithCancellationToken*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithAccept(System.String)
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.WithAccept(System.String)
+  id: WithAccept(System.String)
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithAccept(String)
+  nameWithType: HttpRequestBuilder.WithAccept(String)
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithAccept(System.String)
+  type: Method
+  source:
+    id: WithAccept
+    path: ''
+    startLine: 1178
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nSets the accept header for the request\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder WithAccept(string accept)
+    parameters:
+    - id: accept
+      type: System.String
+      description: ''
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function WithAccept(accept As String) As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.WithAccept*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithAllowRedirect(System.Boolean)
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.WithAllowRedirect(System.Boolean)
+  id: WithAllowRedirect(System.Boolean)
+  parent: Interlex.Crawler.Common.HttpRequestBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithAllowRedirect(Boolean)
+  nameWithType: HttpRequestBuilder.WithAllowRedirect(Boolean)
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithAllowRedirect(System.Boolean)
+  type: Method
+  source:
+    id: WithAllowRedirect
+    path: ''
+    startLine: 1190
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nEnable / disable auto redirect for direct responses\n"
+  example: []
+  syntax:
+    content: public HttpRequestBuilder WithAllowRedirect(bool allowRedirect)
+    parameters:
+    - id: allowRedirect
+      type: System.Boolean
+      description: True to enable
+    return:
+      type: Interlex.Crawler.Common.HttpRequestBuilder
+      description: ''
+    content.vb: Public Function WithAllowRedirect(allowRedirect As Boolean) As HttpRequestBuilder
+  overload: Interlex.Crawler.Common.HttpRequestBuilder.WithAllowRedirect*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Interlex.Crawler.Common
+  commentId: N:Interlex.Crawler.Common
+  name: Interlex.Crawler.Common
+  nameWithType: Interlex.Crawler.Common
+  fullName: Interlex.Crawler.Common
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.Execute*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.Execute
+  name: Execute
+  nameWithType: HttpRequestBuilder.Execute
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.Execute
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.ExecuteRich*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.ExecuteRich
+  name: ExecuteRich
+  nameWithType: HttpRequestBuilder.ExecuteRich
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.ExecuteRich
+- uid: Interlex.Crawler.Common.ResponseRichResult
+  commentId: T:Interlex.Crawler.Common.ResponseRichResult
+  parent: Interlex.Crawler.Common
+  name: ResponseRichResult
+  nameWithType: ResponseRichResult
+  fullName: Interlex.Crawler.Common.ResponseRichResult
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.ExecuteRichAsync*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.ExecuteRichAsync
+  name: ExecuteRichAsync
+  nameWithType: HttpRequestBuilder.ExecuteRichAsync
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.ExecuteRichAsync
+- uid: System.Threading.Tasks.Task{Interlex.Crawler.Common.ResponseRichResult}
+  commentId: T:System.Threading.Tasks.Task{Interlex.Crawler.Common.ResponseRichResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ResponseRichResult>
+  nameWithType: Task<ResponseRichResult>
+  fullName: System.Threading.Tasks.Task<Interlex.Crawler.Common.ResponseRichResult>
+  nameWithType.vb: Task(Of ResponseRichResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Interlex.Crawler.Common.ResponseRichResult)
+  name.vb: Task(Of ResponseRichResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Interlex.Crawler.Common.ResponseRichResult
+    name: ResponseRichResult
+    nameWithType: ResponseRichResult
+    fullName: Interlex.Crawler.Common.ResponseRichResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Interlex.Crawler.Common.ResponseRichResult
+    name: ResponseRichResult
+    nameWithType: ResponseRichResult
+    fullName: Interlex.Crawler.Common.ResponseRichResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.ExecuteWebRespose*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.ExecuteWebRespose
+  name: ExecuteWebRespose
+  nameWithType: HttpRequestBuilder.ExecuteWebRespose
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.ExecuteWebRespose
+- uid: HttpWebResponse
+  commentId: '!:HttpWebResponse'
+  isExternal: true
+  name: HttpWebResponse
+  nameWithType: HttpWebResponse
+  fullName: HttpWebResponse
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.ExecuteWebResposeAsync*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.ExecuteWebResposeAsync
+  name: ExecuteWebResposeAsync
+  nameWithType: HttpRequestBuilder.ExecuteWebResposeAsync
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.ExecuteWebResposeAsync
+- uid: System.Threading.Tasks.Task{HttpWebResponse}
+  commentId: T:System.Threading.Tasks.Task{HttpWebResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<HttpWebResponse>
+  nameWithType: Task<HttpWebResponse>
+  fullName: System.Threading.Tasks.Task<HttpWebResponse>
+  nameWithType.vb: Task(Of HttpWebResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of HttpWebResponse)
+  name.vb: Task(Of HttpWebResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: HttpWebResponse
+    name: HttpWebResponse
+    nameWithType: HttpWebResponse
+    fullName: HttpWebResponse
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: HttpWebResponse
+    name: HttpWebResponse
+    nameWithType: HttpWebResponse
+    fullName: HttpWebResponse
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithUrl*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.WithUrl
+  name: WithUrl
+  nameWithType: HttpRequestBuilder.WithUrl
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithUrl
+- uid: Interlex.Crawler.Common.HttpRequestBuilder
+  commentId: T:Interlex.Crawler.Common.HttpRequestBuilder
+  parent: Interlex.Crawler.Common
+  name: HttpRequestBuilder
+  nameWithType: HttpRequestBuilder
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithUrl(System.String)
+  commentId: M:Interlex.Crawler.Common.HttpRequestBuilder.WithUrl(System.String)
+  isExternal: true
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithHost*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.WithHost
+  name: WithHost
+  nameWithType: HttpRequestBuilder.WithHost
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithHost
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithRefer*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.WithRefer
+  name: WithRefer
+  nameWithType: HttpRequestBuilder.WithRefer
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithRefer
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithPostData*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.WithPostData
+  name: WithPostData
+  nameWithType: HttpRequestBuilder.WithPostData
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithPostData
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithMethod*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.WithMethod
+  name: WithMethod
+  nameWithType: HttpRequestBuilder.WithMethod
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithMethod
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithCookie*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.WithCookie
+  name: WithCookie
+  nameWithType: HttpRequestBuilder.WithCookie
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithCookie
+- uid: Cookie
+  commentId: '!:Cookie'
+  isExternal: true
+  name: Cookie
+  nameWithType: Cookie
+  fullName: Cookie
+- uid: System.Collections.Generic.IEnumerable{Cookie}
+  commentId: T:System.Collections.Generic.IEnumerable{Cookie}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<Cookie>
+  nameWithType: IEnumerable<Cookie>
+  fullName: System.Collections.Generic.IEnumerable<Cookie>
+  nameWithType.vb: IEnumerable(Of Cookie)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Cookie)
+  name.vb: IEnumerable(Of Cookie)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Cookie
+    name: Cookie
+    nameWithType: Cookie
+    fullName: Cookie
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Cookie
+    name: Cookie
+    nameWithType: Cookie
+    fullName: Cookie
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithContentType*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.WithContentType
+  name: WithContentType
+  nameWithType: HttpRequestBuilder.WithContentType
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithContentType
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.UseGZip*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.UseGZip
+  name: UseGZip
+  nameWithType: HttpRequestBuilder.UseGZip
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.UseGZip
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.Post*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.Post
+  name: Post
+  nameWithType: HttpRequestBuilder.Post
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.Post
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.Get*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.Get
+  name: Get
+  nameWithType: HttpRequestBuilder.Get
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.Get
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.Head*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.Head
+  name: Head
+  nameWithType: HttpRequestBuilder.Head
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.Head
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithApplicationJsonType*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.WithApplicationJsonType
+  name: WithApplicationJsonType
+  nameWithType: HttpRequestBuilder.WithApplicationJsonType
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithApplicationJsonType
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithProxy*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.WithProxy
+  name: WithProxy
+  nameWithType: HttpRequestBuilder.WithProxy
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithProxy
+- uid: WebProxy
+  commentId: '!:WebProxy'
+  isExternal: true
+  name: WebProxy
+  nameWithType: WebProxy
+  fullName: WebProxy
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithHeader*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.WithHeader
+  name: WithHeader
+  nameWithType: HttpRequestBuilder.WithHeader
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithHeader
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithTimeout*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.WithTimeout
+  name: WithTimeout
+  nameWithType: HttpRequestBuilder.WithTimeout
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithTimeout
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithCharset*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.WithCharset
+  name: WithCharset
+  nameWithType: HttpRequestBuilder.WithCharset
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithCharset
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithCancellationToken*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.WithCancellationToken
+  name: WithCancellationToken
+  nameWithType: HttpRequestBuilder.WithCancellationToken
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithCancellationToken
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithAccept*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.WithAccept
+  name: WithAccept
+  nameWithType: HttpRequestBuilder.WithAccept
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithAccept
+- uid: Interlex.Crawler.Common.HttpRequestBuilder.WithAllowRedirect*
+  commentId: Overload:Interlex.Crawler.Common.HttpRequestBuilder.WithAllowRedirect
+  name: WithAllowRedirect
+  nameWithType: HttpRequestBuilder.WithAllowRedirect
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder.WithAllowRedirect
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

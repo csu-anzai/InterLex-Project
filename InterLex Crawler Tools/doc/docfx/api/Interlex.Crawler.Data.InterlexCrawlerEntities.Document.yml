@@ -1,0 +1,732 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+  commentId: T:Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+  id: InterlexCrawlerEntities.Document
+  parent: Interlex.Crawler.Data
+  children:
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentFormat
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentGroup
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentGroupId
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentId
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentName
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentOrder
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Identifier
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Md5
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Operation
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Url
+  langs:
+  - csharp
+  - vb
+  name: InterlexCrawlerEntities.Document
+  nameWithType: InterlexCrawlerEntities.Document
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+  type: Class
+  source:
+    id: Document
+    path: ''
+    startLine: 4084
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  summary: "\nEntity for the Documents table\n"
+  example: []
+  syntax:
+    content: public class Document
+    content.vb: Public Class Document
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentId
+  commentId: P:Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentId
+  id: DocumentId
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+  langs:
+  - csharp
+  - vb
+  name: DocumentId
+  nameWithType: InterlexCrawlerEntities.Document.DocumentId
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentId
+  type: Property
+  source:
+    id: DocumentId
+    path: ''
+    startLine: 4086
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  syntax:
+    content: public int DocumentId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DocumentId As Integer
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentFormat
+  commentId: P:Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentFormat
+  id: DocumentFormat
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+  langs:
+  - csharp
+  - vb
+  name: DocumentFormat
+  nameWithType: InterlexCrawlerEntities.Document.DocumentFormat
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentFormat
+  type: Property
+  source:
+    id: DocumentFormat
+    path: ''
+    startLine: 4087
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  syntax:
+    content: public string DocumentFormat { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DocumentFormat As String
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentFormat*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentName
+  commentId: P:Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentName
+  id: DocumentName
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+  langs:
+  - csharp
+  - vb
+  name: DocumentName
+  nameWithType: InterlexCrawlerEntities.Document.DocumentName
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentName
+  type: Property
+  source:
+    id: DocumentName
+    path: ''
+    startLine: 4088
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  syntax:
+    content: public string DocumentName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DocumentName As String
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentName*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Identifier
+  commentId: P:Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Identifier
+  id: Identifier
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+  langs:
+  - csharp
+  - vb
+  name: Identifier
+  nameWithType: InterlexCrawlerEntities.Document.Identifier
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Identifier
+  type: Property
+  source:
+    id: Identifier
+    path: ''
+    startLine: 4089
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  syntax:
+    content: public string Identifier { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Identifier As String
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Identifier*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Operation
+  commentId: P:Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Operation
+  id: Operation
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+  langs:
+  - csharp
+  - vb
+  name: Operation
+  nameWithType: InterlexCrawlerEntities.Document.Operation
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Operation
+  type: Property
+  source:
+    id: Operation
+    path: ''
+    startLine: 4090
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  syntax:
+    content: public int Operation { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Operation As Integer
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Operation*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Url
+  commentId: P:Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Url
+  id: Url
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+  langs:
+  - csharp
+  - vb
+  name: Url
+  nameWithType: InterlexCrawlerEntities.Document.Url
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Url
+  type: Property
+  source:
+    id: Url
+    path: ''
+    startLine: 4091
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  syntax:
+    content: public string Url { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Url As String
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Url*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Md5
+  commentId: P:Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Md5
+  id: Md5
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+  langs:
+  - csharp
+  - vb
+  name: Md5
+  nameWithType: InterlexCrawlerEntities.Document.Md5
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Md5
+  type: Property
+  source:
+    id: Md5
+    path: ''
+    startLine: 4092
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  syntax:
+    content: public string Md5 { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Md5 As String
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Md5*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentOrder
+  commentId: P:Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentOrder
+  id: DocumentOrder
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+  langs:
+  - csharp
+  - vb
+  name: DocumentOrder
+  nameWithType: InterlexCrawlerEntities.Document.DocumentOrder
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentOrder
+  type: Property
+  source:
+    id: DocumentOrder
+    path: ''
+    startLine: 4093
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  syntax:
+    content: public int DocumentOrder { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DocumentOrder As Integer
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentOrder*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentGroupId
+  commentId: P:Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentGroupId
+  id: DocumentGroupId
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+  langs:
+  - csharp
+  - vb
+  name: DocumentGroupId
+  nameWithType: InterlexCrawlerEntities.Document.DocumentGroupId
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentGroupId
+  type: Property
+  source:
+    id: DocumentGroupId
+    path: ''
+    startLine: 4094
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  syntax:
+    content: public int DocumentGroupId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property DocumentGroupId As Integer
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentGroupId*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentGroup
+  commentId: P:Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentGroup
+  id: DocumentGroup
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+  langs:
+  - csharp
+  - vb
+  name: DocumentGroup
+  nameWithType: InterlexCrawlerEntities.Document.DocumentGroup
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentGroup
+  type: Property
+  source:
+    id: DocumentGroup
+    path: ''
+    startLine: 4095
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  syntax:
+    content: public virtual InterlexCrawlerEntities.DocumentGroup DocumentGroup { get; set; }
+    parameters: []
+    return:
+      type: Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup
+    content.vb: Public Overridable Property DocumentGroup As InterlexCrawlerEntities.DocumentGroup
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentGroup*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: Interlex.Crawler.Data
+  commentId: N:Interlex.Crawler.Data
+  name: Interlex.Crawler.Data
+  nameWithType: Interlex.Crawler.Data
+  fullName: Interlex.Crawler.Data
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentId*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentId
+  name: DocumentId
+  nameWithType: InterlexCrawlerEntities.Document.DocumentId
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentId
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentFormat*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentFormat
+  name: DocumentFormat
+  nameWithType: InterlexCrawlerEntities.Document.DocumentFormat
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentFormat
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentName*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentName
+  name: DocumentName
+  nameWithType: InterlexCrawlerEntities.Document.DocumentName
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentName
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Identifier*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Identifier
+  name: Identifier
+  nameWithType: InterlexCrawlerEntities.Document.Identifier
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Identifier
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Operation*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Operation
+  name: Operation
+  nameWithType: InterlexCrawlerEntities.Document.Operation
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Operation
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Url*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Url
+  name: Url
+  nameWithType: InterlexCrawlerEntities.Document.Url
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Url
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Md5*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Md5
+  name: Md5
+  nameWithType: InterlexCrawlerEntities.Document.Md5
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.Md5
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentOrder*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentOrder
+  name: DocumentOrder
+  nameWithType: InterlexCrawlerEntities.Document.DocumentOrder
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentOrder
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentGroupId*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentGroupId
+  name: DocumentGroupId
+  nameWithType: InterlexCrawlerEntities.Document.DocumentGroupId
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentGroupId
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentGroup*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentGroup
+  name: DocumentGroup
+  nameWithType: InterlexCrawlerEntities.Document.DocumentGroup
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document.DocumentGroup
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup
+  commentId: T:Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup
+  parent: Interlex.Crawler.Data
+  name: InterlexCrawlerEntities.DocumentGroup
+  nameWithType: InterlexCrawlerEntities.DocumentGroup
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup

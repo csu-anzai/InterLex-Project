@@ -1,0 +1,182 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Model.DocumentModelOperation
+  commentId: T:Interlex.Crawler.Model.DocumentModelOperation
+  id: DocumentModelOperation
+  parent: Interlex.Crawler.Model
+  children:
+  - Interlex.Crawler.Model.DocumentModelOperation.Add
+  - Interlex.Crawler.Model.DocumentModelOperation.Del
+  - Interlex.Crawler.Model.DocumentModelOperation.None
+  - Interlex.Crawler.Model.DocumentModelOperation.Upd
+  langs:
+  - csharp
+  - vb
+  name: DocumentModelOperation
+  nameWithType: DocumentModelOperation
+  fullName: Interlex.Crawler.Model.DocumentModelOperation
+  type: Enum
+  source:
+    id: DocumentModelOperation
+    path: ''
+    startLine: 3629
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nOperation status for <xref href=\"Interlex.Crawler.Model.DocumentModel\" data-throw-if-not-resolved=\"false\"></xref> used by the <xref href=\"Interlex.Crawler.Manager.DocumentGroupManager\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public enum DocumentModelOperation
+    content.vb: Public Enum DocumentModelOperation
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Interlex.Crawler.Model.DocumentModelOperation.None
+  commentId: F:Interlex.Crawler.Model.DocumentModelOperation.None
+  id: None
+  parent: Interlex.Crawler.Model.DocumentModelOperation
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: DocumentModelOperation.None
+  fullName: Interlex.Crawler.Model.DocumentModelOperation.None
+  type: Field
+  source:
+    id: None
+    path: ''
+    startLine: 3631
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  syntax:
+    content: None = 0
+    return:
+      type: Interlex.Crawler.Model.DocumentModelOperation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Interlex.Crawler.Model.DocumentModelOperation.Add
+  commentId: F:Interlex.Crawler.Model.DocumentModelOperation.Add
+  id: Add
+  parent: Interlex.Crawler.Model.DocumentModelOperation
+  langs:
+  - csharp
+  - vb
+  name: Add
+  nameWithType: DocumentModelOperation.Add
+  fullName: Interlex.Crawler.Model.DocumentModelOperation.Add
+  type: Field
+  source:
+    id: Add
+    path: ''
+    startLine: 3636
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nNew document\n"
+  example: []
+  syntax:
+    content: Add = 1
+    return:
+      type: Interlex.Crawler.Model.DocumentModelOperation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Interlex.Crawler.Model.DocumentModelOperation.Upd
+  commentId: F:Interlex.Crawler.Model.DocumentModelOperation.Upd
+  id: Upd
+  parent: Interlex.Crawler.Model.DocumentModelOperation
+  langs:
+  - csharp
+  - vb
+  name: Upd
+  nameWithType: DocumentModelOperation.Upd
+  fullName: Interlex.Crawler.Model.DocumentModelOperation.Upd
+  type: Field
+  source:
+    id: Upd
+    path: ''
+    startLine: 3641
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nUpdated document\n"
+  example: []
+  syntax:
+    content: Upd = 2
+    return:
+      type: Interlex.Crawler.Model.DocumentModelOperation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Interlex.Crawler.Model.DocumentModelOperation.Del
+  commentId: F:Interlex.Crawler.Model.DocumentModelOperation.Del
+  id: Del
+  parent: Interlex.Crawler.Model.DocumentModelOperation
+  langs:
+  - csharp
+  - vb
+  name: Del
+  nameWithType: DocumentModelOperation.Del
+  fullName: Interlex.Crawler.Model.DocumentModelOperation.Del
+  type: Field
+  source:
+    id: Del
+    path: ''
+    startLine: 3646
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nDeleted document\n"
+  example: []
+  syntax:
+    content: Del = 3
+    return:
+      type: Interlex.Crawler.Model.DocumentModelOperation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Interlex.Crawler.Model.DocumentModel
+  commentId: T:Interlex.Crawler.Model.DocumentModel
+  name: DocumentModel
+  nameWithType: DocumentModel
+  fullName: Interlex.Crawler.Model.DocumentModel
+- uid: Interlex.Crawler.Manager.DocumentGroupManager
+  commentId: T:Interlex.Crawler.Manager.DocumentGroupManager
+  parent: Interlex.Crawler.Manager
+  name: DocumentGroupManager
+  nameWithType: DocumentGroupManager
+  fullName: Interlex.Crawler.Manager.DocumentGroupManager
+- uid: Interlex.Crawler.Model
+  commentId: N:Interlex.Crawler.Model
+  name: Interlex.Crawler.Model
+  nameWithType: Interlex.Crawler.Model
+  fullName: Interlex.Crawler.Model
+- uid: Interlex.Crawler.Manager
+  commentId: N:Interlex.Crawler.Manager
+  name: Interlex.Crawler.Manager
+  nameWithType: Interlex.Crawler.Manager
+  fullName: Interlex.Crawler.Manager
+- uid: Interlex.Crawler.Model.DocumentModelOperation
+  commentId: T:Interlex.Crawler.Model.DocumentModelOperation
+  parent: Interlex.Crawler.Model
+  name: DocumentModelOperation
+  nameWithType: DocumentModelOperation
+  fullName: Interlex.Crawler.Model.DocumentModelOperation

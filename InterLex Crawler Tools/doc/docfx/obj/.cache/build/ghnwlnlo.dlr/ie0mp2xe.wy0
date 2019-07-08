@@ -1,0 +1,1121 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HttpRequestBuilder
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HttpRequestBuilder
+   ">
+    <meta name="generator" content="docfx 2.42.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Interlex.Crawler.Common.HttpRequestBuilder">
+  
+  
+  <h1 id="Interlex_Crawler_Common_HttpRequestBuilder" data-uid="Interlex.Crawler.Common.HttpRequestBuilder" class="text-break">Class HttpRequestBuilder
+  </h1>
+  <div class="markdown level0 summary"><p>Represents class with capabilities to execute http requests</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">HttpRequestBuilder</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Interlex.Crawler.Common.html">Interlex.Crawler.Common</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Interlex_Crawler_Common_HttpRequestBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HttpRequestBuilder</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_Execute_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.Execute*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_Execute" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.Execute">Execute()</h4>
+  <div class="markdown level1 summary"><p>Executes the request and returns the string representation of the respose uisng</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Execute()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_ExecuteRich_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.ExecuteRich*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_ExecuteRich" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.ExecuteRich">ExecuteRich()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResponseRichResult ExecuteRich()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.ResponseRichResult.html">ResponseRichResult</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_ExecuteRichAsync_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.ExecuteRichAsync*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_ExecuteRichAsync" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.ExecuteRichAsync">ExecuteRichAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ResponseRichResult&gt; ExecuteRichAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Interlex.Crawler.Common.ResponseRichResult.html">ResponseRichResult</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_ExecuteWebRespose_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.ExecuteWebRespose*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_ExecuteWebRespose" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.ExecuteWebRespose">ExecuteWebRespose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpWebResponse ExecuteWebRespose()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">HttpWebResponse</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_ExecuteWebResposeAsync_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.ExecuteWebResposeAsync*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_ExecuteWebResposeAsync" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.ExecuteWebResposeAsync">ExecuteWebResposeAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpWebResponse&gt; ExecuteWebResposeAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">HttpWebResponse</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_Get_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.Get*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_Get" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.Get">Get()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder Get()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_Head_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.Head*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_Head" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.Head">Head()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder Head()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_Post_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.Post*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_Post" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.Post">Post()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder Post()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_UseGZip_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.UseGZip*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_UseGZip" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.UseGZip">UseGZip()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder UseGZip()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_WithAccept_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithAccept*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_WithAccept_System_String_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithAccept(System.String)">WithAccept(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder WithAccept(string accept)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">accept</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_WithAllowRedirect_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithAllowRedirect*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_WithAllowRedirect_System_Boolean_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithAllowRedirect(System.Boolean)">WithAllowRedirect(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder WithAllowRedirect(bool allowRedirect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">allowRedirect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_WithApplicationJsonType_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithApplicationJsonType*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_WithApplicationJsonType" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithApplicationJsonType">WithApplicationJsonType()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder WithApplicationJsonType()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_WithCancellationToken_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithCancellationToken*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_WithCancellationToken_System_Threading_CancellationToken_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithCancellationToken(System.Threading.CancellationToken)">WithCancellationToken(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder WithCancellationToken(CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_WithCharset_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithCharset*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_WithCharset_System_String_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithCharset(System.String)">WithCharset(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder WithCharset(string charset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">charset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_WithContentType_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithContentType*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_WithContentType_System_String_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithContentType(System.String)">WithContentType(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder WithContentType(string type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_WithCookie_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithCookie*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_WithCookie_Cookie_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithCookie(Cookie)">WithCookie(Cookie)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder WithCookie(Cookie cookie)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Cookie</span></td>
+        <td><span class="parametername">cookie</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_WithCookie_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithCookie*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_WithCookie_System_Collections_Generic_IEnumerable_Cookie__" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithCookie(System.Collections.Generic.IEnumerable{Cookie})">WithCookie(IEnumerable&lt;Cookie&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder WithCookie(IEnumerable&lt;Cookie&gt; cookies)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">Cookie</span>&gt;</td>
+        <td><span class="parametername">cookies</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_WithCookie_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithCookie*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_WithCookie_System_String_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithCookie(System.String)">WithCookie(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder WithCookie(string cookie)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">cookie</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_WithHeader_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithHeader*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_WithHeader_System_String_System_String_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithHeader(System.String,System.String)">WithHeader(String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder WithHeader(string name, string value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_WithHost_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithHost*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_WithHost_System_String_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithHost(System.String)">WithHost(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder WithHost(string host)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">host</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_WithMethod_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithMethod*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_WithMethod_System_String_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithMethod(System.String)">WithMethod(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder WithMethod(string method)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">method</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_WithPostData_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithPostData*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_WithPostData_System_String_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithPostData(System.String)">WithPostData(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder WithPostData(string postData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">postData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_WithProxy_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithProxy*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_WithProxy_System_String_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithProxy(System.String)">WithProxy(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder WithProxy(string proxy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">proxy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_WithProxy_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithProxy*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_WithProxy_WebProxy_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithProxy(WebProxy)">WithProxy(WebProxy)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder WithProxy(WebProxy proxy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">WebProxy</span></td>
+        <td><span class="parametername">proxy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_WithRefer_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithRefer*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_WithRefer_System_String_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithRefer(System.String)">WithRefer(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder WithRefer(string refer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">refer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_WithTimeout_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithTimeout*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_WithTimeout_System_TimeSpan_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithTimeout(System.TimeSpan)">WithTimeout(TimeSpan)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder WithTimeout(TimeSpan timeout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Interlex_Crawler_Common_HttpRequestBuilder_WithUrl_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithUrl*"></a>
+  <h4 id="Interlex_Crawler_Common_HttpRequestBuilder_WithUrl_System_String_" data-uid="Interlex.Crawler.Common.HttpRequestBuilder.WithUrl(System.String)">WithUrl(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestBuilder WithUrl(string url)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Interlex.Crawler.Common.HttpRequestBuilder.html">HttpRequestBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

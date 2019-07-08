@@ -1,0 +1,58 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Crawlers.DE
+  commentId: N:Interlex.Crawler.Crawlers.DE
+  id: Interlex.Crawler.Crawlers.DE
+  children:
+  - Interlex.Crawler.Crawlers.DE.BaseBundes
+  - Interlex.Crawler.Crawlers.DE.Bundesarbeitsgericht
+  - Interlex.Crawler.Crawlers.DE.Bundesfinanzhofs
+  - Interlex.Crawler.Crawlers.DE.Bundesgerichtshof
+  - Interlex.Crawler.Crawlers.DE.Bundespatentgericht
+  - Interlex.Crawler.Crawlers.DE.Bundessozialgericht
+  langs:
+  - csharp
+  - vb
+  name: Interlex.Crawler.Crawlers.DE
+  nameWithType: Interlex.Crawler.Crawlers.DE
+  fullName: Interlex.Crawler.Crawlers.DE
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Interlex.Crawler.Crawlers.DE.BaseBundes
+  commentId: T:Interlex.Crawler.Crawlers.DE.BaseBundes
+  parent: Interlex.Crawler.Crawlers.DE
+  name: BaseBundes
+  nameWithType: BaseBundes
+  fullName: Interlex.Crawler.Crawlers.DE.BaseBundes
+- uid: Interlex.Crawler.Crawlers.DE.Bundesarbeitsgericht
+  commentId: T:Interlex.Crawler.Crawlers.DE.Bundesarbeitsgericht
+  name: Bundesarbeitsgericht
+  nameWithType: Bundesarbeitsgericht
+  fullName: Interlex.Crawler.Crawlers.DE.Bundesarbeitsgericht
+- uid: Interlex.Crawler.Crawlers.DE.Bundesfinanzhofs
+  commentId: T:Interlex.Crawler.Crawlers.DE.Bundesfinanzhofs
+  name: Bundesfinanzhofs
+  nameWithType: Bundesfinanzhofs
+  fullName: Interlex.Crawler.Crawlers.DE.Bundesfinanzhofs
+- uid: Interlex.Crawler.Crawlers.DE.Bundesgerichtshof
+  commentId: T:Interlex.Crawler.Crawlers.DE.Bundesgerichtshof
+  name: Bundesgerichtshof
+  nameWithType: Bundesgerichtshof
+  fullName: Interlex.Crawler.Crawlers.DE.Bundesgerichtshof
+- uid: Interlex.Crawler.Crawlers.DE.Bundespatentgericht
+  commentId: T:Interlex.Crawler.Crawlers.DE.Bundespatentgericht
+  name: Bundespatentgericht
+  nameWithType: Bundespatentgericht
+  fullName: Interlex.Crawler.Crawlers.DE.Bundespatentgericht
+- uid: Interlex.Crawler.Crawlers.DE.Bundessozialgericht
+  commentId: T:Interlex.Crawler.Crawlers.DE.Bundessozialgericht
+  name: Bundessozialgericht
+  nameWithType: Bundessozialgericht
+  fullName: Interlex.Crawler.Crawlers.DE.Bundessozialgericht
+- uid: Interlex.Crawler.Crawlers.DE
+  commentId: N:Interlex.Crawler.Crawlers.DE
+  name: Interlex.Crawler.Crawlers.DE
+  nameWithType: Interlex.Crawler.Crawlers.DE
+  fullName: Interlex.Crawler.Crawlers.DE

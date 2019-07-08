@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Crawlers.Interlex_editor_tool
+  commentId: N:Interlex.Crawler.Crawlers.Interlex_editor_tool
+  id: Interlex.Crawler.Crawlers.Interlex_editor_tool
+  children:
+  - Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool
+  langs:
+  - csharp
+  - vb
+  name: Interlex.Crawler.Crawlers.Interlex_editor_tool
+  nameWithType: Interlex.Crawler.Crawlers.Interlex_editor_tool
+  fullName: Interlex.Crawler.Crawlers.Interlex_editor_tool
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool
+  commentId: T:Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool
+  name: InterlexEditorTool
+  nameWithType: InterlexEditorTool
+  fullName: Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool

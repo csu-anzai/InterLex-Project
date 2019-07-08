@@ -1,0 +1,719 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Common.ResponseRichResult
+  commentId: T:Interlex.Crawler.Common.ResponseRichResult
+  id: ResponseRichResult
+  parent: Interlex.Crawler.Common
+  children:
+  - Interlex.Crawler.Common.ResponseRichResult.Charset
+  - Interlex.Crawler.Common.ResponseRichResult.Cookies
+  - Interlex.Crawler.Common.ResponseRichResult.Encoding
+  - Interlex.Crawler.Common.ResponseRichResult.GetHeaderValue(System.String)
+  - Interlex.Crawler.Common.ResponseRichResult.HasHeader(System.String)
+  - Interlex.Crawler.Common.ResponseRichResult.ResponseBytes
+  - Interlex.Crawler.Common.ResponseRichResult.ResponseContent
+  - Interlex.Crawler.Common.ResponseRichResult.StatusCode
+  langs:
+  - csharp
+  - vb
+  name: ResponseRichResult
+  nameWithType: ResponseRichResult
+  fullName: Interlex.Crawler.Common.ResponseRichResult
+  type: Class
+  source:
+    id: ResponseRichResult
+    path: ''
+    startLine: 1341
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nRepresents class for http response\n"
+  example: []
+  syntax:
+    content: public class ResponseRichResult
+    content.vb: Public Class ResponseRichResult
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Interlex.Crawler.Common.ResponseRichResult.ResponseBytes
+  commentId: P:Interlex.Crawler.Common.ResponseRichResult.ResponseBytes
+  id: ResponseBytes
+  parent: Interlex.Crawler.Common.ResponseRichResult
+  langs:
+  - csharp
+  - vb
+  name: ResponseBytes
+  nameWithType: ResponseRichResult.ResponseBytes
+  fullName: Interlex.Crawler.Common.ResponseRichResult.ResponseBytes
+  type: Property
+  source:
+    id: ResponseBytes
+    path: ''
+    startLine: 1354
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nRaw bytes of the response\n"
+  example: []
+  syntax:
+    content: public byte[] ResponseBytes { get; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public ReadOnly Property ResponseBytes As Byte()
+  overload: Interlex.Crawler.Common.ResponseRichResult.ResponseBytes*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Common.ResponseRichResult.ResponseContent
+  commentId: P:Interlex.Crawler.Common.ResponseRichResult.ResponseContent
+  id: ResponseContent
+  parent: Interlex.Crawler.Common.ResponseRichResult
+  langs:
+  - csharp
+  - vb
+  name: ResponseContent
+  nameWithType: ResponseRichResult.ResponseContent
+  fullName: Interlex.Crawler.Common.ResponseRichResult.ResponseContent
+  type: Property
+  source:
+    id: ResponseContent
+    path: ''
+    startLine: 1359
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nResponse content represent as string using the encoding of the response\n"
+  example: []
+  syntax:
+    content: public string ResponseContent { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ResponseContent As String
+  overload: Interlex.Crawler.Common.ResponseRichResult.ResponseContent*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Common.ResponseRichResult.StatusCode
+  commentId: P:Interlex.Crawler.Common.ResponseRichResult.StatusCode
+  id: StatusCode
+  parent: Interlex.Crawler.Common.ResponseRichResult
+  langs:
+  - csharp
+  - vb
+  name: StatusCode
+  nameWithType: ResponseRichResult.StatusCode
+  fullName: Interlex.Crawler.Common.ResponseRichResult.StatusCode
+  type: Property
+  source:
+    id: StatusCode
+    path: ''
+    startLine: 1364
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nHttp status code\n"
+  example: []
+  syntax:
+    content: public HttpStatusCode StatusCode { get; }
+    parameters: []
+    return:
+      type: HttpStatusCode
+    content.vb: Public ReadOnly Property StatusCode As HttpStatusCode
+  overload: Interlex.Crawler.Common.ResponseRichResult.StatusCode*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Common.ResponseRichResult.Cookies
+  commentId: P:Interlex.Crawler.Common.ResponseRichResult.Cookies
+  id: Cookies
+  parent: Interlex.Crawler.Common.ResponseRichResult
+  langs:
+  - csharp
+  - vb
+  name: Cookies
+  nameWithType: ResponseRichResult.Cookies
+  fullName: Interlex.Crawler.Common.ResponseRichResult.Cookies
+  type: Property
+  source:
+    id: Cookies
+    path: ''
+    startLine: 1392
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nCookies\n"
+  example: []
+  syntax:
+    content: public CookieCollection Cookies { get; }
+    parameters: []
+    return:
+      type: CookieCollection
+    content.vb: Public ReadOnly Property Cookies As CookieCollection
+  overload: Interlex.Crawler.Common.ResponseRichResult.Cookies*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Common.ResponseRichResult.Charset
+  commentId: P:Interlex.Crawler.Common.ResponseRichResult.Charset
+  id: Charset
+  parent: Interlex.Crawler.Common.ResponseRichResult
+  langs:
+  - csharp
+  - vb
+  name: Charset
+  nameWithType: ResponseRichResult.Charset
+  fullName: Interlex.Crawler.Common.ResponseRichResult.Charset
+  type: Property
+  source:
+    id: Charset
+    path: ''
+    startLine: 1397
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nCharset\n"
+  example: []
+  syntax:
+    content: public string Charset { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Charset As String
+  overload: Interlex.Crawler.Common.ResponseRichResult.Charset*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Common.ResponseRichResult.Encoding
+  commentId: P:Interlex.Crawler.Common.ResponseRichResult.Encoding
+  id: Encoding
+  parent: Interlex.Crawler.Common.ResponseRichResult
+  langs:
+  - csharp
+  - vb
+  name: Encoding
+  nameWithType: ResponseRichResult.Encoding
+  fullName: Interlex.Crawler.Common.ResponseRichResult.Encoding
+  type: Property
+  source:
+    id: Encoding
+    path: ''
+    startLine: 1402
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nEncoding. Default is utf8\n"
+  example: []
+  syntax:
+    content: public Encoding Encoding { get; }
+    parameters: []
+    return:
+      type: System.Text.Encoding
+    content.vb: Public ReadOnly Property Encoding As Encoding
+  overload: Interlex.Crawler.Common.ResponseRichResult.Encoding*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Common.ResponseRichResult.GetHeaderValue(System.String)
+  commentId: M:Interlex.Crawler.Common.ResponseRichResult.GetHeaderValue(System.String)
+  id: GetHeaderValue(System.String)
+  parent: Interlex.Crawler.Common.ResponseRichResult
+  langs:
+  - csharp
+  - vb
+  name: GetHeaderValue(String)
+  nameWithType: ResponseRichResult.GetHeaderValue(String)
+  fullName: Interlex.Crawler.Common.ResponseRichResult.GetHeaderValue(System.String)
+  type: Method
+  source:
+    id: GetHeaderValue
+    path: ''
+    startLine: 1409
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nReturns the value of a header. Null is returned if no header with the specified valu\n"
+  example: []
+  syntax:
+    content: public string GetHeaderValue(string headerName)
+    parameters:
+    - id: headerName
+      type: System.String
+      description: header value
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Function GetHeaderValue(headerName As String) As String
+  overload: Interlex.Crawler.Common.ResponseRichResult.GetHeaderValue*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Common.ResponseRichResult.HasHeader(System.String)
+  commentId: M:Interlex.Crawler.Common.ResponseRichResult.HasHeader(System.String)
+  id: HasHeader(System.String)
+  parent: Interlex.Crawler.Common.ResponseRichResult
+  langs:
+  - csharp
+  - vb
+  name: HasHeader(String)
+  nameWithType: ResponseRichResult.HasHeader(String)
+  fullName: Interlex.Crawler.Common.ResponseRichResult.HasHeader(System.String)
+  type: Method
+  source:
+    id: HasHeader
+    path: ''
+    startLine: 1426
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nTrue if the header exists\n"
+  example: []
+  syntax:
+    content: public bool HasHeader(string headerName)
+    parameters:
+    - id: headerName
+      type: System.String
+      description: header name
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Public Function HasHeader(headerName As String) As Boolean
+  overload: Interlex.Crawler.Common.ResponseRichResult.HasHeader*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Interlex.Crawler.Common
+  commentId: N:Interlex.Crawler.Common
+  name: Interlex.Crawler.Common
+  nameWithType: Interlex.Crawler.Common
+  fullName: Interlex.Crawler.Common
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Interlex.Crawler.Common.ResponseRichResult.ResponseBytes*
+  commentId: Overload:Interlex.Crawler.Common.ResponseRichResult.ResponseBytes
+  name: ResponseBytes
+  nameWithType: ResponseRichResult.ResponseBytes
+  fullName: Interlex.Crawler.Common.ResponseRichResult.ResponseBytes
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Interlex.Crawler.Common.ResponseRichResult.ResponseContent*
+  commentId: Overload:Interlex.Crawler.Common.ResponseRichResult.ResponseContent
+  name: ResponseContent
+  nameWithType: ResponseRichResult.ResponseContent
+  fullName: Interlex.Crawler.Common.ResponseRichResult.ResponseContent
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Interlex.Crawler.Common.ResponseRichResult.StatusCode*
+  commentId: Overload:Interlex.Crawler.Common.ResponseRichResult.StatusCode
+  name: StatusCode
+  nameWithType: ResponseRichResult.StatusCode
+  fullName: Interlex.Crawler.Common.ResponseRichResult.StatusCode
+- uid: HttpStatusCode
+  isExternal: true
+  name: HttpStatusCode
+  nameWithType: HttpStatusCode
+  fullName: HttpStatusCode
+- uid: Interlex.Crawler.Common.ResponseRichResult.Cookies*
+  commentId: Overload:Interlex.Crawler.Common.ResponseRichResult.Cookies
+  name: Cookies
+  nameWithType: ResponseRichResult.Cookies
+  fullName: Interlex.Crawler.Common.ResponseRichResult.Cookies
+- uid: CookieCollection
+  isExternal: true
+  name: CookieCollection
+  nameWithType: CookieCollection
+  fullName: CookieCollection
+- uid: Interlex.Crawler.Common.ResponseRichResult.Charset*
+  commentId: Overload:Interlex.Crawler.Common.ResponseRichResult.Charset
+  name: Charset
+  nameWithType: ResponseRichResult.Charset
+  fullName: Interlex.Crawler.Common.ResponseRichResult.Charset
+- uid: Interlex.Crawler.Common.ResponseRichResult.Encoding*
+  commentId: Overload:Interlex.Crawler.Common.ResponseRichResult.Encoding
+  name: Encoding
+  nameWithType: ResponseRichResult.Encoding
+  fullName: Interlex.Crawler.Common.ResponseRichResult.Encoding
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: Interlex.Crawler.Common.ResponseRichResult.GetHeaderValue*
+  commentId: Overload:Interlex.Crawler.Common.ResponseRichResult.GetHeaderValue
+  name: GetHeaderValue
+  nameWithType: ResponseRichResult.GetHeaderValue
+  fullName: Interlex.Crawler.Common.ResponseRichResult.GetHeaderValue
+- uid: Interlex.Crawler.Common.ResponseRichResult.HasHeader*
+  commentId: Overload:Interlex.Crawler.Common.ResponseRichResult.HasHeader
+  name: HasHeader
+  nameWithType: ResponseRichResult.HasHeader
+  fullName: Interlex.Crawler.Common.ResponseRichResult.HasHeader
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

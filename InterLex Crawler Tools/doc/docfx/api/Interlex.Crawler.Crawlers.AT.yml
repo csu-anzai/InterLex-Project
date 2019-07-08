@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Crawlers.AT
+  commentId: N:Interlex.Crawler.Crawlers.AT
+  id: Interlex.Crawler.Crawlers.AT
+  children:
+  - Interlex.Crawler.Crawlers.AT.RisBka
+  langs:
+  - csharp
+  - vb
+  name: Interlex.Crawler.Crawlers.AT
+  nameWithType: Interlex.Crawler.Crawlers.AT
+  fullName: Interlex.Crawler.Crawlers.AT
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Interlex.Crawler.Crawlers.AT.RisBka
+  commentId: T:Interlex.Crawler.Crawlers.AT.RisBka
+  name: RisBka
+  nameWithType: RisBka
+  fullName: Interlex.Crawler.Crawlers.AT.RisBka

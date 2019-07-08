@@ -1,0 +1,807 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities
+  commentId: T:Interlex.Crawler.Data.InterlexCrawlerEntities
+  id: InterlexCrawlerEntities
+  parent: Interlex.Crawler.Data
+  children:
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.Crawlers
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroups
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.Documents
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.GetNewOrUpdatedInterlexEditorToolLazy
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.OnConfiguring(DbContextOptionsBuilder)
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.OnModelCreating(ModelBuilder)
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatuses
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLogs
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.PChangeOperationStatus(System.String,System.Int32,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: InterlexCrawlerEntities
+  nameWithType: InterlexCrawlerEntities
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities
+  type: Class
+  source:
+    id: InterlexCrawlerEntities
+    path: ''
+    startLine: 3965
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  summary: "\nEF model for the InterlexCrawler database\n"
+  example: []
+  syntax:
+    content: 'public class InterlexCrawlerEntities : DbContext'
+    content.vb: >-
+      Public Class InterlexCrawlerEntities
+          Inherits DbContext
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Crawlers
+  commentId: P:Interlex.Crawler.Data.InterlexCrawlerEntities.Crawlers
+  id: Crawlers
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities
+  langs:
+  - csharp
+  - vb
+  name: Crawlers
+  nameWithType: InterlexCrawlerEntities.Crawlers
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Crawlers
+  type: Property
+  source:
+    id: Crawlers
+    path: ''
+    startLine: 3970
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  summary: "\nEF dbset for the Crawlers table\n"
+  example: []
+  syntax:
+    content: public DbSet<InterlexCrawlerEntities.Crawler> Crawlers { get; set; }
+    parameters: []
+    return:
+      type: DbSet{Interlex.Crawler.Data.InterlexCrawlerEntities.Crawler}
+    content.vb: Public Property Crawlers As DbSet(Of InterlexCrawlerEntities.Crawler)
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.Crawlers*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Documents
+  commentId: P:Interlex.Crawler.Data.InterlexCrawlerEntities.Documents
+  id: Documents
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities
+  langs:
+  - csharp
+  - vb
+  name: Documents
+  nameWithType: InterlexCrawlerEntities.Documents
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Documents
+  type: Property
+  source:
+    id: Documents
+    path: ''
+    startLine: 3975
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  summary: "\nEF dbset for the Documents table\n"
+  example: []
+  syntax:
+    content: public DbSet<InterlexCrawlerEntities.Document> Documents { get; set; }
+    parameters: []
+    return:
+      type: DbSet{Interlex.Crawler.Data.InterlexCrawlerEntities.Document}
+    content.vb: Public Property Documents As DbSet(Of InterlexCrawlerEntities.Document)
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.Documents*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroups
+  commentId: P:Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroups
+  id: DocumentGroups
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities
+  langs:
+  - csharp
+  - vb
+  name: DocumentGroups
+  nameWithType: InterlexCrawlerEntities.DocumentGroups
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroups
+  type: Property
+  source:
+    id: DocumentGroups
+    path: ''
+    startLine: 3980
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  summary: "\nEF dbset for the DocumentGroups table\n"
+  example: []
+  syntax:
+    content: public DbSet<InterlexCrawlerEntities.DocumentGroup> DocumentGroups { get; set; }
+    parameters: []
+    return:
+      type: DbSet{Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup}
+    content.vb: Public Property DocumentGroups As DbSet(Of InterlexCrawlerEntities.DocumentGroup)
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroups*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatuses
+  commentId: P:Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatuses
+  id: OperationStatuses
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities
+  langs:
+  - csharp
+  - vb
+  name: OperationStatuses
+  nameWithType: InterlexCrawlerEntities.OperationStatuses
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatuses
+  type: Property
+  source:
+    id: OperationStatuses
+    path: ''
+    startLine: 3985
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  summary: "\nEF dbset for the OperationStatuses table\n"
+  example: []
+  syntax:
+    content: public DbSet<InterlexCrawlerEntities.OperationStatus> OperationStatuses { get; set; }
+    parameters: []
+    return:
+      type: DbSet{Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus}
+    content.vb: Public Property OperationStatuses As DbSet(Of InterlexCrawlerEntities.OperationStatus)
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatuses*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLogs
+  commentId: P:Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLogs
+  id: OperationStatusLogs
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities
+  langs:
+  - csharp
+  - vb
+  name: OperationStatusLogs
+  nameWithType: InterlexCrawlerEntities.OperationStatusLogs
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLogs
+  type: Property
+  source:
+    id: OperationStatusLogs
+    path: ''
+    startLine: 3990
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  summary: "\nEF dbset for the OperationStatusLogs\n"
+  example: []
+  syntax:
+    content: public DbSet<InterlexCrawlerEntities.OperationStatusLog> OperationStatusLogs { get; set; }
+    parameters: []
+    return:
+      type: DbSet{Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog}
+    content.vb: Public Property OperationStatusLogs As DbSet(Of InterlexCrawlerEntities.OperationStatusLog)
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLogs*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.PChangeOperationStatus(System.String,System.Int32,System.String,System.String)
+  commentId: M:Interlex.Crawler.Data.InterlexCrawlerEntities.PChangeOperationStatus(System.String,System.Int32,System.String,System.String)
+  id: PChangeOperationStatus(System.String,System.Int32,System.String,System.String)
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities
+  langs:
+  - csharp
+  - vb
+  name: PChangeOperationStatus(String, Int32, String, String)
+  nameWithType: InterlexCrawlerEntities.PChangeOperationStatus(String, Int32, String, String)
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.PChangeOperationStatus(System.String, System.Int32, System.String, System.String)
+  type: Method
+  source:
+    id: PChangeOperationStatus
+    path: ''
+    startLine: 4000
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  summary: "\nProcedure used to change the operation status for specific document gorup identifier\n"
+  example: []
+  syntax:
+    content: public int PChangeOperationStatus(string identifier, int operation, string caller, string errorMessage)
+    parameters:
+    - id: identifier
+      type: System.String
+      description: Document group identifier
+    - id: operation
+      type: System.Int32
+      description: New operation status id
+    - id: caller
+      type: System.String
+      description: 'Caller of the function. Example: &apos;Interlex.Crawlers&apos;'
+    - id: errorMessage
+      type: System.String
+      description: Error message if the <code data-dev-comment-type="paramref" class="paramref">operation</code> is error status code
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Function PChangeOperationStatus(identifier As String, operation As Integer, caller As String, errorMessage As String) As Integer
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.PChangeOperationStatus*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.GetNewOrUpdatedInterlexEditorToolLazy
+  commentId: M:Interlex.Crawler.Data.InterlexCrawlerEntities.GetNewOrUpdatedInterlexEditorToolLazy
+  id: GetNewOrUpdatedInterlexEditorToolLazy
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities
+  langs:
+  - csharp
+  - vb
+  name: GetNewOrUpdatedInterlexEditorToolLazy()
+  nameWithType: InterlexCrawlerEntities.GetNewOrUpdatedInterlexEditorToolLazy()
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.GetNewOrUpdatedInterlexEditorToolLazy()
+  type: Method
+  source:
+    id: GetNewOrUpdatedInterlexEditorToolLazy
+    path: ''
+    startLine: 4025
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  summary: "\nReturns information for the new or changed documents in the interlex editor tool module\n"
+  example: []
+  syntax:
+    content: public IEnumerable<(string id, string json)> GetNewOrUpdatedInterlexEditorToolLazy()
+    return:
+      type: System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String}}
+      description: ''
+    content.vb: Public Function GetNewOrUpdatedInterlexEditorToolLazy As IEnumerable(Of(id As String, json As String))
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.GetNewOrUpdatedInterlexEditorToolLazy*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OnConfiguring(DbContextOptionsBuilder)
+  commentId: M:Interlex.Crawler.Data.InterlexCrawlerEntities.OnConfiguring(DbContextOptionsBuilder)
+  id: OnConfiguring(DbContextOptionsBuilder)
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities
+  langs:
+  - csharp
+  - vb
+  name: OnConfiguring(DbContextOptionsBuilder)
+  nameWithType: InterlexCrawlerEntities.OnConfiguring(DbContextOptionsBuilder)
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OnConfiguring(DbContextOptionsBuilder)
+  type: Method
+  source:
+    id: OnConfiguring
+    path: ''
+    startLine: 4042
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  syntax:
+    content: protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    parameters:
+    - id: optionsBuilder
+      type: DbContextOptionsBuilder
+    content.vb: Protected Overrides Sub OnConfiguring(optionsBuilder As DbContextOptionsBuilder)
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.OnConfiguring*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OnModelCreating(ModelBuilder)
+  commentId: M:Interlex.Crawler.Data.InterlexCrawlerEntities.OnModelCreating(ModelBuilder)
+  id: OnModelCreating(ModelBuilder)
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities
+  langs:
+  - csharp
+  - vb
+  name: OnModelCreating(ModelBuilder)
+  nameWithType: InterlexCrawlerEntities.OnModelCreating(ModelBuilder)
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OnModelCreating(ModelBuilder)
+  type: Method
+  source:
+    id: OnModelCreating
+    path: ''
+    startLine: 4050
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  syntax:
+    content: protected override void OnModelCreating(ModelBuilder modelBuilder)
+    parameters:
+    - id: modelBuilder
+      type: ModelBuilder
+    content.vb: Protected Overrides Sub OnModelCreating(modelBuilder As ModelBuilder)
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.OnModelCreating*
+  modifiers.csharp:
+  - protected
+  - override
+  modifiers.vb:
+  - Protected
+  - Overrides
+references:
+- uid: Interlex.Crawler.Data
+  commentId: N:Interlex.Crawler.Data
+  name: Interlex.Crawler.Data
+  nameWithType: Interlex.Crawler.Data
+  fullName: Interlex.Crawler.Data
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Crawlers*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.Crawlers
+  name: Crawlers
+  nameWithType: InterlexCrawlerEntities.Crawlers
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Crawlers
+- uid: DbSet{Interlex.Crawler.Data.InterlexCrawlerEntities.Crawler}
+  commentId: '!:DbSet{Interlex.Crawler.Data.InterlexCrawlerEntities.Crawler}'
+  definition: DbSet`1
+  name: DbSet<InterlexCrawlerEntities.Crawler>
+  nameWithType: DbSet<InterlexCrawlerEntities.Crawler>
+  fullName: DbSet<Interlex.Crawler.Data.InterlexCrawlerEntities.Crawler>
+  nameWithType.vb: DbSet(Of InterlexCrawlerEntities.Crawler)
+  fullName.vb: DbSet(Of Interlex.Crawler.Data.InterlexCrawlerEntities.Crawler)
+  name.vb: DbSet(Of InterlexCrawlerEntities.Crawler)
+  spec.csharp:
+  - uid: DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: DbSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Crawler
+    name: InterlexCrawlerEntities.Crawler
+    nameWithType: InterlexCrawlerEntities.Crawler
+    fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Crawler
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: DbSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Crawler
+    name: InterlexCrawlerEntities.Crawler
+    nameWithType: InterlexCrawlerEntities.Crawler
+    fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Crawler
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: DbSet`1
+  isExternal: true
+  name: DbSet<>
+  nameWithType: DbSet<>
+  fullName: DbSet<>
+  nameWithType.vb: DbSet(Of )
+  fullName.vb: DbSet(Of )
+  name.vb: DbSet(Of )
+  spec.csharp:
+  - uid: DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: DbSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: DbSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Documents*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.Documents
+  name: Documents
+  nameWithType: InterlexCrawlerEntities.Documents
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Documents
+- uid: DbSet{Interlex.Crawler.Data.InterlexCrawlerEntities.Document}
+  commentId: '!:DbSet{Interlex.Crawler.Data.InterlexCrawlerEntities.Document}'
+  definition: DbSet`1
+  name: DbSet<InterlexCrawlerEntities.Document>
+  nameWithType: DbSet<InterlexCrawlerEntities.Document>
+  fullName: DbSet<Interlex.Crawler.Data.InterlexCrawlerEntities.Document>
+  nameWithType.vb: DbSet(Of InterlexCrawlerEntities.Document)
+  fullName.vb: DbSet(Of Interlex.Crawler.Data.InterlexCrawlerEntities.Document)
+  name.vb: DbSet(Of InterlexCrawlerEntities.Document)
+  spec.csharp:
+  - uid: DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: DbSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+    name: InterlexCrawlerEntities.Document
+    nameWithType: InterlexCrawlerEntities.Document
+    fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: DbSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+    name: InterlexCrawlerEntities.Document
+    nameWithType: InterlexCrawlerEntities.Document
+    fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroups*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroups
+  name: DocumentGroups
+  nameWithType: InterlexCrawlerEntities.DocumentGroups
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroups
+- uid: DbSet{Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup}
+  commentId: '!:DbSet{Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup}'
+  definition: DbSet`1
+  name: DbSet<InterlexCrawlerEntities.DocumentGroup>
+  nameWithType: DbSet<InterlexCrawlerEntities.DocumentGroup>
+  fullName: DbSet<Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup>
+  nameWithType.vb: DbSet(Of InterlexCrawlerEntities.DocumentGroup)
+  fullName.vb: DbSet(Of Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup)
+  name.vb: DbSet(Of InterlexCrawlerEntities.DocumentGroup)
+  spec.csharp:
+  - uid: DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: DbSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup
+    name: InterlexCrawlerEntities.DocumentGroup
+    nameWithType: InterlexCrawlerEntities.DocumentGroup
+    fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: DbSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup
+    name: InterlexCrawlerEntities.DocumentGroup
+    nameWithType: InterlexCrawlerEntities.DocumentGroup
+    fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatuses*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatuses
+  name: OperationStatuses
+  nameWithType: InterlexCrawlerEntities.OperationStatuses
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatuses
+- uid: DbSet{Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus}
+  commentId: '!:DbSet{Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus}'
+  definition: DbSet`1
+  name: DbSet<InterlexCrawlerEntities.OperationStatus>
+  nameWithType: DbSet<InterlexCrawlerEntities.OperationStatus>
+  fullName: DbSet<Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus>
+  nameWithType.vb: DbSet(Of InterlexCrawlerEntities.OperationStatus)
+  fullName.vb: DbSet(Of Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus)
+  name.vb: DbSet(Of InterlexCrawlerEntities.OperationStatus)
+  spec.csharp:
+  - uid: DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: DbSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus
+    name: InterlexCrawlerEntities.OperationStatus
+    nameWithType: InterlexCrawlerEntities.OperationStatus
+    fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: DbSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus
+    name: InterlexCrawlerEntities.OperationStatus
+    nameWithType: InterlexCrawlerEntities.OperationStatus
+    fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLogs*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLogs
+  name: OperationStatusLogs
+  nameWithType: InterlexCrawlerEntities.OperationStatusLogs
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLogs
+- uid: DbSet{Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog}
+  commentId: '!:DbSet{Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog}'
+  definition: DbSet`1
+  name: DbSet<InterlexCrawlerEntities.OperationStatusLog>
+  nameWithType: DbSet<InterlexCrawlerEntities.OperationStatusLog>
+  fullName: DbSet<Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog>
+  nameWithType.vb: DbSet(Of InterlexCrawlerEntities.OperationStatusLog)
+  fullName.vb: DbSet(Of Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog)
+  name.vb: DbSet(Of InterlexCrawlerEntities.OperationStatusLog)
+  spec.csharp:
+  - uid: DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: DbSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog
+    name: InterlexCrawlerEntities.OperationStatusLog
+    nameWithType: InterlexCrawlerEntities.OperationStatusLog
+    fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: DbSet`1
+    name: DbSet
+    nameWithType: DbSet
+    fullName: DbSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog
+    name: InterlexCrawlerEntities.OperationStatusLog
+    nameWithType: InterlexCrawlerEntities.OperationStatusLog
+    fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.PChangeOperationStatus*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.PChangeOperationStatus
+  name: PChangeOperationStatus
+  nameWithType: InterlexCrawlerEntities.PChangeOperationStatus
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.PChangeOperationStatus
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.GetNewOrUpdatedInterlexEditorToolLazy*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.GetNewOrUpdatedInterlexEditorToolLazy
+  name: GetNewOrUpdatedInterlexEditorToolLazy
+  nameWithType: InterlexCrawlerEntities.GetNewOrUpdatedInterlexEditorToolLazy
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.GetNewOrUpdatedInterlexEditorToolLazy
+- uid: System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<ValueTuple<String, String>>
+  nameWithType: IEnumerable<ValueTuple<String, String>>
+  fullName: System.Collections.Generic.IEnumerable<System.ValueTuple<System.String, System.String>>
+  nameWithType.vb: IEnumerable(Of ValueTuple(Of String, String))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.ValueTuple(Of System.String, System.String))
+  name.vb: IEnumerable(Of ValueTuple(Of String, String))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.ValueTuple`2
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.ValueTuple`2
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OnConfiguring*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.OnConfiguring
+  name: OnConfiguring
+  nameWithType: InterlexCrawlerEntities.OnConfiguring
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OnConfiguring
+- uid: DbContextOptionsBuilder
+  commentId: '!:DbContextOptionsBuilder'
+  isExternal: true
+  name: DbContextOptionsBuilder
+  nameWithType: DbContextOptionsBuilder
+  fullName: DbContextOptionsBuilder
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OnModelCreating*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.OnModelCreating
+  name: OnModelCreating
+  nameWithType: InterlexCrawlerEntities.OnModelCreating
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OnModelCreating
+- uid: ModelBuilder
+  commentId: '!:ModelBuilder'
+  isExternal: true
+  name: ModelBuilder
+  nameWithType: ModelBuilder
+  fullName: ModelBuilder

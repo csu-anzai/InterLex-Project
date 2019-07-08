@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Crawlers.Eurlex
+  commentId: N:Interlex.Crawler.Crawlers.Eurlex
+  id: Interlex.Crawler.Crawlers.Eurlex
+  children:
+  - Interlex.Crawler.Crawlers.Eurlex.Eurlex
+  langs:
+  - csharp
+  - vb
+  name: Interlex.Crawler.Crawlers.Eurlex
+  nameWithType: Interlex.Crawler.Crawlers.Eurlex
+  fullName: Interlex.Crawler.Crawlers.Eurlex
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Interlex.Crawler.Crawlers.Eurlex.Eurlex
+  commentId: T:Interlex.Crawler.Crawlers.Eurlex.Eurlex
+  name: Eurlex
+  nameWithType: Eurlex
+  fullName: Interlex.Crawler.Crawlers.Eurlex.Eurlex

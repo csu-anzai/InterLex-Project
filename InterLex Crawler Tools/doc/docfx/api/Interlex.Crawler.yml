@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler
+  commentId: N:Interlex.Crawler
+  id: Interlex.Crawler
+  children:
+  - Interlex.Crawler.CrawlerApi
+  langs:
+  - csharp
+  - vb
+  name: Interlex.Crawler
+  nameWithType: Interlex.Crawler
+  fullName: Interlex.Crawler
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Interlex.Crawler.CrawlerApi
+  commentId: T:Interlex.Crawler.CrawlerApi
+  name: CrawlerApi
+  nameWithType: CrawlerApi
+  fullName: Interlex.Crawler.CrawlerApi

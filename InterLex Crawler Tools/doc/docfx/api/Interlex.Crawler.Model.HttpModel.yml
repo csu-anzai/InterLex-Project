@@ -1,0 +1,854 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Model.HttpModel
+  commentId: T:Interlex.Crawler.Model.HttpModel
+  id: HttpModel
+  parent: Interlex.Crawler.Model
+  children:
+  - Interlex.Crawler.Model.HttpModel.#ctor(System.String,System.Byte[],System.Text.Encoding,System.String,System.String,CookieCollection,HttpStatusCode)
+  - Interlex.Crawler.Model.HttpModel.ContentDisposition
+  - Interlex.Crawler.Model.HttpModel.Cookies
+  - Interlex.Crawler.Model.HttpModel.Encoding
+  - Interlex.Crawler.Model.HttpModel.GetAsHtml
+  - Interlex.Crawler.Model.HttpModel.GetAsString
+  - Interlex.Crawler.Model.HttpModel.IsHtml
+  - Interlex.Crawler.Model.HttpModel.MimeType
+  - Interlex.Crawler.Model.HttpModel.Raw
+  - Interlex.Crawler.Model.HttpModel.StatusCode
+  - Interlex.Crawler.Model.HttpModel.Url
+  langs:
+  - csharp
+  - vb
+  name: HttpModel
+  nameWithType: HttpModel
+  fullName: Interlex.Crawler.Model.HttpModel
+  type: Class
+  source:
+    id: HttpModel
+    path: ''
+    startLine: 3663
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nRepresents http response\n"
+  example: []
+  syntax:
+    content: public class HttpModel
+    content.vb: Public Class HttpModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Interlex.Crawler.Model.HttpModel.#ctor(System.String,System.Byte[],System.Text.Encoding,System.String,System.String,CookieCollection,HttpStatusCode)
+  commentId: M:Interlex.Crawler.Model.HttpModel.#ctor(System.String,System.Byte[],System.Text.Encoding,System.String,System.String,CookieCollection,HttpStatusCode)
+  id: '#ctor(System.String,System.Byte[],System.Text.Encoding,System.String,System.String,CookieCollection,HttpStatusCode)'
+  parent: Interlex.Crawler.Model.HttpModel
+  langs:
+  - csharp
+  - vb
+  name: HttpModel(String, Byte[], Encoding, String, String, CookieCollection, HttpStatusCode)
+  nameWithType: HttpModel.HttpModel(String, Byte[], Encoding, String, String, CookieCollection, HttpStatusCode)
+  fullName: Interlex.Crawler.Model.HttpModel.HttpModel(System.String, System.Byte[], System.Text.Encoding, System.String, System.String, CookieCollection, HttpStatusCode)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 3679
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nCreates new instance\n"
+  example: []
+  syntax:
+    content: public HttpModel(string url, byte[] raw, Encoding encoding, string mimeType, string contentDisposition, CookieCollection cookies, HttpStatusCode statusCode)
+    parameters:
+    - id: url
+      type: System.String
+      description: ''
+    - id: raw
+      type: System.Byte[]
+      description: ''
+    - id: encoding
+      type: System.Text.Encoding
+      description: ''
+    - id: mimeType
+      type: System.String
+      description: ''
+    - id: contentDisposition
+      type: System.String
+      description: ''
+    - id: cookies
+      type: CookieCollection
+      description: ''
+    - id: statusCode
+      type: HttpStatusCode
+      description: ''
+    content.vb: Public Sub New(url As String, raw As Byte(), encoding As Encoding, mimeType As String, contentDisposition As String, cookies As CookieCollection, statusCode As HttpStatusCode)
+  overload: Interlex.Crawler.Model.HttpModel.#ctor*
+  nameWithType.vb: HttpModel.HttpModel(String, Byte(), Encoding, String, String, CookieCollection, HttpStatusCode)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Interlex.Crawler.Model.HttpModel.HttpModel(System.String, System.Byte(), System.Text.Encoding, System.String, System.String, CookieCollection, HttpStatusCode)
+  name.vb: HttpModel(String, Byte(), Encoding, String, String, CookieCollection, HttpStatusCode)
+- uid: Interlex.Crawler.Model.HttpModel.Url
+  commentId: P:Interlex.Crawler.Model.HttpModel.Url
+  id: Url
+  parent: Interlex.Crawler.Model.HttpModel
+  langs:
+  - csharp
+  - vb
+  name: Url
+  nameWithType: HttpModel.Url
+  fullName: Interlex.Crawler.Model.HttpModel.Url
+  type: Property
+  source:
+    id: Url
+    path: ''
+    startLine: 3707
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nUrl of the response\n"
+  example: []
+  syntax:
+    content: public string Url { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Url As String
+  overload: Interlex.Crawler.Model.HttpModel.Url*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Model.HttpModel.Raw
+  commentId: P:Interlex.Crawler.Model.HttpModel.Raw
+  id: Raw
+  parent: Interlex.Crawler.Model.HttpModel
+  langs:
+  - csharp
+  - vb
+  name: Raw
+  nameWithType: HttpModel.Raw
+  fullName: Interlex.Crawler.Model.HttpModel.Raw
+  type: Property
+  source:
+    id: Raw
+    path: ''
+    startLine: 3712
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nContent of the response\n"
+  example: []
+  syntax:
+    content: public byte[] Raw { get; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public ReadOnly Property Raw As Byte()
+  overload: Interlex.Crawler.Model.HttpModel.Raw*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Model.HttpModel.MimeType
+  commentId: P:Interlex.Crawler.Model.HttpModel.MimeType
+  id: MimeType
+  parent: Interlex.Crawler.Model.HttpModel
+  langs:
+  - csharp
+  - vb
+  name: MimeType
+  nameWithType: HttpModel.MimeType
+  fullName: Interlex.Crawler.Model.HttpModel.MimeType
+  type: Property
+  source:
+    id: MimeType
+    path: ''
+    startLine: 3717
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nMime type (content-type) of the response\n"
+  example: []
+  syntax:
+    content: public string MimeType { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property MimeType As String
+  overload: Interlex.Crawler.Model.HttpModel.MimeType*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Model.HttpModel.ContentDisposition
+  commentId: P:Interlex.Crawler.Model.HttpModel.ContentDisposition
+  id: ContentDisposition
+  parent: Interlex.Crawler.Model.HttpModel
+  langs:
+  - csharp
+  - vb
+  name: ContentDisposition
+  nameWithType: HttpModel.ContentDisposition
+  fullName: Interlex.Crawler.Model.HttpModel.ContentDisposition
+  type: Property
+  source:
+    id: ContentDisposition
+    path: ''
+    startLine: 3722
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nContent disposition of the response\n"
+  example: []
+  syntax:
+    content: public string ContentDisposition { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ContentDisposition As String
+  overload: Interlex.Crawler.Model.HttpModel.ContentDisposition*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Model.HttpModel.Encoding
+  commentId: P:Interlex.Crawler.Model.HttpModel.Encoding
+  id: Encoding
+  parent: Interlex.Crawler.Model.HttpModel
+  langs:
+  - csharp
+  - vb
+  name: Encoding
+  nameWithType: HttpModel.Encoding
+  fullName: Interlex.Crawler.Model.HttpModel.Encoding
+  type: Property
+  source:
+    id: Encoding
+    path: ''
+    startLine: 3727
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nEncoding of the response\n"
+  example: []
+  syntax:
+    content: public Encoding Encoding { get; }
+    parameters: []
+    return:
+      type: System.Text.Encoding
+    content.vb: Public ReadOnly Property Encoding As Encoding
+  overload: Interlex.Crawler.Model.HttpModel.Encoding*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Model.HttpModel.Cookies
+  commentId: P:Interlex.Crawler.Model.HttpModel.Cookies
+  id: Cookies
+  parent: Interlex.Crawler.Model.HttpModel
+  langs:
+  - csharp
+  - vb
+  name: Cookies
+  nameWithType: HttpModel.Cookies
+  fullName: Interlex.Crawler.Model.HttpModel.Cookies
+  type: Property
+  source:
+    id: Cookies
+    path: ''
+    startLine: 3732
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nCookies of the response\n"
+  example: []
+  syntax:
+    content: public CookieCollection Cookies { get; }
+    parameters: []
+    return:
+      type: CookieCollection
+    content.vb: Public ReadOnly Property Cookies As CookieCollection
+  overload: Interlex.Crawler.Model.HttpModel.Cookies*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Model.HttpModel.StatusCode
+  commentId: P:Interlex.Crawler.Model.HttpModel.StatusCode
+  id: StatusCode
+  parent: Interlex.Crawler.Model.HttpModel
+  langs:
+  - csharp
+  - vb
+  name: StatusCode
+  nameWithType: HttpModel.StatusCode
+  fullName: Interlex.Crawler.Model.HttpModel.StatusCode
+  type: Property
+  source:
+    id: StatusCode
+    path: ''
+    startLine: 3737
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nStatus code of the response\n"
+  example: []
+  syntax:
+    content: public HttpStatusCode StatusCode { get; }
+    parameters: []
+    return:
+      type: HttpStatusCode
+    content.vb: Public ReadOnly Property StatusCode As HttpStatusCode
+  overload: Interlex.Crawler.Model.HttpModel.StatusCode*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Model.HttpModel.IsHtml
+  commentId: P:Interlex.Crawler.Model.HttpModel.IsHtml
+  id: IsHtml
+  parent: Interlex.Crawler.Model.HttpModel
+  langs:
+  - csharp
+  - vb
+  name: IsHtml
+  nameWithType: HttpModel.IsHtml
+  fullName: Interlex.Crawler.Model.HttpModel.IsHtml
+  type: Property
+  source:
+    id: IsHtml
+    path: ''
+    startLine: 3742
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nIndicates if the response is Html (MimeType = text/html)\n"
+  example: []
+  syntax:
+    content: public bool IsHtml { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsHtml As Boolean
+  overload: Interlex.Crawler.Model.HttpModel.IsHtml*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Model.HttpModel.GetAsString
+  commentId: M:Interlex.Crawler.Model.HttpModel.GetAsString
+  id: GetAsString
+  parent: Interlex.Crawler.Model.HttpModel
+  langs:
+  - csharp
+  - vb
+  name: GetAsString()
+  nameWithType: HttpModel.GetAsString()
+  fullName: Interlex.Crawler.Model.HttpModel.GetAsString()
+  type: Method
+  source:
+    id: GetAsString
+    path: ''
+    startLine: 3749
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nReturns the reponse as string\n"
+  example: []
+  syntax:
+    content: public string GetAsString()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Function GetAsString As String
+  overload: Interlex.Crawler.Model.HttpModel.GetAsString*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Model.HttpModel.GetAsHtml
+  commentId: M:Interlex.Crawler.Model.HttpModel.GetAsHtml
+  id: GetAsHtml
+  parent: Interlex.Crawler.Model.HttpModel
+  langs:
+  - csharp
+  - vb
+  name: GetAsHtml()
+  nameWithType: HttpModel.GetAsHtml()
+  fullName: Interlex.Crawler.Model.HttpModel.GetAsHtml()
+  type: Method
+  source:
+    id: GetAsHtml
+    path: ''
+    startLine: 3755
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nReturns the response as html document\n"
+  example: []
+  syntax:
+    content: public HtmlDocument GetAsHtml()
+    return:
+      type: HtmlDocument
+      description: ''
+    content.vb: Public Function GetAsHtml As HtmlDocument
+  overload: Interlex.Crawler.Model.HttpModel.GetAsHtml*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Interlex.Crawler.Model
+  commentId: N:Interlex.Crawler.Model
+  name: Interlex.Crawler.Model
+  nameWithType: Interlex.Crawler.Model
+  fullName: Interlex.Crawler.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Interlex.Crawler.Model.HttpModel.#ctor*
+  commentId: Overload:Interlex.Crawler.Model.HttpModel.#ctor
+  name: HttpModel
+  nameWithType: HttpModel.HttpModel
+  fullName: Interlex.Crawler.Model.HttpModel.HttpModel
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: CookieCollection
+  isExternal: true
+  name: CookieCollection
+  nameWithType: CookieCollection
+  fullName: CookieCollection
+- uid: HttpStatusCode
+  isExternal: true
+  name: HttpStatusCode
+  nameWithType: HttpStatusCode
+  fullName: HttpStatusCode
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: Interlex.Crawler.Model.HttpModel.Url*
+  commentId: Overload:Interlex.Crawler.Model.HttpModel.Url
+  name: Url
+  nameWithType: HttpModel.Url
+  fullName: Interlex.Crawler.Model.HttpModel.Url
+- uid: Interlex.Crawler.Model.HttpModel.Raw*
+  commentId: Overload:Interlex.Crawler.Model.HttpModel.Raw
+  name: Raw
+  nameWithType: HttpModel.Raw
+  fullName: Interlex.Crawler.Model.HttpModel.Raw
+- uid: Interlex.Crawler.Model.HttpModel.MimeType*
+  commentId: Overload:Interlex.Crawler.Model.HttpModel.MimeType
+  name: MimeType
+  nameWithType: HttpModel.MimeType
+  fullName: Interlex.Crawler.Model.HttpModel.MimeType
+- uid: Interlex.Crawler.Model.HttpModel.ContentDisposition*
+  commentId: Overload:Interlex.Crawler.Model.HttpModel.ContentDisposition
+  name: ContentDisposition
+  nameWithType: HttpModel.ContentDisposition
+  fullName: Interlex.Crawler.Model.HttpModel.ContentDisposition
+- uid: Interlex.Crawler.Model.HttpModel.Encoding*
+  commentId: Overload:Interlex.Crawler.Model.HttpModel.Encoding
+  name: Encoding
+  nameWithType: HttpModel.Encoding
+  fullName: Interlex.Crawler.Model.HttpModel.Encoding
+- uid: Interlex.Crawler.Model.HttpModel.Cookies*
+  commentId: Overload:Interlex.Crawler.Model.HttpModel.Cookies
+  name: Cookies
+  nameWithType: HttpModel.Cookies
+  fullName: Interlex.Crawler.Model.HttpModel.Cookies
+- uid: Interlex.Crawler.Model.HttpModel.StatusCode*
+  commentId: Overload:Interlex.Crawler.Model.HttpModel.StatusCode
+  name: StatusCode
+  nameWithType: HttpModel.StatusCode
+  fullName: Interlex.Crawler.Model.HttpModel.StatusCode
+- uid: Interlex.Crawler.Model.HttpModel.IsHtml*
+  commentId: Overload:Interlex.Crawler.Model.HttpModel.IsHtml
+  name: IsHtml
+  nameWithType: HttpModel.IsHtml
+  fullName: Interlex.Crawler.Model.HttpModel.IsHtml
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Interlex.Crawler.Model.HttpModel.GetAsString*
+  commentId: Overload:Interlex.Crawler.Model.HttpModel.GetAsString
+  name: GetAsString
+  nameWithType: HttpModel.GetAsString
+  fullName: Interlex.Crawler.Model.HttpModel.GetAsString
+- uid: Interlex.Crawler.Model.HttpModel.GetAsHtml*
+  commentId: Overload:Interlex.Crawler.Model.HttpModel.GetAsHtml
+  name: GetAsHtml
+  nameWithType: HttpModel.GetAsHtml
+  fullName: Interlex.Crawler.Model.HttpModel.GetAsHtml
+- uid: HtmlDocument
+  commentId: '!:HtmlDocument'
+  isExternal: true
+  name: HtmlDocument
+  nameWithType: HtmlDocument
+  fullName: HtmlDocument

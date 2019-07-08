@@ -1,0 +1,117 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Model.DocumentGroupModelOperation
+  commentId: T:Interlex.Crawler.Model.DocumentGroupModelOperation
+  id: DocumentGroupModelOperation
+  parent: Interlex.Crawler.Model
+  children:
+  - Interlex.Crawler.Model.DocumentGroupModelOperation.Add
+  - Interlex.Crawler.Model.DocumentGroupModelOperation.Upd
+  langs:
+  - csharp
+  - vb
+  name: DocumentGroupModelOperation
+  nameWithType: DocumentGroupModelOperation
+  fullName: Interlex.Crawler.Model.DocumentGroupModelOperation
+  type: Enum
+  source:
+    id: DocumentGroupModelOperation
+    path: ''
+    startLine: 3557
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nOperation status for specific document group when processed by the <xref href=\"Interlex.Crawler.Manager.DocumentGroupManager\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public enum DocumentGroupModelOperation
+    content.vb: Public Enum DocumentGroupModelOperation
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Interlex.Crawler.Model.DocumentGroupModelOperation.Add
+  commentId: F:Interlex.Crawler.Model.DocumentGroupModelOperation.Add
+  id: Add
+  parent: Interlex.Crawler.Model.DocumentGroupModelOperation
+  langs:
+  - csharp
+  - vb
+  name: Add
+  nameWithType: DocumentGroupModelOperation.Add
+  fullName: Interlex.Crawler.Model.DocumentGroupModelOperation.Add
+  type: Field
+  source:
+    id: Add
+    path: ''
+    startLine: 3562
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nNew document group\n"
+  example: []
+  syntax:
+    content: Add = 0
+    return:
+      type: Interlex.Crawler.Model.DocumentGroupModelOperation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Interlex.Crawler.Model.DocumentGroupModelOperation.Upd
+  commentId: F:Interlex.Crawler.Model.DocumentGroupModelOperation.Upd
+  id: Upd
+  parent: Interlex.Crawler.Model.DocumentGroupModelOperation
+  langs:
+  - csharp
+  - vb
+  name: Upd
+  nameWithType: DocumentGroupModelOperation.Upd
+  fullName: Interlex.Crawler.Model.DocumentGroupModelOperation.Upd
+  type: Field
+  source:
+    id: Upd
+    path: ''
+    startLine: 3567
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nDocument group for update\n"
+  example: []
+  syntax:
+    content: Upd = 1
+    return:
+      type: Interlex.Crawler.Model.DocumentGroupModelOperation
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Interlex.Crawler.Manager.DocumentGroupManager
+  commentId: T:Interlex.Crawler.Manager.DocumentGroupManager
+  parent: Interlex.Crawler.Manager
+  name: DocumentGroupManager
+  nameWithType: DocumentGroupManager
+  fullName: Interlex.Crawler.Manager.DocumentGroupManager
+- uid: Interlex.Crawler.Model
+  commentId: N:Interlex.Crawler.Model
+  name: Interlex.Crawler.Model
+  nameWithType: Interlex.Crawler.Model
+  fullName: Interlex.Crawler.Model
+- uid: Interlex.Crawler.Manager
+  commentId: N:Interlex.Crawler.Manager
+  name: Interlex.Crawler.Manager
+  nameWithType: Interlex.Crawler.Manager
+  fullName: Interlex.Crawler.Manager
+- uid: Interlex.Crawler.Model.DocumentGroupModelOperation
+  commentId: T:Interlex.Crawler.Model.DocumentGroupModelOperation
+  parent: Interlex.Crawler.Model
+  name: DocumentGroupModelOperation
+  nameWithType: DocumentGroupModelOperation
+  fullName: Interlex.Crawler.Model.DocumentGroupModelOperation

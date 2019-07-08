@@ -1,0 +1,1653 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Common.Extensions
+  commentId: T:Interlex.Crawler.Common.Extensions
+  id: Extensions
+  parent: Interlex.Crawler.Common
+  children:
+  - Interlex.Crawler.Common.Extensions.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  - Interlex.Crawler.Common.Extensions.EncodeNonAsciiCharacters(System.String)
+  - Interlex.Crawler.Common.Extensions.GetQueryFragmentsMap(Uri)
+  - Interlex.Crawler.Common.Extensions.Href(HtmlNode)
+  - Interlex.Crawler.Common.Extensions.HtmlDecode(System.String)
+  - Interlex.Crawler.Common.Extensions.IsEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  - Interlex.Crawler.Common.Extensions.IsIn``1(``0,``0[])
+  - Interlex.Crawler.Common.Extensions.IsIn``1(``0,System.Collections.Generic.IEnumerable{``0})
+  - Interlex.Crawler.Common.Extensions.SafeReplace(System.String,System.String,System.String)
+  - Interlex.Crawler.Common.Extensions.SafeReplace(System.String,System.String,System.String,System.StringComparison)
+  - Interlex.Crawler.Common.Extensions.SafeReplaceAll(System.String,System.String[],System.String)
+  - Interlex.Crawler.Common.Extensions.SafeReplaceAtStart(System.String,System.String,System.String)
+  - Interlex.Crawler.Common.Extensions.StartsWithAny(System.String,System.String[])
+  - Interlex.Crawler.Common.Extensions.ToHexMD5(System.String)
+  - Interlex.Crawler.Common.Extensions.ToMD5Hash(System.String)
+  - Interlex.Crawler.Common.Extensions.TupleSplit(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Interlex.Crawler.Common.Extensions
+  type: Class
+  source:
+    id: Extensions
+    path: ''
+    startLine: 225
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nCommon extension methods\n"
+  example: []
+  syntax:
+    content: public static class Extensions
+    content.vb: Public Module Extensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Interlex.Crawler.Common.Extensions.Href(HtmlNode)
+  commentId: M:Interlex.Crawler.Common.Extensions.Href(HtmlNode)
+  id: Href(HtmlNode)
+  isExtensionMethod: true
+  parent: Interlex.Crawler.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: Href(HtmlNode)
+  nameWithType: Extensions.Href(HtmlNode)
+  fullName: Interlex.Crawler.Common.Extensions.Href(HtmlNode)
+  type: Method
+  source:
+    id: Href
+    path: ''
+    startLine: 232
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nReturns the href attribute of the node. If the attribute is missing empty string is returned.\n"
+  example: []
+  syntax:
+    content: public static string Href(this HtmlNode a)
+    parameters:
+    - id: a
+      type: HtmlNode
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Href(a As HtmlNode) As String
+  overload: Interlex.Crawler.Common.Extensions.Href*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.Common.Extensions.SafeReplaceAtStart(System.String,System.String,System.String)
+  commentId: M:Interlex.Crawler.Common.Extensions.SafeReplaceAtStart(System.String,System.String,System.String)
+  id: SafeReplaceAtStart(System.String,System.String,System.String)
+  isExtensionMethod: true
+  parent: Interlex.Crawler.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: SafeReplaceAtStart(String, String, String)
+  nameWithType: Extensions.SafeReplaceAtStart(String, String, String)
+  fullName: Interlex.Crawler.Common.Extensions.SafeReplaceAtStart(System.String, System.String, System.String)
+  type: Method
+  source:
+    id: SafeReplaceAtStart
+    path: ''
+    startLine: 245
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nReplaces the <code data-dev-comment-type=\"paramref\" class=\"paramref\">oldValue</code> with the new value if <code data-dev-comment-type=\"paramref\" class=\"paramref\">str</code> starts with it.\nIf <code data-dev-comment-type=\"paramref\" class=\"paramref\">oldValue</code> is null or empty the original string is returned\n"
+  example: []
+  syntax:
+    content: public static string SafeReplaceAtStart(this string str, string oldValue, string newValue)
+    parameters:
+    - id: str
+      type: System.String
+      description: Original string
+    - id: oldValue
+      type: System.String
+      description: Value to replace
+    - id: newValue
+      type: System.String
+      description: Value to replace with
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SafeReplaceAtStart(str As String, oldValue As String, newValue As String) As String
+  overload: Interlex.Crawler.Common.Extensions.SafeReplaceAtStart*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.Common.Extensions.TupleSplit(System.String,System.String)
+  commentId: M:Interlex.Crawler.Common.Extensions.TupleSplit(System.String,System.String)
+  id: TupleSplit(System.String,System.String)
+  isExtensionMethod: true
+  parent: Interlex.Crawler.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: TupleSplit(String, String)
+  nameWithType: Extensions.TupleSplit(String, String)
+  fullName: Interlex.Crawler.Common.Extensions.TupleSplit(System.String, System.String)
+  type: Method
+  source:
+    id: TupleSplit
+    path: ''
+    startLine: 277
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nSplits the string into exactly two pieces using the provided separator.\nNOTE: If more or less then two pieces are the result of the split operation, exception is thrown.\n"
+  example: []
+  syntax:
+    content: public static (string f, string s)TupleSplit(this string str, string separator)
+    parameters:
+    - id: str
+      type: System.String
+      description: String
+    - id: separator
+      type: System.String
+      description: Separator
+    return:
+      type: System.ValueTuple{System.String,System.String}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function TupleSplit(str As String, separator As String) As(f As String, s As String)
+  overload: Interlex.Crawler.Common.Extensions.TupleSplit*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Throws when the str has more or less then two pieces after the split.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.Common.Extensions.HtmlDecode(System.String)
+  commentId: M:Interlex.Crawler.Common.Extensions.HtmlDecode(System.String)
+  id: HtmlDecode(System.String)
+  isExtensionMethod: true
+  parent: Interlex.Crawler.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: HtmlDecode(String)
+  nameWithType: Extensions.HtmlDecode(String)
+  fullName: Interlex.Crawler.Common.Extensions.HtmlDecode(System.String)
+  type: Method
+  source:
+    id: HtmlDecode
+    path: ''
+    startLine: 300
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nReturns html decoded string from the current using <see cref=\"!:System.Net.WebUtility.HtmlDecode(string)\"></see>\n"
+  example: []
+  syntax:
+    content: public static string HtmlDecode(this string str)
+    parameters:
+    - id: str
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function HtmlDecode(str As String) As String
+  overload: Interlex.Crawler.Common.Extensions.HtmlDecode*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.Common.Extensions.GetQueryFragmentsMap(Uri)
+  commentId: M:Interlex.Crawler.Common.Extensions.GetQueryFragmentsMap(Uri)
+  id: GetQueryFragmentsMap(Uri)
+  isExtensionMethod: true
+  parent: Interlex.Crawler.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: GetQueryFragmentsMap(Uri)
+  nameWithType: Extensions.GetQueryFragmentsMap(Uri)
+  fullName: Interlex.Crawler.Common.Extensions.GetQueryFragmentsMap(Uri)
+  type: Method
+  source:
+    id: GetQueryFragmentsMap
+    path: ''
+    startLine: 310
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nReturns map for the query arguments for the provided uri\n"
+  example: []
+  syntax:
+    content: public static Dictionary<string, string> GetQueryFragmentsMap(this Uri uri)
+    parameters:
+    - id: uri
+      type: Uri
+      description: ''
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetQueryFragmentsMap(uri As Uri) As Dictionary(Of String, String)
+  overload: Interlex.Crawler.Common.Extensions.GetQueryFragmentsMap*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.Common.Extensions.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  commentId: M:Interlex.Crawler.Common.Extensions.DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  id: DistinctBy``2(System.Collections.Generic.IEnumerable{``0},System.Func{``0,``1})
+  isExtensionMethod: true
+  parent: Interlex.Crawler.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: DistinctBy<T, TDistinctKey>(IEnumerable<T>, Func<T, TDistinctKey>)
+  nameWithType: Extensions.DistinctBy<T, TDistinctKey>(IEnumerable<T>, Func<T, TDistinctKey>)
+  fullName: Interlex.Crawler.Common.Extensions.DistinctBy<T, TDistinctKey>(System.Collections.Generic.IEnumerable<T>, System.Func<T, TDistinctKey>)
+  type: Method
+  source:
+    id: DistinctBy
+    path: ''
+    startLine: 340
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nDistincts element in sequnce by given property of the <code data-dev-comment-type=\"typeparamref\" class=\"typeparamref\">T</code>.\n"
+  example: []
+  syntax:
+    content: public static IEnumerable<T> DistinctBy<T, TDistinctKey>(this IEnumerable<T> sequance, Func<T, TDistinctKey> distinctBySelector)
+    parameters:
+    - id: sequance
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: Source sequence
+    - id: distinctBySelector
+      type: System.Func{{T},{TDistinctKey}}
+      description: Key selector for distinction.
+    typeParameters:
+    - id: T
+      description: Source type
+    - id: TDistinctKey
+      description: Type of property to distinct by.
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: Sequence of the same type distincted by the given property of the source type.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function DistinctBy(Of T, TDistinctKey)(sequance As IEnumerable(Of T), distinctBySelector As Func(Of T, TDistinctKey)) As IEnumerable(Of T)
+  overload: Interlex.Crawler.Common.Extensions.DistinctBy*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Throws when <code data-dev-comment-type="paramref" class="paramref">sequance</code> or <code data-dev-comment-type="paramref" class="paramref">distinctBySelector</code> is null.
+  nameWithType.vb: Extensions.DistinctBy(Of T, TDistinctKey)(IEnumerable(Of T), Func(Of T, TDistinctKey))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Interlex.Crawler.Common.Extensions.DistinctBy(Of T, TDistinctKey)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, TDistinctKey))
+  name.vb: DistinctBy(Of T, TDistinctKey)(IEnumerable(Of T), Func(Of T, TDistinctKey))
+- uid: Interlex.Crawler.Common.Extensions.StartsWithAny(System.String,System.String[])
+  commentId: M:Interlex.Crawler.Common.Extensions.StartsWithAny(System.String,System.String[])
+  id: StartsWithAny(System.String,System.String[])
+  isExtensionMethod: true
+  parent: Interlex.Crawler.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: StartsWithAny(String, String[])
+  nameWithType: Extensions.StartsWithAny(String, String[])
+  fullName: Interlex.Crawler.Common.Extensions.StartsWithAny(System.String, System.String[])
+  type: Method
+  source:
+    id: StartsWithAny
+    path: ''
+    startLine: 358
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nDeterms if the current string starts with any of the &apos;start with variants&apos; by using the default string comparison\n"
+  example: []
+  syntax:
+    content: public static bool StartsWithAny(this string str, params string[] startWithVariants)
+    parameters:
+    - id: str
+      type: System.String
+      description: original string
+    - id: startWithVariants
+      type: System.String[]
+      description: starts with variatns
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function StartsWithAny(str As String, ParamArray startWithVariants As String()) As Boolean
+  overload: Interlex.Crawler.Common.Extensions.StartsWithAny*
+  nameWithType.vb: Extensions.StartsWithAny(String, String())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Interlex.Crawler.Common.Extensions.StartsWithAny(System.String, System.String())
+  name.vb: StartsWithAny(String, String())
+- uid: Interlex.Crawler.Common.Extensions.IsIn``1(``0,System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Interlex.Crawler.Common.Extensions.IsIn``1(``0,System.Collections.Generic.IEnumerable{``0})
+  id: IsIn``1(``0,System.Collections.Generic.IEnumerable{``0})
+  isExtensionMethod: true
+  parent: Interlex.Crawler.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: IsIn<T>(T, IEnumerable<T>)
+  nameWithType: Extensions.IsIn<T>(T, IEnumerable<T>)
+  fullName: Interlex.Crawler.Common.Extensions.IsIn<T>(T, System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    id: IsIn
+    path: ''
+    startLine: 370
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nDeterms if the collection contains the currenct object\n"
+  example: []
+  syntax:
+    content: public static bool IsIn<T>(this T object, IEnumerable<T> items)
+    parameters:
+    - id: object
+      type: '{T}'
+      description: ''
+    - id: items
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsIn(Of T)(object As T, items As IEnumerable(Of T)) As Boolean
+  overload: Interlex.Crawler.Common.Extensions.IsIn*
+  nameWithType.vb: Extensions.IsIn(Of T)(T, IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Interlex.Crawler.Common.Extensions.IsIn(Of T)(T, System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IsIn(Of T)(T, IEnumerable(Of T))
+- uid: Interlex.Crawler.Common.Extensions.IsIn``1(``0,``0[])
+  commentId: M:Interlex.Crawler.Common.Extensions.IsIn``1(``0,``0[])
+  id: IsIn``1(``0,``0[])
+  isExtensionMethod: true
+  parent: Interlex.Crawler.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: IsIn<T>(T, T[])
+  nameWithType: Extensions.IsIn<T>(T, T[])
+  fullName: Interlex.Crawler.Common.Extensions.IsIn<T>(T, T[])
+  type: Method
+  source:
+    id: IsIn
+    path: ''
+    startLine: 382
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nDeterms if the collection contains the currenct object\n"
+  example: []
+  syntax:
+    content: public static bool IsIn<T>(this T object, params T[] items)
+    parameters:
+    - id: object
+      type: '{T}'
+      description: ''
+    - id: items
+      type: '{T}[]'
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsIn(Of T)(object As T, ParamArray items As T()) As Boolean
+  overload: Interlex.Crawler.Common.Extensions.IsIn*
+  nameWithType.vb: Extensions.IsIn(Of T)(T, T())
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Interlex.Crawler.Common.Extensions.IsIn(Of T)(T, T())
+  name.vb: IsIn(Of T)(T, T())
+- uid: Interlex.Crawler.Common.Extensions.EncodeNonAsciiCharacters(System.String)
+  commentId: M:Interlex.Crawler.Common.Extensions.EncodeNonAsciiCharacters(System.String)
+  id: EncodeNonAsciiCharacters(System.String)
+  isExtensionMethod: true
+  parent: Interlex.Crawler.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: EncodeNonAsciiCharacters(String)
+  nameWithType: Extensions.EncodeNonAsciiCharacters(String)
+  fullName: Interlex.Crawler.Common.Extensions.EncodeNonAsciiCharacters(System.String)
+  type: Method
+  source:
+    id: EncodeNonAsciiCharacters
+    path: ''
+    startLine: 393
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nReturns unicode escape sequence.\n"
+  example: []
+  syntax:
+    content: public static string EncodeNonAsciiCharacters(this string str)
+    parameters:
+    - id: str
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function EncodeNonAsciiCharacters(str As String) As String
+  overload: Interlex.Crawler.Common.Extensions.EncodeNonAsciiCharacters*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.Common.Extensions.SafeReplaceAll(System.String,System.String[],System.String)
+  commentId: M:Interlex.Crawler.Common.Extensions.SafeReplaceAll(System.String,System.String[],System.String)
+  id: SafeReplaceAll(System.String,System.String[],System.String)
+  isExtensionMethod: true
+  parent: Interlex.Crawler.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: SafeReplaceAll(String, String[], String)
+  nameWithType: Extensions.SafeReplaceAll(String, String[], String)
+  fullName: Interlex.Crawler.Common.Extensions.SafeReplaceAll(System.String, System.String[], System.String)
+  type: Method
+  source:
+    id: SafeReplaceAll
+    path: ''
+    startLine: 424
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nReplaces all occurences of the old values with the provided new value\n<p>NOTE: If the str is empty, empty string is returned\nIf the oldvalues is empty, the original string is returned.</p>\n"
+  example: []
+  syntax:
+    content: public static string SafeReplaceAll(this string str, string[] oldValues, string newValue)
+    parameters:
+    - id: str
+      type: System.String
+      description: String
+    - id: oldValues
+      type: System.String[]
+      description: Values to replace
+    - id: newValue
+      type: System.String
+      description: Value to replace with
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SafeReplaceAll(str As String, oldValues As String(), newValue As String) As String
+  overload: Interlex.Crawler.Common.Extensions.SafeReplaceAll*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Throws when <code data-dev-comment-type="paramref" class="paramref">str</code> is null
+  nameWithType.vb: Extensions.SafeReplaceAll(String, String(), String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Interlex.Crawler.Common.Extensions.SafeReplaceAll(System.String, System.String(), System.String)
+  name.vb: SafeReplaceAll(String, String(), String)
+- uid: Interlex.Crawler.Common.Extensions.SafeReplace(System.String,System.String,System.String)
+  commentId: M:Interlex.Crawler.Common.Extensions.SafeReplace(System.String,System.String,System.String)
+  id: SafeReplace(System.String,System.String,System.String)
+  isExtensionMethod: true
+  parent: Interlex.Crawler.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: SafeReplace(String, String, String)
+  nameWithType: Extensions.SafeReplace(String, String, String)
+  fullName: Interlex.Crawler.Common.Extensions.SafeReplace(System.String, System.String, System.String)
+  type: Method
+  source:
+    id: SafeReplace
+    path: ''
+    startLine: 454
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nReplace value from the string with new one.\n<p>\nNOTE: If <param name=\"str\" /> is Empty string the result will be the original string\n</p>\n<p>\nIf <param name=\"replace\" /> is Empty string the result will be the original string\n</p>>\n"
+  example: []
+  syntax:
+    content: public static string SafeReplace(this string str, string replace, string newValue)
+    parameters:
+    - id: str
+      type: System.String
+      description: ''
+    - id: replace
+      type: System.String
+      description: ''
+    - id: newValue
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: The original string if replace is empty, or the result of the replacment
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SafeReplace(str As String, replace As String, newValue As String) As String
+  overload: Interlex.Crawler.Common.Extensions.SafeReplace*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Throws when <code data-dev-comment-type="paramref" class="paramref">str</code>, <code data-dev-comment-type="paramref" class="paramref">replace</code> or <code data-dev-comment-type="paramref" class="paramref">newValue</code>  is null
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.Common.Extensions.SafeReplace(System.String,System.String,System.String,System.StringComparison)
+  commentId: M:Interlex.Crawler.Common.Extensions.SafeReplace(System.String,System.String,System.String,System.StringComparison)
+  id: SafeReplace(System.String,System.String,System.String,System.StringComparison)
+  isExtensionMethod: true
+  parent: Interlex.Crawler.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: SafeReplace(String, String, String, StringComparison)
+  nameWithType: Extensions.SafeReplace(String, String, String, StringComparison)
+  fullName: Interlex.Crawler.Common.Extensions.SafeReplace(System.String, System.String, System.String, System.StringComparison)
+  type: Method
+  source:
+    id: SafeReplace
+    path: ''
+    startLine: 482
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nReplace value from the string with new one.\n<p>\nNOTE: If <param name=\"str\" /> is Empty string the result will be the original string\n</p>\n<p>\nIf <param name=\"oldValue\" /> is Empty string the result will be the original string\n</p>>\n"
+  example: []
+  syntax:
+    content: public static string SafeReplace(this string str, string oldValue, string newValue, StringComparison comparison)
+    parameters:
+    - id: str
+      type: System.String
+      description: ''
+    - id: oldValue
+      type: System.String
+      description: ''
+    - id: newValue
+      type: System.String
+      description: ''
+    - id: comparison
+      type: System.StringComparison
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SafeReplace(str As String, oldValue As String, newValue As String, comparison As StringComparison) As String
+  overload: Interlex.Crawler.Common.Extensions.SafeReplace*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.Common.Extensions.IsEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:Interlex.Crawler.Common.Extensions.IsEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  id: IsEmpty``1(System.Collections.Generic.IEnumerable{``0})
+  isExtensionMethod: true
+  parent: Interlex.Crawler.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: IsEmpty<T>(IEnumerable<T>)
+  nameWithType: Extensions.IsEmpty<T>(IEnumerable<T>)
+  fullName: Interlex.Crawler.Common.Extensions.IsEmpty<T>(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    id: IsEmpty
+    path: ''
+    startLine: 523
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nReturns true if the squence has no elements\n"
+  example: []
+  syntax:
+    content: public static bool IsEmpty<T>(this IEnumerable<T> sequence)
+    parameters:
+    - id: sequence
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: ''
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function IsEmpty(Of T)(sequence As IEnumerable(Of T)) As Boolean
+  overload: Interlex.Crawler.Common.Extensions.IsEmpty*
+  nameWithType.vb: Extensions.IsEmpty(Of T)(IEnumerable(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Interlex.Crawler.Common.Extensions.IsEmpty(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: IsEmpty(Of T)(IEnumerable(Of T))
+- uid: Interlex.Crawler.Common.Extensions.ToHexMD5(System.String)
+  commentId: M:Interlex.Crawler.Common.Extensions.ToHexMD5(System.String)
+  id: ToHexMD5(System.String)
+  isExtensionMethod: true
+  parent: Interlex.Crawler.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: ToHexMD5(String)
+  nameWithType: Extensions.ToHexMD5(String)
+  fullName: Interlex.Crawler.Common.Extensions.ToHexMD5(System.String)
+  type: Method
+  source:
+    id: ToHexMD5
+    path: ''
+    startLine: 533
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nReturns the hex representation of the md5 hash for the current string.\n"
+  example: []
+  syntax:
+    content: public static string ToHexMD5(this string str)
+    parameters:
+    - id: str
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToHexMD5(str As String) As String
+  overload: Interlex.Crawler.Common.Extensions.ToHexMD5*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.Common.Extensions.ToMD5Hash(System.String)
+  commentId: M:Interlex.Crawler.Common.Extensions.ToMD5Hash(System.String)
+  id: ToMD5Hash(System.String)
+  isExtensionMethod: true
+  parent: Interlex.Crawler.Common.Extensions
+  langs:
+  - csharp
+  - vb
+  name: ToMD5Hash(String)
+  nameWithType: Extensions.ToMD5Hash(String)
+  fullName: Interlex.Crawler.Common.Extensions.ToMD5Hash(System.String)
+  type: Method
+  source:
+    id: ToMD5Hash
+    path: ''
+    startLine: 552
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Common
+  summary: "\nReturns the md5 hash bytes for the current string.\n"
+  example: []
+  syntax:
+    content: public static byte[] ToMD5Hash(this string str)
+    parameters:
+    - id: str
+      type: System.String
+      description: ''
+    return:
+      type: System.Byte[]
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToMD5Hash(str As String) As Byte()
+  overload: Interlex.Crawler.Common.Extensions.ToMD5Hash*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Interlex.Crawler.Common
+  commentId: N:Interlex.Crawler.Common
+  name: Interlex.Crawler.Common
+  nameWithType: Interlex.Crawler.Common
+  fullName: Interlex.Crawler.Common
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Interlex.Crawler.Common.Extensions.Href*
+  commentId: Overload:Interlex.Crawler.Common.Extensions.Href
+  name: Href
+  nameWithType: Extensions.Href
+  fullName: Interlex.Crawler.Common.Extensions.Href
+- uid: HtmlNode
+  isExternal: true
+  name: HtmlNode
+  nameWithType: HtmlNode
+  fullName: HtmlNode
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Interlex.Crawler.Common.Extensions.SafeReplaceAtStart*
+  commentId: Overload:Interlex.Crawler.Common.Extensions.SafeReplaceAtStart
+  name: SafeReplaceAtStart
+  nameWithType: Extensions.SafeReplaceAtStart
+  fullName: Interlex.Crawler.Common.Extensions.SafeReplaceAtStart
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+- uid: Interlex.Crawler.Common.Extensions.TupleSplit*
+  commentId: Overload:Interlex.Crawler.Common.Extensions.TupleSplit
+  name: TupleSplit
+  nameWithType: Extensions.TupleSplit
+  fullName: Interlex.Crawler.Common.Extensions.TupleSplit
+- uid: System.ValueTuple{System.String,System.String}
+  commentId: T:System.ValueTuple{System.String,System.String}
+  parent: System
+  isExternal: true
+  name: ValueTuple<String, String>
+  nameWithType: ValueTuple<String, String>
+  fullName: System.ValueTuple<System.String, System.String>
+  nameWithType.vb: ValueTuple(Of String, String)
+  fullName.vb: System.ValueTuple(Of System.String, System.String)
+  name.vb: ValueTuple(Of String, String)
+  spec.csharp:
+  - uid: System.ValueTuple`2
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.ValueTuple`2
+    name: ValueTuple
+    nameWithType: ValueTuple
+    fullName: System.ValueTuple
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Interlex.Crawler.Common.Extensions.HtmlDecode*
+  commentId: Overload:Interlex.Crawler.Common.Extensions.HtmlDecode
+  name: HtmlDecode
+  nameWithType: Extensions.HtmlDecode
+  fullName: Interlex.Crawler.Common.Extensions.HtmlDecode
+- uid: Interlex.Crawler.Common.Extensions.GetQueryFragmentsMap*
+  commentId: Overload:Interlex.Crawler.Common.Extensions.GetQueryFragmentsMap
+  name: GetQueryFragmentsMap
+  nameWithType: Extensions.GetQueryFragmentsMap
+  fullName: Interlex.Crawler.Common.Extensions.GetQueryFragmentsMap
+- uid: Uri
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: Uri
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+- uid: Interlex.Crawler.Common.Extensions.DistinctBy*
+  commentId: Overload:Interlex.Crawler.Common.Extensions.DistinctBy
+  name: DistinctBy
+  nameWithType: Extensions.DistinctBy
+  fullName: Interlex.Crawler.Common.Extensions.DistinctBy
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func{{T},{TDistinctKey}}
+  commentId: T:System.Func{``0,``1}
+  parent: System
+  definition: System.Func`2
+  name: Func<T, TDistinctKey>
+  nameWithType: Func<T, TDistinctKey>
+  fullName: System.Func<T, TDistinctKey>
+  nameWithType.vb: Func(Of T, TDistinctKey)
+  fullName.vb: System.Func(Of T, TDistinctKey)
+  name.vb: Func(Of T, TDistinctKey)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDistinctKey
+    nameWithType: TDistinctKey
+    fullName: TDistinctKey
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TDistinctKey
+    nameWithType: TDistinctKey
+    fullName: TDistinctKey
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Interlex.Crawler.Common.Extensions.StartsWithAny*
+  commentId: Overload:Interlex.Crawler.Common.Extensions.StartsWithAny
+  name: StartsWithAny
+  nameWithType: Extensions.StartsWithAny
+  fullName: Interlex.Crawler.Common.Extensions.StartsWithAny
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Interlex.Crawler.Common.Extensions.IsIn*
+  commentId: Overload:Interlex.Crawler.Common.Extensions.IsIn
+  name: IsIn
+  nameWithType: Extensions.IsIn
+  fullName: Interlex.Crawler.Common.Extensions.IsIn
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Interlex.Crawler.Common.Extensions.EncodeNonAsciiCharacters*
+  commentId: Overload:Interlex.Crawler.Common.Extensions.EncodeNonAsciiCharacters
+  name: EncodeNonAsciiCharacters
+  nameWithType: Extensions.EncodeNonAsciiCharacters
+  fullName: Interlex.Crawler.Common.Extensions.EncodeNonAsciiCharacters
+- uid: Interlex.Crawler.Common.Extensions.SafeReplaceAll*
+  commentId: Overload:Interlex.Crawler.Common.Extensions.SafeReplaceAll
+  name: SafeReplaceAll
+  nameWithType: Extensions.SafeReplaceAll
+  fullName: Interlex.Crawler.Common.Extensions.SafeReplaceAll
+- uid: Interlex.Crawler.Common.Extensions.SafeReplace*
+  commentId: Overload:Interlex.Crawler.Common.Extensions.SafeReplace
+  name: SafeReplace
+  nameWithType: Extensions.SafeReplace
+  fullName: Interlex.Crawler.Common.Extensions.SafeReplace
+- uid: System.StringComparison
+  commentId: T:System.StringComparison
+  parent: System
+  isExternal: true
+  name: StringComparison
+  nameWithType: StringComparison
+  fullName: System.StringComparison
+- uid: Interlex.Crawler.Common.Extensions.IsEmpty*
+  commentId: Overload:Interlex.Crawler.Common.Extensions.IsEmpty
+  name: IsEmpty
+  nameWithType: Extensions.IsEmpty
+  fullName: Interlex.Crawler.Common.Extensions.IsEmpty
+- uid: Interlex.Crawler.Common.Extensions.ToHexMD5*
+  commentId: Overload:Interlex.Crawler.Common.Extensions.ToHexMD5
+  name: ToHexMD5
+  nameWithType: Extensions.ToHexMD5
+  fullName: Interlex.Crawler.Common.Extensions.ToHexMD5
+- uid: Interlex.Crawler.Common.Extensions.ToMD5Hash*
+  commentId: Overload:Interlex.Crawler.Common.Extensions.ToMD5Hash
+  name: ToMD5Hash
+  nameWithType: Extensions.ToMD5Hash
+  fullName: Interlex.Crawler.Common.Extensions.ToMD5Hash
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

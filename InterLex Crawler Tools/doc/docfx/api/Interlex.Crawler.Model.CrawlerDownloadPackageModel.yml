@@ -1,0 +1,1037 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+  commentId: T:Interlex.Crawler.Model.CrawlerDownloadPackageModel
+  id: CrawlerDownloadPackageModel
+  parent: Interlex.Crawler.Model
+  children:
+  - Interlex.Crawler.Model.CrawlerDownloadPackageModel.CreateFailed(System.String)
+  - Interlex.Crawler.Model.CrawlerDownloadPackageModel.CreateSuccess(Interlex.Crawler.Model.NameModel,System.Text.Encoding,System.String,System.String)
+  - Interlex.Crawler.Model.CrawlerDownloadPackageModel.Documents
+  - Interlex.Crawler.Model.CrawlerDownloadPackageModel.EmptySequence
+  - Interlex.Crawler.Model.CrawlerDownloadPackageModel.Encoding
+  - Interlex.Crawler.Model.CrawlerDownloadPackageModel.Error
+  - Interlex.Crawler.Model.CrawlerDownloadPackageModel.FreeResource
+  - Interlex.Crawler.Model.CrawlerDownloadPackageModel.IsProcessed
+  - Interlex.Crawler.Model.CrawlerDownloadPackageModel.Name
+  - Interlex.Crawler.Model.CrawlerDownloadPackageModel.Success
+  - Interlex.Crawler.Model.CrawlerDownloadPackageModel.TwoLetterLanguage
+  - Interlex.Crawler.Model.CrawlerDownloadPackageModel.Url
+  langs:
+  - csharp
+  - vb
+  name: CrawlerDownloadPackageModel
+  nameWithType: CrawlerDownloadPackageModel
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+  type: Class
+  source:
+    id: CrawlerDownloadPackageModel
+    path: ''
+    startLine: 3360
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nModel for downloaded package\n"
+  example: []
+  syntax:
+    content: public class CrawlerDownloadPackageModel
+    content.vb: Public Class CrawlerDownloadPackageModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.EmptySequence
+  commentId: F:Interlex.Crawler.Model.CrawlerDownloadPackageModel.EmptySequence
+  id: EmptySequence
+  parent: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+  langs:
+  - csharp
+  - vb
+  name: EmptySequence
+  nameWithType: CrawlerDownloadPackageModel.EmptySequence
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.EmptySequence
+  type: Field
+  source:
+    id: EmptySequence
+    path: ''
+    startLine: 3366
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nEmpty sequence\n"
+  example: []
+  syntax:
+    content: public static IReadOnlyCollection<CrawlerDownloadPackageModel> EmptySequence
+    return:
+      type: System.Collections.Generic.IReadOnlyCollection{Interlex.Crawler.Model.CrawlerDownloadPackageModel}
+    content.vb: Public Shared EmptySequence As IReadOnlyCollection(Of CrawlerDownloadPackageModel)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.CreateSuccess(Interlex.Crawler.Model.NameModel,System.Text.Encoding,System.String,System.String)
+  commentId: M:Interlex.Crawler.Model.CrawlerDownloadPackageModel.CreateSuccess(Interlex.Crawler.Model.NameModel,System.Text.Encoding,System.String,System.String)
+  id: CreateSuccess(Interlex.Crawler.Model.NameModel,System.Text.Encoding,System.String,System.String)
+  parent: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+  langs:
+  - csharp
+  - vb
+  name: CreateSuccess(NameModel, Encoding, String, String)
+  nameWithType: CrawlerDownloadPackageModel.CreateSuccess(NameModel, Encoding, String, String)
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.CreateSuccess(Interlex.Crawler.Model.NameModel, System.Text.Encoding, System.String, System.String)
+  type: Method
+  source:
+    id: CreateSuccess
+    path: ''
+    startLine: 3376
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nCreates package representing successful download\n"
+  example: []
+  syntax:
+    content: public static CrawlerDownloadPackageModel CreateSuccess(NameModel name, Encoding encoding, string url, string twoLetterLanguage)
+    parameters:
+    - id: name
+      type: Interlex.Crawler.Model.NameModel
+      description: Name of the package
+    - id: encoding
+      type: System.Text.Encoding
+      description: Encofing of the package
+    - id: url
+      type: System.String
+      description: Url of the package
+    - id: twoLetterLanguage
+      type: System.String
+      description: Two letter language for the package
+    return:
+      type: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+      description: ''
+    content.vb: Public Shared Function CreateSuccess(name As NameModel, encoding As Encoding, url As String, twoLetterLanguage As String) As CrawlerDownloadPackageModel
+  overload: Interlex.Crawler.Model.CrawlerDownloadPackageModel.CreateSuccess*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.CreateFailed(System.String)
+  commentId: M:Interlex.Crawler.Model.CrawlerDownloadPackageModel.CreateFailed(System.String)
+  id: CreateFailed(System.String)
+  parent: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+  langs:
+  - csharp
+  - vb
+  name: CreateFailed(String)
+  nameWithType: CrawlerDownloadPackageModel.CreateFailed(String)
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.CreateFailed(System.String)
+  type: Method
+  source:
+    id: CreateFailed
+    path: ''
+    startLine: 3386
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nCreates package representing failed download\n"
+  example: []
+  syntax:
+    content: public static CrawlerDownloadPackageModel CreateFailed(string error)
+    parameters:
+    - id: error
+      type: System.String
+      description: Error message
+    return:
+      type: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+      description: ''
+    content.vb: Public Shared Function CreateFailed(error As String) As CrawlerDownloadPackageModel
+  overload: Interlex.Crawler.Model.CrawlerDownloadPackageModel.CreateFailed*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Success
+  commentId: P:Interlex.Crawler.Model.CrawlerDownloadPackageModel.Success
+  id: Success
+  parent: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: CrawlerDownloadPackageModel.Success
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Success
+  type: Property
+  source:
+    id: Success
+    path: ''
+    startLine: 3419
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nTrue if the package was successfully downloaded\n"
+  example: []
+  syntax:
+    content: public bool Success { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Success As Boolean
+  overload: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Success*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Error
+  commentId: P:Interlex.Crawler.Model.CrawlerDownloadPackageModel.Error
+  id: Error
+  parent: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: CrawlerDownloadPackageModel.Error
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Error
+  type: Property
+  source:
+    id: Error
+    path: ''
+    startLine: 3424
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nError message for failed package\n"
+  example: []
+  syntax:
+    content: public string Error { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Error As String
+  overload: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Error*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Name
+  commentId: P:Interlex.Crawler.Model.CrawlerDownloadPackageModel.Name
+  id: Name
+  parent: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: CrawlerDownloadPackageModel.Name
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Name
+  type: Property
+  source:
+    id: Name
+    path: ''
+    startLine: 3429
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nName of the package\n"
+  example: []
+  syntax:
+    content: public NameModel Name { get; }
+    parameters: []
+    return:
+      type: Interlex.Crawler.Model.NameModel
+    content.vb: Public ReadOnly Property Name As NameModel
+  overload: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Name*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Encoding
+  commentId: P:Interlex.Crawler.Model.CrawlerDownloadPackageModel.Encoding
+  id: Encoding
+  parent: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+  langs:
+  - csharp
+  - vb
+  name: Encoding
+  nameWithType: CrawlerDownloadPackageModel.Encoding
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Encoding
+  type: Property
+  source:
+    id: Encoding
+    path: ''
+    startLine: 3434
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nEncoding for the package\n"
+  example: []
+  syntax:
+    content: public Encoding Encoding { get; }
+    parameters: []
+    return:
+      type: System.Text.Encoding
+    content.vb: Public ReadOnly Property Encoding As Encoding
+  overload: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Encoding*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.TwoLetterLanguage
+  commentId: P:Interlex.Crawler.Model.CrawlerDownloadPackageModel.TwoLetterLanguage
+  id: TwoLetterLanguage
+  parent: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+  langs:
+  - csharp
+  - vb
+  name: TwoLetterLanguage
+  nameWithType: CrawlerDownloadPackageModel.TwoLetterLanguage
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.TwoLetterLanguage
+  type: Property
+  source:
+    id: TwoLetterLanguage
+    path: ''
+    startLine: 3439
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nTwo letter language\n"
+  example: []
+  syntax:
+    content: public string TwoLetterLanguage { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property TwoLetterLanguage As String
+  overload: Interlex.Crawler.Model.CrawlerDownloadPackageModel.TwoLetterLanguage*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.IsProcessed
+  commentId: P:Interlex.Crawler.Model.CrawlerDownloadPackageModel.IsProcessed
+  id: IsProcessed
+  parent: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+  langs:
+  - csharp
+  - vb
+  name: IsProcessed
+  nameWithType: CrawlerDownloadPackageModel.IsProcessed
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.IsProcessed
+  type: Property
+  source:
+    id: IsProcessed
+    path: ''
+    startLine: 3444
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nIndicates if the package was processed by the <xref href=\"Interlex.Crawler.Manager.DocumentGroupManager\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public bool IsProcessed { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsProcessed As Boolean
+  overload: Interlex.Crawler.Model.CrawlerDownloadPackageModel.IsProcessed*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Url
+  commentId: P:Interlex.Crawler.Model.CrawlerDownloadPackageModel.Url
+  id: Url
+  parent: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+  langs:
+  - csharp
+  - vb
+  name: Url
+  nameWithType: CrawlerDownloadPackageModel.Url
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Url
+  type: Property
+  source:
+    id: Url
+    path: ''
+    startLine: 3449
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nUrl of the package\n"
+  example: []
+  syntax:
+    content: public string Url { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Url As String
+  overload: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Url*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Documents
+  commentId: P:Interlex.Crawler.Model.CrawlerDownloadPackageModel.Documents
+  id: Documents
+  parent: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+  langs:
+  - csharp
+  - vb
+  name: Documents
+  nameWithType: CrawlerDownloadPackageModel.Documents
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Documents
+  type: Property
+  source:
+    id: Documents
+    path: ''
+    startLine: 3454
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nDocuments for the package\n"
+  example: []
+  syntax:
+    content: public List<CrawlerDownloadDocumentModel> Documents { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Interlex.Crawler.Model.CrawlerDownloadDocumentModel}
+    content.vb: Public ReadOnly Property Documents As List(Of CrawlerDownloadDocumentModel)
+  overload: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Documents*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.FreeResource
+  commentId: M:Interlex.Crawler.Model.CrawlerDownloadPackageModel.FreeResource
+  id: FreeResource
+  parent: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+  langs:
+  - csharp
+  - vb
+  name: FreeResource()
+  nameWithType: CrawlerDownloadPackageModel.FreeResource()
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.FreeResource()
+  type: Method
+  source:
+    id: FreeResource
+    path: ''
+    startLine: 3459
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nFrees any holded references (like the <xref href=\"Interlex.Crawler.Model.CrawlerDownloadDocumentModel.HttpGet\" data-throw-if-not-resolved=\"false\"></xref> propery of the <xref href=\"Interlex.Crawler.Model.CrawlerDownloadPackageModel.Documents\" data-throw-if-not-resolved=\"false\"></xref> collection)\n"
+  example: []
+  syntax:
+    content: public void FreeResource()
+    content.vb: Public Sub FreeResource
+  overload: Interlex.Crawler.Model.CrawlerDownloadPackageModel.FreeResource*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Interlex.Crawler.Model
+  commentId: N:Interlex.Crawler.Model
+  name: Interlex.Crawler.Model
+  nameWithType: Interlex.Crawler.Model
+  fullName: Interlex.Crawler.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IReadOnlyCollection{Interlex.Crawler.Model.CrawlerDownloadPackageModel}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{Interlex.Crawler.Model.CrawlerDownloadPackageModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  name: IReadOnlyCollection<CrawlerDownloadPackageModel>
+  nameWithType: IReadOnlyCollection<CrawlerDownloadPackageModel>
+  fullName: System.Collections.Generic.IReadOnlyCollection<Interlex.Crawler.Model.CrawlerDownloadPackageModel>
+  nameWithType.vb: IReadOnlyCollection(Of CrawlerDownloadPackageModel)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of Interlex.Crawler.Model.CrawlerDownloadPackageModel)
+  name.vb: IReadOnlyCollection(Of CrawlerDownloadPackageModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+    name: CrawlerDownloadPackageModel
+    nameWithType: CrawlerDownloadPackageModel
+    fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+    name: CrawlerDownloadPackageModel
+    nameWithType: CrawlerDownloadPackageModel
+    fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    nameWithType: IReadOnlyCollection
+    fullName: System.Collections.Generic.IReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.CreateSuccess*
+  commentId: Overload:Interlex.Crawler.Model.CrawlerDownloadPackageModel.CreateSuccess
+  name: CreateSuccess
+  nameWithType: CrawlerDownloadPackageModel.CreateSuccess
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.CreateSuccess
+- uid: Interlex.Crawler.Model.NameModel
+  commentId: T:Interlex.Crawler.Model.NameModel
+  parent: Interlex.Crawler.Model
+  name: NameModel
+  nameWithType: NameModel
+  fullName: Interlex.Crawler.Model.NameModel
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+  commentId: T:Interlex.Crawler.Model.CrawlerDownloadPackageModel
+  parent: Interlex.Crawler.Model
+  name: CrawlerDownloadPackageModel
+  nameWithType: CrawlerDownloadPackageModel
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.CreateFailed*
+  commentId: Overload:Interlex.Crawler.Model.CrawlerDownloadPackageModel.CreateFailed
+  name: CreateFailed
+  nameWithType: CrawlerDownloadPackageModel.CreateFailed
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.CreateFailed
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Success*
+  commentId: Overload:Interlex.Crawler.Model.CrawlerDownloadPackageModel.Success
+  name: Success
+  nameWithType: CrawlerDownloadPackageModel.Success
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Success
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Error*
+  commentId: Overload:Interlex.Crawler.Model.CrawlerDownloadPackageModel.Error
+  name: Error
+  nameWithType: CrawlerDownloadPackageModel.Error
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Error
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Name*
+  commentId: Overload:Interlex.Crawler.Model.CrawlerDownloadPackageModel.Name
+  name: Name
+  nameWithType: CrawlerDownloadPackageModel.Name
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Name
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Encoding*
+  commentId: Overload:Interlex.Crawler.Model.CrawlerDownloadPackageModel.Encoding
+  name: Encoding
+  nameWithType: CrawlerDownloadPackageModel.Encoding
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Encoding
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.TwoLetterLanguage*
+  commentId: Overload:Interlex.Crawler.Model.CrawlerDownloadPackageModel.TwoLetterLanguage
+  name: TwoLetterLanguage
+  nameWithType: CrawlerDownloadPackageModel.TwoLetterLanguage
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.TwoLetterLanguage
+- uid: Interlex.Crawler.Manager.DocumentGroupManager
+  commentId: T:Interlex.Crawler.Manager.DocumentGroupManager
+  parent: Interlex.Crawler.Manager
+  name: DocumentGroupManager
+  nameWithType: DocumentGroupManager
+  fullName: Interlex.Crawler.Manager.DocumentGroupManager
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.IsProcessed*
+  commentId: Overload:Interlex.Crawler.Model.CrawlerDownloadPackageModel.IsProcessed
+  name: IsProcessed
+  nameWithType: CrawlerDownloadPackageModel.IsProcessed
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.IsProcessed
+- uid: Interlex.Crawler.Manager
+  commentId: N:Interlex.Crawler.Manager
+  name: Interlex.Crawler.Manager
+  nameWithType: Interlex.Crawler.Manager
+  fullName: Interlex.Crawler.Manager
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Url*
+  commentId: Overload:Interlex.Crawler.Model.CrawlerDownloadPackageModel.Url
+  name: Url
+  nameWithType: CrawlerDownloadPackageModel.Url
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Url
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Documents*
+  commentId: Overload:Interlex.Crawler.Model.CrawlerDownloadPackageModel.Documents
+  name: Documents
+  nameWithType: CrawlerDownloadPackageModel.Documents
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Documents
+- uid: System.Collections.Generic.List{Interlex.Crawler.Model.CrawlerDownloadDocumentModel}
+  commentId: T:System.Collections.Generic.List{Interlex.Crawler.Model.CrawlerDownloadDocumentModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<CrawlerDownloadDocumentModel>
+  nameWithType: List<CrawlerDownloadDocumentModel>
+  fullName: System.Collections.Generic.List<Interlex.Crawler.Model.CrawlerDownloadDocumentModel>
+  nameWithType.vb: List(Of CrawlerDownloadDocumentModel)
+  fullName.vb: System.Collections.Generic.List(Of Interlex.Crawler.Model.CrawlerDownloadDocumentModel)
+  name.vb: List(Of CrawlerDownloadDocumentModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Interlex.Crawler.Model.CrawlerDownloadDocumentModel
+    name: CrawlerDownloadDocumentModel
+    nameWithType: CrawlerDownloadDocumentModel
+    fullName: Interlex.Crawler.Model.CrawlerDownloadDocumentModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Interlex.Crawler.Model.CrawlerDownloadDocumentModel
+    name: CrawlerDownloadDocumentModel
+    nameWithType: CrawlerDownloadDocumentModel
+    fullName: Interlex.Crawler.Model.CrawlerDownloadDocumentModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Interlex.Crawler.Model.CrawlerDownloadDocumentModel.HttpGet
+  commentId: P:Interlex.Crawler.Model.CrawlerDownloadDocumentModel.HttpGet
+  isExternal: true
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.Documents
+  commentId: P:Interlex.Crawler.Model.CrawlerDownloadPackageModel.Documents
+  isExternal: true
+- uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel.FreeResource*
+  commentId: Overload:Interlex.Crawler.Model.CrawlerDownloadPackageModel.FreeResource
+  name: FreeResource
+  nameWithType: CrawlerDownloadPackageModel.FreeResource
+  fullName: Interlex.Crawler.Model.CrawlerDownloadPackageModel.FreeResource

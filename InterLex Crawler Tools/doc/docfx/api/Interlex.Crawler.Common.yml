@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Common
+  commentId: N:Interlex.Crawler.Common
+  id: Interlex.Crawler.Common
+  children:
+  - Interlex.Crawler.Common.Extensions
+  - Interlex.Crawler.Common.Http
+  - Interlex.Crawler.Common.HttpRequestBuilder
+  - Interlex.Crawler.Common.MD5Hash
+  - Interlex.Crawler.Common.ResponseRichResult
+  langs:
+  - csharp
+  - vb
+  name: Interlex.Crawler.Common
+  nameWithType: Interlex.Crawler.Common
+  fullName: Interlex.Crawler.Common
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Interlex.Crawler.Common.Extensions
+  commentId: T:Interlex.Crawler.Common.Extensions
+  name: Extensions
+  nameWithType: Extensions
+  fullName: Interlex.Crawler.Common.Extensions
+- uid: Interlex.Crawler.Common.Http
+  commentId: T:Interlex.Crawler.Common.Http
+  parent: Interlex.Crawler.Common
+  name: Http
+  nameWithType: Http
+  fullName: Interlex.Crawler.Common.Http
+- uid: Interlex.Crawler.Common.HttpRequestBuilder
+  commentId: T:Interlex.Crawler.Common.HttpRequestBuilder
+  parent: Interlex.Crawler.Common
+  name: HttpRequestBuilder
+  nameWithType: HttpRequestBuilder
+  fullName: Interlex.Crawler.Common.HttpRequestBuilder
+- uid: Interlex.Crawler.Common.MD5Hash
+  commentId: T:Interlex.Crawler.Common.MD5Hash
+  name: MD5Hash
+  nameWithType: MD5Hash
+  fullName: Interlex.Crawler.Common.MD5Hash
+- uid: Interlex.Crawler.Common.ResponseRichResult
+  commentId: T:Interlex.Crawler.Common.ResponseRichResult
+  parent: Interlex.Crawler.Common
+  name: ResponseRichResult
+  nameWithType: ResponseRichResult
+  fullName: Interlex.Crawler.Common.ResponseRichResult
+- uid: Interlex.Crawler.Common
+  commentId: N:Interlex.Crawler.Common
+  name: Interlex.Crawler.Common
+  nameWithType: Interlex.Crawler.Common
+  fullName: Interlex.Crawler.Common

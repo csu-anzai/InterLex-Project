@@ -1,0 +1,109 @@
+### YamlMime:TableOfContent
+- uid: Interlex.Crawler
+  name: Interlex.Crawler
+  items:
+  - uid: Interlex.Crawler.CrawlerApi
+    name: CrawlerApi
+- uid: Interlex.Crawler.Common
+  name: Interlex.Crawler.Common
+  items:
+  - uid: Interlex.Crawler.Common.Extensions
+    name: Extensions
+  - uid: Interlex.Crawler.Common.Http
+    name: Http
+  - uid: Interlex.Crawler.Common.HttpRequestBuilder
+    name: HttpRequestBuilder
+  - uid: Interlex.Crawler.Common.MD5Hash
+    name: MD5Hash
+  - uid: Interlex.Crawler.Common.ResponseRichResult
+    name: ResponseRichResult
+- uid: Interlex.Crawler.Crawlers
+  name: Interlex.Crawler.Crawlers
+  items:
+  - uid: Interlex.Crawler.Crawlers.BaseGenericCrawler
+    name: BaseGenericCrawler
+  - uid: Interlex.Crawler.Crawlers.BaseHttpCrawler
+    name: BaseHttpCrawler
+- uid: Interlex.Crawler.Crawlers.AT
+  name: Interlex.Crawler.Crawlers.AT
+  items:
+  - uid: Interlex.Crawler.Crawlers.AT.RisBka
+    name: RisBka
+- uid: Interlex.Crawler.Crawlers.DE
+  name: Interlex.Crawler.Crawlers.DE
+  items:
+  - uid: Interlex.Crawler.Crawlers.DE.BaseBundes
+    name: BaseBundes
+  - uid: Interlex.Crawler.Crawlers.DE.Bundesarbeitsgericht
+    name: Bundesarbeitsgericht
+  - uid: Interlex.Crawler.Crawlers.DE.Bundesfinanzhofs
+    name: Bundesfinanzhofs
+  - uid: Interlex.Crawler.Crawlers.DE.Bundesgerichtshof
+    name: Bundesgerichtshof
+  - uid: Interlex.Crawler.Crawlers.DE.Bundespatentgericht
+    name: Bundespatentgericht
+  - uid: Interlex.Crawler.Crawlers.DE.Bundessozialgericht
+    name: Bundessozialgericht
+- uid: Interlex.Crawler.Crawlers.Eurlex
+  name: Interlex.Crawler.Crawlers.Eurlex
+  items:
+  - uid: Interlex.Crawler.Crawlers.Eurlex.Eurlex
+    name: Eurlex
+- uid: Interlex.Crawler.Crawlers.FR
+  name: Interlex.Crawler.Crawlers.FR
+  items:
+  - uid: Interlex.Crawler.Crawlers.FR.LegiFrance
+    name: LegiFrance
+- uid: Interlex.Crawler.Crawlers.Interlex_editor_tool
+  name: Interlex.Crawler.Crawlers.Interlex_editor_tool
+  items:
+  - uid: Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool
+    name: InterlexEditorTool
+- uid: Interlex.Crawler.Crawlers.UK
+  name: Interlex.Crawler.Crawlers.UK
+  items:
+  - uid: Interlex.Crawler.Crawlers.UK.UKSupremeCourt
+    name: UKSupremeCourt
+- uid: Interlex.Crawler.Data
+  name: Interlex.Crawler.Data
+  items:
+  - uid: Interlex.Crawler.Data.InterlexCrawlerEntities
+    name: InterlexCrawlerEntities
+  - uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Crawler
+    name: InterlexCrawlerEntities.Crawler
+  - uid: Interlex.Crawler.Data.InterlexCrawlerEntities.Document
+    name: InterlexCrawlerEntities.Document
+  - uid: Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup
+    name: InterlexCrawlerEntities.DocumentGroup
+  - uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus
+    name: InterlexCrawlerEntities.OperationStatus
+  - uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog
+    name: InterlexCrawlerEntities.OperationStatusLog
+- uid: Interlex.Crawler.Manager
+  name: Interlex.Crawler.Manager
+  items:
+  - uid: Interlex.Crawler.Manager.DocumentGroupManager
+    name: DocumentGroupManager
+  - uid: Interlex.Crawler.Manager.HttpCrawlerManager
+    name: HttpCrawlerManager
+- uid: Interlex.Crawler.Model
+  name: Interlex.Crawler.Model
+  items:
+  - uid: Interlex.Crawler.Model.CrawlerDownloadDocumentModel
+    name: CrawlerDownloadDocumentModel
+  - uid: Interlex.Crawler.Model.CrawlerDownloadPackageModel
+    name: CrawlerDownloadPackageModel
+  - uid: Interlex.Crawler.Model.CrawlerHttpManagerConfig
+    name: CrawlerHttpManagerConfig
+  - uid: Interlex.Crawler.Model.DocumentGroupModel
+    name: DocumentGroupModel
+  - uid: Interlex.Crawler.Model.DocumentGroupModelOperation
+    name: DocumentGroupModelOperation
+  - uid: Interlex.Crawler.Model.DocumentModel
+    name: DocumentModel
+  - uid: Interlex.Crawler.Model.DocumentModelOperation
+    name: DocumentModelOperation
+  - uid: Interlex.Crawler.Model.HttpModel
+    name: HttpModel
+  - uid: Interlex.Crawler.Model.NameModel
+    name: NameModel

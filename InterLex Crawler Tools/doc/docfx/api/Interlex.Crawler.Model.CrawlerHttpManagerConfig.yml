@@ -1,0 +1,475 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Model.CrawlerHttpManagerConfig
+  commentId: T:Interlex.Crawler.Model.CrawlerHttpManagerConfig
+  id: CrawlerHttpManagerConfig
+  parent: Interlex.Crawler.Model
+  children:
+  - Interlex.Crawler.Model.CrawlerHttpManagerConfig.#ctor(System.Int32)
+  - Interlex.Crawler.Model.CrawlerHttpManagerConfig.Default
+  - Interlex.Crawler.Model.CrawlerHttpManagerConfig.MaxDegreeOfParallel
+  langs:
+  - csharp
+  - vb
+  name: CrawlerHttpManagerConfig
+  nameWithType: CrawlerHttpManagerConfig
+  fullName: Interlex.Crawler.Model.CrawlerHttpManagerConfig
+  type: Class
+  source:
+    id: CrawlerHttpManagerConfig
+    path: ''
+    startLine: 3486
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nConfig for the <xref href=\"Interlex.Crawler.Manager.HttpCrawlerManager\" data-throw-if-not-resolved=\"false\"></xref> class\n"
+  example: []
+  syntax:
+    content: public class CrawlerHttpManagerConfig
+    content.vb: Public Class CrawlerHttpManagerConfig
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Interlex.Crawler.Model.CrawlerHttpManagerConfig.Default
+  commentId: F:Interlex.Crawler.Model.CrawlerHttpManagerConfig.Default
+  id: Default
+  parent: Interlex.Crawler.Model.CrawlerHttpManagerConfig
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: CrawlerHttpManagerConfig.Default
+  fullName: Interlex.Crawler.Model.CrawlerHttpManagerConfig.Default
+  type: Field
+  source:
+    id: Default
+    path: ''
+    startLine: 3491
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nDefault config. <xref href=\"Interlex.Crawler.Model.CrawlerHttpManagerConfig.MaxDegreeOfParallel\" data-throw-if-not-resolved=\"false\"></xref> = <xref href=\"System.Environment.ProcessorCount\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static readonly CrawlerHttpManagerConfig Default
+    return:
+      type: Interlex.Crawler.Model.CrawlerHttpManagerConfig
+    content.vb: Public Shared ReadOnly Default As CrawlerHttpManagerConfig
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Interlex.Crawler.Model.CrawlerHttpManagerConfig.#ctor(System.Int32)
+  commentId: M:Interlex.Crawler.Model.CrawlerHttpManagerConfig.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Interlex.Crawler.Model.CrawlerHttpManagerConfig
+  langs:
+  - csharp
+  - vb
+  name: CrawlerHttpManagerConfig(Int32)
+  nameWithType: CrawlerHttpManagerConfig.CrawlerHttpManagerConfig(Int32)
+  fullName: Interlex.Crawler.Model.CrawlerHttpManagerConfig.CrawlerHttpManagerConfig(System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 3497
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nCreate new instance\n"
+  example: []
+  syntax:
+    content: public CrawlerHttpManagerConfig(int maxDegreeOfParallel)
+    parameters:
+    - id: maxDegreeOfParallel
+      type: System.Int32
+      description: Max degree of parallel
+    content.vb: Public Sub New(maxDegreeOfParallel As Integer)
+  overload: Interlex.Crawler.Model.CrawlerHttpManagerConfig.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Model.CrawlerHttpManagerConfig.MaxDegreeOfParallel
+  commentId: P:Interlex.Crawler.Model.CrawlerHttpManagerConfig.MaxDegreeOfParallel
+  id: MaxDegreeOfParallel
+  parent: Interlex.Crawler.Model.CrawlerHttpManagerConfig
+  langs:
+  - csharp
+  - vb
+  name: MaxDegreeOfParallel
+  nameWithType: CrawlerHttpManagerConfig.MaxDegreeOfParallel
+  fullName: Interlex.Crawler.Model.CrawlerHttpManagerConfig.MaxDegreeOfParallel
+  type: Property
+  source:
+    id: MaxDegreeOfParallel
+    path: ''
+    startLine: 3505
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Model
+  summary: "\nMax degree of parallel\n"
+  example: []
+  syntax:
+    content: public int MaxDegreeOfParallel { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property MaxDegreeOfParallel As Integer
+  overload: Interlex.Crawler.Model.CrawlerHttpManagerConfig.MaxDegreeOfParallel*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: Interlex.Crawler.Manager.HttpCrawlerManager
+  commentId: T:Interlex.Crawler.Manager.HttpCrawlerManager
+  name: HttpCrawlerManager
+  nameWithType: HttpCrawlerManager
+  fullName: Interlex.Crawler.Manager.HttpCrawlerManager
+- uid: Interlex.Crawler.Model
+  commentId: N:Interlex.Crawler.Model
+  name: Interlex.Crawler.Model
+  nameWithType: Interlex.Crawler.Model
+  fullName: Interlex.Crawler.Model
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Interlex.Crawler.Model.CrawlerHttpManagerConfig.MaxDegreeOfParallel
+  commentId: P:Interlex.Crawler.Model.CrawlerHttpManagerConfig.MaxDegreeOfParallel
+  isExternal: true
+- uid: System.Environment.ProcessorCount
+  commentId: P:System.Environment.ProcessorCount
+  isExternal: true
+- uid: Interlex.Crawler.Model.CrawlerHttpManagerConfig
+  commentId: T:Interlex.Crawler.Model.CrawlerHttpManagerConfig
+  parent: Interlex.Crawler.Model
+  name: CrawlerHttpManagerConfig
+  nameWithType: CrawlerHttpManagerConfig
+  fullName: Interlex.Crawler.Model.CrawlerHttpManagerConfig
+- uid: Interlex.Crawler.Model.CrawlerHttpManagerConfig.#ctor*
+  commentId: Overload:Interlex.Crawler.Model.CrawlerHttpManagerConfig.#ctor
+  name: CrawlerHttpManagerConfig
+  nameWithType: CrawlerHttpManagerConfig.CrawlerHttpManagerConfig
+  fullName: Interlex.Crawler.Model.CrawlerHttpManagerConfig.CrawlerHttpManagerConfig
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Interlex.Crawler.Model.CrawlerHttpManagerConfig.MaxDegreeOfParallel*
+  commentId: Overload:Interlex.Crawler.Model.CrawlerHttpManagerConfig.MaxDegreeOfParallel
+  name: MaxDegreeOfParallel
+  nameWithType: CrawlerHttpManagerConfig.MaxDegreeOfParallel
+  fullName: Interlex.Crawler.Model.CrawlerHttpManagerConfig.MaxDegreeOfParallel

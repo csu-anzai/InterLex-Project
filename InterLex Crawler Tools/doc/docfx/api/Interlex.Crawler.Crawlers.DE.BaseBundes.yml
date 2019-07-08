@@ -1,0 +1,567 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Crawlers.DE.BaseBundes
+  commentId: T:Interlex.Crawler.Crawlers.DE.BaseBundes
+  id: BaseBundes
+  parent: Interlex.Crawler.Crawlers.DE
+  children:
+  - Interlex.Crawler.Crawlers.DE.BaseBundes.#ctor(ILog)
+  - Interlex.Crawler.Crawlers.DE.BaseBundes.LoadAsync(System.String,System.String,System.Int32,System.Int32,System.String)
+  - Interlex.Crawler.Crawlers.DE.BaseBundes.StartAsync
+  langs:
+  - csharp
+  - vb
+  name: BaseBundes
+  nameWithType: BaseBundes
+  fullName: Interlex.Crawler.Crawlers.DE.BaseBundes
+  type: Class
+  source:
+    id: BaseBundes
+    path: ''
+    startLine: 1765
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers.DE
+  syntax:
+    content: 'public abstract class BaseBundes : BaseGenericCrawler'
+    content.vb: >-
+      Public MustInherit Class BaseBundes
+          Inherits BaseGenericCrawler
+  inheritance:
+  - System.Object
+  - Interlex.Crawler.Crawlers.BaseGenericCrawler
+  derivedClasses:
+  - Interlex.Crawler.Crawlers.DE.Bundesarbeitsgericht
+  - Interlex.Crawler.Crawlers.DE.Bundesfinanzhofs
+  - Interlex.Crawler.Crawlers.DE.Bundesgerichtshof
+  - Interlex.Crawler.Crawlers.DE.Bundespatentgericht
+  - Interlex.Crawler.Crawlers.DE.Bundessozialgericht
+  inheritedMembers:
+  - Interlex.Crawler.Crawlers.BaseGenericCrawler.DocumentGroupManager
+  - Interlex.Crawler.Crawlers.BaseGenericCrawler.Http
+  - Interlex.Crawler.Crawlers.BaseGenericCrawler.Logger
+  - Interlex.Crawler.Crawlers.BaseGenericCrawler.CrawlerId
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Interlex.Crawler.Crawlers.DE.BaseBundes.#ctor(ILog)
+  commentId: M:Interlex.Crawler.Crawlers.DE.BaseBundes.#ctor(ILog)
+  id: '#ctor(ILog)'
+  parent: Interlex.Crawler.Crawlers.DE.BaseBundes
+  langs:
+  - csharp
+  - vb
+  name: BaseBundes(ILog)
+  nameWithType: BaseBundes.BaseBundes(ILog)
+  fullName: Interlex.Crawler.Crawlers.DE.BaseBundes.BaseBundes(ILog)
+  type: Constructor
+  source:
+    id: .ctor
+    path: ''
+    startLine: 1767
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers.DE
+  syntax:
+    content: public BaseBundes(ILog logger)
+    parameters:
+    - id: logger
+      type: ILog
+    content.vb: Public Sub New(logger As ILog)
+  overload: Interlex.Crawler.Crawlers.DE.BaseBundes.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Crawlers.DE.BaseBundes.StartAsync
+  commentId: M:Interlex.Crawler.Crawlers.DE.BaseBundes.StartAsync
+  id: StartAsync
+  parent: Interlex.Crawler.Crawlers.DE.BaseBundes
+  langs:
+  - csharp
+  - vb
+  name: StartAsync()
+  nameWithType: BaseBundes.StartAsync()
+  fullName: Interlex.Crawler.Crawlers.DE.BaseBundes.StartAsync()
+  type: Method
+  source:
+    id: StartAsync
+    path: ''
+    startLine: 1771
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers.DE
+  syntax:
+    content: public abstract override Task StartAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public MustOverride Overrides Function StartAsync As Task
+  overridden: Interlex.Crawler.Crawlers.BaseGenericCrawler.StartAsync
+  overload: Interlex.Crawler.Crawlers.DE.BaseBundes.StartAsync*
+  modifiers.csharp:
+  - public
+  - abstract
+  - override
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - Overrides
+- uid: Interlex.Crawler.Crawlers.DE.BaseBundes.LoadAsync(System.String,System.String,System.Int32,System.Int32,System.String)
+  commentId: M:Interlex.Crawler.Crawlers.DE.BaseBundes.LoadAsync(System.String,System.String,System.Int32,System.Int32,System.String)
+  id: LoadAsync(System.String,System.String,System.Int32,System.Int32,System.String)
+  parent: Interlex.Crawler.Crawlers.DE.BaseBundes
+  langs:
+  - csharp
+  - vb
+  name: LoadAsync(String, String, Int32, Int32, String)
+  nameWithType: BaseBundes.LoadAsync(String, String, Int32, Int32, String)
+  fullName: Interlex.Crawler.Crawlers.DE.BaseBundes.LoadAsync(System.String, System.String, System.Int32, System.Int32, System.String)
+  type: Method
+  source:
+    id: LoadAsync
+    path: ''
+    startLine: 1773
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Crawlers.DE
+  syntax:
+    content: public Task LoadAsync(string baseUrl, string mainUrl, int fromYear, int toYear, string crawlerName)
+    parameters:
+    - id: baseUrl
+      type: System.String
+    - id: mainUrl
+      type: System.String
+    - id: fromYear
+      type: System.Int32
+    - id: toYear
+      type: System.Int32
+    - id: crawlerName
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function LoadAsync(baseUrl As String, mainUrl As String, fromYear As Integer, toYear As Integer, crawlerName As String) As Task
+  overload: Interlex.Crawler.Crawlers.DE.BaseBundes.LoadAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Interlex.Crawler.Crawlers.DE
+  commentId: N:Interlex.Crawler.Crawlers.DE
+  name: Interlex.Crawler.Crawlers.DE
+  nameWithType: Interlex.Crawler.Crawlers.DE
+  fullName: Interlex.Crawler.Crawlers.DE
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Interlex.Crawler.Crawlers.BaseGenericCrawler
+  commentId: T:Interlex.Crawler.Crawlers.BaseGenericCrawler
+  parent: Interlex.Crawler.Crawlers
+  name: BaseGenericCrawler
+  nameWithType: BaseGenericCrawler
+  fullName: Interlex.Crawler.Crawlers.BaseGenericCrawler
+- uid: Interlex.Crawler.Crawlers.BaseGenericCrawler.DocumentGroupManager
+  commentId: F:Interlex.Crawler.Crawlers.BaseGenericCrawler.DocumentGroupManager
+  parent: Interlex.Crawler.Crawlers.BaseGenericCrawler
+  name: DocumentGroupManager
+  nameWithType: BaseGenericCrawler.DocumentGroupManager
+  fullName: Interlex.Crawler.Crawlers.BaseGenericCrawler.DocumentGroupManager
+- uid: Interlex.Crawler.Crawlers.BaseGenericCrawler.Http
+  commentId: F:Interlex.Crawler.Crawlers.BaseGenericCrawler.Http
+  parent: Interlex.Crawler.Crawlers.BaseGenericCrawler
+  name: Http
+  nameWithType: BaseGenericCrawler.Http
+  fullName: Interlex.Crawler.Crawlers.BaseGenericCrawler.Http
+- uid: Interlex.Crawler.Crawlers.BaseGenericCrawler.Logger
+  commentId: F:Interlex.Crawler.Crawlers.BaseGenericCrawler.Logger
+  parent: Interlex.Crawler.Crawlers.BaseGenericCrawler
+  name: Logger
+  nameWithType: BaseGenericCrawler.Logger
+  fullName: Interlex.Crawler.Crawlers.BaseGenericCrawler.Logger
+- uid: Interlex.Crawler.Crawlers.BaseGenericCrawler.CrawlerId
+  commentId: F:Interlex.Crawler.Crawlers.BaseGenericCrawler.CrawlerId
+  parent: Interlex.Crawler.Crawlers.BaseGenericCrawler
+  name: CrawlerId
+  nameWithType: BaseGenericCrawler.CrawlerId
+  fullName: Interlex.Crawler.Crawlers.BaseGenericCrawler.CrawlerId
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Interlex.Crawler.Crawlers
+  commentId: N:Interlex.Crawler.Crawlers
+  name: Interlex.Crawler.Crawlers
+  nameWithType: Interlex.Crawler.Crawlers
+  fullName: Interlex.Crawler.Crawlers
+- uid: Interlex.Crawler.Crawlers.DE.BaseBundes.#ctor*
+  commentId: Overload:Interlex.Crawler.Crawlers.DE.BaseBundes.#ctor
+  name: BaseBundes
+  nameWithType: BaseBundes.BaseBundes
+  fullName: Interlex.Crawler.Crawlers.DE.BaseBundes.BaseBundes
+- uid: ILog
+  isExternal: true
+  name: ILog
+  nameWithType: ILog
+  fullName: ILog
+- uid: Interlex.Crawler.Crawlers.BaseGenericCrawler.StartAsync
+  commentId: M:Interlex.Crawler.Crawlers.BaseGenericCrawler.StartAsync
+  parent: Interlex.Crawler.Crawlers.BaseGenericCrawler
+  name: StartAsync()
+  nameWithType: BaseGenericCrawler.StartAsync()
+  fullName: Interlex.Crawler.Crawlers.BaseGenericCrawler.StartAsync()
+  spec.csharp:
+  - uid: Interlex.Crawler.Crawlers.BaseGenericCrawler.StartAsync
+    name: StartAsync
+    nameWithType: BaseGenericCrawler.StartAsync
+    fullName: Interlex.Crawler.Crawlers.BaseGenericCrawler.StartAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Interlex.Crawler.Crawlers.BaseGenericCrawler.StartAsync
+    name: StartAsync
+    nameWithType: BaseGenericCrawler.StartAsync
+    fullName: Interlex.Crawler.Crawlers.BaseGenericCrawler.StartAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Interlex.Crawler.Crawlers.DE.BaseBundes.StartAsync*
+  commentId: Overload:Interlex.Crawler.Crawlers.DE.BaseBundes.StartAsync
+  name: StartAsync
+  nameWithType: BaseBundes.StartAsync
+  fullName: Interlex.Crawler.Crawlers.DE.BaseBundes.StartAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Interlex.Crawler.Crawlers.DE.BaseBundes.LoadAsync*
+  commentId: Overload:Interlex.Crawler.Crawlers.DE.BaseBundes.LoadAsync
+  name: LoadAsync
+  nameWithType: BaseBundes.LoadAsync
+  fullName: Interlex.Crawler.Crawlers.DE.BaseBundes.LoadAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

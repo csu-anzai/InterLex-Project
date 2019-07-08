@@ -1,0 +1,598 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus
+  commentId: T:Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus
+  id: InterlexCrawlerEntities.OperationStatus
+  parent: Interlex.Crawler.Data
+  children:
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.CurrentStatus
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.Identifier
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.LastModificationDate
+  - Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.OperationStatusLogs
+  langs:
+  - csharp
+  - vb
+  name: InterlexCrawlerEntities.OperationStatus
+  nameWithType: InterlexCrawlerEntities.OperationStatus
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus
+  type: Class
+  source:
+    id: OperationStatus
+    path: ''
+    startLine: 4120
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  summary: "\nEntity for the OperationStatus table\n"
+  example: []
+  syntax:
+    content: public class OperationStatus
+    content.vb: Public Class OperationStatus
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.Identifier
+  commentId: P:Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.Identifier
+  id: Identifier
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus
+  langs:
+  - csharp
+  - vb
+  name: Identifier
+  nameWithType: InterlexCrawlerEntities.OperationStatus.Identifier
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.Identifier
+  type: Property
+  source:
+    id: Identifier
+    path: ''
+    startLine: 4122
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  syntax:
+    content: public Guid Identifier { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: Public Property Identifier As Guid
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.Identifier*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.CurrentStatus
+  commentId: P:Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.CurrentStatus
+  id: CurrentStatus
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus
+  langs:
+  - csharp
+  - vb
+  name: CurrentStatus
+  nameWithType: InterlexCrawlerEntities.OperationStatus.CurrentStatus
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.CurrentStatus
+  type: Property
+  source:
+    id: CurrentStatus
+    path: ''
+    startLine: 4123
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  syntax:
+    content: public int CurrentStatus { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property CurrentStatus As Integer
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.CurrentStatus*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.LastModificationDate
+  commentId: P:Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.LastModificationDate
+  id: LastModificationDate
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus
+  langs:
+  - csharp
+  - vb
+  name: LastModificationDate
+  nameWithType: InterlexCrawlerEntities.OperationStatus.LastModificationDate
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.LastModificationDate
+  type: Property
+  source:
+    id: LastModificationDate
+    path: ''
+    startLine: 4124
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  syntax:
+    content: public DateTime LastModificationDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property LastModificationDate As Date
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.LastModificationDate*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.OperationStatusLogs
+  commentId: P:Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.OperationStatusLogs
+  id: OperationStatusLogs
+  parent: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus
+  langs:
+  - csharp
+  - vb
+  name: OperationStatusLogs
+  nameWithType: InterlexCrawlerEntities.OperationStatus.OperationStatusLogs
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.OperationStatusLogs
+  type: Property
+  source:
+    id: OperationStatusLogs
+    path: ''
+    startLine: 4125
+  assemblies:
+  - cs.temp.dll
+  namespace: Interlex.Crawler.Data
+  syntax:
+    content: public virtual ICollection<InterlexCrawlerEntities.OperationStatusLog> OperationStatusLogs { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog}
+    content.vb: Public Overridable Property OperationStatusLogs As ICollection(Of InterlexCrawlerEntities.OperationStatusLog)
+  overload: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.OperationStatusLogs*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: Interlex.Crawler.Data
+  commentId: N:Interlex.Crawler.Data
+  name: Interlex.Crawler.Data
+  nameWithType: Interlex.Crawler.Data
+  fullName: Interlex.Crawler.Data
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.Identifier*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.Identifier
+  name: Identifier
+  nameWithType: InterlexCrawlerEntities.OperationStatus.Identifier
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.Identifier
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.CurrentStatus*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.CurrentStatus
+  name: CurrentStatus
+  nameWithType: InterlexCrawlerEntities.OperationStatus.CurrentStatus
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.CurrentStatus
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.LastModificationDate*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.LastModificationDate
+  name: LastModificationDate
+  nameWithType: InterlexCrawlerEntities.OperationStatus.LastModificationDate
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.LastModificationDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.OperationStatusLogs*
+  commentId: Overload:Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.OperationStatusLogs
+  name: OperationStatusLogs
+  nameWithType: InterlexCrawlerEntities.OperationStatus.OperationStatusLogs
+  fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.OperationStatusLogs
+- uid: System.Collections.Generic.ICollection{Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog}
+  commentId: T:System.Collections.Generic.ICollection{Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  name: ICollection<InterlexCrawlerEntities.OperationStatusLog>
+  nameWithType: ICollection<InterlexCrawlerEntities.OperationStatusLog>
+  fullName: System.Collections.Generic.ICollection<Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog>
+  nameWithType.vb: ICollection(Of InterlexCrawlerEntities.OperationStatusLog)
+  fullName.vb: System.Collections.Generic.ICollection(Of Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog)
+  name.vb: ICollection(Of InterlexCrawlerEntities.OperationStatusLog)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog
+    name: InterlexCrawlerEntities.OperationStatusLog
+    nameWithType: InterlexCrawlerEntities.OperationStatusLog
+    fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog
+    name: InterlexCrawlerEntities.OperationStatusLog
+    nameWithType: InterlexCrawlerEntities.OperationStatusLog
+    fullName: Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    nameWithType: ICollection
+    fullName: System.Collections.Generic.ICollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

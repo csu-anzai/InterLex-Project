@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Interlex.Crawler.Manager
+  commentId: N:Interlex.Crawler.Manager
+  id: Interlex.Crawler.Manager
+  children:
+  - Interlex.Crawler.Manager.DocumentGroupManager
+  - Interlex.Crawler.Manager.HttpCrawlerManager
+  langs:
+  - csharp
+  - vb
+  name: Interlex.Crawler.Manager
+  nameWithType: Interlex.Crawler.Manager
+  fullName: Interlex.Crawler.Manager
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+references:
+- uid: Interlex.Crawler.Manager.DocumentGroupManager
+  commentId: T:Interlex.Crawler.Manager.DocumentGroupManager
+  parent: Interlex.Crawler.Manager
+  name: DocumentGroupManager
+  nameWithType: DocumentGroupManager
+  fullName: Interlex.Crawler.Manager.DocumentGroupManager
+- uid: Interlex.Crawler.Manager.HttpCrawlerManager
+  commentId: T:Interlex.Crawler.Manager.HttpCrawlerManager
+  name: HttpCrawlerManager
+  nameWithType: HttpCrawlerManager
+  fullName: Interlex.Crawler.Manager.HttpCrawlerManager
+- uid: Interlex.Crawler.Manager
+  commentId: N:Interlex.Crawler.Manager
+  name: Interlex.Crawler.Manager
+  nameWithType: Interlex.Crawler.Manager
+  fullName: Interlex.Crawler.Manager
