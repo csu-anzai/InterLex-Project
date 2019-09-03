@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "Y:/Interlex/Interlex.Crawler/Documentation",
+  "source_base_path": "C:/Users/oreshenski/Desktop/docfx",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -12,7 +12,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Common.Extensions.html",
-          "hash": "1wloZtOFYrYdYF9t6r6eYw=="
+          "hash": "BVqxv4Y8JwA6izLkFIRBXg=="
         }
       },
       "is_incremental": true,
@@ -24,7 +24,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Common.Http.html",
-          "hash": "0oDqaI7CqD7wUSY7g6KUBw=="
+          "hash": "mS3mHiQpmq1b0bci1V1KCQ=="
         }
       },
       "is_incremental": true,
@@ -36,10 +36,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Common.HttpRequestBuilder.html",
-          "hash": "GBtCbNMI0+oQW31X+2PukA=="
+          "hash": "J0UjqCKOh9nRR65tr6NWxA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -48,10 +48,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Common.MD5Hash.html",
-          "hash": "+4QgHESZuCziERqEzxgU+g=="
+          "hash": "37DmSZs29Pwf/XCciPbesg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -60,10 +60,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Common.ResponseRichResult.html",
-          "hash": "3ICzERPIbx6gQ3ekggmkOg=="
+          "hash": "XpUvvElScZk3yfqGMFmXIw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -72,10 +72,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Common.html",
-          "hash": "1F7l67nIR0bREjYZGc6Eww=="
+          "hash": "zcLjPij1h+TWs692Wj0KYQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -84,10 +84,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.CrawlerApi.html",
-          "hash": "XY0APTJUyac/elc8Xs5QWg=="
+          "hash": "r2qFPypV+nGWchRC/88VEA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -96,10 +96,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Crawlers.AT.RisBka.html",
-          "hash": "RvS2vjTn8Nw0Nm+eiyXCLw=="
+          "hash": "ghFXXWpESgcOxb+OaVaHVQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -108,10 +108,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Crawlers.AT.html",
-          "hash": "LIoL6tNdz4riQbr6+VER/w=="
+          "hash": "d3zpSCXQhUdB+8TvjZk+Lw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -120,10 +120,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Crawlers.BaseGenericCrawler.html",
-          "hash": "ACM9+GLqi0gVVbA6446Z/g=="
+          "hash": "6SxRXnbLLo5fBqx6VUbhew=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -132,10 +132,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Crawlers.BaseHttpCrawler.html",
-          "hash": "nATjEcVCyyZ6K0jU/jxeBA=="
+          "hash": "eGROQcMqOZbz2gb2ywnA4g=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -144,10 +144,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Crawlers.DE.BaseBundes.html",
-          "hash": "54SR6xpElD5haabpRs4WXA=="
+          "hash": "42t0PK6TSMZbw1ZtPnyUCQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -156,10 +156,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Crawlers.DE.Bundesarbeitsgericht.html",
-          "hash": "6nB6rp6DcdEBP1XVXzYM9g=="
+          "hash": "OXClcNmJ+b04PL/qt4H1PQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -168,10 +168,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Crawlers.DE.Bundesfinanzhofs.html",
-          "hash": "zZUAdNdNvYGHPRgirYO9cw=="
+          "hash": "LXI1xpBkmbcXF9El256E1A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -180,10 +180,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Crawlers.DE.Bundesgerichtshof.html",
-          "hash": "4+4PsTAJVu2QsTlmFZh4Fw=="
+          "hash": "ul9E4OD7NuOk9XtHtysVoA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -192,10 +192,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Crawlers.DE.Bundespatentgericht.html",
-          "hash": "E6p9KSoGW4yYCpa5O1Errg=="
+          "hash": "OwsXCAFSmuu1s4ZrQ926LA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -204,10 +204,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Crawlers.DE.Bundessozialgericht.html",
-          "hash": "jC9arr7uX0v7L2pY0/O9iQ=="
+          "hash": "Itmdh1c3SzWMOUvXbU/UwA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -216,10 +216,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Crawlers.DE.html",
-          "hash": "A8PaNMziKwF/0UT7lY9RTA=="
+          "hash": "wmQfwFYTCucvsOzdsxsTuA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -228,10 +228,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Crawlers.Eurlex.Eurlex.html",
-          "hash": "FYg2LIDCV2CLOihoQJPgsA=="
+          "hash": "ekLp13Nl2v+N9amI1IqpTg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -240,10 +240,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Crawlers.Eurlex.html",
-          "hash": "Y4RZvC49TtvG2ET9NnTw9A=="
+          "hash": "xm+TFWo07dnKE0AIZPvwHQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -252,10 +252,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Crawlers.FR.LegiFrance.html",
-          "hash": "MyRuwRMFWsu4OXGPsmZt8w=="
+          "hash": "8eVuyeeLLy49OlKyR8ICFw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -264,10 +264,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Crawlers.FR.html",
-          "hash": "gSbssu/6ajQtbUs+xQ9lgg=="
+          "hash": "+5RQ0GmUS0/4cjb7lPmRZA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -276,10 +276,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Crawlers.Interlex_editor_tool.InterlexEditorTool.html",
-          "hash": "c+l+w7TggdI7b0EvZ6Aehg=="
+          "hash": "+Jpl4K4EyS/25bupwoWJew=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -288,10 +288,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Crawlers.Interlex_editor_tool.html",
-          "hash": "+4CGWxOr7cfo+XkaUL1wcw=="
+          "hash": "oM9ijIYfRqfuYlhe/6h4xw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -300,10 +300,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Crawlers.UK.UKSupremeCourt.html",
-          "hash": "mDS+2q6n0oWgtVM1ltGNZA=="
+          "hash": "FEjJFmjhblC2NT2YS5e8tg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -312,10 +312,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Crawlers.UK.html",
-          "hash": "ALVfzvhMrfHW+nlJtzQroA=="
+          "hash": "ISRMlkvbbZMTAUtcvA+47w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -324,10 +324,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Crawlers.html",
-          "hash": "SMVAINHEKUzi5ythnAOjTw=="
+          "hash": "ETTkdKZi+uhEipkE1WRwrA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -336,10 +336,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Data.InterlexCrawlerEntities.Crawler.html",
-          "hash": "aYLAxTZycPC1EkKp7fK4cg=="
+          "hash": "FrcQGt3qs/OJ4bvHuY/ffA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -348,10 +348,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Data.InterlexCrawlerEntities.Document.html",
-          "hash": "Fo+dSLb+OTHmsgufdsWWaw=="
+          "hash": "xCJMXOsQW1mb8vClZMgYQg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -360,10 +360,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Data.InterlexCrawlerEntities.DocumentGroup.html",
-          "hash": "jLsZCqOIlEVwNyjQk7hQdw=="
+          "hash": "Va/Nvo3qiLPjkFW5sWnIiw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -372,10 +372,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatus.html",
-          "hash": "ktr0J2n7CdUdLFbGFDmp+w=="
+          "hash": "JkutuJu43xlNIpudphH8Pw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -384,10 +384,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Data.InterlexCrawlerEntities.OperationStatusLog.html",
-          "hash": "U3VExAoUugan3n0aBDtAcQ=="
+          "hash": "oirtkVcu91z/oAg4FFuuKQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -396,10 +396,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Data.InterlexCrawlerEntities.html",
-          "hash": "Dj5tSxg2XOS9QRIUihR4hw=="
+          "hash": "BULitMqoffdjVwffdAIb6A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -408,10 +408,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Data.html",
-          "hash": "TXAvON8/lSE3VeBlpjdndg=="
+          "hash": "6Y2MDbdw+o0Hh/MqNSCc9w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -420,10 +420,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Manager.DocumentGroupManager.html",
-          "hash": "MQbzJjtRdz6uRneF1Vwy/Q=="
+          "hash": "M0t9u6QabZABBVV6n0M5Mg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -432,10 +432,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Manager.HttpCrawlerManager.html",
-          "hash": "UYHko4WDQ/P9Zeu2R51iQg=="
+          "hash": "U8kswMkHwn1b6bSFLeh4kQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -444,10 +444,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Manager.html",
-          "hash": "u41wQ28PQxmUsA46zYcaJA=="
+          "hash": "WrrcuUfWHroSUSyasFxdYQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -456,10 +456,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Model.CrawlerDownloadDocumentModel.html",
-          "hash": "MuyE7llzOWRweUBmfOVBBA=="
+          "hash": "6mYyOW6ZTnr7TEFisDpRIw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -468,10 +468,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Model.CrawlerDownloadPackageModel.html",
-          "hash": "7UrV9n0f+nN3KAQZN+2cXA=="
+          "hash": "poSg3lZSbHRDAGld8xJrxg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -483,10 +483,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Model.CrawlerHttpManagerConfig.html",
-          "hash": "n28WGcd/sOMaMNeMMNznjQ=="
+          "hash": "gqaXeEXFw+YB3C5jJE/iZw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -495,10 +495,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Model.DocumentGroupModel.html",
-          "hash": "8aXMiXqiWksBaylyE2gpew=="
+          "hash": "pwUdKKyrLZ45+aEaTWdM8w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -507,10 +507,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Model.DocumentGroupModelOperation.html",
-          "hash": "ao/A78uQrjZCtKIle7yMQw=="
+          "hash": "1G0qp4O0eYynIC+GdF4fpg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -519,10 +519,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Model.DocumentModel.html",
-          "hash": "t4rBAqIpDkcC3eIGoaZGGQ=="
+          "hash": "Jw4GxFqVTu+FARbew85LiA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -531,10 +531,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Model.DocumentModelOperation.html",
-          "hash": "d6i/ulM7mo7OY8C+uECEsQ=="
+          "hash": "Jv+Z2K2Ad7tgW73ESE/xFA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -543,10 +543,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Model.HttpModel.html",
-          "hash": "B0+zGPq9iK3ew8AQtaPeYg=="
+          "hash": "w5xWVYfEEAbxnBU2NB1Flw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -558,10 +558,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Model.NameModel.html",
-          "hash": "h8X5ZAk7lsouOBfHUY8xSw=="
+          "hash": "lBtmwO8X2dwRQv+vxuoSkg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -570,10 +570,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.Model.html",
-          "hash": "S8jARcA/CghxJ7nRgG7PPg=="
+          "hash": "gBim352X0xOIgoqnNVA8xg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -582,10 +582,10 @@
       "output": {
         ".html": {
           "relative_path": "api/Interlex.Crawler.html",
-          "hash": "NhVI1K+FMMIB3JQluaUOyg=="
+          "hash": "IFHmRwpSpHCX65hcd0Opcw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -594,7 +594,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "wPdAuWCuEprHcI4D4NyF5Q=="
+          "hash": "V4P3mCOaRDvN0ElKFttxBA=="
         }
       },
       "is_incremental": true,
@@ -613,24 +613,33 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "articles/intro.md",
+      "type": "Resource",
+      "source_relative_path": "images/favicon.png",
       "output": {
-        ".html": {
-          "relative_path": "articles/intro.html",
-          "hash": "hwcpv5lbKj08oC73jwjDpQ=="
+        "resource": {
+          "relative_path": "images/favicon.png"
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Toc",
-      "source_relative_path": "articles/toc.yml",
+      "type": "Resource",
+      "source_relative_path": "images/logo120x65-white.png",
       "output": {
-        ".html": {
-          "relative_path": "articles/toc.html",
-          "hash": "t7iiFrmuYmrKWisdq+lN6Q=="
+        "resource": {
+          "relative_path": "images/logo120x65-white.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo120x65.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo120x65.png"
         }
       },
       "is_incremental": false,
@@ -642,7 +651,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "mfO3xhAQimsmGXuxASl69g=="
+          "hash": "TiWBcHPII59U5uoQr34pgg=="
         }
       },
       "is_incremental": true,
@@ -654,7 +663,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "k+/dkjFuwAVS32HduMpmBw=="
+          "hash": "1Xdjw8Ib7j95/TiJDj+CFw=="
         }
       },
       "is_incremental": false,
@@ -670,6 +679,13 @@
         "skipped_file_count": 0
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -680,14 +696,14 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 3,
-          "skipped_file_count": 3
+          "total_file_count": 2,
+          "skipped_file_count": 2
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 48,
-          "skipped_file_count": 15
+          "skipped_file_count": 48
         }
       }
     },

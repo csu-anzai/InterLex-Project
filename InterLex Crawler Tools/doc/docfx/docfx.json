@@ -49,6 +49,11 @@
         ]
       }
     ],
+	"globalMetadata": {
+      "_appTitle": "InterLex Crawler porject",
+	  "_appLogoPath": "/images/logo120x65-white.png",
+	  "_appFaviconPath": "/images/favicon.png"
+	},
     "dest": "_site",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
